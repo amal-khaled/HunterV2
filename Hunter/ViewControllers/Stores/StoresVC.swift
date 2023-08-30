@@ -107,7 +107,7 @@ class StoresVC: UIViewController {
     //MARK: IBActions
     
     @IBAction func didTapCreateStoreButton(_ sender: UIButton) {
-        let addStoreVC = AddStoreVC.instantiate()
+        let addStoreVC = CreateStoreVC.instantiate()
         navigationController?.pushViewController(addStoreVC, animated: true)
         
     }

@@ -7,10 +7,10 @@
 
 import UIKit
 
-class AddStoreVC: UIViewController {
+class CreateStoreVC: UIViewController {
     
-    static func instantiate()-> AddStoreVC{
-        let addStoreVC = UIStoryboard(name: "Store", bundle: nil).instantiateViewController(withIdentifier: "AddStoreVC") as! AddStoreVC
+    static func instantiate()-> CreateStoreVC{
+        let addStoreVC = UIStoryboard(name: "Store", bundle: nil).instantiateViewController(withIdentifier: "AddStoreVC") as! CreateStoreVC
         
         return addStoreVC
     }

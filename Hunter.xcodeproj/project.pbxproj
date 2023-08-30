@@ -229,7 +229,7 @@
 		C8CCE33C2A19E29200FFAFB2 /* LocalizedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CCE33B2A19E29200FFAFB2 /* LocalizedImage.swift */; };
 		C8CCE33E2A19E33B00FFAFB2 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CCE33D2A19E33B00FFAFB2 /* ProfileController.swift */; };
 		C8CCE3402A19E81100FFAFB2 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CCE33F2A19E81100FFAFB2 /* Profile.swift */; };
-		C8EAB7CC2A9C99A9009F975C /* AddStoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EAB7CB2A9C99A9009F975C /* AddStoreVC.swift */; };
+		C8EAB7CC2A9C99A9009F975C /* CreateStoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EAB7CB2A9C99A9009F975C /* CreateStoreVC.swift */; };
 		C8ECBD542A34535E003178DA /* VerifyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ECBD532A34535E003178DA /* VerifyAccountVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -467,7 +467,7 @@
 		C8CCE33B2A19E29200FFAFB2 /* LocalizedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedImage.swift; sourceTree = "<group>"; };
 		C8CCE33D2A19E33B00FFAFB2 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		C8CCE33F2A19E81100FFAFB2 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		C8EAB7CB2A9C99A9009F975C /* AddStoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStoreVC.swift; sourceTree = "<group>"; };
+		C8EAB7CB2A9C99A9009F975C /* CreateStoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStoreVC.swift; sourceTree = "<group>"; };
 		C8ECBD532A34535E003178DA /* VerifyAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAccountVC.swift; sourceTree = "<group>"; };
 		D2935A47F02BDB207D88AACE /* Pods-Monasba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monasba.debug.xcconfig"; path = "Target Support Files/Pods-Monasba/Pods-Monasba.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1068,7 +1068,7 @@
 			isa = PBXGroup;
 			children = (
 				C8B7C93F2A97A93C008D87FA /* StoresVC.swift */,
-				C8EAB7CB2A9C99A9009F975C /* AddStoreVC.swift */,
+				C8EAB7CB2A9C99A9009F975C /* CreateStoreVC.swift */,
 			);
 			path = Stores;
 			sourceTree = "<group>";
@@ -1337,7 +1337,7 @@
 				C8A2BEB32A3A541E00A05E77 /* OtherUserProductVC.swift in Sources */,
 				C89286BC2A3DB41500FB0A8A /* EditProfileVC.swift in Sources */,
 				C8AD40E72A29DCF600E464DB /* SettingsModel.swift in Sources */,
-				C8EAB7CC2A9C99A9009F975C /* AddStoreVC.swift in Sources */,
+				C8EAB7CC2A9C99A9009F975C /* CreateStoreVC.swift in Sources */,
 				C8A4CD842A34A73E00A9BF28 /* SuccessfulVerifyModel.swift in Sources */,
 				65F33D0B2A22DCC700A1A889 /* ReportAskReplyViewController.swift in Sources */,
 				658F9E6E2A5BD6E6007EC571 /* FullScreenViewController.swift in Sources */,
