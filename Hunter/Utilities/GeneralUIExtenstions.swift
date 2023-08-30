@@ -371,6 +371,8 @@ extension String {
     }
     
     
+    
+    
     var formatAddress:[String:String]{
         var map = [String:String]()
         var subloc:String = ""
@@ -918,4 +920,10 @@ extension UICollectionView {
 extension Notification.Name {
     static let userIDNotification = Notification.Name("UserIDNotification")
     static let loadUserRate = Notification.Name("loadUserRate")
+}
+
+extension Optional where Wrapped == String {
+    var safeValue: String {
+        return self ?? ""
+    }
 }

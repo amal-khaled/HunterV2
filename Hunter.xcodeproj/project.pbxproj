@@ -168,9 +168,11 @@
 		C89286BC2A3DB41500FB0A8A /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89286BB2A3DB41500FB0A8A /* EditProfileVC.swift */; };
 		C89286BE2A3DB8A800FB0A8A /* EditProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89286BD2A3DB8A800FB0A8A /* EditProfileModel.swift */; };
 		C89AD68D2A69829A00748572 /* BlockUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89AD68C2A69829900748572 /* BlockUserVC.swift */; };
+		C89BB55D2A9FE32D00E3612F /* CreateStoreSuccessfullyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89BB55C2A9FE32D00E3612F /* CreateStoreSuccessfullyVC.swift */; };
 		C89D12852A10209200669FD9 /* AddAdvsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89D12842A10209200669FD9 /* AddAdvsController.swift */; };
 		C89D12872A10245B00669FD9 /* AddAdvsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89D12862A10245B00669FD9 /* AddAdvsModel.swift */; };
 		C8A17F6B2A80E0DF00D6E292 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8A17F6A2A80E0DF00D6E292 /* GoogleService-Info.plist */; };
+		C8A27B482A9F91DB0090A9D2 /* StoresController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A27B472A9F91DB0090A9D2 /* StoresController.swift */; };
 		C8A281BA2A3DA01E00954090 /* FollowTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A281B82A3DA01E00954090 /* FollowTVCell.swift */; };
 		C8A281BB2A3DA01E00954090 /* FollowTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8A281B92A3DA01E00954090 /* FollowTVCell.xib */; };
 		C8A2BEB32A3A541E00A05E77 /* OtherUserProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A2BEB22A3A541E00A05E77 /* OtherUserProductVC.swift */; };
@@ -403,9 +405,11 @@
 		C89286BB2A3DB41500FB0A8A /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
 		C89286BD2A3DB8A800FB0A8A /* EditProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileModel.swift; sourceTree = "<group>"; };
 		C89AD68C2A69829900748572 /* BlockUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockUserVC.swift; sourceTree = "<group>"; };
+		C89BB55C2A9FE32D00E3612F /* CreateStoreSuccessfullyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStoreSuccessfullyVC.swift; sourceTree = "<group>"; };
 		C89D12842A10209200669FD9 /* AddAdvsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAdvsController.swift; sourceTree = "<group>"; };
 		C89D12862A10245B00669FD9 /* AddAdvsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAdvsModel.swift; sourceTree = "<group>"; };
 		C8A17F6A2A80E0DF00D6E292 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C8A27B472A9F91DB0090A9D2 /* StoresController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresController.swift; sourceTree = "<group>"; };
 		C8A281B82A3DA01E00954090 /* FollowTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowTVCell.swift; sourceTree = "<group>"; };
 		C8A281B92A3DA01E00954090 /* FollowTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowTVCell.xib; sourceTree = "<group>"; };
 		C8A2BEB22A3A541E00A05E77 /* OtherUserProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherUserProductVC.swift; sourceTree = "<group>"; };
@@ -657,6 +661,7 @@
 				65FFFA152A1E972600B70368 /* NotificationsController.swift */,
 				65784C682A27147B0099A293 /* ChatController.swift */,
 				C8C715022A647887006C5AFE /* FollowersController.swift */,
+				C8A27B472A9F91DB0090A9D2 /* StoresController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1069,6 +1074,7 @@
 			children = (
 				C8B7C93F2A97A93C008D87FA /* StoresVC.swift */,
 				C8EAB7CB2A9C99A9009F975C /* CreateStoreVC.swift */,
+				C89BB55C2A9FE32D00E3612F /* CreateStoreSuccessfullyVC.swift */,
 			);
 			path = Stores;
 			sourceTree = "<group>";
@@ -1306,6 +1312,7 @@
 				65F33D0D2A22DCD500A1A889 /* ReplyAskViewController.swift in Sources */,
 				C8A72A3B2A00B45600F9C26D /* SuccessAddingVC.swift in Sources */,
 				C85FFCE52A260D21000C426D /* ChatModel.swift in Sources */,
+				C89BB55D2A9FE32D00E3612F /* CreateStoreSuccessfullyVC.swift in Sources */,
 				C8AD40E22A28F4F800E464DB /* SettingVC.swift in Sources */,
 				C8C715002A646981006C5AFE /* FollowAndFollowersTapsCell.swift in Sources */,
 				65E54A3C2A029CEB00FEC9A3 /* CategoryViewController.swift in Sources */,
@@ -1318,6 +1325,7 @@
 				65E54A3A2A029AE000FEC9A3 /* mainSideCategoryCollectionViewCell.swift in Sources */,
 				65DD11F729E6845D00A3B8DD /* AppDelegate.swift in Sources */,
 				65E54A382A02991D00FEC9A3 /* SideCategoryCollectionViewCell.swift in Sources */,
+				C8A27B482A9F91DB0090A9D2 /* StoresController.swift in Sources */,
 				C8CC46972A39A79E00C90476 /* VerifyAccountImagePickerVC.swift in Sources */,
 				C8CC468E2A387F4500C90476 /* RoundedNavigationBar.swift in Sources */,
 				65FFFA162A1E972600B70368 /* NotificationsController.swift in Sources */,
