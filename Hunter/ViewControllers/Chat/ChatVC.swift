@@ -286,11 +286,18 @@ class ChatVC: ViewController,UITableViewDataSource,UITableViewDelegate,
     @objc func openOtherProfileUser (){
 //        user.other_id = user.other_id
 //        goNav("otherProfilev","Profile")
-        let vc = UIStoryboard(name: PROFILE_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: OTHER_USER_PROFILE_VCID) as! OtherUserProfileVC
-        vc.OtherUserId = Int(Constants.userOtherId) ?? 0
-//        present(vc, animated: true)
-//        presentDetail(vc)
-        navigationController?.pushViewController(vc, animated: true)
+        if AppDelegate.currentUser.isStore ?? false {
+            let storeProfile = StoreProfileVC.instantiate()
+            storeProfile.otherUserId = Int(Constants.userOtherId) ?? 0
+            navigationController?.pushViewController(storeProfile, animated: true)
+        }else {
+            let vc = UIStoryboard(name: PROFILE_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: OTHER_USER_PROFILE_VCID) as! OtherUserProfileVC
+            vc.OtherUserId = Int(Constants.userOtherId) ?? 0
+    //        present(vc, animated: true)
+    //        presentDetail(vc)
+            navigationController?.pushViewController(vc, animated: true)
+        }
+      
     }
     
     

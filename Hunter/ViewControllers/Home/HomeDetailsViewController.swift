@@ -625,7 +625,7 @@ extension HomeDetailsViewController: UICollectionViewDataSource, UICollectionVie
             let vc = UIStoryboard(name: PRODUCT_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: PRODUCT_VCID) as! ProductViewController
             vc.modalPresentationStyle = .fullScreen
             //TODO: pass Product Id of Features ads
-//            vc.product = products[indexPath.row]
+            vc.product = featureProducts[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
         }
         else if collectionView == subCategoryCollectionView{

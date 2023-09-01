@@ -97,6 +97,10 @@ struct User: Codable {
     var searchIsFollow, isFollow, activeNotification: Int?
     var toke: String?
     var codeVerify:Int?
+    var isStore: Bool?
+    var store: Store?
+    var availableAdsCountUserInCurrentMonth, availableAdsCountStoreInCurrentMonth: Int?
+    var plan: Plan?
     enum CodingKeys: String, CodingKey {
         case id, name
         case lastName = "last_name"
@@ -126,7 +130,81 @@ struct User: Codable {
         case userRate = "UserRate"
         case searchIsFollow = "follow"
         case isFollow = "is_follow"
-
         case activeNotification = "active_notification"
+        case isStore = "is_store"
+        case store
+        case availableAdsCountUserInCurrentMonth = "available_ads_count_user_in_current_month"
+        case availableAdsCountStoreInCurrentMonth = "available_ads_count_store_in_current_month"
+        case plan
+    }
+}
+
+struct Store: Codable {
+    var id: Int?
+    var companyName, companyActivity, phone, email: String?
+    var whatsapp: String?
+    var countryNameAr: CountryNameArObject?
+    var countryNameEn: CountryNameEnObject?
+    var cityNameAr, cityNameEn, regionNameAr, regionNameEn: String?
+    var bio, logo, license: String?
+    var twitter, instagram, website, googleMap: String?
+    var coverPhoto: String?
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case companyName = "company_name"
+        case companyActivity = "company_activity"
+        case phone, email, whatsapp
+        case countryNameAr = "country_name_ar"
+        case countryNameEn = "country_name_en"
+        case cityNameAr = "city_name_ar"
+        case cityNameEn = "city_name_en"
+        case regionNameAr = "region_name_ar"
+        case regionNameEn = "region_name_en"
+        case bio, logo, license, twitter, instagram, website
+        case googleMap = "google_map"
+        case coverPhoto = "cover_photo"
+    }
+}
+
+// MARK: - Plan
+struct Plan: Codable {
+    var id: Int?
+    var nameEn, nameAr, pricePerMonth, durationPerDay: String?
+    var adsCount: Int?
+    var bestSeller, createdAt, updatedAt: String?
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case nameEn = "name_en"
+        case nameAr = "name_ar"
+        case pricePerMonth = "price_per_month"
+        case durationPerDay = "duration_per_day"
+        case adsCount = "ads_count"
+        case bestSeller = "best_seller"
+        case createdAt = "created_at"
+        case updatedAt = "updated_at"
+    }
+}
+
+// MARK: - CountryNameAr
+struct CountryNameArObject: Codable {
+    let nameAr, name: String?
+    let currency: String?
+
+    enum CodingKeys: String, CodingKey {
+        case nameAr = "name_ar"
+        case name, currency
+    }
+}
+
+// MARK: - CountryNameEn
+struct CountryNameEnObject: Codable {
+    let nameEn: String?
+    let name, currency: String?
+
+    enum CodingKeys: String, CodingKey {
+        case nameEn = "name_en"
+        case name, currency
     }
 }

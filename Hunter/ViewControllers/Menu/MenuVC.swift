@@ -86,28 +86,44 @@ class MenuVC: UIViewController {
     
     @IBAction func didTapProfileButton(_ sender: UIButton) {
         print("didTapProfileButton")
+//        if StaticFunctions.isLogin() {
+//            let vc = UIStoryboard(name: PROFILE_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: PROFILE_VCID) as! ProfileVC
+//            vc.modalPresentationStyle = .fullScreen
+//           // present(vc, animated: true)
+////            presentDetail(vc)
+//            navigationController?.pushViewController(vc, animated: true)
+//        }else {
+//            StaticFunctions.createErrorAlert(msg: "Please Login First To Can Go To Profile!".localize)
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0){
+//                self.basicPresentation(storyName: Auth_STORYBOARD, segueId: "login_nav")
+//            }
+//
+//        }
         if StaticFunctions.isLogin() {
-            let vc = UIStoryboard(name: PROFILE_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: PROFILE_VCID) as! ProfileVC
-            vc.modalPresentationStyle = .fullScreen
-           // present(vc, animated: true)
-//            presentDetail(vc)
-            navigationController?.pushViewController(vc, animated: true)
+            print(AppDelegate.currentUser.isStore)
+            DispatchQueue.main.async {
+                if AppDelegate.currentUser.isStore ?? false {
+                    let storeProfileVC = StoreProfileVC.instantiate()
+//                    let nav = UINavigationController(rootViewController: storeProfileVC)
+                    storeProfileVC.otherUserId = AppDelegate.currentUser.id ?? 0
+                    self.navigationController?.pushViewController(storeProfileVC, animated: true)
+                }else{
+                    let vc = UIStoryboard(name: PROFILE_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: PROFILE_VCID) as! ProfileVC
+                    vc.modalPresentationStyle = .fullScreen
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
+            }
         }else {
             StaticFunctions.createErrorAlert(msg: "Please Login First To Can Go To Profile!".localize)
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0){
                 self.basicPresentation(storyName: Auth_STORYBOARD, segueId: "login_nav")
             }
-           
         }
-       
 
     }
     
     @IBAction func didTapAddAdButton(_ sender: Any) {
-//        let vc = UIStoryboard(name: ADVS_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: ADDADVS_VCID) as! AddAdvsVC
-//        vc.modalPresentationStyle = .fullScreen
-//        presentDetail(vc)
-        
+
         if StaticFunctions.isLogin() {
             let vc = UIStoryboard(name: ADVS_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: ADDADVS_VCID) as! AddAdvsVC
             vc.modalPresentationStyle = .fullScreen

@@ -179,6 +179,9 @@ extension LoginViewController{
      func login() {
        
          StaticFunctions.enableBtnWithoutAlpha(btn: loginBtn, status: false)
+         
+         let phoneNumber = countryCode + phoneTF.text!
+         
          if Reachability.isConnectedToNetwork(){
              self.loginBtn.startAnimation()
              AppDelegate.currentUser = User()
@@ -189,7 +192,7 @@ extension LoginViewController{
 
                  if check == 0{
                      if let userObject = data {
-                         
+                         print(userObject.data.codeVerify)
                          if userObject.data.codeVerify == 1 {
                              AppDelegate.currentUser = userObject.data ?? User()
                              AppDelegate.defaults.set( userObject.token ?? "", forKey: "token")
@@ -210,7 +213,7 @@ extension LoginViewController{
 
                  }
 
-             },  phone:  phoneTF.text!, passwoord: passwordTF.text!)
+             },  phone: phoneNumber, passwoord: passwordTF.text!)
 
          }
          else{

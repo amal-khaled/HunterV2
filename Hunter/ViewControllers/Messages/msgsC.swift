@@ -192,7 +192,8 @@ class msgsC: UIViewController , UICollectionViewDelegate , UICollectionViewDataS
         chk_select_all.secondaryCheckmarkTintColor = UIColor.white
         chk_select_all.tintColor = UIColor(named: "#0093F5")
         chk_select_all.stateChangeAnimation = .bounce(.fill)
-        self.title = "Messages".localize
+//        self.title = "Messages".localize
+        self.navigationController?.navigationBar.tintColor = .white
 //        get()
     }
     

@@ -527,39 +527,21 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             homeDetailsVC.modalPresentationStyle = .fullScreen
             navigationController?.pushViewController(homeDetailsVC, animated: true)
             
-//            self.subcategoryId = -1
-//            self.categoryId = categories[indexPath.row].id ?? 0
-//            if categories[indexPath.row].hasSubCat == 1{
-//                getSubCategory()
-//            }else{
-//                //                subCategories.removeAll()
-////                subCategoryCollectionView.isHidden = true
-//            }
-//            if categoryId == 1 {
-//                sell = nil
-//                typeLbl.text = "All".localize
-//                self.typeView.isHidden = false
-//            }else{
-//                self.typeView.isHidden = true
-//
-//            }
-//            self.resetProducts()
-//            self.getData()
             
         }else if collectionView == FeaturesCollectionView {
             
             let vc = UIStoryboard(name: PRODUCT_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: PRODUCT_VCID) as! ProductViewController
             vc.modalPresentationStyle = .fullScreen
             //TODO: pass Product Id of Features ads
-//            vc.product = products[indexPath.row]
+            vc.product = featureProducts[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
         }
-//        else if collectionView == subCategoryCollectionView{
-//            self.subcategoryId = subCategories[indexPath.row].id ?? 0
-//            self.resetProducts()
-//            self.getData()
-//
-//        }
+        else if collectionView == storeCollectionView{
+            let storeProfile = StoreProfileVC.instantiate()
+            storeProfile.otherUserId = storesList[indexPath.item].userID ?? 0
+            storeProfile.countryId = storesList[indexPath.item].countryID ?? 6
+            navigationController?.pushViewController(storeProfile, animated: true)
+        }
     }
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if indexPath.row == (products.count-1) && !isTheLast{

@@ -192,6 +192,8 @@ class CreateStoreVC: UIViewController {
     @IBAction func didTapChangeLogo(_ sender: UIButton) {
         isStorelogo = true
         openGallery()
+//        let vc = EditStoreVC.instantiate()
+//        navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func didTapChooseCountryButton(_ sender: UIButton) {
