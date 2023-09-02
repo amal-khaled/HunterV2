@@ -28,7 +28,7 @@
         @IBOutlet weak var followersCountLabel: UILabel!
         @IBOutlet weak var followingsCountLabel: UILabel!
         @IBOutlet weak var pages: UIView!
-        @IBOutlet weak var chatButton: UIButton!
+        @IBOutlet weak var addRateButton: UIButton!
         @IBOutlet weak var followButton: UIButton!
         
         var OtherUserId = 0
@@ -69,13 +69,15 @@
         //MARK: Methods
         
         fileprivate func setupProfileUI(){
-            if user.id == OtherUserId {
-                blockAndReportStackView.isHidden = true
-                followView.isHidden = true
-            }else{
-                blockAndReportStackView.isHidden = false
-                followView.isHidden = false
-            }
+            
+            addRateButton.isHidden = true
+//            if user.id == OtherUserId {
+//                blockAndReportStackView.isHidden = true
+//                followView.isHidden = true
+//            }else{
+//                blockAndReportStackView.isHidden = false
+//                followView.isHidden = false
+//            }
         }
         
         func initTabs(){
@@ -232,10 +234,17 @@
             navigationController?.pushViewController(vc, animated: true)
         }
         
+        
+        @IBAction func didTapAddRateButton(_ sender: UIButton) {
+            let vc = UIStoryboard(name: "Profile", bundle: nil).instantiateViewController(withIdentifier: "AddRateForUsersVC") as! AddRateForUsersVC
+            vc.otherUserId = OtherUserId
+            vc.modalPresentationStyle = .overFullScreen
+            self.present(vc, animated: false)
+        }
+        
+        
         @IBAction func chatBtnAction(_ sender: UIButton) {
             if StaticFunctions.isLogin() {
-             
-                if chatButton.titleLabel?.text == "Chat".localize {
                     let vc = UIStoryboard(name: "Chat", bundle: nil).instantiateViewController(withIdentifier: "ChatVC") as! ChatVC
                     Constants.userOtherId = "\(OtherUserId)"
                     print(OtherUserId)
@@ -251,15 +260,6 @@
                             StaticFunctions.createErrorAlert(msg: "Can't Create Room".localize)
                         }
                     }
-                }else{
-                    let vc = UIStoryboard(name: "Profile", bundle: nil).instantiateViewController(withIdentifier: "AddRateForUsersVC") as! AddRateForUsersVC
-                    vc.otherUserId = OtherUserId
-                    vc.modalPresentationStyle = .fullScreen
-                    self.present(vc, animated: false)
-                }
-                
-                
-                
                 
             }else {
                 StaticFunctions.createErrorAlert(msg: "Please Login First".localize)
@@ -308,33 +308,33 @@
                 
             }
             
-            fullNameUserLabel.text = "\(profileModel.name ?? "") \(profileModel.lastName ?? "")"
-            if profileModel.verified != 0 {
-                userVerifiedImageView.isHidden = false
-            }else{
-                userVerifiedImageView.isHidden = true
-            }
+//            fullNameUserLabel.text = "\(profileModel.name ?? "") \(profileModel.lastName ?? "")"
+//            if profileModel.verified != 0 {
+//                userVerifiedImageView.isHidden = false
+//            }else{
+//                userVerifiedImageView.isHidden = true
+//            }
             
             advsCountLabel.text = "\(profileModel.numberOfProds ?? 0)"
             followersCountLabel.text = "\(profileModel.followers ?? 0)"
             followingsCountLabel.text = "\(profileModel.following ?? 0)"
-            userNameLabel.text = profileModel.username
+            userNameLabel.text = profileModel.name
            
-            if let bio = profileModel.bio {
-                userBioLabel.text = bio
-            }
+//            if let bio = profileModel.bio {
+//                userBioLabel.text = bio
+//            }
             if MOLHLanguage.currentAppleLanguage() == "en" {
                 UserLocationLabel.text = "\(profileModel.countriesNameEn ?? "") - \(profileModel.citiesNameEn ?? "")"
             }else {
                 UserLocationLabel.text = "\(profileModel.countriesNameAr ?? "") - \(profileModel.citiesNameAr ?? "")"
             }
             
-            if profileModel.activeNotification == 1 {
-                StaticFunctions.setImageFromAssets(notificationImageView, "bell_fill")
-                    
-                }else{
-                    StaticFunctions.setImageFromAssets(notificationImageView, "bell_main")
-                }
+//            if profileModel.activeNotification == 1 {
+//                StaticFunctions.setImageFromAssets(notificationImageView, "bell_fill")
+//
+//                }else{
+//                    StaticFunctions.setImageFromAssets(notificationImageView, "bell_main")
+//                }
             
             if profileModel.isFollow == 1 {
                 self.followButton.setTitle("unfollow".localize, for: .normal)
@@ -342,14 +342,14 @@
                 self.followButton.setTitle("follow".localize, for: .normal)
             }
             
-            if AppDelegate.currentUser.id == OtherUserId {
-    //            self.enable([self.btn_follow,self.btn_not], enabled: false)
-    //            self.setTxtColor(self.btn_follow,"#000000")
-    //            self.contactv.constant = 0
-                self.chatButton.isHidden = true
-                self.followView.isHidden = true
-                self.blockAndReportStackView.isHidden = true
-            }
+//            if AppDelegate.currentUser.id == OtherUserId {
+//    //            self.enable([self.btn_follow,self.btn_not], enabled: false)
+//    //            self.setTxtColor(self.btn_follow,"#000000")
+//    //            self.contactv.constant = 0
+//                self.chatButton.isHidden = true
+//                self.followView.isHidden = true
+//                self.blockAndReportStackView.isHidden = true
+//            }
             
         }
         
@@ -419,9 +419,9 @@
         
         func didMoveToControllerAtIndex(index: Int) {
             if index == 1 {
-                chatButton.setTitle("Add Rate".localize, for: .normal)
+                addRateButton.isHidden = false
             }else{
-                chatButton.setTitle("Chat".localize, for: .normal)
+                addRateButton.isHidden = true
             }
         }
     }

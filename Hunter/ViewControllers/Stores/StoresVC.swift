@@ -29,6 +29,7 @@ class StoresVC: UIViewController {
     var countryName = MOLHLanguage.currentAppleLanguage() == "en" ? AppDelegate.currentCountry.nameEn : AppDelegate.currentCountry.nameAr
     var countryId = AppDelegate.currentCountry.id ?? 6
     var cityId = -1
+    var storesList = [StoreObject]()
     
     //MARK: - App Life Cycle
     override func viewDidLoad() {
@@ -36,7 +37,7 @@ class StoresVC: UIViewController {
         
         pagerView.delegate = self
         pagerView.dataSource = self
-
+        getStores()
         
         customNavView.cornerRadius = 30
         customNavView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
@@ -121,12 +122,12 @@ extension StoresVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollect
     
      func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 20
+         return storesList.count
     }
     
      func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "storeCell", for: indexPath)
-        
+         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StoreCollectionViewCell", for: indexPath) as? StoreCollectionViewCell else {return UICollectionViewCell()}
+         cell.setData(store: storesList[indexPath.item])
         return cell
     }
     
@@ -135,10 +136,10 @@ extension StoresVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollect
     }
     
      func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//         let vc = UIStoryboard(name: "Store", bundle: nil).instantiateViewController(withIdentifier: "StoreProfileVC") as! StoreProfileVC
-//         vc.modalPresentationStyle = .fullScreen
-//         vc.modalTransitionStyle = .crossDissolve
-//         present(vc, animated: true)
+         let storeProfile = StoreProfileVC.instantiate()
+         storeProfile.otherUserId = storesList[indexPath.item].userID ?? 0
+         storeProfile.countryId = storesList[indexPath.item].countryID ?? 6
+         navigationController?.pushViewController(storeProfile, animated: true)
     }
     
 }
@@ -155,4 +156,19 @@ extension StoresVC:FSPagerViewDelegate , FSPagerViewDataSource {
     }
 
 
+}
+
+extension StoresVC {
+    func getStores(){
+        ProductController.shared.getStores(completion: { stores, check, message in
+            if check == 0{
+                print(stores.count)
+                self.storesList.removeAll()
+                self.storesList.append(contentsOf: stores)
+                self.CollectionView.reloadData()
+            }else{
+                StaticFunctions.createErrorAlert(msg: message)
+            }
+        }, countryId: countryId)
+    }
 }

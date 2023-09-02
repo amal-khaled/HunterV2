@@ -60,7 +60,7 @@
 
 "Please Login First To Can Go To Asks!" = "الرجاء تسجيل الدخول أولاً ليتمكن من الذهاب إلى اسألتي!";
 "Please Login First To Can Go To Verify Account!" = "الرجاء تسجيل الدخول أولاً لتتمكن من توثيق الحساب!";
-
+"Stores Packages" = "باقات المتاجر";
 
 //MARK: Verify Account
 "Verify Account" = "توثيق الحساب";
@@ -175,7 +175,7 @@
 "send video" = "ارسال فيديو";
 "send location" = "ارسال الموقع";
 "send contact" = "ارسال جهة الاتصال";
-"Add Rate" = "إضافة تقييم";
+"ADD RATE" = "إضافة تقييم";
 "Confirm" = "تأكيد";
 "Please type any text to send" = "الرجاء كتابة أي نص لإرساله";
 "Specify the location, please" = "حدد الموقع من فضلك";
@@ -283,7 +283,7 @@
 "follow" = "متابعة";
 "Added Successfully" = "تمت الاضافة بنجاح";
 "Can't Create Room" = "لا تستطيع انشاء محادثة";
-"Really Do You want to Block this user?" = "حقا هل تريد حظر هذا المستخدم";
+"Do You want to Block this User?!" = "حقا هل تريد حظر هذا المستخدم";
 "Change" = "تغيير";
 
 "Wirrning ⚠️ " = "⚠️ تحذير";
@@ -408,7 +408,24 @@ To get free ads" = "سيتم مراجعتة من قبل الإدارة
 "My chats" = "دردشاتي";
 "STORES PACKAGES" = "باقات المتاجر";
 "Create Store" = "أضف متجرك الآن";
-
+"I agree to the " = " أوافق على";
+"Terms and Conditions" = "الأحكام والشروط";
+"Have Account?" = " لديك حساب؟";
+"Write a brief about your company" = "يرجي كتابة نبذة عن نشاطك";
+"About Company" = "نبذة عن نشاطك";
+"The company's trade license" = "الرخصة التجارية للشركة";
+"Enter your Email" = "ادخل البريد الالكتروني";
+"Enter WhatsApp number" = "ادخل رقم الواتساب";
+"WhatsApp number" = " رقم الواتساب";
+"Activity" = "النشاط";
+"Company activity" = "نشاط الشركة";
+"Enter name" = "ادخل الاسم";
+"Company name" = "اسم الشركة";
+"Upload the company logo" = "تحميل شعار الشركة";
+"Add Store" = "إضافة متجر";
+"WhatsApp" = "واتساب";
 //MARK: Edit Store
 
 "Edit social media" = "تعديل وسائل التواصل";
+"Updated" = "تم التحديث";
+"(Change)" = "(تغيير)";

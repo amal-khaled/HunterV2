@@ -58,20 +58,34 @@ class MenuVC: UIViewController {
 //        tabBarController?.tabBar.isHidden = false
         dateLabel.text = FormattedDate()
         
-        loginButton.shake()
+//        loginButton.shake()
         if StaticFunctions.isLogin() {
             //logged in
             userNameLabel.text = AppDelegate.currentUser.name ?? ""
-            userImageView.setImageWithLoading(url: AppDelegate.currentUser.pic ?? "")
+            if AppDelegate.currentUser.isStore ?? false {
+                if let logo =  AppDelegate.currentUser.store?.logo {
+                    userImageView.setImageWithLoading(url:logo)
+                }else{
+                    userImageView.setImageWithLoading(url: AppDelegate.currentUser.pic ?? "")
+                }
+                
+            }else{
+                userImageView.setImageWithLoading(url: AppDelegate.currentUser.pic ?? "")
+            }
+            
             logoutView.isHidden = false
-            loginButton.isHidden = true
-            loginViewContainer.isHidden = true
+            loginButton.isHidden = false
+            loginViewContainer.isHidden = false
+            loginButton.setTitle("Stores Packages".localize, for: .normal)
         }else {
            // logged out
+            loginButton.shake()
             userNameLabel.text = "Guest".localize
+            loginButton.setTitle("Login".localize, for: .normal)
             logoutView.isHidden = true
             loginButton.isHidden = false
             loginViewContainer.isHidden = false
+            
         }
     }
     

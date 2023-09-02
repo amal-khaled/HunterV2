@@ -29,7 +29,7 @@ class CreateStoreSuccessfullyVC: UIViewController {
         dismiss(animated: false)
     }
     @IBAction func didTapLogin(_ sender: UIButton) {
-        
-         
+        self.basicPresentation(storyName: Auth_STORYBOARD, segueId: "login_nav")
+
      }
      }

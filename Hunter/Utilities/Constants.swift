@@ -139,6 +139,7 @@ class Constants {
     static let PROFILE_URL = DOMAIN + "profile"
     static let PRODUCTS_BY_USER_URL = DOMAIN + "prods_by_user"
     static let EDIT_USER_URL = DOMAIN + "user_edit"
+    static let EDIT_STORE_URL = DOMAIN + "stores/"
     static let FOLLOW_USER = DOMAIN + "make_follow"
     static let BLOCK_USER = DOMAIN + "blocked"
     //Notifications

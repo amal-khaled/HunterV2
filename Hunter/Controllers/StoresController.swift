@@ -96,4 +96,51 @@ class StoresController {
     }
     
     
+    
+    func updateStore(completion: @escaping(Bool,String)-> (), link : String, param: Parameters , images:[String:UIImage]){
+        
+        var header: HTTPHeaders =
+        [
+            "OS": "ios",
+            "Accept":"application/json",
+            "Content-Lang": MOLHLanguage.currentAppleLanguage()
+            //         "App-Version": version as! String,
+            //         "Os-Version": UIDevice.current.systemVersion
+        ]
+        if AppDelegate.currentUser.toke != "" && AppDelegate.currentUser.toke != nil{
+            header["Authorization"] = "Bearer \(AppDelegate.currentUser.toke ?? "")"
+        }
+        
+        AF.upload(multipartFormData: { multipart in
+            
+            for (key,value) in images {
+                let imageData = value.jpegData(compressionQuality: 0.1)!
+                multipart.append(imageData, withName: key ,fileName: "file.jpg", mimeType: "image/jpg")
+
+            }
+            
+//            switch imageType {
+//            case.profileImage:
+//                    multipart.append(imageData, withName: "logo",fileName: "file.jpg", mimeType: "image/jpg")
+//            case.coverImage:
+//                multipart.append(imageData, withName: "cover",fileName: "file.jpg", mimeType: "image/jpg")
+//            }
+            
+            
+            for (key,value) in param {
+                multipart.append((value as AnyObject).description.data(using: String.Encoding.utf8)!, withName: key)
+            }
+        }, to: link,headers: header)
+        .responseDecodable(of:UpdateStoreModel.self){ response in
+            
+            switch response.result {
+            case .success(let data):
+                print(data.message ?? "")
+                completion(true, "Updated".localize)
+            case .failure(let error):
+                print(error)
+                completion(false,SERVER_ERROR)
+            }
+        }
+    }
 }

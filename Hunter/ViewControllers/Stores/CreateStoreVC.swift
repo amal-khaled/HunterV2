@@ -52,6 +52,7 @@ class CreateStoreVC: UIViewController {
     var coountryVC = CounriesViewController()
     var countryId = AppDelegate.currentCountry.id ?? 6
     var countryName = MOLHLanguage.currentAppleLanguage() == "en" ? AppDelegate.currentCountry.nameEn : AppDelegate.currentCountry.nameAr
+    var countryCode =  AppDelegate.currentCountry.code
     
     
     
@@ -144,7 +145,7 @@ class CreateStoreVC: UIViewController {
         let licenseImage = storeLicenseImage.jpegData(compressionQuality: 1.0)!
         
         self.registerButton.startAnimation()
-        StoresController.shared.createStore(fullname: fullNameTextField.text.safeValue, mobile: mobileTextFiled.text.safeValue , whatsAppNum: whatsAppNumberTextFiled.text.safeValue, email: emailTextFiled.text.safeValue, activity: activityTextFiled.text.safeValue, countryCode: countryId, password: passwordTextField.text.safeValue, bio: aboutCompanyTextField.text.safeValue, logoImage:logoImage , licenseImage: licenseImage) { data in
+        StoresController.shared.createStore(fullname: fullNameTextField.text.safeValue, mobile: (countryCode ?? "965") + mobileTextFiled.text.safeValue , whatsAppNum: whatsAppNumberTextFiled.text.safeValue, email: emailTextFiled.text.safeValue, activity: activityTextFiled.text.safeValue, countryCode: countryId, password: passwordTextField.text.safeValue, bio: aboutCompanyTextField.text.safeValue, logoImage:logoImage , licenseImage: licenseImage) { data in
             
             self.registerButton.stopAnimation()
             guard let data = data else { return }
@@ -202,6 +203,7 @@ class CreateStoreVC: UIViewController {
             (country) in
             self.countryFlagImage.setImageWithLoading(url: country.image ?? "")
             self.contryMobileCode.text = country.code ?? "965"
+            self.countryCode = country.code ?? "965"
             self.countryName = MOLHLanguage.currentAppleLanguage() == "en" ? (country.nameEn ?? "") : (country.nameAr ?? "")
             self.countryNameButton.setTitle(self.countryName, for: .normal)
             self.countryId = country.id ?? 6

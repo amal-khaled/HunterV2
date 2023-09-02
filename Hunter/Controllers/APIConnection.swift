@@ -170,9 +170,9 @@ func uploadImageConnection(completion: @escaping(Bool,String)-> (), link : Strin
         
         switch imageType {
         case.profileImage:
-            multipart.append(imageData, withName: "image",fileName: "file.jpg", mimeType: "image/jpg")
+                multipart.append(imageData, withName: "image",fileName: "file.jpg", mimeType: "image/jpg")
         case.coverImage:
-            multipart.append(imageData, withName: "cover",fileName: "file.jpg", mimeType: "image/jpg")
+                multipart.append(imageData, withName: "cover",fileName: "file.jpg", mimeType: "image/jpg")
         }
         
         
@@ -192,7 +192,49 @@ func uploadImageConnection(completion: @escaping(Bool,String)-> (), link : Strin
         }
     }
 }
+    func uploadImageConnectionForStore(completion: @escaping(Bool,String)-> (), link : String, param: Parameters , image:UIImage , imageType:ImageType){
+        
+        var header: HTTPHeaders =
+        [
+            "OS": "ios",
+            "Accept":"application/json",
+            "Content-Lang": MOLHLanguage.currentAppleLanguage()
+            //         "App-Version": version as! String,
+            //         "Os-Version": UIDevice.current.systemVersion
+        ]
+        if AppDelegate.currentUser.toke != "" && AppDelegate.currentUser.toke != nil{
+            header["Authorization"] = "Bearer \(AppDelegate.currentUser.toke ?? "")"
+        }
+        let imageData = image.jpegData(compressionQuality: 0.1)!
+        AF.upload(multipartFormData: { multipart in
+            
+            switch imageType {
+            case.profileImage:
+                    multipart.append(imageData, withName: "logo",fileName: "file.jpg", mimeType: "image/jpg")
+            case.coverImage:
+                multipart.append(imageData, withName: "cover",fileName: "file.jpg", mimeType: "image/jpg")
+            }
+            
+            
+            for (key,value) in param {
+                multipart.append((value as AnyObject).description.data(using: String.Encoding.utf8)!, withName: key)
+            }
+        }, to: link,headers: header)
+        .responseDecodable(of:UpdateStoreModel.self){ response in
+            
+            switch response.result {
+            case .success(let data):
+                print(data.message ?? "")
+                completion(true, "Updated".localize)
+            case .failure(let error):
+                print(error)
+                completion(false,SERVER_ERROR)
+            }
+        }
+    }
 
+    
+    
 
     func uploadImagesAndVideos(images: [UIImage], videos: [URL], completionHandler: @escaping (Swift.Result<String, Error>) -> Void) {
     let headers: HTTPHeaders = ["Content-type": "multipart/form-data"]

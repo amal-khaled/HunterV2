@@ -19,8 +19,7 @@ class StoreProfileVC: UIViewController {
     }
     
     
-    var otherUserId = AppDelegate.currentUser.id ?? 0
-    var countryId = AppDelegate.currentUser.countryId
+   
     
     
     
@@ -28,7 +27,6 @@ class StoreProfileVC: UIViewController {
     
     @IBOutlet weak var changeCoverButton: UIButton!
     @IBOutlet weak var changeProfileImageButton: UIButton!
-    
     @IBOutlet weak var storeProfileimageContaineView: UIView!
     @IBOutlet weak var storeNameLabel: UILabel!
     @IBOutlet weak var StoreLocationLabel: UILabel!
@@ -50,15 +48,18 @@ class StoreProfileVC: UIViewController {
     @IBOutlet weak var chatButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var collectionViewheightConstraint: NSLayoutConstraint!
+    
     // MARK: - Proprerties
-
+    var otherUserId = AppDelegate.currentUser.id ?? 0
+    var countryId = AppDelegate.currentUser.countryId
     private var products = [Product]()
     private var page = 1
     private var isTheLast = false
     private var EditProfileParams = [String:Any]()
     private var imageType = 0 //profileImage
     private var isUpdateCover = false
-    
+    private var userModel = User()
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,8 +89,15 @@ class StoreProfileVC: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     @IBAction func didTapChangeCoverImageButton(_ sender: UIButton) {
+        isUpdateCover = true
+        imageType = 1 //Cover image
+        displayImageActionSheet()
+        
     }
     @IBAction func didTapChangeProfileImageButton(_ sender: UIButton) {
+        isUpdateCover = false
+        imageType = 0 // profile image
+        displayImageActionSheet()
     }
     
     //SocialMedia Buttons
@@ -178,14 +186,27 @@ class StoreProfileVC: UIViewController {
     }
     
     @IBAction func didTapNotificationButton(_ sender: Any) {
+        
+            let notificationsVC = UIStoryboard(name: "Notifications", bundle: nil).instantiateViewController(withIdentifier: "notifications") as! NotificationsViewController
+            notificationsVC.modalPresentationStyle = .fullScreen
+            navigationController?.pushViewController(notificationsVC, animated: true)
+        
     }
     @IBAction func didTapShareButton(_ sender: UIButton) {
         shareContent(text: "\(Constants.DOMAIN) \(AppDelegate.currentUser.id ?? 0)")
     }
     @IBAction func didTapReportButton(_ sender: UIButton) {
+        let vc = UIStoryboard(name: PROFILE_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: "ReportAboutUserVC") as! ReportAboutUserVC
+        vc.uid = "\(otherUserId)"
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: false)
     }
     
     @IBAction func didTapBlockButton(_ sender: UIButton) {
+        let vc = UIStoryboard(name: PROFILE_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: "BlockUserVC") as! BlockUserVC
+        vc.otherUserId = otherUserId
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: false)
     }
     
     
@@ -248,6 +269,7 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
                     print("======= profile Data ======== ")
                     print(userProfile)
                     self.bindProfileData(from: userProfile)
+                    self.userModel = userProfile
                    // self.getProductsByUser()
                 }
             }, userId: otherUserId)
@@ -256,14 +278,35 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
         private func bindProfileData(from profileModel:User){
             if let cover =  profileModel.store?.coverPhoto {
                 if cover.contains(".png") || cover.contains(".jpg"){
-    //                coverImageView.setImageWithLoading(url:profileModel.cover ?? "" )
+//                    storeCoverImageView.setImageWithLoading(url:profileModel.cover ?? "" )
+                    print(cover)
                     storeCoverImageView.setImageWithLoading(url:cover  )
+                }
+            }else{
+                
+                if let cover =  profileModel.cover {
+                    if cover.contains(".png") || cover.contains(".jpg"){
+    //                    storeCoverImageView.setImageWithLoading(url:profileModel.cover ?? "" )
+                        print(cover)
+                        storeCoverImageView.setImageWithLoading(url:cover  )
+                    }
                 }
             }
             if let userPic =  profileModel.store?.logo {
                 Constants.otherUserPic = userPic
+                
                 if userPic.contains(".png") || userPic.contains(".jpg"){
+                    print(userPic)
                     storeProfileImageView.setImageWithLoading(url:userPic  )
+                }
+            }else{
+                if let userPic =  profileModel.pic {
+                    Constants.otherUserPic = userPic
+                    
+                    if userPic.contains(".png") || userPic.contains(".jpg"){
+                        print(userPic)
+                        storeProfileImageView.setImageWithLoading(url:userPic  )
+                    }
                 }
             }
             
@@ -341,6 +384,7 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
                  products, check, msg in
                  print(products.count)
                  if check == 0{
+                     
                      if self.page == 1 {
                          self.products.removeAll()
                          self.products = products
@@ -405,14 +449,14 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
         
         
         private func changeProfileImage(image:UIImage){
-            APIConnection.apiConnection.uploadImageConnection(completion: { success, message in
+            APIConnection.apiConnection.uploadImageConnectionForStore(completion: { success, message in
                 if success {
                     StaticFunctions.createSuccessAlert(msg: message)
                 }else {
                     StaticFunctions.createErrorAlert(msg: message)
                 }
                 
-            }, link: Constants.EDIT_USER_URL, param: EditProfileParams, image: image, imageType: .profileImage)
+            }, link: Constants.EDIT_STORE_URL + "\(AppDelegate.currentUser.store?.id ?? 0)", param: [:], image: image, imageType: .profileImage)
         }
         
         private func changeCoverImage(image:UIImage){
