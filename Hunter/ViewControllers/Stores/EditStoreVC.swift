@@ -82,27 +82,35 @@ class EditStoreVC: UIViewController {
     
     
     private func setData(){
-
-                companyNameTextFiled.text = AppDelegate.currentUser.store?.companyName ?? ""
+                titleNameOfStoreTextField.text = AppDelegate.currentUser.store?.companyName.safeValue
+        companyNameTextFiled.text = AppDelegate.currentUser.store?.companyName.safeValue
                 passwordTextFiled.text = "******"
                 emailTextField.text = AppDelegate.currentUser.email
                 do {
-                    let phoneNumberCustomDefaultRegion = try phoneNumberKit.parse("\(AppDelegate.currentUser.phone ?? "")", ignoreType: false)
+                    let phoneNumberCustomDefaultRegion = try phoneNumberKit.parse("\(AppDelegate.currentUser.phone.safeValue)", ignoreType: false)
 
                     mobileTextFiled.text = String(phoneNumberCustomDefaultRegion.nationalNumber)
                     countryCodeLabel.text = String(phoneNumberCustomDefaultRegion.countryCode)                }
                 catch {
                     let mobile = AppDelegate.currentUser.phone?.dropFirst(3)
 //                    order.phoneCode = String(user.mobile.prefix(3))
-                    mobileTextFiled.text = AppDelegate.currentUser.phone ?? ""
+                    mobileTextFiled.text = AppDelegate.currentUser.phone.safeValue
                     print("Generic parser error")
                 }
 
 
-        profileImageView.setImageWithLoading(url: AppDelegate.currentUser.pic ?? "")
-        aboutCompanyTextFiled.text = AppDelegate.currentUser.bio ?? ""
-        activityTextFiled.text = AppDelegate.currentUser.store?.companyActivity ?? ""
-        whatsAppTextField.text = AppDelegate.currentUser.store?.whatsapp ?? ""
+        profileImageView.setImageWithLoading(url: AppDelegate.currentUser.store?.logo ?? "")
+        coverImageView.setImageWithLoading(url: AppDelegate.currentUser.cover.safeValue)
+        aboutCompanyTextFiled.text = AppDelegate.currentUser.store?.bio.safeValue
+        activityTextFiled.text = AppDelegate.currentUser.store?.companyActivity.safeValue
+        whatsAppTextField.text = AppDelegate.currentUser.store?.whatsapp.safeValue
+        
+        EditProfileParams =
+        [
+            "id":AppDelegate.currentUser.id ?? 0,
+            "mobile":AppDelegate.currentUser.phone.safeValue,
+            "country_id":AppDelegate.currentUser.countryId ?? 6
+        ]
     }
     // MARK: - IBActions
     
@@ -195,6 +203,7 @@ extension EditStoreVC {
     
     
     private func updateStore(images:[String:UIImage],params:[String:Any]){
+        print(params)
         StoresController.shared.updateStore(completion: { success, message in
             if success {
                 StaticFunctions.createSuccessAlert(msg: message)
@@ -203,6 +212,17 @@ extension EditStoreVC {
             }
             
         }, link: Constants.EDIT_STORE_URL + "\(AppDelegate.currentUser.store?.id ?? 0)", param: params, images: images)
+    }
+    
+    private func changeProfileImage(image:UIImage){
+        APIConnection.apiConnection.uploadImageConnectionForStore(completion: { success, message in
+            if success {
+                StaticFunctions.createSuccessAlert(msg: message)
+            }else {
+                StaticFunctions.createErrorAlert(msg: message)
+            }
+            
+        }, link: Constants.EDIT_STORE_URL + "\(AppDelegate.currentUser.store?.id ?? 0)", param: [:], image: image, imageType: .profileImage)
     }
     
     private func displayImageActionSheet() {
@@ -261,7 +281,7 @@ extension EditStoreVC {
     }
     
     
-    private func changeProfileImage(image:UIImage){
+    private func changeProfileStore(image:UIImage){
         APIConnection.apiConnection.uploadImageConnectionForStore(completion: { success, message in
             if success {
                 StaticFunctions.createSuccessAlert(msg: message)
@@ -269,7 +289,7 @@ extension EditStoreVC {
                 StaticFunctions.createErrorAlert(msg: message)
             }
             
-        }, link: Constants.EDIT_STORE_URL + "\(AppDelegate.currentUser.store?.id ?? 0)", param: [:], image: image, imageType: .profileImage)
+        }, link: Constants.EDIT_STORE_URL + "\(AppDelegate.currentUser.store?.id ?? 0)", param: updateStoreParams, image: image, imageType: .profileImage)
     }
     
     func getAreas(){

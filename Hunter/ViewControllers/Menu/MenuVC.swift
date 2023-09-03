@@ -95,7 +95,13 @@ class MenuVC: UIViewController {
     
     @IBAction func didTapLoginButton(_ sender: UIButton) {
       //  basicPresentation(storyName: Auth_STORYBOARD, segueId: "login_nav")
-        basicPresentation(storyName: Auth_STORYBOARD, segueId: "login_nav")
+        if loginButton.titleLabel?.text == "Stores Packages".localize {
+            let packagesVC = PackagesVC.instantiate()
+            navigationController?.pushViewController(packagesVC, animated: true)
+        }else{
+            basicPresentation(storyName: Auth_STORYBOARD, segueId: "login_nav")
+        }
+        
     }
     
     @IBAction func didTapProfileButton(_ sender: UIButton) {

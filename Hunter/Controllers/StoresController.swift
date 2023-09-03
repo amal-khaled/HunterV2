@@ -112,27 +112,20 @@ class StoresController {
         }
         
         AF.upload(multipartFormData: { multipart in
-            
-            for (key,value) in images {
-                let imageData = value.jpegData(compressionQuality: 0.1)!
-                multipart.append(imageData, withName: key ,fileName: "file.jpg", mimeType: "image/jpg")
-
+            if images.count > 0 {
+                for (key,value) in images {
+                    let imageData = value.jpegData(compressionQuality: 0.1)!
+                    multipart.append(imageData, withName: key ,fileName: "file.jpg", mimeType: "image/jpg")
+                }
             }
-            
-//            switch imageType {
-//            case.profileImage:
-//                    multipart.append(imageData, withName: "logo",fileName: "file.jpg", mimeType: "image/jpg")
-//            case.coverImage:
-//                multipart.append(imageData, withName: "cover",fileName: "file.jpg", mimeType: "image/jpg")
-//            }
-            
             
             for (key,value) in param {
                 multipart.append((value as AnyObject).description.data(using: String.Encoding.utf8)!, withName: key)
             }
         }, to: link,headers: header)
+
         .responseDecodable(of:UpdateStoreModel.self){ response in
-            
+
             switch response.result {
             case .success(let data):
                 print(data.message ?? "")

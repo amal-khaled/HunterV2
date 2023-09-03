@@ -215,7 +215,6 @@
 		C8AD40E92A2B0EBF00E464DB /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AD40E82A2B0EBF00E464DB /* AboutVC.swift */; };
 		C8AD40EB2A2B110F00E464DB /* CondsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AD40EA2A2B110F00E464DB /* CondsVC.swift */; };
 		C8AD40EE2A2B177500E464DB /* MainTabBarVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AD40ED2A2B177500E464DB /* MainTabBarVCViewController.swift */; };
-		C8B7C93D2A97A0AA008D87FA /* StoreSpare.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8B7C93C2A97A0AA008D87FA /* StoreSpare.storyboard */; };
 		C8B7C9402A97A93C008D87FA /* StoresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B7C93F2A97A93C008D87FA /* StoresVC.swift */; };
 		C8B7C9422A97B724008D87FA /* Store.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8B7C9412A97B724008D87FA /* Store.storyboard */; };
 		C8C149502A84E7F00055DC7B /* CreditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C1494F2A84E7F00055DC7B /* CreditVC.swift */; };
@@ -223,6 +222,8 @@
 		C8C715002A646981006C5AFE /* FollowAndFollowersTapsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C714FE2A646981006C5AFE /* FollowAndFollowersTapsCell.swift */; };
 		C8C715012A646981006C5AFE /* FollowAndFollowersTapsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8C714FF2A646981006C5AFE /* FollowAndFollowersTapsCell.xib */; };
 		C8C715032A647887006C5AFE /* FollowersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C715022A647887006C5AFE /* FollowersController.swift */; };
+		C8C7E8A82AA47A520093022B /* Packages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8C7E8A72AA47A520093022B /* Packages.storyboard */; };
+		C8C7E8AB2AA480750093022B /* PackagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C7E8AA2AA480750093022B /* PackagesVC.swift */; };
 		C8CC468B2A3874B800C90476 /* ProfileProductsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C85FFCAF2A260AAE000C426D /* ProfileProductsCollectionViewCell.xib */; };
 		C8CC468E2A387F4500C90476 /* RoundedNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC468D2A387F4500C90476 /* RoundedNavigationBar.swift */; };
 		C8CC46912A3918C900C90476 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC46902A3918C900C90476 /* Loading.swift */; };
@@ -461,7 +462,6 @@
 		C8AD40E82A2B0EBF00E464DB /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		C8AD40EA2A2B110F00E464DB /* CondsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CondsVC.swift; sourceTree = "<group>"; };
 		C8AD40ED2A2B177500E464DB /* MainTabBarVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarVCViewController.swift; sourceTree = "<group>"; };
-		C8B7C93C2A97A0AA008D87FA /* StoreSpare.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoreSpare.storyboard; sourceTree = "<group>"; };
 		C8B7C93F2A97A93C008D87FA /* StoresVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresVC.swift; sourceTree = "<group>"; };
 		C8B7C9412A97B724008D87FA /* Store.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Store.storyboard; sourceTree = "<group>"; };
 		C8C1494F2A84E7F00055DC7B /* CreditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditVC.swift; sourceTree = "<group>"; };
@@ -469,6 +469,8 @@
 		C8C714FE2A646981006C5AFE /* FollowAndFollowersTapsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowAndFollowersTapsCell.swift; sourceTree = "<group>"; };
 		C8C714FF2A646981006C5AFE /* FollowAndFollowersTapsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowAndFollowersTapsCell.xib; sourceTree = "<group>"; };
 		C8C715022A647887006C5AFE /* FollowersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersController.swift; sourceTree = "<group>"; };
+		C8C7E8A72AA47A520093022B /* Packages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Packages.storyboard; sourceTree = "<group>"; };
+		C8C7E8AA2AA480750093022B /* PackagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackagesVC.swift; sourceTree = "<group>"; };
 		C8CC468D2A387F4500C90476 /* RoundedNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedNavigationBar.swift; sourceTree = "<group>"; };
 		C8CC46902A3918C900C90476 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		C8CC46922A39190500C90476 /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
@@ -501,6 +503,7 @@
 		652711E829EBF7CE00D503F9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C8C7E8A92AA4805E0093022B /* Packages */,
 				C8B7C93E2A97A928008D87FA /* Stores */,
 				C8AD40EC2A2B170E00E464DB /* MainTabBar */,
 				C85FFCA62A260A34000C426D /* Messages */,
@@ -755,7 +758,7 @@
 				658D003B2A15F22200F512E9 /* Search.storyboard */,
 				65FFFA172A1E9FF200B70368 /* Notifications.storyboard */,
 				C8AD40DF2A28EB9400E464DB /* Settings.storyboard */,
-				C8B7C93C2A97A0AA008D87FA /* StoreSpare.storyboard */,
+				C8C7E8A72AA47A520093022B /* Packages.storyboard */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1103,6 +1106,14 @@
 			path = "Followers&followings";
 			sourceTree = "<group>";
 		};
+		C8C7E8A92AA4805E0093022B /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				C8C7E8AA2AA480750093022B /* PackagesVC.swift */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
 		C8CC468C2A387EC800C90476 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -1228,13 +1239,13 @@
 				658D003C2A15F22200F512E9 /* Search.storyboard in Resources */,
 				C8AD40E02A28EB9400E464DB /* Settings.storyboard in Resources */,
 				C85FFCE02A260BEF000C426D /* MsgCell.xib in Resources */,
-				C8B7C93D2A97A0AA008D87FA /* StoreSpare.storyboard in Resources */,
 				C8191F9E2A40765C0057AA28 /* FavouritesCollectionViewCell.xib in Resources */,
 				C8CC46952A391F4800C90476 /* load2.json in Resources */,
 				C85FFCDB2A260BEF000C426D /* AttachCell.xib in Resources */,
 				C85FFC9E2A2608AC000C426D /* Chat.storyboard in Resources */,
 				C84D28FE2A6D0AA90026F125 /* MsgCellForReceiver.xib in Resources */,
 				C85FFC9D2A2608AC000C426D /* Main.storyboard in Resources */,
+				C8C7E8A82AA47A520093022B /* Packages.storyboard in Resources */,
 				C85FFCDA2A260BEF000C426D /* MsgColorCell.xib in Resources */,
 				658F9E702A5C0734007EC571 /* Auth.storyboard in Resources */,
 				C8CCE3382A18FC5F00FFAFB2 /* Menu.storyboard in Resources */,
@@ -1499,6 +1510,7 @@
 				C8A2BEC82A3A649A00A05E77 /* ViewPagerTabView.swift in Sources */,
 				65C7FF0029FD0A350062BFAA /* TypeViewController.swift in Sources */,
 				C85FFCD32A260BEF000C426D /* MsgMediaCell.swift in Sources */,
+				C8C7E8AB2AA480750093022B /* PackagesVC.swift in Sources */,
 				C89286BE2A3DB8A800FB0A8A /* EditProfileModel.swift in Sources */,
 				C80CC9302A6DBE8100B56F54 /* FavCell.swift in Sources */,
 				659987FE2A1F422C00DBD8EE /* Comment.swift in Sources */,

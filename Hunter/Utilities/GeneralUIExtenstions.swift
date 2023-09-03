@@ -11,69 +11,128 @@ import MOLH
 // MARK: -UIView
 
 @IBDesignable extension UIView {
-    
-    @IBInspectable var shadowColor: UIColor? {
-        set {
-            guard let uiColor = newValue else { return }
-            layer.shadowColor = uiColor.cgColor
-        }
-        get {
-            guard let color = layer.borderColor else { return nil }
-            return UIColor(cgColor: color)
-        }
-    }
-    @IBInspectable var shadowOpacity: Float  {
-        set {
-            layer.shadowOpacity = newValue
-        }
-        get {
-            return layer.shadowOpacity
-        }
-    }
-    @IBInspectable var shadowOffset: CGSize  {
-        set {
-            layer.shadowOffset = newValue
-        }
-        get {
-            return layer.shadowOffset
-        }
-    }
-    @IBInspectable var shadowRadius: CGFloat {
-        set {
-            layer.shadowRadius = newValue
-        }
-        get {
-            return layer.shadowRadius
-        }
-    }
-    
-    
-    @IBInspectable var borderWidth: CGFloat {
-        set {
-            layer.borderWidth = newValue
-        }
-        get {
-            return layer.borderWidth
-        }
-    }
-    
-    @IBInspectable var cornerRadius: CGFloat {
-        set {
-            layer.cornerRadius = newValue
-        }
+    @IBInspectable
+    var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
         }
+        set {
+            layer.cornerRadius = newValue
+        }
     }
     
-    @IBInspectable var borderColor: UIColor? {
+    @IBInspectable var topLeft: Bool {
+        get { return layer.maskedCorners.contains(.layerMinXMinYCorner) }
         set {
-            guard let uiColor = newValue else { return }
-            layer.borderColor = uiColor.cgColor
+            if newValue {
+                layer.maskedCorners.insert(.layerMinXMinYCorner)
+            } else {
+                layer.maskedCorners.remove(.layerMinXMinYCorner)
+            }
         }
+    }
+
+    @IBInspectable var topRight: Bool {
+        get { return layer.maskedCorners.contains(.layerMaxXMinYCorner) }
+        set {
+            if newValue {
+                layer.maskedCorners.insert(.layerMaxXMinYCorner)
+            } else {
+                layer.maskedCorners.remove(.layerMaxXMinYCorner)
+            }
+        }
+    }
+
+    @IBInspectable var bottomLeft: Bool {
+        get { return layer.maskedCorners.contains(.layerMinXMaxYCorner) }
+        set {
+            if newValue {
+                layer.maskedCorners.insert(.layerMinXMaxYCorner)
+            } else {
+                layer.maskedCorners.remove(.layerMinXMaxYCorner)
+            }
+        }
+    }
+
+    @IBInspectable var bottomRight: Bool {
+        get { return layer.maskedCorners.contains(.layerMaxXMaxYCorner) }
+        set {
+            if newValue {
+                layer.maskedCorners.insert(.layerMaxXMaxYCorner)
+            } else {
+                layer.maskedCorners.remove(.layerMaxXMaxYCorner)
+            }
+        }
+    }
+    
+    
+    
+    @IBInspectable
+    var borderWidth: CGFloat {
         get {
-            guard let color = layer.borderColor else { return nil }
-            return UIColor(cgColor: color)
+            return layer.borderWidth
+        }
+        set {
+            layer.borderWidth = newValue
+        }
+    }
+    @IBInspectable
+    var borderColor: UIColor? {
+        get {
+            if let color = layer.borderColor {
+                return UIColor(cgColor: color)
+            }
+            return nil
+        }
+        set {
+            if let color = newValue {
+                layer.borderColor = color.cgColor
+            } else {
+                layer.borderColor = nil
+            }
+        }
+    }
+    @IBInspectable
+    var shadowRadius: CGFloat {
+        get {
+            return layer.shadowRadius
+        }
+        set {
+            layer.shadowRadius = newValue
+        }
+    }
+    @IBInspectable
+    var shadowOpacity: Float {
+        get {
+            return layer.shadowOpacity
+        }
+        set {
+            layer.shadowOpacity = newValue
+        }
+    }
+    @IBInspectable
+    var shadowOffset: CGSize {
+        get {
+            return layer.shadowOffset
+        }
+        set {
+            layer.shadowOffset = newValue
+        }
+    }
+    @IBInspectable
+    var shadowColor: UIColor? {
+        get {
+            if let color = layer.shadowColor {
+                return UIColor(cgColor: color)
+            }
+            return nil
+        }
+        set {
+            if let color = newValue {
+                layer.shadowColor = color.cgColor
+            } else {
+                layer.shadowColor = nil
+            }
         }
     }
 }
