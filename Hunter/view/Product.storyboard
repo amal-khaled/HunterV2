@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -120,7 +120,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Cdi-fd-1Bw">
-                                                        <rect key="frame" x="307" y="59" width="70" height="226"/>
+                                                        <rect key="frame" x="307" y="59" width="70" height="148"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XL-KA-4Jc">
                                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
@@ -144,8 +144,8 @@
                                                                     <action selector="shareAction:" destination="0o5-1R-ZbA" eventType="touchUpInside" id="UOM-sC-Usb"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWJ-p2-n1K">
-                                                                <rect key="frame" x="0.0" y="78" width="70" height="70"/>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWJ-p2-n1K">
+                                                                <rect key="frame" x="0.0" y="74" width="70" height="70"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="70" id="dXa-YJ-N1n"/>
@@ -164,7 +164,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJX-gK-OxT">
-                                                                <rect key="frame" x="0.0" y="156" width="70" height="70"/>
+                                                                <rect key="frame" x="0.0" y="78" width="70" height="70"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="tintColor" systemColor="systemRedColor"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -352,7 +352,7 @@
                                                                                         <autoresizingMask key="autoresizingMask"/>
                                                                                         <subviews>
                                                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rOW-gt-yNe">
-                                                                                                <rect key="frame" x="15" y="17" width="307" height="144.66666666666666"/>
+                                                                                                <rect key="frame" x="15" y="17" width="307" height="154.66666666666666"/>
                                                                                                 <subviews>
                                                                                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kPc-aS-9W1">
                                                                                                         <rect key="frame" x="0.0" y="0.0" width="307" height="45"/>
@@ -400,7 +400,7 @@
                                                                                                         </subviews>
                                                                                                     </stackView>
                                                                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PP9-Qq-HGz" customClass="EdgeInsetLabel" customModule="Hunter" customModuleProvider="target">
-                                                                                                        <rect key="frame" x="0.0" y="53" width="307" height="13.666666666666671"/>
+                                                                                                        <rect key="frame" x="0.0" y="52.999999999999993" width="307" height="23.666666666666664"/>
                                                                                                         <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="13.5"/>
                                                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                         <nil key="highlightedColor"/>
@@ -426,7 +426,7 @@
                                                                                                         </userDefinedRuntimeAttributes>
                                                                                                     </label>
                                                                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0g1-aN-0Gy" userLabel="report">
-                                                                                                        <rect key="frame" x="0.0" y="74.666666666666671" width="307" height="50"/>
+                                                                                                        <rect key="frame" x="0.0" y="84.666666666666671" width="307" height="50.000000000000014"/>
                                                                                                         <subviews>
                                                                                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Te3-wa-aLm">
                                                                                                                 <rect key="frame" x="0.0" y="0.0" width="307" height="1"/>
@@ -609,7 +609,7 @@
                                                                                                         </userDefinedRuntimeAttributes>
                                                                                                     </view>
                                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yce-Fp-m18">
-                                                                                                        <rect key="frame" x="0.0" y="132.66666666666666" width="307" height="12"/>
+                                                                                                        <rect key="frame" x="0.0" y="142.66666666666666" width="307" height="12"/>
                                                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                         <constraints>
                                                                                                             <constraint firstAttribute="height" constant="12" id="Yee-cV-oBn"/>
@@ -1050,7 +1050,7 @@
                                                                                     <constraint firstAttribute="height" constant="14.5" id="2fu-Cs-ENv"/>
                                                                                 </constraints>
                                                                                 <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="13.5"/>
-                                                                                <color key="textColor" name="#0EBFB1"/>
+                                                                                <color key="textColor" name="#0093F5"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Path 5" translatesAutoresizingMaskIntoConstraints="NO" id="qPo-wF-1I3">
@@ -1438,7 +1438,7 @@
                                                 <rect key="frame" x="10" y="20" width="373" height="48"/>
                                                 <subviews>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nI8-uD-Ke8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="101.66666666666667" height="21"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="99" height="21"/>
                                                         <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
                                                         <color key="textColor" name="#0093F5"/>
                                                         <nil key="highlightedColor"/>
@@ -1447,7 +1447,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="add comment to ad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxL-09-nt0">
-                                                        <rect key="frame" x="0.0" y="27" width="123.33333333333333" height="21"/>
+                                                        <rect key="frame" x="0.0" y="27" width="115.33333333333333" height="21"/>
                                                         <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
                                                         <color key="textColor" systemColor="systemGrayColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1656,7 +1656,7 @@
                                                 <rect key="frame" x="10" y="20" width="373" height="48"/>
                                                 <subviews>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add reply" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cI-XH-NvL">
-                                                        <rect key="frame" x="0.0" y="0.0" width="68.666666666666671" height="21"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="66.666666666666671" height="21"/>
                                                         <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
                                                         <color key="textColor" name="#0093F5"/>
                                                         <nil key="highlightedColor"/>
@@ -1665,7 +1665,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="add reply to ..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOR-Wz-fi2">
-                                                        <rect key="frame" x="0.0" y="27" width="90.333333333333329" height="21"/>
+                                                        <rect key="frame" x="0.0" y="27" width="84.666666666666671" height="21"/>
                                                         <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
                                                         <color key="textColor" systemColor="systemGrayColor"/>
                                                         <nil key="highlightedColor"/>
@@ -2029,7 +2029,7 @@
                                                 <rect key="frame" x="10" y="20" width="373" height="48"/>
                                                 <subviews>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="report comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBS-fg-zEW">
-                                                        <rect key="frame" x="0.0" y="0.0" width="115" height="21"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="117.33333333333333" height="21"/>
                                                         <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
                                                         <color key="textColor" name="#0093F5"/>
                                                         <nil key="highlightedColor"/>
@@ -2038,7 +2038,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="what's the reason for reeporting content / comment owner" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKW-4R-Yz2">
-                                                        <rect key="frame" x="0.0" y="27" width="365" height="21"/>
+                                                        <rect key="frame" x="0.0" y="27" width="348" height="21"/>
                                                         <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
                                                         <color key="textColor" systemColor="systemGrayColor"/>
                                                         <nil key="highlightedColor"/>
@@ -2234,10 +2234,10 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HmV-qs-MnO">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="140.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="150.33333333333334"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xkJ-Wi-6hO">
-                                                <rect key="frame" x="15" y="14.999999999999993" width="363" height="110.33333333333331"/>
+                                                <rect key="frame" x="15" y="14.999999999999993" width="363" height="120.33333333333331"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Jni-jQ-ZrD">
                                                         <rect key="frame" x="0.0" y="0.0" width="363" height="50"/>
@@ -2276,7 +2276,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="WjU-j8-YNj" customClass="EdgeInsetLabel" customModule="Hunter" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="58.000000000000007" width="363" height="19.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="58.000000000000007" width="363" height="29.333333333333336"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                                         <color key="textColor" name="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -2302,7 +2302,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="P5o-0T-0ZT">
-                                                        <rect key="frame" x="0.0" y="85.333333333333343" width="363" height="25"/>
+                                                        <rect key="frame" x="0.0" y="95.333333333333343" width="363" height="25"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShowCommentsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="n3c-97-3pL">
                                                                 <rect key="frame" x="0.0" y="0.0" width="15" height="25"/>
@@ -2374,7 +2374,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <tableView clipsSubviews="YES" tag="3" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qEc-PF-mZH">
-                                        <rect key="frame" x="30" y="142.33333333333331" width="353" height="530.66666666666674"/>
+                                        <rect key="frame" x="30" y="152.33333333333331" width="353" height="520.66666666666674"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="183" id="ZCv-Yz-ctY" customClass="CommentReplyTableViewCell" customModule="Hunter" customModuleProvider="target">
@@ -2919,7 +2919,7 @@
                                                 <rect key="frame" x="10" y="20" width="373" height="48"/>
                                                 <subviews>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="report comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzV-aj-YqR">
-                                                        <rect key="frame" x="0.0" y="0.0" width="115" height="21"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="117.33333333333333" height="21"/>
                                                         <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
                                                         <color key="textColor" name="#0093F5"/>
                                                         <nil key="highlightedColor"/>
@@ -2928,7 +2928,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="what's the reason for reeporting content / comment owner" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdT-OT-nZV">
-                                                        <rect key="frame" x="0.0" y="27" width="365" height="21"/>
+                                                        <rect key="frame" x="0.0" y="27" width="348" height="21"/>
                                                         <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
                                                         <color key="textColor" systemColor="systemGrayColor"/>
                                                         <nil key="highlightedColor"/>
@@ -3115,28 +3115,28 @@
     </scenes>
     <designables>
         <designable name="1nn-tZ-NAz">
-            <size key="intrinsicContentSize" width="38" height="31"/>
+            <size key="intrinsicContentSize" width="35" height="28"/>
         </designable>
         <designable name="3iO-EI-aqA">
-            <size key="intrinsicContentSize" width="30" height="13.666666666666666"/>
+            <size key="intrinsicContentSize" width="40" height="23.666666666666664"/>
         </designable>
         <designable name="KWK-QE-DuK">
-            <size key="intrinsicContentSize" width="38" height="31"/>
+            <size key="intrinsicContentSize" width="35" height="28"/>
         </designable>
         <designable name="MbQ-lW-q07">
-            <size key="intrinsicContentSize" width="4" height="13.666666666666666"/>
+            <size key="intrinsicContentSize" width="14" height="23.666666666666664"/>
         </designable>
         <designable name="PP9-Qq-HGz">
-            <size key="intrinsicContentSize" width="30" height="13.666666666666666"/>
+            <size key="intrinsicContentSize" width="40" height="23.666666666666664"/>
         </designable>
         <designable name="WjU-j8-YNj">
-            <size key="intrinsicContentSize" width="7.333333333333333" height="19.333333333333332"/>
+            <size key="intrinsicContentSize" width="17.333333333333332" height="29.333333333333332"/>
         </designable>
         <designable name="oBl-Hq-9cb">
-            <size key="intrinsicContentSize" width="38" height="31"/>
+            <size key="intrinsicContentSize" width="35" height="28"/>
         </designable>
         <designable name="zB4-Jc-N8F">
-            <size key="intrinsicContentSize" width="38" height="31"/>
+            <size key="intrinsicContentSize" width="35" height="28"/>
         </designable>
     </designables>
     <resources>

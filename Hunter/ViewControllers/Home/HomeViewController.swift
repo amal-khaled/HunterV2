@@ -147,6 +147,7 @@ class HomeViewController: UIViewController {
 
         rightView.addSubview(dropDownImage)
 
+
         let locationImage = UIImageView(image: UIImage(named: "locationBlack")?.withRenderingMode(.alwaysOriginal))
         locationImage.contentMode = .scaleAspectFill
         locationImage.frame = CGRect(x: rightView.frame.width - 25, y: 10, width: 14, height: 10) // Adjust the position and size of the image
@@ -157,10 +158,10 @@ class HomeViewController: UIViewController {
         titleLabel.textAlignment = .center
         titleLabel.adjustsFontSizeToFitWidth = true
         rightView.addSubview(titleLabel)
-        titleLabel.frame = CGRect(x: 20, y: 0, width: rightView.frame.width - 40, height: rightView.frame.height ) // Adjust the position and width of the label
-        
+        titleLabel.frame = CGRect(x: 30, y: 0, width: rightView.frame.width - 60, height: rightView.frame.height ) // Adjust the position and width of the label
+
         let categoryButton = UIButton(type: .custom)
-        categoryButton.contentEdgeInsets = UIEdgeInsets(top: 0,left: 5,bottom: 0,right:5)
+//        categoryButton.titleEdgeInsets = UIEdgeInsets(top: 0,left: 20,bottom: 0,right:20)
 
         categoryButton.frame = rightView.bounds
         categoryButton.addTarget(self, action: #selector(categoryBtnAction), for: .touchUpInside)
@@ -643,3 +644,4 @@ extension HomeViewController:UITextFieldDelegate{
             return true
         }
 }
+

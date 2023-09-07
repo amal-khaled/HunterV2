@@ -29,7 +29,6 @@ class NotificationsViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = false
         
         tableView.rowHeight = UITableView.automaticDimension
-        getData()
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -40,6 +39,10 @@ class NotificationsViewController: UIViewController {
         if !StaticFunctions.isLogin(){
             basicPresentation(storyName: Auth_STORYBOARD, segueId: "login_nav")
             
+        }
+        else{
+            
+            getData()
         }
     }
     
