@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Icon feather-user.png",
+      "filename" : "sasaw.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Icon feather-user@2x.png",
+      "filename" : "sasaw@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Icon feather-user@3x.png",
+      "filename" : "sasaw@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

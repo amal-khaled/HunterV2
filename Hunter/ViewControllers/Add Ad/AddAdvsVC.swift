@@ -142,6 +142,7 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
     var mainImageKey:String = ""
     var selectedIndexPath: IndexPath = [0,0]
     var descText:String = ""
+    var isFeature = 0
     //MARK: App LifeCycle
     
     override func viewDidLoad() {
@@ -433,7 +434,8 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
                           "loc":"\(cityName) \(regionName)",
                           "phone":"\(phone)","wts":phone,"descr":descTextView.text!,
                           "has_chat":hasChat,"has_wts":hasWhats,"has_phone":hasPhone,
-                          "tajeer_or_sell":"\(tajeer)"
+                          "tajeer_or_sell":"\(tajeer)",
+            "is_feature" : isFeature
         ]
         if  selectedImages.count <= 0{
             StaticFunctions.createErrorAlert(msg: "Post at least one photo for the ad.".localize)
@@ -447,19 +449,14 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
             StaticFunctions.createErrorAlert(msg: "Put your contact phone number".localize)
         }
         else {
-            createAds()
-//            AddAdvsController.shared.addAdvs(params: params,selectedMedia: self.selectedMedia) { success, message in
-//                if success{
-//                    print(message)
-//                    let vc = UIStoryboard(name: ADVS_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: SUCCESS_ADDING_VCID) as! SuccessAddingVC
-//                    vc.modalPresentationStyle = .fullScreen
-//                    vc.present(vc, animated: true)
-//                }else{
-//                    print("error" , message)
-//                    StaticFunctions.createErrorAlert(msg: message)
-//
-//                }
-//            }
+            // go to Choose Ad Type vc
+            let vc = UIStoryboard(name: ADVS_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: "ChooseAdTypeVC") as! ChooseAdTypeVC
+            vc.delegate = self
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true)
+            
+            
+//            createAds()
         }
         
 
@@ -527,9 +524,9 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
 //                    completion(true,data.message ?? "")
                     print(data.message ?? "")
                     let vc = UIStoryboard(name: ADVS_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: SUCCESS_ADDING_VCID) as! SuccessAddingVC
-                    vc.modalPresentationStyle = .fullScreen
+                    vc.modalPresentationStyle = .overFullScreen
                     vc.isFromHome = self.isFromHome
-                    self.navigationController?.pushViewController(vc, animated: true)
+                    self.present(vc, animated: false)
                 }else{
 //                    completion(false , data.message ?? "")
                     print(data.message)
@@ -1042,4 +1039,12 @@ extension AddAdvsVC:UITextViewDelegate {
             descTextView.textColor = UIColor.lightGray
         }
     }
+}
+extension AddAdvsVC : ChooseAdTyDelegate {
+    func didTapNormalAd() {
+        
+        createAds()
+    }
+    
+    
 }

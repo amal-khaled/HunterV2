@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "lastsasas.png",
+      "filename" : "sasa.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "lastsasas@2x.png",
+      "filename" : "sasa@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "lastsasas@3x.png",
+      "filename" : "sasa@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

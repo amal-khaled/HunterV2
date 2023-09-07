@@ -167,6 +167,9 @@ class Constants {
     //Chat
     static let CREATE_CHAT_ROOM = DOMAIN + "create_room"
 
+    //packages
+    static let GET_PLANS_URL = DOMAIN + "plans"
+    
     
     static var COUNTRIES = [Country]()
     static var CITIES = [Country]()

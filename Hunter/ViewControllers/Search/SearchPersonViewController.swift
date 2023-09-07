@@ -119,6 +119,7 @@ extension SearchPersonViewController{
 }
 extension SearchPersonViewController: ContentDelegate{
     func updateContent(searchText: String, isHidden: Bool) {
+        print(searchText)
         self.searchText = searchText
         self.page = 1
         self.isTheLast = false

@@ -160,7 +160,6 @@ class ProfileVC: UIViewController {
                 vc.modalPresentationStyle = .fullScreen
                 vc.userId = AppDelegate.currentUser.id ?? 0
                 navigationController?.pushViewController(vc, animated: true)
-                
             }
     }
     
@@ -228,7 +227,7 @@ extension ProfileVC {
             }
             
             //use 128 as user id to check
-        }, userId: userId , page: page, countryId:countryId )
+        }, userId: userId , page: page, countryId:countryId, status: "" )
     }
     
     private func displayImageActionSheet() {

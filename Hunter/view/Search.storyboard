@@ -273,23 +273,6 @@
                             <constraint firstItem="pj4-2N-rxx" firstAttribute="bottom" secondItem="wF1-rm-Tmy" secondAttribute="bottom" id="eBO-Qm-IC9"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search" image="SearchIcon" selectedImage="SearchIcon" id="MBf-qa-gb5" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
-                            <userDefinedRuntimeAttribute type="number" keyPath="textFontSize">
-                                <real key="value" value="15"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
-                                <color key="value" name="#8F8F8F"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
-                                <color key="value" name="#8F8F8F"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                        <connections>
-                            <outlet property="animation" destination="iml-hW-MVx" id="osd-nC-DSI"/>
-                        </connections>
-                    </tabBarItem>
                     <navigationItem key="navigationItem" title="search results" id="oAW-Xk-JmJ">
                         <barButtonItem key="backBarButtonItem" title=" " id="DeJ-Lp-TyR"/>
                     </navigationItem>
@@ -905,17 +888,17 @@
                                 </subviews>
                             </stackView>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="rnl-qM-ieY">
-                                <rect key="frame" x="30" y="-80.666666666666671" width="303" height="161.33333333333334"/>
+                                <rect key="frame" x="30" y="242" width="303" height="161"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noMessagesImage" translatesAutoresizingMaskIntoConstraints="NO" id="JqE-2M-4z6">
-                                        <rect key="frame" x="101.66666666666666" y="0.0" width="100" height="100.33333333333333"/>
+                                        <rect key="frame" x="101.66666666666666" y="0.0" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="L05-Uk-5Bf"/>
                                             <constraint firstAttribute="height" constant="100" id="x1d-c8-2B7"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="x3s-Vr-kLB">
-                                        <rect key="frame" x="20.333333333333343" y="130.33333333333334" width="262.33333333333326" height="31"/>
+                                        <rect key="frame" x="20.333333333333343" y="130" width="262.33333333333326" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are no matching results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3m-8D-be0">
                                                 <rect key="frame" x="52.999999999999986" y="0.0" width="156.66666666666663" height="13.333333333333334"/>
@@ -1003,10 +986,10 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="4EU-Bw-BEP" customClass="AskTableViewCell" customModule="Hunter" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="50" width="363" height="359"/>
+                                                <rect key="frame" x="0.0" y="50" width="363" height="369"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4EU-Bw-BEP" id="Ygs-J2-a72">
-                                                    <rect key="frame" x="0.0" y="0.0" width="363" height="359"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="363" height="369"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6gw-RI-d6W">
@@ -1020,7 +1003,7 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="hxb-aI-LfO">
-                                                                    <rect key="frame" x="15" y="15" width="333" height="314"/>
+                                                                    <rect key="frame" x="15" y="15" width="333" height="324"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fRB-1A-z4K">
                                                                             <rect key="frame" x="0.0" y="0.0" width="333" height="55.333333333333336"/>
@@ -1129,10 +1112,10 @@
                                                                             </subviews>
                                                                         </stackView>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="sTw-RT-hvY" userLabel="question">
-                                                                            <rect key="frame" x="0.0" y="81.333333333333329" width="333" height="166.66666666666669"/>
+                                                                            <rect key="frame" x="0.0" y="81.333333333333329" width="333" height="176.66666666666669"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGC-34-MXs" customClass="EdgeInsetLabel" customModule="Hunter" customModuleProvider="target">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="333" height="14.666666666666666"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="333" height="24.666666666666668"/>
                                                                                     <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14.5"/>
                                                                                     <color key="textColor" name="blackColor"/>
                                                                                     <nil key="highlightedColor"/>
@@ -1158,7 +1141,7 @@
                                                                                     </userDefinedRuntimeAttributes>
                                                                                 </label>
                                                                                 <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gpx-Q5-XYq">
-                                                                                    <rect key="frame" x="0.0" y="16.666666666666671" width="333" height="150"/>
+                                                                                    <rect key="frame" x="0.0" y="26.666666666666671" width="333" height="150"/>
                                                                                     <subviews>
                                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ProfileBackground" translatesAutoresizingMaskIntoConstraints="NO" id="mBZ-Sm-9wV" customClass="DynamicImageView" customModule="Hunter" customModuleProvider="target">
                                                                                             <rect key="frame" x="0.0" y="0.0" width="333" height="150"/>
@@ -1206,7 +1189,7 @@
                                                                             </subviews>
                                                                         </stackView>
                                                                         <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aof-UO-hFC" userLabel="report">
-                                                                            <rect key="frame" x="0.0" y="274" width="333" height="40"/>
+                                                                            <rect key="frame" x="0.0" y="284" width="333" height="40"/>
                                                                             <subviews>
                                                                                 <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alignment="center" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="B7k-Ga-3Yq">
                                                                                     <rect key="frame" x="15" y="2" width="250" height="20"/>
@@ -1348,7 +1331,7 @@
                                 </subviews>
                             </stackView>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="KAh-BE-C4N">
-                                <rect key="frame" x="30" y="-80.666666666666671" width="303" height="161.33333333333334"/>
+                                <rect key="frame" x="30" y="-80.666666666666686" width="303" height="161.33333333333334"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noMessagesImage" translatesAutoresizingMaskIntoConstraints="NO" id="xBN-eN-GnR">
                                         <rect key="frame" x="101.66666666666666" y="0.0" width="100" height="100.33333333333333"/>
@@ -1403,30 +1386,16 @@
             </objects>
             <point key="canvasLocation" x="1315" y="549"/>
         </scene>
-        <!--Search-->
+        <!--Navigation Controller-->
         <scene sceneID="TbN-dr-6Ir">
             <objects>
                 <navigationController storyboardIdentifier="searchv" automaticallyAdjustsScrollViewInsets="NO" id="vvZ-wx-Mt2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" image="SearchIcon" selectedImage="SearchIcon" id="KSG-u6-Cxj" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
-                            <userDefinedRuntimeAttribute type="number" keyPath="textFontSize">
-                                <real key="value" value="15"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
-                                <color key="value" name="#8F8F8F"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
-                                <color key="value" name="#8F8F8F"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="arrowBack" backIndicatorTransitionMaskImage="arrowBack" id="otK-9N-7Vh">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" name="#0EBFB1"/>
+                        <color key="backgroundColor" name="#0093F5"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
@@ -1458,7 +1427,7 @@
             </objects>
             <point key="canvasLocation" x="-1682" y="-2"/>
         </scene>
-        <!--Search-->
+        <!--Search Base View Controller-->
         <scene sceneID="iGn-Xj-lzl">
             <objects>
                 <viewController storyboardIdentifier="search_base" id="jb0-d1-d08" customClass="SearchBaseViewController" customModule="Hunter" customModuleProvider="target" sceneMemberID="viewController">
@@ -1551,27 +1520,10 @@
                         <constraints>
                             <constraint firstItem="0QD-KH-ZbQ" firstAttribute="leading" secondItem="Wc3-s0-a4h" secondAttribute="leading" constant="15" id="KR9-Ui-g1Z"/>
                             <constraint firstItem="Wc3-s0-a4h" firstAttribute="bottom" secondItem="0QD-KH-ZbQ" secondAttribute="bottom" id="Un2-ji-Fjm"/>
-                            <constraint firstItem="0QD-KH-ZbQ" firstAttribute="top" secondItem="Wc3-s0-a4h" secondAttribute="top" id="Xq6-Gt-waT"/>
+                            <constraint firstItem="0QD-KH-ZbQ" firstAttribute="top" secondItem="Wc3-s0-a4h" secondAttribute="top" id="YjR-Cg-YUG"/>
                             <constraint firstItem="Wc3-s0-a4h" firstAttribute="trailing" secondItem="0QD-KH-ZbQ" secondAttribute="trailing" constant="15" id="bHf-7h-ST1"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search" image="SearchIcon" selectedImage="SearchIcon" id="amo-sA-Qdc" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
-                            <userDefinedRuntimeAttribute type="number" keyPath="textFontSize">
-                                <real key="value" value="15"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
-                                <color key="value" name="#8F8F8F"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
-                                <color key="value" name="#8F8F8F"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                        <connections>
-                            <outlet property="animation" destination="iml-hW-MVx" id="BNO-7c-ukQ"/>
-                        </connections>
-                    </tabBarItem>
                     <navigationItem key="navigationItem" id="aVL-13-SBm">
                         <barButtonItem key="backBarButtonItem" title=" " id="Mv4-tg-Z6N"/>
                     </navigationItem>
@@ -1596,12 +1548,12 @@
                     </userDefinedRuntimeAttributes>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="-750" y="-2"/>
+            <point key="canvasLocation" x="-947.32824427480909" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <designables>
         <designable name="gGC-34-MXs">
-            <size key="intrinsicContentSize" width="32" height="14.666666666666666"/>
+            <size key="intrinsicContentSize" width="42" height="24.666666666666664"/>
         </designable>
     </designables>
     <resources>
@@ -3855,7 +3807,7 @@ bztxO3NNE00YTSVNKE01TTpNQk1FTUpNUgAAAAAAAAIBAAAAAAAAAGgAAAAAAAAAAAAAAAAAAE1VA
         <image name="noMessagesImage" width="232" height="244.66667175292969"/>
         <image name="verification" width="16" height="16"/>
         <namedColor name="#0093F5">
-            <color red="0.0" green="0.57647058823529407" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.57599997520446777" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="#0EBFB1">
             <color red="0.054999999701976776" green="0.74900001287460327" blue="0.6940000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

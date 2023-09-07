@@ -81,6 +81,8 @@ extension SearchAdsViewController: UICollectionViewDataSource, UICollectionViewD
 }
 extension SearchAdsViewController{
     func getData(){
+        print(searchText)
+
         SearchController.shared.searchAds(completion: { [self]
             ads, check, msg in
             if check == 0{
@@ -113,6 +115,7 @@ extension SearchAdsViewController{
 }
 extension SearchAdsViewController: ContentDelegate{
     func updateContent(searchText: String, isHidden: Bool) {
+        print(searchText)
         self.searchText = searchText
         self.page = 1
         self.isTheLast = false

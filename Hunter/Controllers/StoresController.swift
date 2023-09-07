@@ -98,6 +98,7 @@ class StoresController {
     
     
     func updateStore(completion: @escaping(Bool,String)-> (), link : String, param: Parameters , images:[String:UIImage]){
+        print(link)
         
         var header: HTTPHeaders =
         [
@@ -119,6 +120,7 @@ class StoresController {
                 }
             }
             
+            print(param)
             for (key,value) in param {
                 multipart.append((value as AnyObject).description.data(using: String.Encoding.utf8)!, withName: key)
             }

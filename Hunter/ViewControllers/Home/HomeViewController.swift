@@ -92,6 +92,9 @@ class HomeViewController: UIViewController {
     //MARK: Methods
     
     private func ConfigureView(){
+        
+        searchTextField.delegate = self
+        searchTextField.returnKeyType = .search
         customNavView.cornerRadius = 30
         customNavView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
         self.navigationController?.navigationBar.isHidden = false
@@ -626,3 +629,17 @@ extension HomeViewController {
     }
     }
 
+extension HomeViewController:UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            // Perform the segue when the Return key is pressed
+        let vc = UIStoryboard(name: SEARCH_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: "search") as! SearchViewController
+        if searchTextField.text.safeValue != "" {
+            vc.searchText = searchTextField.text!
+            navigationController?.pushViewController(vc, animated: true)
+        }else{
+            StaticFunctions.createErrorAlert(msg: "Please type in anything you want to search for in Hunter".localize)
+        }
+       
+            return true
+        }
+}

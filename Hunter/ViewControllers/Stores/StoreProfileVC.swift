@@ -406,7 +406,7 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
                  }
                  
                  //use 128 as user id to check
-             }, userId: otherUserId , page: page, countryId:countryId ?? 0)
+             }, userId: otherUserId , page: page, countryId:countryId ?? 0, status: "")
          }
         
         

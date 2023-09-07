@@ -50,11 +50,13 @@ class ProfileController {
     }
     
     
-    func getProductsByUser(completion: @escaping([Product], Int, String)->(),userId:Int, page: Int,countryId: Int){
+    func getProductsByUser(completion: @escaping([Product], Int, String)->(),userId:Int, page: Int,countryId: Int , status:String){
         
         let param = ["page": page,
                      "uid": userId,
-                     "country_id": countryId]
+                     "country_id": countryId,
+                     "status":status
+        ] as [String : Any]
         print(param)
         APIConnection.apiConnection.postConnection(completion: {
             data  in

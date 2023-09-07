@@ -13,6 +13,14 @@ class MyAdsVC: UIViewController {
     @IBOutlet weak var myAdsCollectionView: UICollectionView!
     
     
+    @IBOutlet weak var featuredPendingView: UIView!
+    @IBOutlet weak var featuredPendingLbl: UILabel!
+    @IBOutlet weak var pendingView: UIView!
+    @IBOutlet weak var pendingLbl: UILabel!
+    @IBOutlet weak var activatedView: UIView!
+    @IBOutlet weak var activatedLbl: UILabel!
+    
+    @IBOutlet weak var noAdsStackView: UIStackView!
     private  let cellIdentifier = "MyAdsCollectionViewCell"
     private var products = [Product]()
     private var page = 1
@@ -22,7 +30,8 @@ class MyAdsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ConfigureUIView()
-        getProductsByUser()
+        noAdsStackView.isHidden = true
+        getProductsByUser(with: "published")
         print(userId)
     }
     
@@ -58,7 +67,67 @@ class MyAdsVC: UIViewController {
         myAdsCollectionView.dataSource = self
         myAdsCollectionView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
     }
-
+    
+    
+    
+    
+    @IBAction func didTapActivatedBtnAction(_ sender: Any) {
+        getProductsByUser(with: "published")
+        activatedLbl.textColor = UIColor(named: "#0093F5")
+        activatedView.backgroundColor = UIColor(named: "#0093F5")
+        
+        pendingLbl.textColor = UIColor(named: "#929292")
+        pendingView.backgroundColor = UIColor(named: "#929292")
+        
+        featuredPendingLbl.textColor = UIColor(named: "#929292")
+        featuredPendingView.backgroundColor = UIColor(named: "#929292")
+        
+        activatedView.isHidden = false
+        pendingView.isHidden = true
+        featuredPendingView.isHidden = true
+        
+    }
+    @IBAction func didTapPendingBtnAction(_ sender: Any) {
+        products = []
+        getProductsByUser(with: "unpaid_normal")
+        
+        activatedLbl.textColor = UIColor(named: "#929292")
+        activatedView.backgroundColor = UIColor(named: "#929292")
+        
+        pendingLbl.textColor = UIColor(named: "#0093F5")
+        pendingView.backgroundColor = UIColor(named: "#0093F5")
+        
+        featuredPendingLbl.textColor = UIColor(named: "#929292")
+        featuredPendingView.backgroundColor = UIColor(named: "#929292")
+        
+        activatedView.isHidden = true
+        pendingView.isHidden = false
+        featuredPendingView.isHidden = true
+    }
+    @IBAction func didTapFeaturedPendingBtnAction(_ sender: Any) {
+        getProductsByUser(with: "unpaid_feature")
+        
+        activatedLbl.textColor = UIColor(named: "#929292")
+        activatedView.backgroundColor = UIColor(named: "#929292")
+        
+        pendingLbl.textColor = UIColor(named: "#929292")
+        pendingView.backgroundColor = UIColor(named: "#929292")
+        
+        featuredPendingLbl.textColor = UIColor(named: "#0093F5")
+        featuredPendingView.backgroundColor = UIColor(named: "#0093F5")
+        
+        activatedView.isHidden = true
+        pendingView.isHidden = true
+        featuredPendingView.isHidden = false
+    }
+    
+    
+    @IBAction func didTapAddAdButton(_ sender: UIButton) {
+        let vc = UIStoryboard(name: "", bundle: nil).instantiateViewController(withIdentifier: "AddAdvsVC") as! AddAdvsVC
+        
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 //MARK: CollectionView Delegate & DataSource
 
@@ -90,7 +159,7 @@ extension MyAdsVC : UICollectionViewDelegate,UICollectionViewDataSource , UIColl
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if indexPath.row == (products.count-1) && !isTheLast{
             page+=1
-            getProductsByUser()
+            getProductsByUser(with: "")
             
         }
     }
@@ -110,7 +179,7 @@ extension MyAdsVC:MyAdsCollectionViewCellDelegate {
                 if let success = data.success {
                     if success {
                         StaticFunctions.createSuccessAlert(msg:"Ads Deleted Seccessfully".localize)
-                        self.getProductsByUser()
+                        self.getProductsByUser(with: "")
                         self.myAdsCollectionView.reloadData()
                     }
                 }
@@ -121,7 +190,12 @@ extension MyAdsVC:MyAdsCollectionViewCellDelegate {
     }
     
     func shareAdCell(buttonDidPressed indexPath: IndexPath) {
-        shareContent(text:Constants.DOMAIN + "\(products[indexPath.row].id ?? 0)")
+        if products[indexPath.row].status == "unpaid_feature" {
+            //GO To Pay
+        }else{
+            shareContent(text:Constants.DOMAIN + "\(products[indexPath.row].id ?? 0)")
+        }
+        
         
     }
     
@@ -137,9 +211,7 @@ extension MyAdsVC:MyAdsCollectionViewCellDelegate {
     
 }
 extension MyAdsVC {
-    private func getProductsByUser(){
-//         guard let userId = AppDelegate.currentUser.id , let countryId = AppDelegate.currentUser.countryId else{return}
-         
+    private func getProductsByUser(with status:String){
          ProfileController.shared.getProductsByUser(completion: {
              products, check, msg in
              print(products.count)
@@ -147,6 +219,13 @@ extension MyAdsVC {
                  if self.page == 1 {
                      self.products.removeAll()
                      self.products = products
+                     if self.products.isEmpty {
+                         self.myAdsCollectionView.isHidden = true
+                         self.noAdsStackView.isHidden = false
+                     }else{
+                         self.myAdsCollectionView.isHidden = false
+                         self.noAdsStackView.isHidden = true
+                     }
                      
                  }else{
                      self.products.append(contentsOf: products)
@@ -162,7 +241,8 @@ extension MyAdsVC {
              }
              
              //use 128 as user id to check
-         }, userId: userId , page: page, countryId:6 )
+         }, userId: userId , page: page, countryId:6 ,status: status)
      }
+    
 }
 

@@ -35,6 +35,8 @@
 "Persons relevant to your search result" = "الأشخاص ذوي الصلة بنتيجة البحث الخاصة بك";
 "Persons" = "الأشخاص";
 "Questions" = "أسئلة";
+"Search result" = "نتائج البحث";
+"Please type in anything you want to search for in Hunter" = "من فضلك اكتب اي شئ تريد البحث عنة في الصياد";
 
 //MARK: Menu
 "Back" = "رجوع";
@@ -425,7 +427,29 @@ To get free ads" = "سيتم مراجعتة من قبل الإدارة
 "Add Store" = "إضافة متجر";
 "WhatsApp" = "واتساب";
 //MARK: Edit Store
-
 "Edit social media" = "تعديل وسائل التواصل";
 "Updated" = "تم التحديث";
 "(Change)" = "(تغيير)";
+"Pay Now" = "ادفع الان";
+
+//MARK: PACKAGES
+"This subscription does not automatically renew" = "لا يتم تجديد هذا الاشتراك تلقائيا";
+"Features" = "الميزات";
+"3 Months" = "٣ أشهر";
+"6 Months" = "٦ أشهر";
+"12 Months" = "١٢ أشهر";
+"Choose your premium package" = "اختر باقتك المميزة";
+"Stores packages" = "باقات المتاجر";
+"Best Seller" = "الأكثر مبيعًا";
+"BUY NOW" = "اشتري الأن";
+
+"One step left to post your ad" = "بقي لك خطوة واحدة لإضافة لإعلانك";
+"Choose ad type" = "أختر نوع الاعلان";
+"Featured ad" = "إعلان مميز";
+"50 times more contacts and views About free advertising" = "اتصالات ومشاهدات اكثر بـ 50 ضعف عن الإعلان المجاني";
+"Pinned to the top of the home page" = "مثبت في أعلى  الصفحة الرئيسية";
+"Priority to appear in search results" = "اولوية الظهور في نتائج البحث";
+"Normal ad" = "اعلان مجاني";
+"Appearing with other ads according to the date of publication" = "الظهور مع باقي الإعلانات حسب تاريخ النشر";
+"Unpinned to the top of the home page" = " غير مثبت في أعلى  الصفحة الرئيسية";
+"Appear in general search results" = "الظهور  في نتائج البحث العامة";

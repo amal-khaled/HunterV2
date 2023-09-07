@@ -29,13 +29,24 @@ class SuccessAddingVC: UIViewController {
     }
     //MARK:  IBActions
     
-    @IBAction func goToHomeBtnAction(_ sender: UIButton) {
-        if isFromHome {
-            self.navigationController?.popToRootViewController(animated: true)
-        }else{
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue:"goHome"), object: nil)
-            self.navigationController?.popToRootViewController(animated: true)
+    @IBAction func didTapuploadNewAds(_ sender: UIButton) {
+        dismiss(animated: false)
+    }
+    @IBAction func didTapGoToMyAds(_ sender: UIButton) {
+//        if isFromHome {
+//            self.navigationController?.popToRootViewController(animated: true)
+//        }else{
+//            NotificationCenter.default.post(name: NSNotification.Name(rawValue:"goHome"), object: nil)
+//            self.navigationController?.popToRootViewController(animated: true)
+//
+//        }
+        
+        if let vc = UIStoryboard(name: MENU_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: MYADS_VCID) as? MyAdsVC {
+            vc.modalPresentationStyle = .fullScreen
+            vc.userId = AppDelegate.currentUser.id ?? 0
+            navigationController?.pushViewController(vc, animated: true)
             
         }
+        
     }
 }

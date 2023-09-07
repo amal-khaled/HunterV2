@@ -184,8 +184,8 @@ class EditStoreVC: UIViewController {
             "company_activity":activityTextFiled.text.safeValue,
             "phone":mobileTextFiled.text.safeValue,
             "whatsapp":whatsAppTextField.text.safeValue,
-            "city_id":cityId,
-            "region_id":stateId,
+//            "city_id":cityId,
+//            "region_id":stateId,
             "email":emailTextField.text.safeValue,
         ]
         

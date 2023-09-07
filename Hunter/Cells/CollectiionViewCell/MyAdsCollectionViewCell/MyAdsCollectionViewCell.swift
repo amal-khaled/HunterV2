@@ -32,6 +32,9 @@ class MyAdsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var deleteAdButton: UIButton!
     @IBOutlet weak var shareAdButton: UIButton!
     
+    @IBOutlet weak var featuredImage: UIImageView!
+    
+    @IBOutlet weak var shareLabel: UILabel!
     weak var delegate:MyAdsCollectionViewCellDelegate?
     var indexPath:IndexPath?
     
@@ -97,6 +100,11 @@ class MyAdsCollectionViewCell: UICollectionViewCell {
              imageLink = product.mainImage ?? ""
         }
         
+        if product.isFeature  ?? false{
+            featuredImage.isHidden = false
+        }else{
+            featuredImage.isHidden = true
+        }
        
         
         if imageLink.contains(".mp4")  || imageLink.contains(".mov") {
@@ -112,6 +120,10 @@ class MyAdsCollectionViewCell: UICollectionViewCell {
             isVideoImageView.isHidden = true
             adImageView.setImageWithLoading(url: imageLink )
  
+        }
+        
+        if product.status == "unpaid_feature" {
+            shareLabel.text = "Pay Now".localize
         }
     }
     

@@ -24,7 +24,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MyAdsCollectionViewCell" customModule="Monasba" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MyAdsCollectionViewCell" customModule="Hunter" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="542" height="446"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -48,19 +48,28 @@
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vok-Yo-TrW">
                                         <rect key="frame" x="0.0" y="0.0" width="542" height="190"/>
                                         <subviews>
-                                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play_ico" translatesAutoresizingMaskIntoConstraints="NO" id="0Qi-lm-mFl">
-                                                <rect key="frame" x="482" y="20" width="50" height="45"/>
+                                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="isvideo" translatesAutoresizingMaskIntoConstraints="NO" id="0Qi-lm-mFl">
+                                                <rect key="frame" x="246" y="70" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="8Ax-mT-XhO"/>
-                                                    <constraint firstAttribute="height" constant="45" id="9gD-Ad-EMH"/>
+                                                    <constraint firstAttribute="height" constant="50" id="9gD-Ad-EMH"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FeatureImage" translatesAutoresizingMaskIntoConstraints="NO" id="vM1-gx-7Bd">
+                                                <rect key="frame" x="476" y="0.0" width="50" height="71"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="vI5-Qr-vGG"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="0Qi-lm-mFl" firstAttribute="top" secondItem="vok-Yo-TrW" secondAttribute="top" constant="20" id="AaE-vW-RXc"/>
-                                            <constraint firstAttribute="trailing" secondItem="0Qi-lm-mFl" secondAttribute="trailing" constant="10" id="DgK-1L-LZz"/>
+                                            <constraint firstAttribute="trailing" secondItem="vM1-gx-7Bd" secondAttribute="trailing" constant="16" id="7gC-ln-R3B"/>
+                                            <constraint firstItem="0Qi-lm-mFl" firstAttribute="centerX" secondItem="vok-Yo-TrW" secondAttribute="centerX" id="8I9-Ni-wOg"/>
+                                            <constraint firstItem="vM1-gx-7Bd" firstAttribute="top" secondItem="vok-Yo-TrW" secondAttribute="top" id="Aco-bf-RAS"/>
                                             <constraint firstAttribute="height" constant="190" id="ZyR-ZO-lbS"/>
+                                            <constraint firstItem="vM1-gx-7Bd" firstAttribute="height" secondItem="vok-Yo-TrW" secondAttribute="height" multiplier="0.373684" id="gTO-Uv-4Tf"/>
+                                            <constraint firstItem="0Qi-lm-mFl" firstAttribute="centerY" secondItem="vok-Yo-TrW" secondAttribute="centerY" id="pPv-ey-Fh9"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -104,7 +113,7 @@
                                             <constraint firstAttribute="height" constant="20" id="1Tr-rr-JbC"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="20.5"/>
-                                        <color key="textColor" name="#0EBFB1"/>
+                                        <color key="textColor" name="#0093F5"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FPI-Ou-1iY">
@@ -124,7 +133,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" name="#0EBFB1"/>
+                                                        <color key="backgroundColor" name="#0093F5"/>
                                                         <constraints>
                                                             <constraint firstItem="cWe-Q6-Daf" firstAttribute="centerX" secondItem="lPs-RV-m4E" secondAttribute="centerX" id="AtA-cm-Daf"/>
                                                             <constraint firstAttribute="height" constant="18" id="Ygj-pO-N7w"/>
@@ -166,7 +175,7 @@
                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ddddddddd" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6f-kX-9Ir">
                                                                 <rect key="frame" x="19" y="2" width="53" height="11"/>
                                                                 <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="11"/>
-                                                                <color key="textColor" name="#0EBFB1"/>
+                                                                <color key="textColor" name="#0093F5"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verification" translatesAutoresizingMaskIntoConstraints="NO" id="6RC-aL-Slf">
@@ -287,7 +296,7 @@
                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BE-ki-Xr8">
                                                                 <rect key="frame" x="27" y="11.666666666666686" width="24" height="14"/>
                                                                 <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="13.800000190734863"/>
-                                                                <color key="textColor" name="#0EBFB1"/>
+                                                                <color key="textColor" name="#0093F5"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
@@ -339,7 +348,7 @@
                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbm-Tw-4Na">
                                                                 <rect key="frame" x="11.333333333333343" y="11.666666666666686" width="39.666666666666664" height="14"/>
                                                                 <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="13.800000190734863"/>
-                                                                <color key="textColor" name="#0EBFB1"/>
+                                                                <color key="textColor" name="#0093F5"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
@@ -391,7 +400,7 @@
                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akJ-40-YVx">
                                                                 <rect key="frame" x="16.333333333333311" y="11.666666666666686" width="34.666666666666657" height="14"/>
                                                                 <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="13.800000190734863"/>
-                                                                <color key="textColor" name="#0EBFB1"/>
+                                                                <color key="textColor" name="#0093F5"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
@@ -483,30 +492,33 @@
                 <outlet property="currencyLabel" destination="1sy-fM-mBz" id="r6B-SY-Kn5"/>
                 <outlet property="deleteAdButton" destination="zga-wm-aOk" id="ZfX-aI-0K0"/>
                 <outlet property="editButton" destination="vM9-bG-dKg" id="d5n-lP-59x"/>
+                <outlet property="featuredImage" destination="vM1-gx-7Bd" id="sTF-fS-Ng3"/>
                 <outlet property="isVideoImageView" destination="0Qi-lm-mFl" id="H0C-Ib-Ld7"/>
                 <outlet property="priceLabel" destination="B1T-WQ-jV3" id="doO-bx-22M"/>
                 <outlet property="sellLabel" destination="cWe-Q6-Daf" id="LCS-mR-3YB"/>
                 <outlet property="sellView" destination="lPs-RV-m4E" id="8uD-Lo-qaw"/>
                 <outlet property="shareAdButton" destination="BBW-U6-Mop" id="9KA-Dt-QJt"/>
+                <outlet property="shareLabel" destination="akJ-40-YVx" id="aIO-vE-E0K"/>
                 <outlet property="timeLabel" destination="4p5-lh-cHw" id="LKV-NA-E4I"/>
                 <outlet property="userImageView" destination="b0n-17-aOD" id="g21-RW-Dhe"/>
                 <outlet property="userNameLabel" destination="j6f-kX-9Ir" id="wUG-4N-ysX"/>
                 <outlet property="verifiedImage" destination="6RC-aL-Slf" id="eK2-ST-1da"/>
             </connections>
-            <point key="canvasLocation" x="271" y="6"/>
+            <point key="canvasLocation" x="270.76923076923077" y="5.6872037914691944"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="FeatureImage" width="29" height="34"/>
         <image name="Share_ADVs" width="15.333333015441895" height="14"/>
         <image name="clock2" width="14.666666984558105" height="14.666666984558105"/>
         <image name="del_main" width="12" height="13.333333015441895"/>
         <image name="edit" width="12.333333015441895" height="12.666666984558105"/>
+        <image name="isvideo" width="50" height="50"/>
         <image name="locationgrey" width="96" height="96"/>
         <image name="money" width="16" height="13.666666984558105"/>
-        <image name="play_ico" width="29.666666030883789" height="25.666666030883789"/>
         <image name="verification" width="16" height="16"/>
-        <namedColor name="#0EBFB1">
-            <color red="0.054999999701976776" green="0.74900001287460327" blue="0.6940000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="#0093F5">
+            <color red="0.0" green="0.57599997520446777" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="#E2E1E1">
             <color red="0.88599997758865356" green="0.88200002908706665" blue="0.88200002908706665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
