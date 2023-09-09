@@ -219,9 +219,13 @@
 		C8AD40EE2A2B177500E464DB /* MainTabBarVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AD40ED2A2B177500E464DB /* MainTabBarVCViewController.swift */; };
 		C8B256EA2AA8FED200317A12 /* ChooseAdTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B256E92AA8FED200317A12 /* ChooseAdTypeVC.swift */; };
 		C8B256FF2AA9A6AF00317A12 /* PayingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B256FE2AA9A6AF00317A12 /* PayingVC.swift */; };
+		C8B257032AA9D02700317A12 /* SearchStoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B257012AA9D02700317A12 /* SearchStoreCell.swift */; };
+		C8B257042AA9D02700317A12 /* SearchStoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8B257022AA9D02700317A12 /* SearchStoreCell.xib */; };
 		C8B7C9402A97A93C008D87FA /* StoresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B7C93F2A97A93C008D87FA /* StoresVC.swift */; };
 		C8B7C9422A97B724008D87FA /* Store.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8B7C9412A97B724008D87FA /* Store.storyboard */; };
 		C8C149502A84E7F00055DC7B /* CreditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C1494F2A84E7F00055DC7B /* CreditVC.swift */; };
+		C8C6C6392AAC9CCB0049FBFB /* PayingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C6C6382AAC9CCB0049FBFB /* PayingController.swift */; };
+		C8C6C63B2AAC9DA30049FBFB /* PaymentModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C6C63A2AAC9DA30049FBFB /* PaymentModels.swift */; };
 		C8C714FC2A646805006C5AFE /* FollowersAndFollowingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C714FB2A646805006C5AFE /* FollowersAndFollowingsVC.swift */; };
 		C8C715002A646981006C5AFE /* FollowAndFollowersTapsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C714FE2A646981006C5AFE /* FollowAndFollowersTapsCell.swift */; };
 		C8C715012A646981006C5AFE /* FollowAndFollowersTapsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8C714FF2A646981006C5AFE /* FollowAndFollowersTapsCell.xib */; };
@@ -472,9 +476,13 @@
 		C8AD40ED2A2B177500E464DB /* MainTabBarVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarVCViewController.swift; sourceTree = "<group>"; };
 		C8B256E92AA8FED200317A12 /* ChooseAdTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAdTypeVC.swift; sourceTree = "<group>"; };
 		C8B256FE2AA9A6AF00317A12 /* PayingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayingVC.swift; sourceTree = "<group>"; };
+		C8B257012AA9D02700317A12 /* SearchStoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStoreCell.swift; sourceTree = "<group>"; };
+		C8B257022AA9D02700317A12 /* SearchStoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchStoreCell.xib; sourceTree = "<group>"; };
 		C8B7C93F2A97A93C008D87FA /* StoresVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresVC.swift; sourceTree = "<group>"; };
 		C8B7C9412A97B724008D87FA /* Store.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Store.storyboard; sourceTree = "<group>"; };
 		C8C1494F2A84E7F00055DC7B /* CreditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditVC.swift; sourceTree = "<group>"; };
+		C8C6C6382AAC9CCB0049FBFB /* PayingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayingController.swift; sourceTree = "<group>"; };
+		C8C6C63A2AAC9DA30049FBFB /* PaymentModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModels.swift; sourceTree = "<group>"; };
 		C8C714FB2A646805006C5AFE /* FollowersAndFollowingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersAndFollowingsVC.swift; sourceTree = "<group>"; };
 		C8C714FE2A646981006C5AFE /* FollowAndFollowersTapsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowAndFollowersTapsCell.swift; sourceTree = "<group>"; };
 		C8C714FF2A646981006C5AFE /* FollowAndFollowersTapsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowAndFollowersTapsCell.xib; sourceTree = "<group>"; };
@@ -621,6 +629,7 @@
 		658DE51529F82AFA0015D549 /* CollectiionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				C8B257002AA9CFF300317A12 /* searchStoreCell */,
 				C80CC92C2A6DBE4A00B56F54 /* FavsCell */,
 				C8C714FD2A64694C006C5AFE /* Followers&followings */,
 				C8191F9A2A4076250057AA28 /* FavouritesCell */,
@@ -672,6 +681,7 @@
 				C85A5C532A6143610074AF4D /* UploadMediaModel.swift */,
 				C889ABF62A8CC0DB0088D158 /* StoresModel.swift */,
 				C8FF98032AA50B4F00DBA6CF /* PackagesModel.swift */,
+				C8C6C63A2AAC9DA30049FBFB /* PaymentModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -692,6 +702,7 @@
 				C8C715022A647887006C5AFE /* FollowersController.swift */,
 				C8A27B472A9F91DB0090A9D2 /* StoresController.swift */,
 				C8FF98052AA50CD900DBA6CF /* PackagesController.swift */,
+				C8C6C6382AAC9CCB0049FBFB /* PayingController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1118,6 +1129,15 @@
 			path = Paying;
 			sourceTree = "<group>";
 		};
+		C8B257002AA9CFF300317A12 /* searchStoreCell */ = {
+			isa = PBXGroup;
+			children = (
+				C8B257012AA9D02700317A12 /* SearchStoreCell.swift */,
+				C8B257022AA9D02700317A12 /* SearchStoreCell.xib */,
+			);
+			path = searchStoreCell;
+			sourceTree = "<group>";
+		};
 		C8B7C93E2A97A928008D87FA /* Stores */ = {
 			isa = PBXGroup;
 			children = (
@@ -1268,6 +1288,7 @@
 				C84D28FD2A6D0A990026F125 /* MsgContactSenderCell.xib in Resources */,
 				C86678BF29FFA12B0019AE81 /* Advs.storyboard in Resources */,
 				65DD121F29E6915A00A3B8DD /* Localizable.strings in Resources */,
+				C8B257042AA9D02700317A12 /* SearchStoreCell.xib in Resources */,
 				C85FFCE12A260BEF000C426D /* MsgRecordRecieverCell.xib in Resources */,
 				C85FFCDC2A260BEF000C426D /* MsgContactCell.xib in Resources */,
 				C8A2BEC22A3A5F7200A05E77 /* RateOtherUserCell.xib in Resources */,
@@ -1379,6 +1400,7 @@
 				65E54A3C2A029CEB00FEC9A3 /* CategoryViewController.swift in Sources */,
 				C8FF98042AA50B4F00DBA6CF /* PackagesModel.swift in Sources */,
 				C8A547E02A59513A00031FE9 /* FBShimmeringView.m in Sources */,
+				C8C6C6392AAC9CCB0049FBFB /* PayingController.swift in Sources */,
 				C8C715032A647887006C5AFE /* FollowersController.swift in Sources */,
 				C8A2BED02A3B559400A05E77 /* followersVC.swift in Sources */,
 				C83FBD802A553B3F0009CA73 /* AddRateForUsersVC.swift in Sources */,
@@ -1451,6 +1473,7 @@
 				C8AD40E92A2B0EBF00E464DB /* AboutVC.swift in Sources */,
 				65E15A6E2A20C045006930A4 /* ReportReplyViewController.swift in Sources */,
 				659F892D29FD9A3400AFA95C /* AuthCoontroller.swift in Sources */,
+				C8B257032AA9D02700317A12 /* SearchStoreCell.swift in Sources */,
 				65495D7E2A1DFEFE00A23579 /* SearchAskViewController.swift in Sources */,
 				65F33D092A229D4100A1A889 /* AskRepliesViewController.swift in Sources */,
 				65B5505B2A1C863F002D2264 /* SearchController.swift in Sources */,
@@ -1552,6 +1575,7 @@
 				C85FFCD32A260BEF000C426D /* MsgMediaCell.swift in Sources */,
 				C8C7E8AB2AA480750093022B /* PackagesVC.swift in Sources */,
 				C89286BE2A3DB8A800FB0A8A /* EditProfileModel.swift in Sources */,
+				C8C6C63B2AAC9DA30049FBFB /* PaymentModels.swift in Sources */,
 				C80CC9302A6DBE8100B56F54 /* FavCell.swift in Sources */,
 				659987FE2A1F422C00DBD8EE /* Comment.swift in Sources */,
 				65C7FF0229FD461D0062BFAA /* CounriesViewController.swift in Sources */,

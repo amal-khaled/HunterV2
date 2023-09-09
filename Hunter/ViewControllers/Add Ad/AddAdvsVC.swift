@@ -417,26 +417,7 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
     @IBAction func addAdBtnAction(_ sender: UIButton) {
         
         AppDelegate.defaults.removeObject(forKey:"postSessionData")
-        params = [
-            "uid":AppDelegate.currentUser.id ?? 0,
-                          "name":advsTitleTF.text!, "price":priceTF.text!,
-                          "amount":"0", "lat": "0", "lng":"0",
-                          "prod_size":"25","color":"red",
-                          "color_name":"red",
-                          "cat_id":"\(mainCatID)",
-                          "sub_cat_id": "\(subCatID)",
-                          "sell_cost":priceTF.text!,"errors":"",
-                          "brand_id":"Nike",
-                          "material_id":"",
-                          "country_id":AppDelegate.currentUser.countryId ?? 0,
-                          "city_id":"\(cityId)",
-                          "region_id":"\(regionId)",
-                          "loc":"\(cityName) \(regionName)",
-                          "phone":"\(phone)","wts":phone,"descr":descTextView.text!,
-                          "has_chat":hasChat,"has_wts":hasWhats,"has_phone":hasPhone,
-                          "tajeer_or_sell":"\(tajeer)",
-            "is_feature" : isFeature
-        ]
+      
         if  selectedImages.count <= 0{
             StaticFunctions.createErrorAlert(msg: "Post at least one photo for the ad.".localize)
         }else if mainImageKey == "" {
@@ -463,7 +444,28 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
         
     }
     
-    func createAds() {
+    func createAds(isFeatured:Int) {
+        
+        params = [
+            "uid":AppDelegate.currentUser.id ?? 0,
+                          "name":advsTitleTF.text!, "price":priceTF.text!,
+                          "amount":"0", "lat": "0", "lng":"0",
+                          "prod_size":"25","color":"red",
+                          "color_name":"red",
+                          "cat_id":"\(mainCatID)",
+                          "sub_cat_id": "\(subCatID)",
+                          "sell_cost":priceTF.text!,"errors":"",
+                          "brand_id":"Nike",
+                          "material_id":"",
+                          "country_id":AppDelegate.currentUser.countryId ?? 0,
+                          "city_id":"\(cityId)",
+                          "region_id":"\(regionId)",
+                          "loc":"\(cityName) \(regionName)",
+                          "phone":"\(phone)","wts":phone,"descr":descTextView.text!,
+                          "has_chat":hasChat,"has_wts":hasWhats,"has_phone":hasPhone,
+                          "tajeer_or_sell":"\(tajeer)",
+                          "is_feature" : isFeatured
+        ]
         var type = ""
         var index = ""
         var image = Data()
@@ -523,10 +525,20 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
                 if data.statusCode == 200{
 //                    completion(true,data.message ?? "")
                     print(data.message ?? "")
-                    let vc = UIStoryboard(name: ADVS_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: SUCCESS_ADDING_VCID) as! SuccessAddingVC
-                    vc.modalPresentationStyle = .overFullScreen
-                    vc.isFromHome = self.isFromHome
-                    self.present(vc, animated: false)
+                    if isFeatured == 1 {
+                        PayingController.shared.payingFeaturedAd(completion: { payment, check, message in
+                            if check == 0{
+                                let vc = UIStoryboard(name: ADVS_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: "PayingVC") as! PayingVC
+                                vc.urlString = payment?.data.invoiceURL ?? ""
+                                self.navigationController?.pushViewController(vc, animated: true)
+                            }else{
+                                StaticFunctions.createErrorAlert(msg: message)
+                            }
+                        }, countryId: AppDelegate.currentUser.countryId ?? 5, productId: data.data?.id ?? 0)
+                    }else {
+                        self.goToSuccessfullAddAd()
+                    }
+                    
                 }else{
 //                    completion(false , data.message ?? "")
                     print(data.message)
@@ -550,6 +562,13 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
         
     }
     
+    
+    private func goToSuccessfullAddAd(){
+        let vc = UIStoryboard(name: ADVS_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: SUCCESS_ADDING_VCID) as! SuccessAddingVC
+        vc.modalPresentationStyle = .overFullScreen
+        vc.isFromHome = self.isFromHome
+        self.present(vc, animated: false)
+    }
     }
     
 
@@ -1042,9 +1061,11 @@ extension AddAdvsVC:UITextViewDelegate {
 }
 extension AddAdvsVC : ChooseAdTyDelegate {
     func didTapNormalAd() {
-        
-        createAds()
+        createAds(isFeatured:0)
     }
     
+    func didTapFeaturedAd() {
+        createAds(isFeatured: 1)
+    }
     
 }

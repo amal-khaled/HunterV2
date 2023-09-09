@@ -11,6 +11,7 @@ import Alamofire
 
 protocol ChooseAdTyDelegate:AnyObject{
     func didTapNormalAd()
+    func didTapFeaturedAd()
 }
 
 class ChooseAdTypeVC: UIViewController {
@@ -37,7 +38,8 @@ class ChooseAdTypeVC: UIViewController {
         
     }
     @IBAction func didTapChooseFeaturedAdButton(_ sender: UIButton) {
-        
+        delegate?.didTapFeaturedAd()
+        dismiss(animated: true)
     }
     
     @IBAction func didTapNormalAdButton(_ sender: Any) {

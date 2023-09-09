@@ -5184,6 +5184,9 @@
         <designable name="mUR-DR-Ytl">
             <size key="intrinsicContentSize" width="73" height="32"/>
         </designable>
+        <designable name="sm9-Me-6CO">
+            <size key="intrinsicContentSize" width="340" height="27.333333333333332"/>
+        </designable>
         <designable name="vOp-j7-vim">
             <size key="intrinsicContentSize" width="37" height="32"/>
         </designable>

@@ -11,10 +11,12 @@ class SearchAskViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
 
+    @IBOutlet weak var collectionView: UICollectionView!
     var asks = [Ask]()
     var page = 1
     var isTheLast = false
     var searchText = ""
+    var storesList = [StoreObject]()
     @IBOutlet weak var textStackView: UIStackView!
     @IBOutlet weak var searchNoResult: UIStackView!
 
@@ -38,64 +40,92 @@ class SearchAskViewController: UIViewController {
     */
 
 }
-extension SearchAskViewController: UITableViewDelegate, UITableViewDataSource{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return asks.count
+//extension SearchAskViewController: UITableViewDelegate, UITableViewDataSource{
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return asks.count
+//    }
+//    
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! AskTableViewCell
+//        cell.setData(ask: asks[indexPath.row])
+//        cell.showUserBtclosure = {
+//            let vc = UIStoryboard(name: PROFILE_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: OTHER_USER_PROFILE_VCID) as! OtherUserProfileVC
+//            vc.navigationController?.navigationBar.isHidden = true
+//            vc.OtherUserId = self.asks[indexPath.row].userId ?? 0
+//            self.navigationController?.pushViewController(vc, animated: true)
+//        }
+//        cell.deleteBtclosure = {
+//            CategoryController.shared.deleteAsk(completion: {
+//                check, msg in
+//                if check == 0{
+//                    StaticFunctions.createSuccessAlert(msg: msg)
+//                    self.asks.removeAll()
+//
+//                    self.page = 1
+//                    self.isTheLast = false
+//                    self.getData()
+//                }else{
+//                    StaticFunctions.createErrorAlert(msg: msg)
+//
+//                }
+//            }, id: self.asks[indexPath.row].id ?? 0)
+//        }
+//        cell.zoomBtclosure = {
+//            if let quesPicture = self.asks[indexPath.row].pic{
+//                
+//                let zoomCtrl = VKImageZoom()
+//                zoomCtrl.image_url = URL.init(string: "\(Constants.IMAGE_URL)\(quesPicture)")
+//                print("zoomCtrl.image_url ====> ",zoomCtrl.image_url , "\(Constants.IMAGE_URL)\(quesPicture)")
+//                self.present(zoomCtrl, animated: true, completion: nil)
+//                
+//            }
+//        }
+//        return cell
+//    }
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let vc = UIStoryboard(name: CATEGORRY_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: COMMENT_REPLY_VCID) as! AskRepliesViewController
+//        vc.data.question = self.asks[indexPath.row]
+//        self.navigationController?.pushViewController(vc, animated: true)
+//        
+//    }
+//   
+//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//        if indexPath.row == (asks.count-1) && !isTheLast{
+//            page+=1
+//            getData()
+//
+//        }
+//    }
+//    
+//
+//}
+//MARK: UICollectionView DataSource
+extension SearchAskViewController:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+    
+    
+    
+     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+         return 10
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! AskTableViewCell
-        cell.setData(ask: asks[indexPath.row])
-        cell.showUserBtclosure = {
-            let vc = UIStoryboard(name: PROFILE_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: OTHER_USER_PROFILE_VCID) as! OtherUserProfileVC
-            vc.navigationController?.navigationBar.isHidden = true
-            vc.OtherUserId = self.asks[indexPath.row].userId ?? 0
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
-        cell.deleteBtclosure = {
-            CategoryController.shared.deleteAsk(completion: {
-                check, msg in
-                if check == 0{
-                    StaticFunctions.createSuccessAlert(msg: msg)
-                    self.asks.removeAll()
-
-                    self.page = 1
-                    self.isTheLast = false
-                    self.getData()
-                }else{
-                    StaticFunctions.createErrorAlert(msg: msg)
-
-                }
-            }, id: self.asks[indexPath.row].id ?? 0)
-        }
-        cell.zoomBtclosure = {
-            if let quesPicture = self.asks[indexPath.row].pic{
-                
-                let zoomCtrl = VKImageZoom()
-                zoomCtrl.image_url = URL.init(string: "\(Constants.IMAGE_URL)\(quesPicture)")
-                print("zoomCtrl.image_url ====> ",zoomCtrl.image_url , "\(Constants.IMAGE_URL)\(quesPicture)")
-                self.present(zoomCtrl, animated: true, completion: nil)
-                
-            }
-        }
+     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SearchStoreCell", for: indexPath) as? StoreCollectionViewCell else {return UICollectionViewCell()}
+        // cell.setData(store: storesList[indexPath.item])
         return cell
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = UIStoryboard(name: CATEGORRY_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: COMMENT_REPLY_VCID) as! AskRepliesViewController
-        vc.data.question = self.asks[indexPath.row]
-        self.navigationController?.pushViewController(vc, animated: true)
-        
-    }
-   
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.row == (asks.count-1) && !isTheLast{
-            page+=1
-            getData()
-
-        }
+    
+     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: (collectionView.bounds.width/2)-10, height: 175)
     }
     
-
+     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+         let storeProfile = StoreProfileVC.instantiate()
+         storeProfile.otherUserId = storesList[indexPath.item].userID ?? 0
+         storeProfile.countryId = storesList[indexPath.item].countryID ?? 6
+         navigationController?.pushViewController(storeProfile, animated: true)
+    }
+    
 }
 
 extension SearchAskViewController{
@@ -136,9 +166,9 @@ extension SearchAskViewController: ContentDelegate{
         self.page = 1
             self.isTheLast = false
         textStackView.isHidden = isHidden
-        self.tableView.isHidden = isHidden
+//        self.tableView.isHidden = isHidden
 
-        getData()
+//        getData()
     }
     
     

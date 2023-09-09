@@ -125,6 +125,24 @@ class StoresController {
                 multipart.append((value as AnyObject).description.data(using: String.Encoding.utf8)!, withName: key)
             }
         }, to: link,headers: header)
+        
+//        .responseJSON { response in
+//            switch response.result {
+//            case .success(let value):
+//                print(value)
+//                if let dictionary = value as? [String: Any] {
+//                    print("Received dictionary is:", dictionary)
+//                    if let message = dictionary["message"] {
+//                        print("Type of message:",message)
+//                    }
+//                }
+//            case .failure(let error):
+//                print("Error: \(error)")
+//                if let data = response.data {
+//                    let str = String(data: data, encoding: .utf8)
+//                    print("Failed response data:", str ?? "")
+//                }
+//            }
 
         .responseDecodable(of:UpdateStoreModel.self){ response in
 

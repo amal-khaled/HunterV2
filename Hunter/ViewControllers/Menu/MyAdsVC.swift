@@ -105,6 +105,7 @@ class MyAdsVC: UIViewController {
         featuredPendingView.isHidden = true
     }
     @IBAction func didTapFeaturedPendingBtnAction(_ sender: Any) {
+        products = []
         getProductsByUser(with: "unpaid_feature")
         
         activatedLbl.textColor = UIColor(named: "#929292")
@@ -123,7 +124,7 @@ class MyAdsVC: UIViewController {
     
     
     @IBAction func didTapAddAdButton(_ sender: UIButton) {
-        let vc = UIStoryboard(name: "", bundle: nil).instantiateViewController(withIdentifier: "AddAdvsVC") as! AddAdvsVC
+        let vc = UIStoryboard(name: ADVS_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: "AddAdvsVC") as! AddAdvsVC
         
         navigationController?.pushViewController(vc, animated: true)
     }

@@ -13,14 +13,15 @@ class PayingVC: UIViewController {
     @IBOutlet weak var webView: WKWebView!
     
     var paymentId = 0
-    
+    var urlString:String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Load a URL
-             if let url = URL(string: "https://example.com") {
+             if let url = URL(string: urlString) {
                  let request = URLRequest(url: url)
                  webView.load(request)
+                 
              }
          
     }
@@ -28,6 +29,7 @@ class PayingVC: UIViewController {
 
     // MARK: - Navigation
     @IBAction func didTapBackButton(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
     }
     
     
