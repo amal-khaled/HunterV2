@@ -110,6 +110,8 @@ class Constants {
     static let REPORT_REPLY_URL = DOMAIN + "reply_reports"
     static let DELETE_REPLY_URL = DOMAIN + "delete_comment_on_rates"
     static let PAYING_FEATURED_AD_URL = DOMAIN + "prods/pay/"
+    static let PAYING_FEATURED_AD_CALLBACK_URL = DOMAIN + "prods/callback"
+    
 
 //delete_comment_on_rates
     

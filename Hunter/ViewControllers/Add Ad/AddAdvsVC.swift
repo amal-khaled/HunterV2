@@ -143,6 +143,7 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
     var selectedIndexPath: IndexPath = [0,0]
     var descText:String = ""
     var isFeature = 0
+    var invoiceURL = ""
     //MARK: App LifeCycle
     
     override func viewDidLoad() {
@@ -518,6 +519,7 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
         },to:Constants.ADDADVS_URL)
         .responseDecodable(of:AddAdvsModel.self){ response in
 //            Loading().finishProgress(self)
+            self.AddAdvsButton.stopAnimation()
             switch response.result {
             case .success(let data):
                 print("success")
@@ -529,7 +531,9 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
                         PayingController.shared.payingFeaturedAd(completion: { payment, check, message in
                             if check == 0{
                                 let vc = UIStoryboard(name: ADVS_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: "PayingVC") as! PayingVC
+                                vc.delegate  = self
                                 vc.urlString = payment?.data.invoiceURL ?? ""
+                                self.invoiceURL = "\(payment?.data.invoiceID ?? 0)"
                                 self.navigationController?.pushViewController(vc, animated: true)
                             }else{
                                 StaticFunctions.createErrorAlert(msg: message)
@@ -565,9 +569,10 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
     
     private func goToSuccessfullAddAd(){
         let vc = UIStoryboard(name: ADVS_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: SUCCESS_ADDING_VCID) as! SuccessAddingVC
-        vc.modalPresentationStyle = .overFullScreen
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .overFullScreen
         vc.isFromHome = self.isFromHome
-        self.present(vc, animated: false)
+        self.present(nav, animated: false)
     }
     }
     
@@ -1068,4 +1073,20 @@ extension AddAdvsVC : ChooseAdTyDelegate {
         createAds(isFeatured: 1)
     }
     
+}
+extension AddAdvsVC:PayingDelegate{
+    
+    func passPaymentId(with paymentId: String) {
+        PayingController.shared.callBackFeaturedAds(completion: { payment, check, message in
+            if check == 0{
+                print(message)
+            }else{
+                print(message)
+                StaticFunctions.createErrorAlert(msg: message)
+            }
+        }, invoiceId: invoiceURL, paymentId: paymentId)
+    }
+    func didPayingSuccess() {
+        goToSuccessfullAddAd()
+    }
 }

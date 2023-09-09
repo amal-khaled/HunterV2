@@ -30,22 +30,31 @@ class SuccessAddingVC: UIViewController {
     //MARK:  IBActions
     
     @IBAction func didTapuploadNewAds(_ sender: UIButton) {
+        //TODO:   handle this case going to AddAdsVC on tapBar
         dismiss(animated: false)
     }
     @IBAction func didTapGoToMyAds(_ sender: UIButton) {
-//        if isFromHome {
-//            self.navigationController?.popToRootViewController(animated: true)
-//        }else{
-//            NotificationCenter.default.post(name: NSNotification.Name(rawValue:"goHome"), object: nil)
-//            self.navigationController?.popToRootViewController(animated: true)
-//
-//        }
+
         
         if let vc = UIStoryboard(name: MENU_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: MYADS_VCID) as? MyAdsVC {
-            vc.modalPresentationStyle = .fullScreen
-            vc.userId = AppDelegate.currentUser.id ?? 0
-            navigationController?.pushViewController(vc, animated: true)
+            print("ViewController instantiated successfully.")
             
+            vc.modalPresentationStyle = .fullScreen
+            if let currentUserID = AppDelegate.currentUser.id {
+                print("User ID found: \(currentUserID)")
+                vc.userId = currentUserID
+            } else {
+                print("User ID is nil or 0.")
+            }
+            
+            if let navigationController = navigationController {
+                navigationController.pushViewController(vc, animated: true)
+                print("Pushing view controller.")
+            } else {
+                print("Navigation controller is nil.")
+            }
+        } else {
+            print("Failed to instantiate ViewController.")
         }
         
     }

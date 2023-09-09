@@ -193,6 +193,15 @@ extension MyAdsVC:MyAdsCollectionViewCellDelegate {
     func shareAdCell(buttonDidPressed indexPath: IndexPath) {
         if products[indexPath.row].status == "unpaid_feature" {
             //GO To Pay
+            PayingController.shared.payingFeaturedAd(completion: { payment, check, message in
+                if check == 0{
+                    let vc = UIStoryboard(name: ADVS_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: "PayingVC") as! PayingVC
+                    vc.urlString = payment?.data.invoiceURL ?? ""
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }else{
+                    StaticFunctions.createErrorAlert(msg: message)
+                }
+            }, countryId: AppDelegate.currentUser.countryId ?? 5, productId: products[indexPath.item].id ?? 0)
         }else{
             shareContent(text:Constants.DOMAIN + "\(products[indexPath.row].id ?? 0)")
         }

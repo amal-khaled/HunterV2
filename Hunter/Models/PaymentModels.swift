@@ -24,3 +24,14 @@ struct payingObject: Codable {
         case invoiceID = "invoiceId"
     }
 }
+
+
+struct CallBackModel:Codable {
+    let message: String?
+    let data: CallBackObject?
+    let success, statusCode: Int?
+}
+
+struct CallBackObject:Codable{
+    
+}

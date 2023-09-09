@@ -8,12 +8,20 @@
 import UIKit
 import WebKit
 
+protocol PayingDelegate:AnyObject{
+    func didPayingSuccess()
+    func passPaymentId(with paymentId:String)
+}
+
 class PayingVC: UIViewController {
 
     @IBOutlet weak var webView: WKWebView!
     
-    var paymentId = 0
+    var paymentId = ""
     var urlString:String = ""
+    var isSuccess = false
+    
+    weak var delegate:PayingDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,7 +41,43 @@ class PayingVC: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
-    
+    func fetchInvoiceStatus(from url: URL) {
+//        guard let url = URL(string: urlString) else { return }
+        
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if let error = error {
+                print("Failed to fetch data: \(error)")
+                return
+            }
+            
+            if let data = data {
+                do {
+                    if let jsonObj = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any],
+                       let dataObj = jsonObj["Data"] as? [String: Any],
+                       let invoiceStatus = dataObj["InvoiceStatus"] as? String {
+                        
+                        print(invoiceStatus)
+                        // Now you have 'invoiceStatus' to check if user actually paid or not
+                        DispatchQueue.main.async {
+                            if invoiceStatus == "Paid" {
+                                // Payment was successful, show SuccessfulVC
+                                self.delegate?.didPayingSuccess()
+                                self.delegate?.passPaymentId(with: self.paymentId )
+                                self.navigationController?.popViewController(animated: true)
+                                
+                            }else{
+                                self.navigationController?.popViewController(animated: true)
+                            }
+                        }
+                    }
+                } catch {
+                    print("Failed to parse JSON: \(error)")
+                }
+            }
+        }
+        
+        task.resume()
+    }
     
     
 
@@ -51,37 +95,32 @@ extension PayingVC :WKNavigationDelegate {
                // Parse the URL to get the paymentId
                let components = URLComponents(url: url, resolvingAgainstBaseURL: false)
                let paymentId = components?.queryItems?.first(where: { $0.name == "PaymentID" })?.value
-               
+//            delegate?.passPaymentId(with: paymentId ?? "Unknown")
+            self.paymentId = paymentId ?? "Unknown"
                print("Payment ID: \(paymentId ?? "Unknown")")
                // Cancel the navigation
                decisionHandler(.allow)
                return
            }
         
-      if let url = navigationAction.request.url,
-         url.absoluteString.contains("callback") {
-        
-        // Pop the view controller
-        navigationController?.popViewController(animated: true)
+     
 
-        // Cancel the navigation
-        decisionHandler(.cancel)
-        return
-      }
+        
+        if !isSuccess {
+            if let url = navigationAction.request.url,
+               url.absoluteString.contains("callback") {
+              
+                fetchInvoiceStatus(from: url)
+                
+              // Cancel the navigation
+              decisionHandler(.cancel)
+              return
+            }
+        }
       
       // Allow the navigation
       decisionHandler(.allow)
     }
-    
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        webView.evaluateJavaScript("document.getElementById('paymentId').value") { (result, error) in
-            if let error = error {
-                print("JavaScript evaluation error: \(error)")
-            } else if let paymentId = result as? String {
-                print("Got paymentId: \(paymentId)")
-                // Now you can use the paymentId
-            }
-        }
-    }
+
    
 }

@@ -124,6 +124,7 @@ class MyAdsCollectionViewCell: UICollectionViewCell {
         
         if product.status == "unpaid_feature" {
             shareLabel.text = "Pay Now".localize
+            shareLabel.font = UIFont(name: "Tajawal-Regular", size: 10)
         }
     }
     
