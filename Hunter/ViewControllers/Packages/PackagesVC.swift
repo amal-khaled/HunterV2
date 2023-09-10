@@ -16,7 +16,7 @@ class PackagesVC: UIViewController {
         
         return controller
     }
-
+    
     //MARK: IBOulets
     
     @IBOutlet weak var tableView: UITableView!
@@ -45,28 +45,30 @@ class PackagesVC: UIViewController {
     private var diamondList:PackageObject?
     private var isGold = false
     private var isDiamond = false
-    
+    private var invoiceURL = ""
+    private var planId = 1
+    private var monthCount = 3
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
         fetchAllPlans()
         startFlashAnimation()
         
-//        // Set the rowHeight to automaticDimension
-//            tableView.rowHeight = UITableView.automaticDimension
-//            tableView.estimatedRowHeight = 60 // Provide an estimated row height
+        //        // Set the rowHeight to automaticDimension
+        //            tableView.rowHeight = UITableView.automaticDimension
+        //            tableView.estimatedRowHeight = 60 // Provide an estimated row height
         
-//        tableViewHeightConstraint.constant = 200
+        //        tableViewHeightConstraint.constant = 200
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         tableView.reloadData()
         tableView.layoutIfNeeded()
-       tableViewHeightConstraint.constant = tableView.contentSize.height
+        tableViewHeightConstraint.constant = tableView.contentSize.height
     }
     
     private func configureView(){
-//        bestSellerFlag.shake()
+        //        bestSellerFlag.shake()
         setupButton(for: silverButton, isTapped: true)
         setupButton(for: goldButton, isTapped: false)
         setupButton(for: diamondButton, isTapped: false)
@@ -75,7 +77,7 @@ class PackagesVC: UIViewController {
     }
     
     
-  private func setupButton(for button: UIButton, isTapped:Bool){
+    private func setupButton(for button: UIButton, isTapped:Bool){
         if isTapped {
             button.setTitleColor(.white, for: .normal)
             button.backgroundColor = UIColor(named: "#0093F5")
@@ -103,20 +105,20 @@ class PackagesVC: UIViewController {
     }
     
     func toggleFlashView() {
-          UIView.transition(with: bestSellerFlag, duration: 1, options: .transitionCrossDissolve, animations: {
-              self.bestSellerFlag.isHidden = !self.bestSellerFlag.isHidden
-          }, completion: nil)
-      }
-
-      func startFlashAnimation() {
-          // Use a Timer to repeatedly toggle the flashView's visibility.
-          let timer = Timer.scheduledTimer(withTimeInterval: 0.7, repeats: true) { [weak self] timer in
-              self?.toggleFlashView()
-          }
-
-          // Add the timer to the main run loop to start the animation immediately.
-          RunLoop.main.add(timer, forMode: .common)
-      }
+        UIView.transition(with: bestSellerFlag, duration: 1, options: .transitionCrossDissolve, animations: {
+            self.bestSellerFlag.isHidden = !self.bestSellerFlag.isHidden
+        }, completion: nil)
+    }
+    
+    func startFlashAnimation() {
+        // Use a Timer to repeatedly toggle the flashView's visibility.
+        let timer = Timer.scheduledTimer(withTimeInterval: 0.7, repeats: true) { [weak self] timer in
+            self?.toggleFlashView()
+        }
+        
+        // Add the timer to the main run loop to start the animation immediately.
+        RunLoop.main.add(timer, forMode: .common)
+    }
     
     
     func fetchAllPlans(){
@@ -143,7 +145,13 @@ class PackagesVC: UIViewController {
         }, countryId: 0)
     }
     
-
+    
+    private func goToSuccessPlanfullSubscribe(){
+        let vc = SuccessPlanSucbscribeVC.instantiate()
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .overFullScreen
+        present(nav, animated: false)
+    }
     
   
     @IBAction func didTapBackButton(_ sender: UIButton) {
@@ -152,6 +160,7 @@ class PackagesVC: UIViewController {
     }
     
     @IBAction func didTapSilverButton(_ sender: UIButton) {
+        planId = silverList?.id ?? 0
         isGold = false
         isDiamond = false
         setupButton(for: silverButton, isTapped: true)
@@ -161,6 +170,7 @@ class PackagesVC: UIViewController {
     }
     
     @IBAction func didTapGoldButton(_ sender: UIButton) {
+        planId = goldList?.id ?? 0
         isGold = true
         isDiamond = false
         setupButton(for: silverButton, isTapped: false)
@@ -170,6 +180,7 @@ class PackagesVC: UIViewController {
     }
     
     @IBAction func didTapDiamondButton(_ sender: UIButton) {
+        planId = diamondList?.id ?? 0
         isGold = false
         isDiamond = true
         setupButton(for: silverButton, isTapped: false)
@@ -179,22 +190,44 @@ class PackagesVC: UIViewController {
     }
     
     @IBAction func didTapThreeMonthButton(_ sender: UIButton) {
+        monthCount = 3
         handlePackegesPlanSelected(for: threeMonthViewContainer, label: threeLabel, rondedView: threeMonthRoundedView)
         handlePackegesPlanNotSelected(for: sixMonthViewContainer, label: sixLabel, rondedView: sixMonthRoundedView)
         handlePackegesPlanNotSelected(for: twelveMonthViewContainer, label: twelveLabel, rondedView: twelveMonthRoundedView)
     }
     
     @IBAction func didTapSixMonthButton(_ sender: UIButton) {
+        monthCount = 6
         handlePackegesPlanSelected(for: sixMonthViewContainer, label: sixLabel, rondedView: sixMonthRoundedView)
         handlePackegesPlanNotSelected(for: threeMonthViewContainer, label: threeLabel, rondedView: threeMonthRoundedView)
         handlePackegesPlanNotSelected(for: twelveMonthViewContainer, label: twelveLabel, rondedView: twelveMonthRoundedView)
     }
     
     @IBAction func didTapTwelveutton(_ sender: UIButton) {
+        monthCount = 12
         handlePackegesPlanSelected(for: twelveMonthViewContainer, label: twelveLabel, rondedView: twelveMonthRoundedView)
         handlePackegesPlanNotSelected(for: threeMonthViewContainer, label: threeLabel, rondedView: threeMonthRoundedView)
         handlePackegesPlanNotSelected(for: sixMonthViewContainer, label: sixLabel, rondedView: sixMonthRoundedView)
     }
+    
+    
+    @IBAction func didTapBuyNowButton(_ sender: UIButton) {
+        
+        PayingController.shared.payingPlan(completion: { payment, check, message in
+            if check == 0{
+                let vc = UIStoryboard(name: ADVS_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: "PayingVC") as! PayingVC
+                vc.planDelegate  = self
+                vc.isFeaturedAd = false
+                vc.urlString = payment?.data.invoiceURL ?? ""
+                self.invoiceURL = "\(payment?.data.invoiceID ?? 0)"
+                self.navigationController?.pushViewController(vc, animated: true)
+            }else{
+                StaticFunctions.createErrorAlert(msg: message)
+            }
+        }, countryId: AppDelegate.currentUser.countryId ?? 5, planId:planId,month: monthCount)
+    }
+    
+    
     
 }
 
@@ -215,24 +248,35 @@ extension PackagesVC : UITableViewDataSource,UITableViewDelegate{
         
         if isGold {
             if let features = goldList?.features, indexPath.row < features.count {
-                        cell.setData(from: features[indexPath.row], index: indexPath.row)
-                    }
-//            cell.setData(from: silverFeature[indexPath.row], index: indexPath.row)
+                cell.setData(from: features[indexPath.row], index: indexPath.row)
+            }
+            //            cell.setData(from: silverFeature[indexPath.row], index: indexPath.row)
         }else if isDiamond {
             if let features = diamondList?.features, indexPath.row < features.count {
-                        cell.setData(from: features[indexPath.row], index: indexPath.row)
-                    }
-//            cell.setData(from: silverFeature[indexPath.row], index: indexPath.row)
+                cell.setData(from: features[indexPath.row], index: indexPath.row)
+            }
+            //            cell.setData(from: silverFeature[indexPath.row], index: indexPath.row)
         }else{
             if let features = silverList?.features, indexPath.row < features.count {
-                        cell.setData(from: features[indexPath.row], index: indexPath.row)
-                    }
-//            cell.setData(from: silverFeature[indexPath.row], index: indexPath.row)
+                cell.setData(from: features[indexPath.row], index: indexPath.row)
+            }
+            //            cell.setData(from: silverFeature[indexPath.row], index: indexPath.row)
         }
         return cell
     }
-    
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return tableView.estimatedRowHeight
-//    }
+}
+extension PackagesVC:PayingPlanDelegate{
+    func passPaymentId(with paymentId: String) {
+        PayingController.shared.callBackPlanSubscribe(completion: { payment, check, message in
+            if check == 0{
+                print(message)
+            }else{
+                print(message)
+                StaticFunctions.createErrorAlert(msg: message)
+            }
+        }, invoiceId: invoiceURL, paymentId: paymentId)
+    }
+    func didPayingSuccess() {
+        goToSuccessPlanfullSubscribe()
+    }
 }

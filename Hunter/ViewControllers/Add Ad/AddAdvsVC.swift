@@ -532,6 +532,7 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
                             if check == 0{
                                 let vc = UIStoryboard(name: ADVS_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: "PayingVC") as! PayingVC
                                 vc.delegate  = self
+                                vc.isFeaturedAd = true
                                 vc.urlString = payment?.data.invoiceURL ?? ""
                                 self.invoiceURL = "\(payment?.data.invoiceID ?? 0)"
                                 self.navigationController?.pushViewController(vc, animated: true)

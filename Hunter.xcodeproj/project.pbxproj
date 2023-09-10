@@ -226,6 +226,7 @@
 		C8C149502A84E7F00055DC7B /* CreditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C1494F2A84E7F00055DC7B /* CreditVC.swift */; };
 		C8C6C6392AAC9CCB0049FBFB /* PayingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C6C6382AAC9CCB0049FBFB /* PayingController.swift */; };
 		C8C6C63B2AAC9DA30049FBFB /* PaymentModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C6C63A2AAC9DA30049FBFB /* PaymentModels.swift */; };
+		C8C6C63D2AAD9E240049FBFB /* SuccessPlanSucbscribeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C6C63C2AAD9E240049FBFB /* SuccessPlanSucbscribeVC.swift */; };
 		C8C714FC2A646805006C5AFE /* FollowersAndFollowingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C714FB2A646805006C5AFE /* FollowersAndFollowingsVC.swift */; };
 		C8C715002A646981006C5AFE /* FollowAndFollowersTapsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C714FE2A646981006C5AFE /* FollowAndFollowersTapsCell.swift */; };
 		C8C715012A646981006C5AFE /* FollowAndFollowersTapsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8C714FF2A646981006C5AFE /* FollowAndFollowersTapsCell.xib */; };
@@ -483,6 +484,7 @@
 		C8C1494F2A84E7F00055DC7B /* CreditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditVC.swift; sourceTree = "<group>"; };
 		C8C6C6382AAC9CCB0049FBFB /* PayingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayingController.swift; sourceTree = "<group>"; };
 		C8C6C63A2AAC9DA30049FBFB /* PaymentModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModels.swift; sourceTree = "<group>"; };
+		C8C6C63C2AAD9E240049FBFB /* SuccessPlanSucbscribeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessPlanSucbscribeVC.swift; sourceTree = "<group>"; };
 		C8C714FB2A646805006C5AFE /* FollowersAndFollowingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersAndFollowingsVC.swift; sourceTree = "<group>"; };
 		C8C714FE2A646981006C5AFE /* FollowAndFollowersTapsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowAndFollowersTapsCell.swift; sourceTree = "<group>"; };
 		C8C714FF2A646981006C5AFE /* FollowAndFollowersTapsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowAndFollowersTapsCell.xib; sourceTree = "<group>"; };
@@ -1164,6 +1166,7 @@
 			isa = PBXGroup;
 			children = (
 				C8C7E8AA2AA480750093022B /* PackagesVC.swift */,
+				C8C6C63C2AAD9E240049FBFB /* SuccessPlanSucbscribeVC.swift */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
@@ -1514,6 +1517,7 @@
 				C89D12852A10209200669FD9 /* AddAdvsController.swift in Sources */,
 				C8AD40EB2A2B110F00E464DB /* CondsVC.swift in Sources */,
 				C85FFCA42A260A0F000C426D /* ChatVC.swift in Sources */,
+				C8C6C63D2AAD9E240049FBFB /* SuccessPlanSucbscribeVC.swift in Sources */,
 				C8191F992A40748D0057AA28 /* FavouritesVC.swift in Sources */,
 				65B5505F2A1CB640002D2264 /* FollowerTableViewCell.swift in Sources */,
 				C8CCE33E2A19E33B00FFAFB2 /* ProfileController.swift in Sources */,
