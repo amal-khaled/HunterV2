@@ -138,7 +138,8 @@ class StoreProfileVC: UIViewController {
         print("nothing")
     }
     @IBAction func didTapStoresPackagesButton(_ sender: UIButton) {
-        
+        let packagesVC = PackagesVC.instantiate()
+        navigationController?.pushViewController(packagesVC, animated: true)
         
     }
     

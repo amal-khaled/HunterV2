@@ -339,6 +339,7 @@ class HomeViewController: UIViewController {
     
     @IBAction func didTapMoreStores(_ sender: UIButton) {
         
+        tabBarController?.selectedIndex = 2
     }
 }
 extension HomeViewController{

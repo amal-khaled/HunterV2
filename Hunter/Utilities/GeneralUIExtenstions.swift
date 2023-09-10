@@ -724,7 +724,7 @@ extension UIImageView{
     func setImageWithLoading(url: String){
         self.sd_imageIndicator = SDWebImageActivityIndicator.gray
         print("\(Constants.IMAGE_URL)\(url)")
-        self.sd_setImage(with: URL(string: "\(Constants.IMAGE_URL)\(url)"))
+        self.sd_setImage(with: URL(string: "\(Constants.IMAGE_URL)\(url)"),placeholderImage: UIImage(named: "placeHolderImage"))
     }
     
     

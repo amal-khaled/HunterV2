@@ -235,6 +235,7 @@
                                                                                     <subviews>
                                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShadwanComapnyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="P0J-dd-Okd">
                                                                                             <rect key="frame" x="0.0" y="0.0" width="171" height="104"/>
+                                                                                            <color key="tintColor" name="#9C9C9C"/>
                                                                                             <userDefinedRuntimeAttributes>
                                                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                                                     <real key="value" value="15"/>
