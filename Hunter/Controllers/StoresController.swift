@@ -144,17 +144,16 @@ class StoresController {
 //                }
 //            }
 
-//        .responseDecodable(of:UpdateStoreModel.self){ response in
-        .responseJSON { response in
-print( response.result)
-//            switch response.result {
-//            case .success(let data):
-//                print(data.message ?? "")
-//                completion(true, "Updated".localize)
-//            case .failure(let error):
-//                print(error)
-//                completion(false,SERVER_ERROR)
-//            }
+        .responseDecodable(of:UpdateStoreModel.self){ response in
+
+            switch response.result {
+            case .success(let data):
+                print(data.message ?? "")
+                completion(true, "Updated".localize)
+            case .failure(let error):
+                print(error)
+                completion(false,SERVER_ERROR)
+            }
         }
     }
 }
