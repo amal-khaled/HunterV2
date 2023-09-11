@@ -192,7 +192,7 @@ extension LoginViewController{
 
                  if check == 0{
                      if let userObject = data {
-                         print(userObject.data.codeVerify)
+//                         print(userObject.data.codeVerify)
                          if userObject.data.codeVerify == 1 {
                              AppDelegate.currentUser = userObject.data ?? User()
                              AppDelegate.defaults.set( userObject.token ?? "", forKey: "token")
