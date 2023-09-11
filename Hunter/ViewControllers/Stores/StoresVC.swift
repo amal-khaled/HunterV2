@@ -34,7 +34,7 @@ class StoresVC: UIViewController {
     //MARK: - App Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        searchTextField.delegate = self
         pagerView.delegate = self
         pagerView.dataSource = self
         getStores()
@@ -171,4 +171,18 @@ extension StoresVC {
             }
         }, countryId: countryId)
     }
+}
+extension StoresVC:UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            // Perform the segue when the Return key is pressed
+        let vc = UIStoryboard(name: SEARCH_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: "search") as! SearchViewController
+        if searchTextField.text.safeValue != "" {
+            vc.searchText = searchTextField.text!
+            navigationController?.pushViewController(vc, animated: true)
+        }else{
+            StaticFunctions.createErrorAlert(msg: "Please type in anything you want to search for in Hunter".localize)
+        }
+       
+            return true
+        }
 }

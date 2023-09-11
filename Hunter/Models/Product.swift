@@ -99,6 +99,7 @@ struct Product: Codable{
     var isStore:Bool?
     var isFeature:Bool?
     var status:String?
+    var views:Int?
     
     enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -133,6 +134,7 @@ struct Product: Codable{
         case isStore = "is_store"
         case isFeature = "is_feature"
         case status = "status"
+        case views = "views"
     }
 }
 struct ProductImage: Codable{

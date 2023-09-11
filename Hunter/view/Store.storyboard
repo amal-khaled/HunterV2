@@ -138,7 +138,7 @@
                                                                                 </constraints>
                                                                             </imageView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6Y-Pp-ew7">
-                                                                                <rect key="frame" x="74.999999999999986" y="11.666666666666657" width="94.000000000000014" height="17"/>
+                                                                                <rect key="frame" x="74.999999999999986" y="10" width="96.000000000000014" height="20"/>
                                                                                 <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="17"/>
                                                                                 <color key="textColor" name="blackColor"/>
                                                                                 <nil key="highlightedColor"/>
@@ -2673,14 +2673,14 @@ To get free ads</string>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dmP-MM-Vx7">
-                                        <rect key="frame" x="333" y="131" width="45" height="210"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dmP-MM-Vx7">
+                                        <rect key="frame" x="343" y="103" width="35" height="140"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5x-he-d11">
-                                                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="45" id="G2Y-p0-1PA"/>
-                                                    <constraint firstAttribute="height" constant="45" id="s3d-wk-ej6"/>
+                                                    <constraint firstAttribute="width" constant="35" id="G2Y-p0-1PA"/>
+                                                    <constraint firstAttribute="height" constant="35" id="s3d-wk-ej6"/>
                                                 </constraints>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -2690,7 +2690,7 @@ To get free ads</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVQ-ZS-Pcz" userLabel="share Button">
-                                                <rect key="frame" x="0.0" y="55" width="45" height="45"/>
+                                                <rect key="frame" x="0.0" y="35" width="35" height="35"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="shareProfile"/>
@@ -2699,17 +2699,16 @@ To get free ads</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6HL-J6-GdO" userLabel="Report Button">
-                                                <rect key="frame" x="0.0" y="110" width="45" height="45"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.0" y="70" width="35" height="35"/>
                                                 <color key="tintColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="flag.fill" catalog="system"/>
+                                                <state key="normal" image="flag-image"/>
                                                 <connections>
                                                     <action selector="didTapReportButton:" destination="GKQ-C2-D3L" eventType="touchUpInside" id="YEZ-7k-Y9Q"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJP-ko-BUH" userLabel="Block Button">
-                                                <rect key="frame" x="0.0" y="165" width="45" height="45"/>
+                                                <rect key="frame" x="0.0" y="105" width="35" height="35"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -2753,7 +2752,7 @@ To get free ads</string>
                                     <constraint firstAttribute="height" constant="300" id="6mQ-mL-HXR"/>
                                     <constraint firstItem="AWL-TP-We5" firstAttribute="top" secondItem="08O-Ck-7oc" secondAttribute="top" constant="90" id="8ST-OU-AJ4"/>
                                     <constraint firstAttribute="leading" secondItem="dBo-nL-6ae" secondAttribute="leading" id="CgV-RQ-D7g"/>
-                                    <constraint firstItem="dmP-MM-Vx7" firstAttribute="top" secondItem="dBo-nL-6ae" secondAttribute="bottom" constant="8" id="EyP-pb-lTW"/>
+                                    <constraint firstItem="dmP-MM-Vx7" firstAttribute="top" secondItem="dBo-nL-6ae" secondAttribute="bottom" constant="-20" id="EyP-pb-lTW"/>
                                     <constraint firstAttribute="trailing" secondItem="dmP-MM-Vx7" secondAttribute="trailing" constant="15" id="GA5-23-DEG"/>
                                     <constraint firstItem="AWL-TP-We5" firstAttribute="centerX" secondItem="08O-Ck-7oc" secondAttribute="centerX" id="NTg-8b-bKc"/>
                                     <constraint firstAttribute="trailing" secondItem="kR5-Kq-jKH" secondAttribute="trailing" id="RrW-Qg-nR0"/>
@@ -3351,7 +3350,7 @@ To get free ads</string>
                                                                                             <rect key="frame" x="10" y="97.333333333333329" width="298" height="16"/>
                                                                                             <subviews>
                                                                                                 <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JCc-87-ujc">
-                                                                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="16"/>
+                                                                                                    <rect key="frame" x="0.0" y="0.0" width="32" height="16"/>
                                                                                                     <subviews>
                                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مصر" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="Q6w-3Y-Tgj">
                                                                                                             <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
@@ -3360,7 +3359,7 @@ To get free ads</string>
                                                                                                             <nil key="highlightedColor"/>
                                                                                                         </label>
                                                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="place_black_24dp-gray" translatesAutoresizingMaskIntoConstraints="NO" id="gik-0a-4Y8">
-                                                                                                            <rect key="frame" x="24" y="0.0" width="16" height="16"/>
+                                                                                                            <rect key="frame" x="24" y="0.0" width="8" height="16"/>
                                                                                                             <constraints>
                                                                                                                 <constraint firstAttribute="height" constant="16" id="Qzh-lU-UOc"/>
                                                                                                                 <constraint firstAttribute="width" constant="16" id="aFf-jl-K4G"/>
@@ -3369,23 +3368,23 @@ To get free ads</string>
                                                                                                     </subviews>
                                                                                                 </stackView>
                                                                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bd0-Ur-cnW">
-                                                                                                    <rect key="frame" x="218.66666666666666" y="0.0" width="79.333333333333343" height="16"/>
+                                                                                                    <rect key="frame" x="219.33333333333334" y="0.0" width="78.666666666666657" height="16"/>
                                                                                                     <subviews>
                                                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Path 5" translatesAutoresizingMaskIntoConstraints="NO" id="z06-gg-iKr">
-                                                                                                            <rect key="frame" x="0.0" y="0.6666666666666714" width="15.666666666666666" height="15"/>
+                                                                                                            <rect key="frame" x="0.0" y="0.6666666666666714" width="15" height="15"/>
                                                                                                             <constraints>
                                                                                                                 <constraint firstAttribute="height" constant="15" id="Sk5-jn-JeO"/>
                                                                                                                 <constraint firstAttribute="width" constant="15" id="ZFU-nb-feV"/>
                                                                                                             </constraints>
                                                                                                         </imageView>
                                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="احمد محمد" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="8FK-Ac-lgh">
-                                                                                                            <rect key="frame" x="23.666666666666682" y="2.6666666666666705" width="35.666666666666657" height="10.666666666666664"/>
+                                                                                                            <rect key="frame" x="22.999999999999996" y="2.6666666666666705" width="35.666666666666657" height="10.666666666666664"/>
                                                                                                             <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="9"/>
                                                                                                             <color key="textColor" name="#0EBFB1"/>
                                                                                                             <nil key="highlightedColor"/>
                                                                                                         </label>
                                                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon feather-user" translatesAutoresizingMaskIntoConstraints="NO" id="Pdx-wr-E9F">
-                                                                                                            <rect key="frame" x="67.333333333333343" y="0.6666666666666714" width="12" height="15"/>
+                                                                                                            <rect key="frame" x="66.666666666666657" y="0.6666666666666714" width="12" height="15"/>
                                                                                                             <constraints>
                                                                                                                 <constraint firstAttribute="height" constant="15" id="TzU-Dx-9Nf"/>
                                                                                                                 <constraint firstAttribute="width" constant="12" id="qul-AY-o4L"/>
@@ -3952,7 +3951,7 @@ To get free ads</string>
         <image name="eemail" width="64" height="64"/>
         <image name="emailIcon" width="35" height="35"/>
         <image name="eye" catalog="system" width="128" height="79"/>
-        <image name="flag.fill" catalog="system" width="128" height="121"/>
+        <image name="flag-image" width="44.333332061767578" height="40.666667938232422"/>
         <image name="instagramSocial" width="23" height="23"/>
         <image name="instgramImage" width="41" height="41"/>
         <image name="locationSocial" width="19" height="26.333333969116211"/>

@@ -23,21 +23,14 @@ class SearchAskViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        getData()
-        // Do any additional setup after loading the view.
+        collectionView.register(UINib(nibName: "SearchStoreCell", bundle: nil), forCellWithReuseIdentifier: "SearchStoreCell")
     }
     
     
     
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 //extension SearchAskViewController: UITableViewDelegate, UITableViewDataSource{
@@ -110,7 +103,7 @@ extension SearchAskViewController:UICollectionViewDelegate,UICollectionViewDataS
     }
     
      func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SearchStoreCell", for: indexPath) as? StoreCollectionViewCell else {return UICollectionViewCell()}
+         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SearchStoreCell", for: indexPath) as? SearchStoreCell else {return UICollectionViewCell()}
         // cell.setData(store: storesList[indexPath.item])
         return cell
     }
