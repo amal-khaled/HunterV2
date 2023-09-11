@@ -3634,7 +3634,7 @@
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
                                                                                                     <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NdE-b4-UUX">
-                                                                                                        <rect key="frame" x="89.333333333333371" y="0.0" width="270.66666666666663" height="15"/>
+                                                                                                        <rect key="frame" x="89.333333333333343" y="0.0" width="270.66666666666663" height="15"/>
                                                                                                         <subviews>
                                                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لن تتم مشاركة موقع الخريطة مع المستخدمين" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3l-4i-Ngn">
                                                                                                                 <rect key="frame" x="0.0" y="2" width="247.66666666666666" height="13"/>
@@ -5202,6 +5202,9 @@
         </designable>
         <designable name="mUR-DR-Ytl">
             <size key="intrinsicContentSize" width="70" height="29"/>
+        </designable>
+        <designable name="sm9-Me-6CO">
+            <size key="intrinsicContentSize" width="340" height="27.333333333333332"/>
         </designable>
         <designable name="vOp-j7-vim">
             <size key="intrinsicContentSize" width="34" height="29"/>

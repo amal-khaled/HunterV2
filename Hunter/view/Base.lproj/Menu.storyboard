@@ -1074,7 +1074,7 @@
                     <navigationItem key="navigationItem" id="orY-8K-L85"/>
                     <connections>
                         <outlet property="arabicButton" destination="TBF-6W-2jH" id="FB3-T7-Cwq"/>
-                        <outlet property="dateLabel" destination="S82-U2-sjh" id="QVg-Tb-2Z0"/>
+                        <outlet property="dateLabel" destination="S82-U2-sjh" id="qzu-70-5VQ"/>
                         <outlet property="englishButton" destination="kY2-Eu-Vah" id="467-9c-oFX"/>
                         <outlet property="loginButton" destination="f2y-Op-a2A" id="lFg-u0-CME"/>
                         <outlet property="loginViewContainer" destination="fGy-Zo-Br6" id="b55-dg-o1s"/>
@@ -2686,7 +2686,7 @@
                                         <rect key="frame" x="10" y="10" width="370" height="787"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="rUG-p6-lsv">
-                                            <rect key="frame" x="0.0" y="436.66665649414062" width="370" height="119"/>
+                                            <rect key="frame" x="0.0" y="446.66665649414062" width="370" height="119"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <userDefinedRuntimeAttributes>
@@ -2697,14 +2697,14 @@
                                         </view>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="zys-b7-9lx" customClass="AskTableViewCell" customModule="Hunter" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="50" width="370" height="358.66665649414062"/>
+                                                <rect key="frame" x="0.0" y="50" width="370" height="368.66665649414062"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zys-b7-9lx" id="7iQ-ut-qPa">
-                                                    <rect key="frame" x="0.0" y="0.0" width="370" height="358.66665649414062"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="370" height="368.66665649414062"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vt4-DT-1HX">
-                                                            <rect key="frame" x="0.0" y="0.0" width="370" height="343.66666666666669"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="370" height="353.66666666666669"/>
                                                             <subviews>
                                                                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RaW-uQ-eeE">
                                                                     <rect key="frame" x="20" y="166" width="399" height="28"/>
@@ -2714,7 +2714,7 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="arh-Gx-3cR">
-                                                                    <rect key="frame" x="15" y="15" width="340" height="313.66666666666669"/>
+                                                                    <rect key="frame" x="15" y="15" width="340" height="323.66666666666669"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="N18-UF-0vU">
                                                                             <rect key="frame" x="0.0" y="0.0" width="340" height="55"/>
@@ -2826,10 +2826,10 @@
                                                                             </subviews>
                                                                         </stackView>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="yeo-af-Mu2" userLabel="question">
-                                                                            <rect key="frame" x="0.0" y="80.999999999999986" width="340" height="166.66666666666663"/>
+                                                                            <rect key="frame" x="0.0" y="80.999999999999986" width="340" height="176.66666666666663"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iaf-YA-Al6" customClass="EdgeInsetLabel" customModule="Hunter" customModuleProvider="target">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="340" height="14.666666666666666"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="340" height="24.666666666666668"/>
                                                                                     <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14.5"/>
                                                                                     <color key="textColor" name="blackColor"/>
                                                                                     <nil key="highlightedColor"/>
@@ -2855,7 +2855,7 @@
                                                                                     </userDefinedRuntimeAttributes>
                                                                                 </label>
                                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42N-yN-VdY">
-                                                                                    <rect key="frame" x="0.0" y="16.666666666666671" width="340" height="150"/>
+                                                                                    <rect key="frame" x="0.0" y="26.666666666666671" width="340" height="150"/>
                                                                                     <subviews>
                                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileBackground" translatesAutoresizingMaskIntoConstraints="NO" id="WlU-VW-ZdX" customClass="DynamicImageView" customModule="Hunter" customModuleProvider="target">
                                                                                             <rect key="frame" x="0.0" y="0.0" width="340" height="150"/>
@@ -2903,7 +2903,7 @@
                                                                             </subviews>
                                                                         </stackView>
                                                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Svc-wI-K2M" userLabel="report">
-                                                                            <rect key="frame" x="0.0" y="273.66666666666669" width="340" height="40"/>
+                                                                            <rect key="frame" x="0.0" y="283.66666666666669" width="340" height="40"/>
                                                                             <subviews>
                                                                                 <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alignment="center" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="XH4-Qq-RHw">
                                                                                     <rect key="frame" x="15" y="2" width="250" height="20"/>
@@ -3126,7 +3126,7 @@
     </scenes>
     <designables>
         <designable name="Iaf-YA-Al6">
-            <size key="intrinsicContentSize" width="32" height="14.666666666666666"/>
+            <size key="intrinsicContentSize" width="42" height="24.666666666666664"/>
         </designable>
         <designable name="xi7-HO-hg1">
             <size key="intrinsicContentSize" width="41" height="26"/>

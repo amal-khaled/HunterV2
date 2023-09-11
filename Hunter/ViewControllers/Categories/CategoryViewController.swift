@@ -6,8 +6,14 @@
 //
 
 import UIKit
+import WoofTabBarController
 
 class CategoryViewController: UIViewController {
+    
+    static func instantiate()->CategoryViewController{
+        let controller = UIStoryboard(name: CATEGORRY_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier:"categories") as! CategoryViewController
+        return controller
+    }
     
     @IBOutlet weak var sideCategoyCollectionView: UICollectionView!
     @IBOutlet weak var listMainCategory: UICollectionView!
@@ -179,5 +185,11 @@ extension CategoryViewController{
             self.cities = [ Country(nameAr: AppDelegate.currentCountry.nameAr ?? "الكويت", nameEn:  AppDelegate.currentCountry.nameEn ?? "Kuwait", id: AppDelegate.currentCountry.id  ?? 6)]
             
         }
+    }
+}
+extension CategoryViewController:WoofTabBarControllerDataSource, WoofTabBarControllerDelegate {
+    
+    func woofTabBarItem() -> WoofTabBarItem {
+        return WoofTabBarItem(title: "Categories".localize, image: "CategoryIcon", selectedImage: "CategoryButtonIcon")
     }
 }

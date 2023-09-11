@@ -7,9 +7,19 @@
 
 import UIKit
 import MOLH
+import WoofTabBarController
 //import RAMAnimatedTabBarController
 
 class HomeViewController: UIViewController {
+    
+    static func instantiate()->HomeViewController{
+        let controller = UIStoryboard(name: MAIN_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier:"home") as! HomeViewController
+        return controller
+    }
+    
+    
+    
+    
     @IBOutlet weak var ContainerStackView: UIStackView!
     
     @IBOutlet weak var ScrollView: UIScrollView!
@@ -59,11 +69,17 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.isNavigationBarHidden = false
         ConfigureView()
         configureNavButtons()
+        navigationController?.navigationBar.tintColor = UIColor.green // Change to your desired text color
+        print(navigationController)
     }
     override func viewDidAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = false
+        
+        print(navigationController)
 
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -86,6 +102,7 @@ class HomeViewController: UIViewController {
         getFeatureData()
         getStores()
     }
+    
     
     
    
@@ -630,3 +647,9 @@ extension HomeViewController:UITextFieldDelegate{
         }
 }
 
+extension HomeViewController:WoofTabBarControllerDataSource, WoofTabBarControllerDelegate {
+    
+    func woofTabBarItem() -> WoofTabBarItem {
+        return WoofTabBarItem(title: "Home".localize, image: "home", selectedImage: "HomeButtonIcon",notificationCount: 3)
+    }
+}
