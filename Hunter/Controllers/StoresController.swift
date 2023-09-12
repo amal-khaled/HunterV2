@@ -27,7 +27,7 @@ class StoresController {
                 
                 if productArray.statusCode == 200{
                     
-                    completion(productArray.data, 0,"")
+                    completion(productArray.data ?? [StoreObject](), 0,"")
                 }
                 else {
                     completion([StoreObject](),1,productArray.message ?? "")
@@ -124,27 +124,7 @@ class StoresController {
             for (key,value) in param {
                 multipart.append((value as AnyObject).description.data(using: String.Encoding.utf8)!, withName: key)
             }
-        }, to: link,headers: header)
-        
-//        .responseJSON { response in
-//            switch response.result {
-//            case .success(let value):
-//                print(value)
-//                if let dictionary = value as? [String: Any] {
-//                    print("Received dictionary is:", dictionary)
-//                    if let message = dictionary["message"] {
-//                        print("Type of message:",message)
-//                    }
-//                }
-//            case .failure(let error):
-//                print("Error: \(error)")
-//                if let data = response.data {
-//                    let str = String(data: data, encoding: .utf8)
-//                    print("Failed response data:", str ?? "")
-//                }
-//            }
-
-        .responseDecodable(of:UpdateStoreModel.self){ response in
+        }, to: link,headers: header).responseDecodable(of:UpdateStoreModel.self){ response in
 
             switch response.result {
             case .success(let data):
@@ -155,5 +135,36 @@ class StoresController {
                 completion(false,SERVER_ERROR)
             }
         }
+    }
+    
+    //MARK: Search
+    func getSearchStores(completion: @escaping([StoreObject], Int, String)->(),countryId:Int,serach:String){
+        
+        let params = [
+            "country_id": countryId,
+            "search":serach
+        ] as [String : Any]
+        APIConnection.apiConnection.getConnectionWithParam(completion: { data in
+            guard let data = data else { return }
+            
+            do {
+                let productArray = try JSONDecoder().decode(StoresModel.self, from: data)
+                
+                if productArray.statusCode == 200{
+                    
+                    completion(productArray.data ?? [StoreObject](), 0,"")
+                }
+                else {
+                    completion([StoreObject](),1,productArray.message ?? "")
+                }
+                
+            } catch (let jerrorr){
+                
+                print(jerrorr)
+                completion([StoreObject](),1,SERVER_ERROR)
+                
+                
+            }
+        }, link: Constants.HOME_STORES_URL,param:params)
     }
 }

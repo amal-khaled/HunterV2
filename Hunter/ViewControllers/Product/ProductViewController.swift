@@ -398,9 +398,9 @@ extension ProductViewController{
             
         }
         
-        userNameLbl.text = (product.userName ?? "") + " " + (product.userLastName ?? "")
+        userNameLbl.text = "Store".localize + " " + (product.userName ?? "") + " " + (product.userLastName ?? "")
         
-        self.userImageView.setImageWithLoading(url: product.userPic ?? "users/1675802939.png")
+        self.userImageView.setImageWithLoading(url: product.userPic ?? "",placeholder: "logo_photo")
         
         
         if   product.userVerified == 1 {

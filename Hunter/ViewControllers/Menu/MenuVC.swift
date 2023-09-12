@@ -18,6 +18,7 @@ class MenuVC: UIViewController {
     
     //MARK: IBOutlet
     
+    @IBOutlet weak var userImageContainerView: UIView!
     @IBOutlet weak var userImageView: UIImageView!
     
     @IBOutlet weak var dateLabel: UILabel!
@@ -34,6 +35,8 @@ class MenuVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        ConfigureUI()
+        userImageContainerView.layer.cornerRadius = userImageContainerView.frame.height / 2
+        userImageView.layer.cornerRadius = userImageView.frame.height / 2
         
     }
     

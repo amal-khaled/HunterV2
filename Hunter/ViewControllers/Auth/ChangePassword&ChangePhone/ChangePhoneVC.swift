@@ -168,7 +168,7 @@ class ChangePhoneVC:UIViewController, UITextFieldDelegate{
                                         if success {
                                             let storyboard = UIStoryboard(name: Auth_STORYBOARD, bundle: nil)
                                             let vc = storyboard.instantiateViewController(withIdentifier:"VerifyCodeVC") as! VerifyCodeVC
-                                            vc.userPhoneNumber = phone
+                                            vc.userPhoneNumber = mobile
                                             vc.countryId = self.country_id
                                             vc.cityId = self.city_id
                                             vc.regionId = self.region_id

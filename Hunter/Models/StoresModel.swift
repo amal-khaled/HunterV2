@@ -10,7 +10,7 @@ import Foundation
 // MARK: - StoresModel
 struct StoresModel: Codable {
     let message: String?
-    let data: [StoreObject]!
+    let data: [StoreObject]?
     let success: Bool?
     let statusCode: Int?
 }

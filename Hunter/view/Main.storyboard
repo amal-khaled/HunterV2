@@ -119,7 +119,7 @@
         <!--Tab BarVC-->
         <scene sceneID="Yfc-Q5-oHU">
             <objects>
-                <viewController storyboardIdentifier="TabBarVC" id="w78-1x-eSB" customClass="TabBarVC" customModule="Hunter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TabBarVC" modalPresentationStyle="fullScreen" id="w78-1x-eSB" customClass="TabBarVC" customModule="Hunter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iPX-7C-viY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1218,7 +1218,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCs-24-oAO" customClass="EdgeInsetLabel" customModule="Hunter" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="25.333333333333336" width="50" height="20"/>
+                                                            <rect key="frame" x="15" y="25.333333333333336" width="20" height="20"/>
                                                             <color key="backgroundColor" red="0.2666666667" green="0.2901960784" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="mwT-Vt-EhQ"/>
@@ -1748,7 +1748,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="2255"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3tu-l8-wsG">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="2225"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="2175"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zyS-4d-RYu">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="208.33333333333334"/>
@@ -2266,7 +2266,7 @@
                                                         </constraints>
                                                     </view>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZCX-Jl-dtB">
-                                                        <rect key="frame" x="0.0" y="543.33333333333337" width="393" height="1456.6666666666665"/>
+                                                        <rect key="frame" x="0.0" y="543.33333333333337" width="393" height="1406.6666666666665"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="f4Z-3Y-bCV">
                                                             <size key="itemSize" width="394" height="204"/>
@@ -2801,7 +2801,7 @@
                                                         </connections>
                                                     </collectionView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQR-e2-olf" userLabel="Stores View">
-                                                        <rect key="frame" x="0.0" y="2005" width="393" height="220"/>
+                                                        <rect key="frame" x="0.0" y="1955" width="393" height="220"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="39q-I9-mV4">
                                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
@@ -2831,7 +2831,7 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYr-eo-vIz">
-                                                                        <rect key="frame" x="14.999999999999996" y="11.333333333333487" width="43.666666666666657" height="17.666666666666671"/>
+                                                                        <rect key="frame" x="14.999999999999996" y="11.333333333333259" width="43.666666666666657" height="17.666666666666671"/>
                                                                         <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="15"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -2988,7 +2988,7 @@
                                             <constraint firstAttribute="trailing" secondItem="3tu-l8-wsG" secondAttribute="trailing" id="KHG-NV-frI"/>
                                             <constraint firstItem="3tu-l8-wsG" firstAttribute="top" secondItem="uoC-AG-oUc" secondAttribute="top" id="KUL-i3-a35"/>
                                             <constraint firstAttribute="height" constant="2255" id="V3B-EA-OB8"/>
-                                            <constraint firstAttribute="bottom" secondItem="3tu-l8-wsG" secondAttribute="bottom" constant="30" id="s86-mT-g2J"/>
+                                            <constraint firstAttribute="bottom" secondItem="3tu-l8-wsG" secondAttribute="bottom" constant="80" id="s86-mT-g2J"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -5416,7 +5416,9 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="FCs-24-oAO"/>
+        <designable name="FCs-24-oAO">
+            <size key="intrinsicContentSize" width="20" height="13"/>
+        </designable>
         <designable name="MUI-H5-TZT">
             <size key="intrinsicContentSize" width="24" height="14"/>
         </designable>

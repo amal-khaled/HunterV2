@@ -1098,6 +1098,6 @@ extension AddAdvsVC:PayingDelegate{
 extension AddAdvsVC:WoofTabBarControllerDataSource, WoofTabBarControllerDelegate {
     
     func woofTabBarItem() -> WoofTabBarItem {
-        return WoofTabBarItem(title: "Add Your Ad".localize, image: "addAdvsButtonIconGray", selectedImage: "home-f")
+        return WoofTabBarItem(title: "Add Your Ad".localize, image: "addAdvsButtonIconGray", selectedImage: "AddAdsIconMain")
     }
 }

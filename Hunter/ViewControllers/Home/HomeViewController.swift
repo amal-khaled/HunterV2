@@ -477,7 +477,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             return cell
         }else if collectionView == FeaturesCollectionView {
          let    cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell-feature", for: indexPath) as! FeaturesProductsCollectionViewCell
-            cell.setData(product: featureProducts.reversed()[indexPath.item])
+            cell.setData(product: featureProducts[indexPath.item])
             return cell
         }else if collectionView == storeCollectionView {
             
