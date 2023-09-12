@@ -60,6 +60,7 @@ class StoreProfileVC: UIViewController {
     private var imageType = 0 //profileImage
     private var isUpdateCover = false
     private var userModel = User()
+    
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -103,18 +104,25 @@ class StoreProfileVC: UIViewController {
     //SocialMedia Buttons
     
     @IBAction func didTapPhoneButton(_ sender: UIButton) {
+        self.makePhoneCall(phone: userModel.phone ?? "")
     }
     
     @IBAction func didTapWhatsAppButton(_ sender: UIButton) {
+        self.openWhatsApp(number: userModel.store?.whatsapp ?? "" , message: "hello I'm Contct with you from Hunter App".localize)
     }
     
     @IBAction func didTapWebSiteButton(_ sender: UIButton) {
+        
+        self.openURL(userModel.store?.website ?? "")
     }
     @IBAction func didTapInstgramButton(_ sender: UIButton) {
+        self.openURL(userModel.store?.instagram ?? "")
     }
     @IBAction func didTapLocationButton(_ sender: UIButton) {
+//        self.openURL(userModel. ?? "")
     }
     @IBAction func didTapTwitterButton(_ sender: UIButton) {
+        self.openURL(userModel.store?.twitter ?? "")
     }
     @IBAction func didTapFollowingsButton(_ sender: UIButton) {
         let vc = UIStoryboard(name: PROFILE_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: "FollowersAndFollowingsVC") as! FollowersAndFollowingsVC

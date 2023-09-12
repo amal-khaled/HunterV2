@@ -33,10 +33,12 @@
 "Ads relevant to your search result" = "الإعلانات ذات الصلة بنتيجة البحث الخاصة بك";
 "Most popular persons" = "الأشخاص الأكثر شعبية";
 "Persons relevant to your search result" = "الأشخاص ذوي الصلة بنتيجة البحث الخاصة بك";
-"Persons" = "الأشخاص";
+"Peoples" = "الأشخاص";
 "Questions" = "أسئلة";
 "Search result" = "نتائج البحث";
 "Please type in anything you want to search for in Hunter" = "من فضلك اكتب اي شئ تريد البحث عنة في الصياد";
+"Most popular Stores" = "المتاجر المناسبة لنتيجة بحثك";
+"Stores" = "المتاجر";
 
 //MARK: Menu
 "Back" = "رجوع";
@@ -291,6 +293,10 @@
 "Wirrning ⚠️ " = "⚠️ تحذير";
 "Do you want to delete Cover ?" = "هل تريد حذف صورة الغلاف حقًا؟";
 "Do you want to delete Profile Image ?" = "هل تريد حذف صورة الملف الشخصي حقا؟";
+
+"hello I'm Contct with you from Hunter App" = "مرحبًا، أنا أتواصل معك من تطبيق الصياد";
+
+
 
 //MARK: Edit Profile
 

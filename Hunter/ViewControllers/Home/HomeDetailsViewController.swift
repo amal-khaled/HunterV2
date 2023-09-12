@@ -64,6 +64,7 @@ class HomeDetailsViewController: UIViewController {
         ConfigureView()
         featuredLabelContainerView.isHidden = !isComeToFeatureAds
         feaureContainerView.isHidden = true
+        searchTextField.delegate = self
     }
     override func viewDidAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = false
@@ -644,3 +645,17 @@ extension HomeDetailsViewController: UICollectionViewDataSource, UICollectionVie
     }
 }
 
+extension HomeDetailsViewController:UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            // Perform the segue when the Return key is pressed
+        let vc = UIStoryboard(name: SEARCH_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: "search") as! SearchViewController
+        if searchTextField.text.safeValue != "" {
+            vc.searchText = searchTextField.text!
+            navigationController?.pushViewController(vc, animated: true)
+        }else{
+            StaticFunctions.createErrorAlert(msg: "Please type in anything you want to search for in Hunter".localize)
+        }
+       
+            return true
+        }
+}

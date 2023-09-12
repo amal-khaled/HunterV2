@@ -80,8 +80,8 @@ class ProductCollectionViewCell: UICollectionViewCell {
         }
         if let createDate = product.createdAt{
             if createDate.count > 11 {
-                self.timeLbl.text =  "\(createDate[11..<16])"
-                
+//                self.timeLbl.text =  "\(createDate[11..<16])"
+                self.timeLbl.text = diffDates(GetDateFromString(createDate)).replace("-", "")
             }
         }
         

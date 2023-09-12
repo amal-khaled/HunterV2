@@ -113,20 +113,6 @@ class HomeViewController: UIViewController {
     func createCustomNavBar(){
         customNavView.cornerRadius = 30
         customNavView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
-//        let customNavBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: (UIApplication.shared.windows.first?.safeAreaInsets.top ?? 0) + UIScreen.main.bounds.height / 4.5))
-//        print(UIScreen.main.bounds.height / 4.5)
-//            customNavBar.backgroundColor = UIColor(named: "#0093F5")
-//        customNavBar.cornerRadius = 30
-//        customNavBar.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
-//        // Set your desired background color
-//            view.addSubview(customNavBar)
-//        self.view.sendSubviewToBack(customNavBar)
-//        self.view.addSubview(ScrollView)
-//        ScrollView.translatesAutoresizingMaskIntoConstraints = false
-//        self.ScrollView.topAnchor.constraint(equalTo: customNavBar.bottomAnchor, constant: -50).isActive = true
-//        self.ScrollView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant:0 ).isActive = true
-//        self.ScrollView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant:0 ).isActive = true
-//        self.ScrollView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant:0 ).isActive = true
     }
  
     
@@ -474,7 +460,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             return cell
         }else if collectionView == FeaturesCollectionView {
          let    cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell-feature", for: indexPath) as! FeaturesProductsCollectionViewCell
-            cell.setData(product: featureProducts[indexPath.row])
+            cell.setData(product: featureProducts.reversed()[indexPath.item])
             return cell
         }else if collectionView == storeCollectionView {
             
@@ -609,7 +595,7 @@ extension HomeViewController {
 //        notificationButton.frame = CGRect(x: 0.0, y: 0.0, width: 30, height: 30)
 
             // Add buttons to the right side of the navigation bar
-            navigationItem.rightBarButtonItems = [chatBarItem, notificationBarItem]
+            navigationItem.rightBarButtonItems = [notificationBarItem,chatBarItem]
     }
    
     @objc private func didTapChatButton() {

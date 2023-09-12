@@ -90,6 +90,42 @@ extension UIViewController :NVActivityIndicatorViewable{
         
         
     }
+    
+    func makePhoneCall(phone phoneNumber: String) {
+           if let url = URL(string: "tel://\(phoneNumber)") {
+               if UIApplication.shared.canOpenURL(url) {
+                   UIApplication.shared.open(url, options: [:], completionHandler: nil)
+               } else {
+                   // Handle the case where the device can't make phone calls (e.g., iPad or simulator)
+                   print("Phone call not available")
+               }
+           }
+       }
+    func openWhatsApp(number: String, message: String = "") {
+            // Check if WhatsApp is installed
+            if let whatsappURL = URL(string: "whatsapp://send?phone=\(number)&text=\(message)") {
+                if UIApplication.shared.canOpenURL(whatsappURL) {
+                    UIApplication.shared.open(whatsappURL, options: [:], completionHandler: nil)
+                } else {
+                    // Handle the case where WhatsApp is not installed
+                    print("WhatsApp is not installed on this device.")
+                }
+            }
+        }
+    
+    func openURL(_ urlString: String) {
+            if let url = URL(string: urlString) {
+                if UIApplication.shared.canOpenURL(url) {
+                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                } else {
+                    // Handle the case where the URL cannot be opened
+                    print("URL cannot be opened.")
+                }
+            } else {
+                // Handle invalid URL
+                print("Invalid URL.")
+            }
+        }
     //    func getNotifications(completion: @escaping(Int)->()){
     //        if Reachability.isConnectedToNetwork(){
     //            UtilitiesController.shared.getNotifications(completion: {

@@ -33,6 +33,7 @@ class ProductViewController: UIViewController {
     @IBOutlet weak var imageSlider: MediaSlideshow!
     @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet weak var userVerifieddImage: UIImageView!
+    @IBOutlet weak var viewsLabel: UILabel!
     let vc = UIStoryboard(name: PRODUCT_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: "full_screen") as! FullScreenViewController
     var product = Product()
     var images = [ProductImage]()
@@ -361,6 +362,7 @@ extension ProductViewController{
             locationLbl.text = product.cityNameAr
             
         }
+        self.viewsLabel.text = "\(product.views ?? 0)"
         self.descriptionLbl.text = product.description
         self.descriptionLbl.sizeToFit()
         if product.userVerified == 1{
