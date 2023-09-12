@@ -289,7 +289,7 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
                 if cover.contains(".png") || cover.contains(".jpg"){
 //                    storeCoverImageView.setImageWithLoading(url:profileModel.cover ?? "" )
                     print(cover)
-                    storeCoverImageView.setImageWithLoading(url:cover  )
+                    storeCoverImageView.setImageWithLoading(url:cover,placeholder: "cover" )
                 }
             }else{
                 
@@ -297,7 +297,7 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
                     if cover.contains(".png") || cover.contains(".jpg"){
     //                    storeCoverImageView.setImageWithLoading(url:profileModel.cover ?? "" )
                         print(cover)
-                        storeCoverImageView.setImageWithLoading(url:cover  )
+                        storeCoverImageView.setImageWithLoading(url:cover ,placeholder: "cover" )
                     }
                 }
             }
@@ -306,7 +306,7 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
                 
                 if userPic.contains(".png") || userPic.contains(".jpg"){
                     print(userPic)
-                    storeProfileImageView.setImageWithLoading(url:userPic  )
+                    storeProfileImageView.setImageWithLoading(url:userPic,placeholder: "logo_photo")
                 }
             }else{
                 if let userPic =  profileModel.pic {
@@ -314,7 +314,7 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
                     
                     if userPic.contains(".png") || userPic.contains(".jpg"){
                         print(userPic)
-                        storeProfileImageView.setImageWithLoading(url:userPic  )
+                        storeProfileImageView.setImageWithLoading(url:userPic,placeholder: "logo_photo")
                     }
                 }
             }

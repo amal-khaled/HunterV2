@@ -182,7 +182,7 @@ class EditStoreVC: UIViewController {
         updateStoreParams = [
             "company_name":companyNameTextFiled.text.safeValue,
             "company_activity":activityTextFiled.text.safeValue,
-            "phone":mobileTextFiled.text.safeValue,
+//            "phone":mobileTextFiled.text.safeValue,
             "whatsapp":whatsAppTextField.text.safeValue,
 //            "city_id":cityId,
 //            "region_id":stateId,

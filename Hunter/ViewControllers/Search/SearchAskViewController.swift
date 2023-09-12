@@ -99,12 +99,12 @@ extension SearchAskViewController:UICollectionViewDelegate,UICollectionViewDataS
     
      func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-         return 10
+         return storesList.count
     }
     
      func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
          guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SearchStoreCell", for: indexPath) as? SearchStoreCell else {return UICollectionViewCell()}
-        // cell.setData(store: storesList[indexPath.item])
+         cell.setData(store: storesList[indexPath.item])
         return cell
     }
     
@@ -152,16 +152,26 @@ extension SearchAskViewController{
             }
         }, id: AppDelegate.currentUser.id ?? 0, searchText: searchText, page: self.page)
     }
+    func getStores(){
+        StoresController.shared.getSearchStores(completion: { stores, check, message in
+            if check == 0{
+                print(stores.count)
+                self.storesList.removeAll()
+                self.storesList.append(contentsOf: stores)
+                self.collectionView.reloadData()
+            }else{
+                StaticFunctions.createErrorAlert(msg: message)
+            }
+        }, countryId: AppDelegate.currentUser.countryId ?? 0,serach:searchText)
+    }
 }
 extension SearchAskViewController: ContentDelegate{
     func updateContent(searchText: String, isHidden: Bool) {
         self.searchText = searchText
         self.page = 1
-            self.isTheLast = false
+        self.isTheLast = false
         textStackView.isHidden = isHidden
-//        self.tableView.isHidden = isHidden
-
-//        getData()
+        getStores()
     }
     
     

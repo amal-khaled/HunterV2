@@ -22,6 +22,7 @@
 "Filter" = "فلتر";
 "choose city" = "اختر المدينة";
 "Back to All" = "رجوع إلى الكل";
+"Categories" = "الأقسام";
 //MARK: Messages
 "you Don't have any messages" = "ليس لديك أية رسائل";
 "Please Login First To Can Uplaod ads" = "الرجاء تسجيل الدخول أولاً لتتمكن من تحميل الإعلانات";
@@ -99,6 +100,7 @@
 "Commercial license" = "الرخصة التجارية";
 
 //MARK: ADD ADs
+"Add Your Ad" = "أضف إعلانك";
 "You have reached the limit of videos and photos" = "لقد وصلت إلى الحد الأقصى من مقاطع الفيديو والصور";
 "Add Photos or Videos" = "أضف صورًا أو مقاطع فيديو";
 "Add Photo" = "إضافة صورة";
@@ -295,7 +297,7 @@
 "Do you want to delete Profile Image ?" = "هل تريد حذف صورة الملف الشخصي حقا؟";
 
 "hello I'm Contct with you from Hunter App" = "مرحبًا، أنا أتواصل معك من تطبيق الصياد";
-
+"Profile" = "حسابي";
 
 
 //MARK: Edit Profile
@@ -395,13 +397,14 @@ Your investment with every occasion" = "تطبيق مناسبة
 "Follow" = "متابعة";
 "user" = "مستخدم";
 "Search Result" = "نتايج البحث";
-"search ad.. person.. question" = "بحث عن اعلان.. شخص.. سؤال";
+"search ad.. Peoples.. Stores" = "بحث عن اعلان.. شخص.. سؤال";
 "There are no matching results" = "لا يوجد نتائج مظابقة";
 "Search again by selecting different values for the search elements" = "قم بالبحث مجددا باختيار قيم مختلفة لعناصر البحث";
 "Done" = "تم";
 
 
 //MARK: Add Store
+"Commercial" = "تجاري";
 "Add Store" = "Add Store";
 "It will be reviewed by management
 To get free ads" = "سيتم مراجعتة من قبل الإدارة

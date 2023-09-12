@@ -7,11 +7,18 @@
 
 import UIKit
 import MOLH
+import WoofTabBarController
 
 class MenuVC: UIViewController {
 
+    static func instantiate()->MenuVC{
+        let controller = UIStoryboard(name: MENU_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier:MENU_VCID) as! MenuVC
+        return controller
+    }
+    
     //MARK: IBOutlet
     
+    @IBOutlet weak var userImageContainerView: UIView!
     @IBOutlet weak var userImageView: UIImageView!
     
     @IBOutlet weak var dateLabel: UILabel!
@@ -28,6 +35,8 @@ class MenuVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        ConfigureUI()
+        userImageContainerView.layer.cornerRadius = userImageContainerView.frame.height / 2
+        userImageView.layer.cornerRadius = userImageView.frame.height / 2
         
     }
     
@@ -56,7 +65,7 @@ class MenuVC: UIViewController {
         
 //        navigationController?.navigationBar.isHidden = true
 //        tabBarController?.tabBar.isHidden = false
-        dateLabel.text = FormattedDate()
+//        dateLabel.text = FormattedDate()
         
 //        loginButton.shake()
         if StaticFunctions.isLogin() {
@@ -339,5 +348,11 @@ extension MenuVC {
         
         self.basicPresentation(storyName: MAIN_STORYBOARD, segueId: "homeT")
       
+    }
+}
+extension MenuVC:WoofTabBarControllerDataSource, WoofTabBarControllerDelegate {
+    
+    func woofTabBarItem() -> WoofTabBarItem {
+        return WoofTabBarItem(title: "Profile".localize, image: "userProfile", selectedImage: "ProfileButtonIcon")
     }
 }

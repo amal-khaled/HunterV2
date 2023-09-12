@@ -8,9 +8,13 @@
 import UIKit
 import FSPagerView
 import MOLH
+import WoofTabBarController
 
 class StoresVC: UIViewController {
-    
+    static func instantiate()->StoresVC{
+        let controller = UIStoryboard(name: "Store", bundle: nil).instantiateViewController(withIdentifier:"StoresVC" ) as! StoresVC
+        return controller
+    }
     @IBOutlet weak var CollectionView: UICollectionView!
     @IBOutlet weak var countryNameLabel: UILabel!
     @IBOutlet weak var cityBtn: UIButton!
@@ -185,4 +189,10 @@ extension StoresVC:UITextFieldDelegate{
        
             return true
         }
+}
+extension StoresVC:WoofTabBarControllerDataSource, WoofTabBarControllerDelegate {
+    
+    func woofTabBarItem() -> WoofTabBarItem {
+        return WoofTabBarItem(title: "Commercial".localize, image: "storeIconGray", selectedImage: "storeButtonIcon")
+    }
 }

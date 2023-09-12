@@ -292,16 +292,17 @@
         }
         
         private func bindProfileData(from profileModel:User){
-            if let cover =  profileModel.cover {
-                if cover.contains(".png") || cover.contains(".jpg"){
-                    CoverImageView.setImageWithLoading(url:profileModel.cover ?? "" )
-                }
-            }
+//            if let cover =  profileModel.cover {
+//                if cover.contains(".png") || cover.contains(".jpg"){
+//                    print(cover)
+//                    CoverImageView.setImageWithLoading(url:profileModel.cover ?? "" )
+//                }
+//            }
             if let userPic =  profileModel.pic {
                 print(userPic)
                 if userPic.contains(".png") || userPic.contains(".jpg") {
                     
-                    userImageView.setImageWithLoading(url:profileModel.pic ?? "" )
+                    userImageView.setImageWithLoading(url:profileModel.pic ?? "" ,placeholder: "logo_photo")
                 }else {
                     userImageView.image = UIImage(named: "logo_photo")
                 }
@@ -320,9 +321,9 @@
             followingsCountLabel.text = "\(profileModel.following ?? 0)"
             userNameLabel.text = profileModel.name
            
-//            if let bio = profileModel.bio {
-//                userBioLabel.text = bio
-//            }
+            if let bio = profileModel.bio {
+                userBioLabel.text = bio
+            }
             if MOLHLanguage.currentAppleLanguage() == "en" {
                 UserLocationLabel.text = "\(profileModel.countriesNameEn ?? "") - \(profileModel.citiesNameEn ?? "")"
             }else {
