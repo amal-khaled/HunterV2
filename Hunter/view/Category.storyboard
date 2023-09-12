@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BU2-Ms-2Dk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -31,13 +31,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UjB-zg-Cah">
-                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WDC-J7-XR1">
-                                        <rect key="frame" x="0.0" y="7" width="388" height="786"/>
+                                        <rect key="frame" x="0.0" y="7" width="388" height="742"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gwT-z2-INT">
-                                                <rect key="frame" x="0.0" y="0.0" width="135" height="786"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="135" height="742"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="135" id="LgA-Ej-0pO"/>
@@ -154,10 +154,10 @@
                                                 </connections>
                                             </collectionView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZh-dX-jXZ">
-                                                <rect key="frame" x="140" y="0.0" width="248" height="786"/>
+                                                <rect key="frame" x="140" y="0.0" width="248" height="742"/>
                                                 <subviews>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uUa-fn-LEA">
-                                                        <rect key="frame" x="0.0" y="0.0" width="248" height="786"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="248" height="742"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="G54-zd-NAN" customClass="RTLCollectionViewFlowLayout" customModule="Hunter" customModuleProvider="target">
                                                             <size key="itemSize" width="128" height="128"/>
@@ -315,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cvj-XG-ec3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1730.534351145038" y="843.66197183098598"/>
+            <point key="canvasLocation" x="2657.2519083969464" y="843.66197183098598"/>
         </scene>
         <!--Asks View Controller-->
         <scene sceneID="HU1-ww-xRP">
@@ -332,7 +332,7 @@
                                         <rect key="frame" x="10" y="10" width="373" height="783"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="mRh-ej-ZFL">
-                                            <rect key="frame" x="0.0" y="436.66665649414062" width="373" height="119"/>
+                                            <rect key="frame" x="0.0" y="446.66665649414062" width="373" height="119"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <userDefinedRuntimeAttributes>
@@ -343,14 +343,14 @@
                                         </view>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="ak5-fG-ncC" customClass="AskTableViewCell" customModule="Hunter" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="50" width="373" height="358.66665649414062"/>
+                                                <rect key="frame" x="0.0" y="50" width="373" height="368.66665649414062"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ak5-fG-ncC" id="gpL-QR-gHq">
-                                                    <rect key="frame" x="0.0" y="0.0" width="373" height="358.66665649414062"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="373" height="368.66665649414062"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83C-q6-dTD">
-                                                            <rect key="frame" x="0.0" y="0.0" width="373" height="343.66666666666669"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="373" height="353.66666666666669"/>
                                                             <subviews>
                                                                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JXR-Uc-1y3">
                                                                     <rect key="frame" x="20" y="166" width="399" height="28"/>
@@ -360,7 +360,7 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="sjU-EV-uHz">
-                                                                    <rect key="frame" x="15" y="15" width="343" height="313.66666666666669"/>
+                                                                    <rect key="frame" x="15" y="15" width="343" height="323.66666666666669"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lzq-az-b7h">
                                                                             <rect key="frame" x="0.0" y="0.0" width="343" height="55"/>
@@ -472,10 +472,10 @@
                                                                             </subviews>
                                                                         </stackView>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ajh-Tw-Yus" userLabel="question">
-                                                                            <rect key="frame" x="0.0" y="80.999999999999986" width="343" height="166.66666666666663"/>
+                                                                            <rect key="frame" x="0.0" y="80.999999999999986" width="343" height="176.66666666666663"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23v-Ig-X8U" customClass="EdgeInsetLabel" customModule="Hunter" customModuleProvider="target">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="14.666666666666666"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="24.666666666666668"/>
                                                                                     <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14.5"/>
                                                                                     <color key="textColor" name="blackColor"/>
                                                                                     <nil key="highlightedColor"/>
@@ -501,7 +501,7 @@
                                                                                     </userDefinedRuntimeAttributes>
                                                                                 </label>
                                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X4u-9M-QY5">
-                                                                                    <rect key="frame" x="0.0" y="16.666666666666671" width="343" height="150"/>
+                                                                                    <rect key="frame" x="0.0" y="26.666666666666671" width="343" height="150"/>
                                                                                     <subviews>
                                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Oq0-vM-rla" customClass="DynamicImageView" customModule="Hunter" customModuleProvider="target">
                                                                                             <rect key="frame" x="0.0" y="0.0" width="343" height="150"/>
@@ -549,7 +549,7 @@
                                                                             </subviews>
                                                                         </stackView>
                                                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HjU-YR-F6W" userLabel="report">
-                                                                            <rect key="frame" x="0.0" y="273.66666666666669" width="343" height="40"/>
+                                                                            <rect key="frame" x="0.0" y="283.66666666666669" width="343" height="40"/>
                                                                             <subviews>
                                                                                 <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alignment="center" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="ggp-vI-7Ip">
                                                                                     <rect key="frame" x="15" y="2" width="250" height="20"/>
@@ -769,7 +769,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dAd-a6-uRw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2519.8473282442746" y="842.95774647887333"/>
+            <point key="canvasLocation" x="3446.5648854961833" y="842.95774647887333"/>
         </scene>
         <!--Add Ask View Controller-->
         <scene sceneID="qv2-40-zxq">
@@ -1253,10 +1253,10 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5az-Eo-S1c">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="107.33333333333333"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="117.33333333333333"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sRf-u8-gnX">
-                                                <rect key="frame" x="15" y="15" width="363" height="77.333333333333329"/>
+                                                <rect key="frame" x="15" y="15" width="363" height="87.333333333333329"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="EDw-gH-1qx">
                                                         <rect key="frame" x="0.0" y="0.0" width="363" height="50"/>
@@ -1295,7 +1295,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="upa-3u-dKc" customClass="EdgeInsetLabel" customModule="Hunter" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="58.000000000000007" width="363" height="19.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="58.000000000000007" width="363" height="29.333333333333336"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                                         <color key="textColor" name="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1321,7 +1321,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZSI-xa-VzI">
-                                                        <rect key="frame" x="0.0" y="81.333333333333343" width="363" height="130"/>
+                                                        <rect key="frame" x="0.0" y="91.333333333333343" width="363" height="130"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="130" id="uBt-Xu-ozJ"/>
                                                         </constraints>
@@ -1379,7 +1379,7 @@
                                         </connections>
                                     </button>
                                     <tableView clipsSubviews="YES" tag="3" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m9E-v1-VVQ">
-                                        <rect key="frame" x="30" y="109.33333333333331" width="353" height="563.66666666666674"/>
+                                        <rect key="frame" x="30" y="119.33333333333331" width="353" height="553.66666666666674"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="183" id="Dw8-sG-U5Q" customClass="CommentReplyTableViewCell" customModule="Hunter" customModuleProvider="target">
@@ -1905,7 +1905,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ik-LC-AGX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3408" y="843"/>
+            <point key="canvasLocation" x="4333.5877862595416" y="842.95774647887333"/>
         </scene>
         <!--Report Ask Reply View Controller-->
         <scene sceneID="UjQ-SV-cFk">
@@ -2123,7 +2123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dFA-TG-bdR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4210" y="1125"/>
+            <point key="canvasLocation" x="5136.6412213740459" y="1124.6478873239437"/>
         </scene>
         <!--Reply Ask View Controller-->
         <scene sceneID="kPC-kE-5hB">
@@ -2342,12 +2342,52 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WY9-gY-jc8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4210" y="438"/>
+            <point key="canvasLocation" x="5136.6412213740459" y="437.32394366197184"/>
+        </scene>
+        <!--Category Navigation Controller-->
+        <scene sceneID="but-dj-taP">
+            <objects>
+                <navigationController storyboardIdentifier="categoryT" automaticallyAdjustsScrollViewInsets="NO" id="hI5-2D-2UP" customClass="CategoryNavigationController" customModule="Hunter" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="arrowBack" backIndicatorTransitionMaskImage="arrowBack" id="vMA-bc-Bo3">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="#0093F5"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" name="#0093F5"/>
+                            <textAttributes key="titleTextAttributes">
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BU2-Ms-2Dk" kind="relationship" relationship="rootViewController" id="Lyu-9l-7tG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qzd-qa-016" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="T4F-Jc-zEm" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="1937" y="844"/>
         </scene>
     </scenes>
     <designables>
         <designable name="23v-Ig-X8U">
-            <size key="intrinsicContentSize" width="32" height="14.666666666666666"/>
+            <size key="intrinsicContentSize" width="42" height="24.666666666666664"/>
         </designable>
         <designable name="3gz-XJ-CN2">
             <size key="intrinsicContentSize" width="35" height="28"/>
@@ -2356,13 +2396,13 @@
             <size key="intrinsicContentSize" width="35" height="28"/>
         </designable>
         <designable name="e7t-uk-gto">
-            <size key="intrinsicContentSize" width="4" height="13.666666666666666"/>
+            <size key="intrinsicContentSize" width="14" height="23.666666666666664"/>
         </designable>
         <designable name="irM-O6-xgk">
             <size key="intrinsicContentSize" width="35" height="28"/>
         </designable>
         <designable name="upa-3u-dKc">
-            <size key="intrinsicContentSize" width="7.333333333333333" height="19.333333333333332"/>
+            <size key="intrinsicContentSize" width="17.333333333333332" height="29.333333333333332"/>
         </designable>
         <designable name="v7I-Sx-uQh">
             <size key="intrinsicContentSize" width="41" height="26"/>
@@ -2373,6 +2413,7 @@
         <image name="ProfileBackground" width="375" height="203"/>
         <image name="RectangleCancelImage" width="45" height="6"/>
         <image name="ShowCommentsIcon" width="12.666666984558105" height="8"/>
+        <image name="arrowBack" width="20.333333969116211" height="13.666666984558105"/>
         <image name="backgroundAsk" width="57" height="57"/>
         <image name="cam_file" width="144" height="144"/>
         <image name="del_gray" width="64" height="64"/>
@@ -2384,7 +2425,7 @@
         <image name="svgexport-6 - 2022-09-12T213831.807" width="21" height="17.333333969116211"/>
         <image name="verification" width="16" height="16"/>
         <namedColor name="#0093F5">
-            <color red="0.0" green="0.57647058823529407" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.57599997520446777" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="#0EBFB1">
             <color red="0.054999999701976776" green="0.74900001287460327" blue="0.6940000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

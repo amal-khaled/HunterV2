@@ -12,11 +12,11 @@ class TabBarVC: WoofTabBarController {
 
     override var defaultIndex: Int { 0 }
     
-    let homeVC = HomeViewController.instantiate()
-    let storesVC = StoresVC.instantiate()
-    let addAdsVC = AddAdvsVC.instantiate()
-    let categoryVC = CategoryViewController.instantiate()
-    let menuVC = MenuVC.instantiate()
+    let homeVC = HomeNavigationController.instantiate()
+    let storesVC = StoreNavigationController.instantiate()
+    let addAdsVC = AddAddNavigationController.instantiate()
+    let categoryVC = CategoryNavigationController.instantiate()
+    let menuVC = ProfileNavigationController.instantiate()
     
     
     override func viewDidLoad() {
@@ -31,13 +31,14 @@ class TabBarVC: WoofTabBarController {
     }
 
     override func viewControllers() -> [WoofTabControllerItem] {
-        return [homeVC, storesVC, addAdsVC, categoryVC, menuVC]
+        return [homeVC,storesVC,addAdsVC,categoryVC,menuVC]
+                //, storesVC, addAdsVC, categoryVC, menuVC]
     }
 }
 
 extension TabBarVC: WoofTabBarControllerBarViewDelegate {
     func shouldSelectItem(itemView: WoofTabBarItemView, destinationVC: WoofTabBarController.WoofTabControllerItem, atIndex: Int) -> Bool {
-
+        navigationController?.popToRootViewController(animated: false)
         return true
     }
     

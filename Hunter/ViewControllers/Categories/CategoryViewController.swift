@@ -187,9 +187,9 @@ extension CategoryViewController{
         }
     }
 }
-extension CategoryViewController:WoofTabBarControllerDataSource, WoofTabBarControllerDelegate {
-    
-    func woofTabBarItem() -> WoofTabBarItem {
-        return WoofTabBarItem(title: "Categories".localize, image: "CategoryIcon", selectedImage: "CategoryButtonIcon")
-    }
-}
+//extension CategoryViewController:WoofTabBarControllerDataSource, WoofTabBarControllerDelegate {
+//    
+//    func woofTabBarItem() -> WoofTabBarItem {
+//        return WoofTabBarItem(title: "Categories".localize, image: "CategoryIcon", selectedImage: "CategoryButtonIcon")
+//    }
+//}

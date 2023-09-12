@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F2n-Rp-azu">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -1103,7 +1103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gcI-cr-ttW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1835.3846153846152" y="715.87677725118476"/>
+            <point key="canvasLocation" x="3692.3076923076924" y="715.87677725118476"/>
         </scene>
         <!--My AdsVC-->
         <scene sceneID="qB8-lQ-lRD">
@@ -1329,7 +1329,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qne-SU-rS5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2626.1538461538462" y="715.87677725118476"/>
+            <point key="canvasLocation" x="4484.6153846153848" y="715.87677725118476"/>
         </scene>
         <!--Change CountryVC-->
         <scene sceneID="c0Q-X5-tJE">
@@ -1491,7 +1491,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aCj-Jj-Nop" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3392.3076923076924" y="703.79146919431275"/>
+            <point key="canvasLocation" x="5249.2307692307686" y="703.79146919431275"/>
         </scene>
         <!--Verify AccountVC-->
         <scene sceneID="YXN-oH-Taz">
@@ -2339,7 +2339,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BDh-rN-sMO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4090.7692307692305" y="712.32227488151659"/>
+            <point key="canvasLocation" x="5949.2307692307686" y="712.32227488151659"/>
         </scene>
         <!--Verify Account Image PickerVC-->
         <scene sceneID="lnW-di-3Pb">
@@ -2550,7 +2550,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="clA-a4-98b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4949.2307692307695" y="715.87677725118476"/>
+            <point key="canvasLocation" x="6807.6923076923076" y="715.87677725118476"/>
         </scene>
         <!--FavouritesVC-->
         <scene sceneID="Ps2-OV-S0n">
@@ -2687,7 +2687,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5tj-0p-BOJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5812.3076923076924" y="715.87677725118476"/>
+            <point key="canvasLocation" x="7670.7692307692305" y="715.87677725118476"/>
         </scene>
         <!--My AsksVC-->
         <scene sceneID="rsf-kT-icR">
@@ -2770,7 +2770,7 @@
                                                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2p-iZ-APZ">
                                                                                                                     <rect key="frame" x="0.0" y="1.3333333333333313" width="31.333333333333332" height="13.666666666666664"/>
                                                                                                                     <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="13.5"/>
-                                                                                                                    <color key="textColor" name="#0EBFB1"/>
+                                                                                                                    <color key="textColor" name="#0093F5"/>
                                                                                                                     <nil key="highlightedColor"/>
                                                                                                                 </label>
                                                                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verification" translatesAutoresizingMaskIntoConstraints="NO" id="Gkg-bc-Nyx">
@@ -3065,7 +3065,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZ2-Gw-tUm" userLabel="add comment">
                                         <rect key="frame" x="320" y="688" width="45" height="45"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 70385" translatesAutoresizingMaskIntoConstraints="NO" id="G60-bI-Ed1">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add" translatesAutoresizingMaskIntoConstraints="NO" id="G60-bI-Ed1">
                                                 <rect key="frame" x="10" y="10" width="25" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="WLh-Zo-HhX"/>
@@ -3139,7 +3139,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IvY-Cl-ZxI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6503.0769230769229" y="711.61137440758296"/>
+            <point key="canvasLocation" x="8361.538461538461" y="711.61137440758296"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="OGb-iH-irN">
+            <objects>
+                <navigationController storyboardIdentifier="menuT" automaticallyAdjustsScrollViewInsets="NO" id="F2n-Rp-azu" customClass="ProfileNavigationController" customModule="Hunter" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Menu" image="menu" id="h6y-pF-3up">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ABs-LL-KEJ">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Q3R-z2-mxY" kind="relationship" relationship="rootViewController" id="kmg-nZ-dqL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6f4-Rr-IB7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2752" y="712"/>
         </scene>
     </scenes>
     <designables>
@@ -3158,13 +3181,13 @@
         <image name="CategoryIcon2" width="15" height="19.666666030883789"/>
         <image name="ChangeLanguageImage" width="100" height="100"/>
         <image name="FavoritesIcon" width="23" height="23"/>
-        <image name="Group 70385" width="37.666667938232422" height="37.666667938232422"/>
         <image name="IconBack" width="15" height="15.666666984558105"/>
         <image name="Path 75459" width="272" height="38.333332061767578"/>
         <image name="ProfileBackground" width="375" height="203"/>
         <image name="QA" width="23" height="23"/>
         <image name="ShowCommentsIcon" width="12.666666984558105" height="8"/>
         <image name="UploadDovImage" width="337" height="150"/>
+        <image name="add" width="50" height="50"/>
         <image name="arrow_Down" width="12" height="6.3333334922790527"/>
         <image name="check_icon" width="19" height="14"/>
         <image name="country" width="16" height="16"/>
@@ -3172,6 +3195,7 @@
         <image name="empty-favourite" width="185.33332824707031" height="151.66667175292969"/>
         <image name="log-out" width="20" height="20"/>
         <image name="logo_photo" width="37.333332061767578" height="37.333332061767578"/>
+        <image name="menu" width="25" height="19"/>
         <image name="mobile" width="13.666666984558105" height="22.333333969116211"/>
         <image name="myAds" width="23" height="23"/>
         <image name="phone2" width="64" height="64"/>

@@ -12,11 +12,11 @@ import WoofTabBarController
 
 class HomeViewController: UIViewController {
     
-    static func instantiate()->HomeViewController{
-        let controller = UIStoryboard(name: MAIN_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier:"home") as! HomeViewController
-        return controller
-    }
-    
+//    static func instantiate()->HomeViewController{
+//        let controller = UIStoryboard(name: MAIN_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier:"home") as! HomeViewController
+//        return controller
+//    }
+//    
     
     
     
@@ -663,9 +663,9 @@ extension HomeViewController:UITextFieldDelegate{
         }
 }
 
-extension HomeViewController:WoofTabBarControllerDataSource, WoofTabBarControllerDelegate {
-    
-    func woofTabBarItem() -> WoofTabBarItem {
-        return WoofTabBarItem(title: "Home".localize, image: "home", selectedImage: "HomeButtonIcon",notificationCount: 3)
-    }
-}
+//extension HomeViewController:WoofTabBarControllerDataSource, WoofTabBarControllerDelegate {
+//
+//    func woofTabBarItem() -> WoofTabBarItem {
+//        return WoofTabBarItem(title: "Home".localize, image: "home", selectedImage: "HomeButtonIcon",notificationCount: 3)
+//    }
+//}

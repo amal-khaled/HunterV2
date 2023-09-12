@@ -350,9 +350,9 @@ extension MenuVC {
       
     }
 }
-extension MenuVC:WoofTabBarControllerDataSource, WoofTabBarControllerDelegate {
-    
-    func woofTabBarItem() -> WoofTabBarItem {
-        return WoofTabBarItem(title: "Profile".localize, image: "userProfile", selectedImage: "ProfileButtonIcon")
-    }
-}
+//extension MenuVC:WoofTabBarControllerDataSource, WoofTabBarControllerDelegate {
+//    
+//    func woofTabBarItem() -> WoofTabBarItem {
+//        return WoofTabBarItem(title: "Profile".localize, image: "userProfile", selectedImage: "ProfileButtonIcon")
+//    }
+//}

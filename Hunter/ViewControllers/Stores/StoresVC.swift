@@ -190,9 +190,9 @@ extension StoresVC:UITextFieldDelegate{
             return true
         }
 }
-extension StoresVC:WoofTabBarControllerDataSource, WoofTabBarControllerDelegate {
-    
-    func woofTabBarItem() -> WoofTabBarItem {
-        return WoofTabBarItem(title: "Commercial".localize, image: "storeIconGray", selectedImage: "storeButtonIcon")
-    }
-}
+//extension StoresVC:WoofTabBarControllerDataSource, WoofTabBarControllerDelegate {
+//    
+//    func woofTabBarItem() -> WoofTabBarItem {
+//        return WoofTabBarItem(title: "Commercial".localize, image: "storeIconGray", selectedImage: "storeButtonIcon")
+//    }
+//}

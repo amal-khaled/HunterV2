@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ig8-3C-ceV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ig8-3C-ceV">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -35,7 +35,7 @@
         <!--Messages-->
         <scene sceneID="gsg-IU-BfZ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ig8-3C-ceV" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="storeT" automaticallyAdjustsScrollViewInsets="NO" id="Ig8-3C-ceV" customClass="StoreNavigationController" customModule="Hunter" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Messages" image="chatIcon" id="rJR-BP-xnF">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
@@ -3974,7 +3974,7 @@ To get free ads</string>
         <image name="user_image" width="225" height="225"/>
         <image name="webSiteImage" width="41" height="41"/>
         <image name="webSocial" width="28.666666030883789" height="26"/>
-        <image name="whatsAppImage" width="41" height="41"/>
+        <image name="whatsAppImage" width="221" height="221"/>
         <image name="whattsIcon" width="35" height="35"/>
         <namedColor name="#0093F5">
             <color red="0.0" green="0.57599997520446777" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

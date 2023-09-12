@@ -55,6 +55,11 @@
 		65B5505B2A1C863F002D2264 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B5505A2A1C863F002D2264 /* SearchController.swift */; };
 		65B5505D2A1CB53E002D2264 /* SearchPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B5505C2A1CB53E002D2264 /* SearchPersonViewController.swift */; };
 		65B5505F2A1CB640002D2264 /* FollowerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B5505E2A1CB640002D2264 /* FollowerTableViewCell.swift */; };
+		65B873B72AB09C3D0020BD23 /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B873B62AB09C3D0020BD23 /* HomeNavigationController.swift */; };
+		65B873B92AB0A0A90020BD23 /* StoreNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B873B82AB0A0A90020BD23 /* StoreNavigationController.swift */; };
+		65B873BB2AB0A0CF0020BD23 /* AddAddNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B873BA2AB0A0CF0020BD23 /* AddAddNavigationController.swift */; };
+		65B873BD2AB0A0F30020BD23 /* CategoryNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B873BC2AB0A0F30020BD23 /* CategoryNavigationController.swift */; };
+		65B873BF2AB0A10B0020BD23 /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B873BE2AB0A10B0020BD23 /* ProfileNavigationController.swift */; };
 		65C4B6132A248C3300A59A4B /* Tajawal-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65C4B6112A248C3300A59A4B /* Tajawal-Bold.ttf */; };
 		65C4B6142A248C3300A59A4B /* Tajawal-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65C4B6122A248C3300A59A4B /* Tajawal-Regular.ttf */; };
 		65C7FF0029FD0A350062BFAA /* TypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C7FEFF29FD0A350062BFAA /* TypeViewController.swift */; };
@@ -306,6 +311,11 @@
 		65B5505A2A1C863F002D2264 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		65B5505C2A1CB53E002D2264 /* SearchPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPersonViewController.swift; sourceTree = "<group>"; };
 		65B5505E2A1CB640002D2264 /* FollowerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerTableViewCell.swift; sourceTree = "<group>"; };
+		65B873B62AB09C3D0020BD23 /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
+		65B873B82AB0A0A90020BD23 /* StoreNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreNavigationController.swift; sourceTree = "<group>"; };
+		65B873BA2AB0A0CF0020BD23 /* AddAddNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddNavigationController.swift; sourceTree = "<group>"; };
+		65B873BC2AB0A0F30020BD23 /* CategoryNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryNavigationController.swift; sourceTree = "<group>"; };
+		65B873BE2AB0A10B0020BD23 /* ProfileNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigationController.swift; sourceTree = "<group>"; };
 		65C4B6112A248C3300A59A4B /* Tajawal-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Bold.ttf"; sourceTree = "<group>"; };
 		65C4B6122A248C3300A59A4B /* Tajawal-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Regular.ttf"; sourceTree = "<group>"; };
 		65C7FEFF29FD0A350062BFAA /* TypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeViewController.swift; sourceTree = "<group>"; };
@@ -599,6 +609,7 @@
 				656FB05629FD5D5D00751C6C /* CityViewController.swift */,
 				656FB05829FD5D6C00751C6C /* CitiesViewController.swift */,
 				6594DE3F29FF1E2B00018AF5 /* StateViewController.swift */,
+				65B873B62AB09C3D0020BD23 /* HomeNavigationController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -835,6 +846,7 @@
 				65F33D082A229D4100A1A889 /* AskRepliesViewController.swift */,
 				65F33D0A2A22DCC700A1A889 /* ReportAskReplyViewController.swift */,
 				65F33D0C2A22DCD500A1A889 /* ReplyAskViewController.swift */,
+				65B873BC2AB0A0F30020BD23 /* CategoryNavigationController.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -1000,6 +1012,7 @@
 				C85FFCA92A260A4B000C426D /* EditAdVC.swift */,
 				C80690692A42E8A9008BB53C /* PickupMediaPopupEditAdsVC.swift */,
 				C8B256E92AA8FED200317A12 /* ChooseAdTypeVC.swift */,
+				65B873BA2AB0A0CF0020BD23 /* AddAddNavigationController.swift */,
 			);
 			path = "Add Ad";
 			sourceTree = "<group>";
@@ -1108,6 +1121,7 @@
 				C8C714FB2A646805006C5AFE /* FollowersAndFollowingsVC.swift */,
 				C89AD68C2A69829900748572 /* BlockUserVC.swift */,
 				C8C1494F2A84E7F00055DC7B /* CreditVC.swift */,
+				65B873BE2AB0A10B0020BD23 /* ProfileNavigationController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -1166,6 +1180,7 @@
 				C89BB55E2AA080EE00E3612F /* EditStoreVC.swift */,
 				C89BB5602AA0810600E3612F /* StoreProfileVC.swift */,
 				C8051C182AA26E76003EF686 /* EditSocialMediaVC.swift */,
+				65B873B82AB0A0A90020BD23 /* StoreNavigationController.swift */,
 			);
 			path = Stores;
 			sourceTree = "<group>";
@@ -1444,6 +1459,7 @@
 				6520853F29FFB99A00C38B45 /* RegisterVerifyViewController.swift in Sources */,
 				65784C692A27147B0099A293 /* ChatController.swift in Sources */,
 				C8205CCE2A4871CC0039B287 /* ChangePasswordVC.swift in Sources */,
+				65B873BB2AB0A0CF0020BD23 /* AddAddNavigationController.swift in Sources */,
 				C889ABF72A8CC0DB0088D158 /* StoresModel.swift in Sources */,
 				65E15A712A210B1C006930A4 /* AskSubCategoryCollectionViewCell.swift in Sources */,
 				C87DD3A52A485C7000B6B0FB /* SuccessVerifiationModel.swift in Sources */,
@@ -1490,6 +1506,7 @@
 				C8FF98062AA50CD900DBA6CF /* PackagesController.swift in Sources */,
 				658DE52029F82D740015D549 /* Product.swift in Sources */,
 				C85FFCBB2A260AAE000C426D /* MyAdsCollectionViewCell.swift in Sources */,
+				65B873BF2AB0A10B0020BD23 /* ProfileNavigationController.swift in Sources */,
 				658DE51729F82B690015D549 /* MainCategoryCollectionViewCell.swift in Sources */,
 				65DD11F929E6845D00A3B8DD /* SceneDelegate.swift in Sources */,
 				658DE51E29F82D5F0015D549 /* ProductCollectionViewCell.swift in Sources */,
@@ -1537,6 +1554,7 @@
 				C89D12852A10209200669FD9 /* AddAdvsController.swift in Sources */,
 				C8AD40EB2A2B110F00E464DB /* CondsVC.swift in Sources */,
 				C85FFCA42A260A0F000C426D /* ChatVC.swift in Sources */,
+				65B873B92AB0A0A90020BD23 /* StoreNavigationController.swift in Sources */,
 				C8C6C63D2AAD9E240049FBFB /* SuccessPlanSucbscribeVC.swift in Sources */,
 				C8191F992A40748D0057AA28 /* FavouritesVC.swift in Sources */,
 				65B5505F2A1CB640002D2264 /* FollowerTableViewCell.swift in Sources */,
@@ -1556,8 +1574,10 @@
 				C8A6A52D2AA6D3BE00AC321B /* PackagesFeatureCell.swift in Sources */,
 				C8A2BECE2A3A64B200A05E77 /* ViewPagerOptions.swift in Sources */,
 				C85FFCDF2A260BEF000C426D /* MsgContactCell.swift in Sources */,
+				65B873BD2AB0A0F30020BD23 /* CategoryNavigationController.swift in Sources */,
 				652711ED29EBF81600D503F9 /* RegisterViewController.swift in Sources */,
 				65F33D052A220DEC00A1A889 /* AddAskViewController.swift in Sources */,
+				65B873B72AB09C3D0020BD23 /* HomeNavigationController.swift in Sources */,
 				C8A2BED82A3B5FA700A05E77 /* FollowersCell.swift in Sources */,
 				656FB05929FD5D6C00751C6C /* CitiesViewController.swift in Sources */,
 				65DD121E29E6915A00A3B8DD /* Constants.swift in Sources */,
