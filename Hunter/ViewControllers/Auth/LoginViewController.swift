@@ -180,8 +180,8 @@ extension LoginViewController{
        
          StaticFunctions.enableBtnWithoutAlpha(btn: loginBtn, status: false)
          
+//         let phoneNumber = countryCode + phoneTF.text!
          let phoneNumber = countryCode + phoneTF.text!
-         
          if Reachability.isConnectedToNetwork(){
              self.loginBtn.startAnimation()
              AppDelegate.currentUser = User()

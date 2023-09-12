@@ -11,12 +11,16 @@ import MOLH
 import IQKeyboardManagerSwift
 import Alamofire
 import TransitionButton
+import WoofTabBarController
 //import NextGrowingTextView
 
 
 class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
    
-    
+    static func instantiate()->AddAdvsVC{
+        let controller = UIStoryboard(name: ADVS_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier:ADDADVS_VCID) as! AddAdvsVC
+        return controller
+    }
     
     //MARK: IBOutlets
     
@@ -1089,5 +1093,11 @@ extension AddAdvsVC:PayingDelegate{
     }
     func didPayingSuccess() {
         goToSuccessfullAddAd()
+    }
+}
+extension AddAdvsVC:WoofTabBarControllerDataSource, WoofTabBarControllerDelegate {
+    
+    func woofTabBarItem() -> WoofTabBarItem {
+        return WoofTabBarItem(title: "Add Your Ad".localize, image: "addAdvsButtonIconGray", selectedImage: "AddAdsIconMain")
     }
 }

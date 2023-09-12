@@ -35,10 +35,10 @@
                                 <rect key="frame" x="0.0" y="90" width="348" height="2110"/>
                                 <subviews>
                                     <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WLF-qk-8zt">
-                                        <rect key="frame" x="0.0" y="0.0" width="348" height="1399"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="348" height="1469"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fBJ-rf-Hhc">
-                                                <rect key="frame" x="15" y="15" width="318" height="1384"/>
+                                                <rect key="frame" x="15" y="15" width="318" height="1454"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="1wo-yp-Fy9">
                                                         <rect key="frame" x="0.0" y="15" width="318" height="1339"/>
@@ -2322,7 +2322,7 @@
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="1wo-yp-Fy9" firstAttribute="top" secondItem="fBJ-rf-Hhc" secondAttribute="top" constant="15" id="88t-jA-YBK"/>
-                                                    <constraint firstAttribute="bottom" secondItem="1wo-yp-Fy9" secondAttribute="bottom" constant="30" id="EgO-NE-9Xh"/>
+                                                    <constraint firstAttribute="bottom" secondItem="1wo-yp-Fy9" secondAttribute="bottom" constant="100" id="EgO-NE-9Xh"/>
                                                     <constraint firstAttribute="trailing" secondItem="1wo-yp-Fy9" secondAttribute="trailing" id="Wa1-7i-Ze2"/>
                                                     <constraint firstItem="1wo-yp-Fy9" firstAttribute="centerX" secondItem="fBJ-rf-Hhc" secondAttribute="centerX" id="mOg-PW-fiY"/>
                                                     <constraint firstItem="1wo-yp-Fy9" firstAttribute="leading" secondItem="fBJ-rf-Hhc" secondAttribute="leading" id="tbq-5b-3cJ"/>
@@ -3634,7 +3634,7 @@
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
                                                                                                     <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NdE-b4-UUX">
-                                                                                                        <rect key="frame" x="89.333333333333371" y="0.0" width="270.66666666666663" height="15"/>
+                                                                                                        <rect key="frame" x="89.333333333333343" y="0.0" width="270.66666666666663" height="15"/>
                                                                                                         <subviews>
                                                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لن تتم مشاركة موقع الخريطة مع المستخدمين" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3l-4i-Ngn">
                                                                                                                 <rect key="frame" x="0.0" y="2" width="247.66666666666666" height="13"/>

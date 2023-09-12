@@ -7,9 +7,19 @@
 
 import UIKit
 import MOLH
+import WoofTabBarController
 //import RAMAnimatedTabBarController
 
 class HomeViewController: UIViewController {
+    
+    static func instantiate()->HomeViewController{
+        let controller = UIStoryboard(name: MAIN_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier:"home") as! HomeViewController
+        return controller
+    }
+    
+    
+    
+    
     @IBOutlet weak var ContainerStackView: UIStackView!
     
     @IBOutlet weak var ScrollView: UIScrollView!
@@ -53,17 +63,24 @@ class HomeViewController: UIViewController {
     var subCategories = [Category]()
     
     let titleLabel = UILabel()
-    
+    let badgeLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
     private let shimmerView = ProductsShimmerView.loadFromNib()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.isNavigationBarHidden = false
         ConfigureView()
         configureNavButtons()
+        navigationController?.navigationBar.tintColor = UIColor.green // Change to your desired text color
+        print(navigationController)
+        updateBadgeCount(5)
     }
     override func viewDidAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = false
+        
+        print(navigationController)
 
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -86,6 +103,7 @@ class HomeViewController: UIViewController {
         getFeatureData()
         getStores()
     }
+    
     
     
    
@@ -460,7 +478,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             return cell
         }else if collectionView == FeaturesCollectionView {
          let    cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell-feature", for: indexPath) as! FeaturesProductsCollectionViewCell
-            cell.setData(product: featureProducts.reversed()[indexPath.item])
+            cell.setData(product: featureProducts[indexPath.item])
             return cell
         }else if collectionView == storeCollectionView {
             
@@ -580,24 +598,39 @@ extension HomeViewController {
 
            let chatBarItem = UIBarButtonItem(customView: chatButton)
         
-        let notificationButton = UIButton(type: .custom)
-        notificationButton.frame = CGRect(x: 0.0, y: 0.0, width: 25, height: 25)
-        notificationButton.setImage(UIImage(named:"notificationn 1"), for: .normal)
-        notificationButton.addTarget(self, action: #selector(didTapNotificationButton), for: UIControl.Event.touchUpInside)
+        let notificationButton = UIButton.init(frame: CGRect.init(x: 0, y: 0, width: 25, height: 25))
+        notificationButton.setImage(image2, for: .normal)
+        notificationButton.addTarget(self, action: #selector(didTapNotificationButton), for: .touchUpInside)
 
-           let notificationBarItem = UIBarButtonItem(customView: notificationButton)
-        
-            
-            // Create buttons with images
-//               let chatButton = UIBarButtonItem(customView: createButtonWithImage(image1, selector: #selector(didTapChatButton)))
-//
-//               let notificationButton = UIBarButtonItem(customView: createButtonWithImage(image2, selector: #selector(didTapNotificationButton)))
-//        notificationButton.frame = CGRect(x: 0.0, y: 0.0, width: 30, height: 30)
+        self.badgeLabel.backgroundColor = .red
+        self.badgeLabel.clipsToBounds = true
+        self.badgeLabel.layer.cornerRadius = badgeLabel.frame.height / 2
+        self.badgeLabel.textColor = UIColor.white
+        self.badgeLabel.font = UIFont.systemFont(ofSize: 12)
+        self.badgeLabel.textAlignment = .center
 
+        notificationButton.addSubview(self.badgeLabel)
+
+//        self.navigationItem.rightBarButtonItems = []
             // Add buttons to the right side of the navigation bar
-            navigationItem.rightBarButtonItems = [notificationBarItem,chatBarItem]
+            navigationItem.rightBarButtonItems = [UIBarButtonItem.init(customView: notificationButton),chatBarItem]
     }
    
+    // Update the badge count
+    func updateBadgeCount(_ count: Int) {
+        if count > 0 {
+            badgeLabel.text = "\(count)"
+            badgeLabel.isHidden = false
+        } else {
+            badgeLabel.isHidden = true
+        }
+    }
+
+
+
+
+
+
     @objc private func didTapChatButton() {
         // Handle chat  tap
         print("Chat")
@@ -630,3 +663,9 @@ extension HomeViewController:UITextFieldDelegate{
         }
 }
 
+extension HomeViewController:WoofTabBarControllerDataSource, WoofTabBarControllerDelegate {
+    
+    func woofTabBarItem() -> WoofTabBarItem {
+        return WoofTabBarItem(title: "Home".localize, image: "home", selectedImage: "HomeButtonIcon",notificationCount: 3)
+    }
+}

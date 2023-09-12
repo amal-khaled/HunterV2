@@ -49,7 +49,7 @@ class OtherUserProductVC: UIViewController {
     }
     func get(page:Int){
        // products.data?.data?.removeAll()
-        let params : [String: Any]  = ["uid":otherUserID,"country_id":otherUserCountryId, "page":page]
+        let params : [String: Any]  = ["uid":otherUserID,"country_id":otherUserCountryId, "page":page,"status":"published"]
         print("parameters for get my advs ======> ", params)
         guard let url = URL(string: Constants.DOMAIN+"prods_by_user") else{return}
         AF.request(url, method: .post, parameters: params)

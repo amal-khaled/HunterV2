@@ -721,10 +721,11 @@ extension UILabel {
     }
 }
 extension UIImageView{
-    func setImageWithLoading(url: String){
+    func setImageWithLoading(url: String,placeholder:String? = "placeHolderImage"){
         self.sd_imageIndicator = SDWebImageActivityIndicator.gray
         print("\(Constants.IMAGE_URL)\(url)")
-        self.sd_setImage(with: URL(string: "\(Constants.IMAGE_URL)\(url)"),placeholderImage: UIImage(named: "placeHolderImage"))
+        let placeholderImage = (placeholder != nil) ? UIImage(named: placeholder!) : UIImage(named: "placeHolderImage")
+        self.sd_setImage(with: URL(string: "\(Constants.IMAGE_URL)\(url)"),placeholderImage: placeholderImage)
     }
     
     

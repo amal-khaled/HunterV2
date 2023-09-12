@@ -21,6 +21,7 @@ class OtherUserProductCell: UICollectionViewCell {
         
         func configure(data:SpecialProdModel) {
             if let image = data.img , let prodImage = data.prodsImage {
+                print(image)
                 if image != "" {
                     if image.contains(".mp4")  || image.contains(".mov") {
 
