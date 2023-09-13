@@ -34,6 +34,7 @@ class StoresVC: UIViewController {
     var countryId = AppDelegate.currentCountry.id ?? 6
     var cityId = -1
     var storesList = [StoreObject]()
+    var sliderList = [SliderObject]()
     
     //MARK: - App Life Cycle
     override func viewDidLoad() {
@@ -42,6 +43,7 @@ class StoresVC: UIViewController {
         pagerView.delegate = self
         pagerView.dataSource = self
         getStores()
+        getSliders()
         
         customNavView.cornerRadius = 30
         customNavView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
@@ -150,15 +152,21 @@ extension StoresVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollect
 
 extension StoresVC:FSPagerViewDelegate , FSPagerViewDataSource {
     func numberOfItems(in pagerView: FSPagerView) -> Int {
-        return 3
+        return sliderList.count
     }
 
     func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
         let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "cell", at: index)
-            cell.imageView?.image = UIImage(named: "about_hdr")
+        cell.imageView?.setImageWithLoading(url: sliderList[index].img ?? "")
             return cell
     }
 
+    func pagerView(_ pagerView: FSPagerView, didSelectItemAt index: Int) {
+        let vc = UIStoryboard(name: PRODUCT_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: PRODUCT_VCID) as! ProductViewController
+        vc.modalPresentationStyle = .fullScreen
+        vc.product.id  = sliderList[index].id ?? 0
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
 }
 
@@ -170,6 +178,20 @@ extension StoresVC {
                 self.storesList.removeAll()
                 self.storesList.append(contentsOf: stores)
                 self.CollectionView.reloadData()
+            }else{
+                StaticFunctions.createErrorAlert(msg: message)
+            }
+        }, countryId: countryId)
+    }
+    
+    
+    func getSliders(){
+        StoresController.shared.getSliders(completion: { sliders, check, message in
+            if check == 0{
+                print(sliders.count)
+                self.sliderList.removeAll()
+                self.sliderList.append(contentsOf: sliders)
+                self.pagerView.reloadData()
             }else{
                 StaticFunctions.createErrorAlert(msg: message)
             }

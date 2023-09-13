@@ -125,7 +125,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable {
         
         // switch root view controllers
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        let nav = storyboard.instantiateViewController(withIdentifier: "homeT")
+        let nav = storyboard.instantiateViewController(withIdentifier: "TabBarVC")
         
         let scene = UIApplication.shared.connectedScenes.first
         if let sd : SceneDelegate = (scene?.delegate as? SceneDelegate) {
@@ -152,7 +152,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable {
     func reset() {
         if let window = UIApplication.shared.windows.first {
             let sb = UIStoryboard(name: MAIN_STORYBOARD, bundle: nil)
-               window.rootViewController = sb.instantiateViewController(withIdentifier: "homeT")
+               window.rootViewController = sb.instantiateViewController(withIdentifier: "TabBarVC")
                window.makeKeyAndVisible()
            }
 //        let rootViewController: UIWindow = ((UIApplication.shared.delegate?.window)!)!
@@ -164,6 +164,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable {
 //        rootviewcontroller.rootViewController = stry.instantiateViewController(withIdentifier: "homeT")
     }
     
+    
+    private func getnotifictionCounts(){
+        NotificationsController.shared.getNotificationsCount(completion: {
+            count, check, msg in
+            
+            if check == 1{
+                StaticFunctions.createErrorAlert(msg: msg)
+            }else{
+                Constants.notificationsCount = count?.data?.count ?? 0
+                
+            }
+        })
+    }
     
 }
 

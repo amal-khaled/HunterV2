@@ -186,7 +186,7 @@ class VerifyCodeVC: UIViewController {
                         if success{
                             StaticFunctions.createSuccessAlert(msg: message)
                             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){
-                                self.basicPresentation(storyName: MAIN_STORYBOARD, segueId: "homeT")
+                                self.basicPresentation(storyName: MAIN_STORYBOARD, segueId: "TabBarVC")
 
                             }
                         }else{

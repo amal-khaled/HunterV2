@@ -81,10 +81,16 @@ class MenuVC: UIViewController {
             }else{
                 userImageView.setImageWithLoading(url: AppDelegate.currentUser.pic ?? "")
             }
+            if AppDelegate.currentUser.isStore ?? false {
+                loginButton.isHidden = false
+                loginViewContainer.isHidden = false
+            }else{
+                loginViewContainer.isHidden = true
+                loginButton.isHidden = true
+                
+            }
             
             logoutView.isHidden = false
-            loginButton.isHidden = false
-            loginViewContainer.isHidden = false
             loginButton.setTitle("Stores Packages".localize, for: .normal)
         }else {
            // logged out
@@ -346,7 +352,7 @@ extension MenuVC {
         UserDefaults.standard.removeObject(forKey: "userId")
         UserDefaults.standard.synchronize()
         
-        self.basicPresentation(storyName: MAIN_STORYBOARD, segueId: "homeT")
+        self.basicPresentation(storyName: MAIN_STORYBOARD, segueId: "TabBarVC")
       
     }
 }

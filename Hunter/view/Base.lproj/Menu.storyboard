@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F2n-Rp-azu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F2n-Rp-azu">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -164,10 +164,10 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="350" height="535"/>
                                                         <subviews>
                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1sc-38-GzQ" userLabel="My Profile View">
-                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="57.666666666666664"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="65"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userProfile" translatesAutoresizingMaskIntoConstraints="NO" id="EkX-MX-oXe">
-                                                                        <rect key="frame" x="20" y="17.333333333333314" width="23" height="23"/>
+                                                                        <rect key="frame" x="20" y="21" width="23" height="23"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="23" id="Flo-Z6-LSG"/>
                                                                             <constraint firstAttribute="height" constant="23" id="MKH-12-leV"/>
@@ -179,7 +179,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </imageView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaL-Sz-CpT">
-                                                                        <rect key="frame" x="84" y="0.0" width="266" height="57.666666666666664"/>
+                                                                        <rect key="frame" x="84" y="0.0" width="266" height="65"/>
                                                                         <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="17"/>
                                                                         <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                                         <state key="normal" title="My Profile">
@@ -196,14 +196,14 @@
                                                                         </connections>
                                                                     </button>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArrowLeftSetting" translatesAutoresizingMaskIntoConstraints="NO" id="B3D-bC-XAL" customClass="LocalizableImage">
-                                                                        <rect key="frame" x="325" y="21.333333333333314" width="10" height="15"/>
+                                                                        <rect key="frame" x="325" y="25" width="10" height="15"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="10" id="176-bD-72q"/>
                                                                             <constraint firstAttribute="height" constant="15" id="dND-hX-R1a"/>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C30-uS-98A">
-                                                                        <rect key="frame" x="63" y="9" width="1" height="40"/>
+                                                                        <rect key="frame" x="63" y="12.666666666666686" width="1" height="40"/>
                                                                         <color key="backgroundColor" name="#E2E1E1"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="Zta-Gh-yx9"/>
@@ -232,10 +232,10 @@
                                                                 </constraints>
                                                             </view>
                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bWj-Gf-KBQ" userLabel="Add Ad View">
-                                                                <rect key="frame" x="0.0" y="59.666666666666686" width="350" height="57.666666666666657"/>
+                                                                <rect key="frame" x="0.0" y="67" width="350" height="65.333333333333314"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AddAdvertise" translatesAutoresizingMaskIntoConstraints="NO" id="Tyn-hS-VfI">
-                                                                        <rect key="frame" x="20" y="17.333333333333314" width="23" height="23"/>
+                                                                        <rect key="frame" x="20" y="21.333333333333314" width="23" height="23"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="23" id="bpH-SU-uXB"/>
                                                                             <constraint firstAttribute="height" constant="23" id="zZi-WB-baE"/>
@@ -247,7 +247,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </imageView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shb-gn-lJm">
-                                                                        <rect key="frame" x="84" y="0.0" width="266" height="57.666666666666664"/>
+                                                                        <rect key="frame" x="84" y="0.0" width="266" height="65.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="17"/>
                                                                         <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                                         <state key="normal" title="Add Ad">
@@ -264,14 +264,14 @@
                                                                         </connections>
                                                                     </button>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArrowLeftSetting" translatesAutoresizingMaskIntoConstraints="NO" id="HBq-WH-JYd" customClass="LocalizableImage">
-                                                                        <rect key="frame" x="325" y="21.333333333333314" width="10" height="15"/>
+                                                                        <rect key="frame" x="325" y="25.333333333333314" width="10" height="15"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="10" id="8NQ-xG-Edu"/>
                                                                             <constraint firstAttribute="height" constant="15" id="LVm-Ve-ukR"/>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cFX-Lq-zep">
-                                                                        <rect key="frame" x="63" y="9" width="1" height="40"/>
+                                                                        <rect key="frame" x="63" y="12.666666666666686" width="1" height="40"/>
                                                                         <color key="backgroundColor" name="#E2E1E1"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="UHf-8p-by9"/>
@@ -300,10 +300,10 @@
                                                                 </constraints>
                                                             </view>
                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6MP-Aw-zHF" userLabel="Favourites View">
-                                                                <rect key="frame" x="0.0" y="119.33333333333333" width="350" height="57.666666666666671"/>
+                                                                <rect key="frame" x="0.0" y="134.33333333333331" width="350" height="65"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FavoritesIcon" translatesAutoresizingMaskIntoConstraints="NO" id="OGK-Up-CcT">
-                                                                        <rect key="frame" x="20" y="17.333333333333371" width="23" height="23"/>
+                                                                        <rect key="frame" x="20" y="21" width="23" height="23"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="23" id="0XG-5w-jwx"/>
                                                                             <constraint firstAttribute="height" constant="23" id="pyw-eC-cFY"/>
@@ -315,7 +315,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </imageView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTb-bf-7FB">
-                                                                        <rect key="frame" x="84" y="0.0" width="266" height="57.666666666666664"/>
+                                                                        <rect key="frame" x="84" y="0.0" width="266" height="65"/>
                                                                         <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="17"/>
                                                                         <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                                         <state key="normal" title="Favourites">
@@ -332,14 +332,14 @@
                                                                         </connections>
                                                                     </button>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArrowLeftSetting" translatesAutoresizingMaskIntoConstraints="NO" id="AcQ-mw-ZJA" customClass="LocalizableImage">
-                                                                        <rect key="frame" x="325" y="21.333333333333371" width="10" height="15"/>
+                                                                        <rect key="frame" x="325" y="25" width="10" height="15"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="15" id="NT7-7k-hQ3"/>
                                                                             <constraint firstAttribute="width" constant="10" id="pmx-Fm-zFG"/>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l07-JE-CV4">
-                                                                        <rect key="frame" x="63" y="9" width="1" height="40"/>
+                                                                        <rect key="frame" x="63" y="12.333333333333371" width="1" height="40"/>
                                                                         <color key="backgroundColor" name="#E2E1E1"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="7bc-E0-EDR"/>
@@ -368,10 +368,10 @@
                                                                 </constraints>
                                                             </view>
                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vAm-rQ-3LE" userLabel="My Ads View">
-                                                                <rect key="frame" x="0.0" y="179" width="350" height="57.666666666666657"/>
+                                                                <rect key="frame" x="0.0" y="201.33333333333331" width="350" height="65.333333333333314"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myAds" translatesAutoresizingMaskIntoConstraints="NO" id="pDG-mB-oWX">
-                                                                        <rect key="frame" x="20" y="17.333333333333314" width="23" height="23"/>
+                                                                        <rect key="frame" x="20" y="21" width="23" height="23"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="23" id="cBb-IH-C9V"/>
                                                                             <constraint firstAttribute="width" constant="23" id="tCs-WL-eaB"/>
@@ -383,7 +383,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </imageView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDe-fy-E7X">
-                                                                        <rect key="frame" x="84" y="0.0" width="266" height="57.666666666666664"/>
+                                                                        <rect key="frame" x="84" y="0.0" width="266" height="65.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="17"/>
                                                                         <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                                         <state key="normal" title="My Ads">
@@ -400,14 +400,14 @@
                                                                         </connections>
                                                                     </button>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArrowLeftSetting" translatesAutoresizingMaskIntoConstraints="NO" id="TXj-3L-VyT" customClass="LocalizableImage">
-                                                                        <rect key="frame" x="325" y="21.333333333333314" width="10" height="15"/>
+                                                                        <rect key="frame" x="325" y="25" width="10" height="15"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="10" id="854-Fq-eJO"/>
                                                                             <constraint firstAttribute="height" constant="15" id="WFA-yD-1vN"/>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5v-k3-9tT">
-                                                                        <rect key="frame" x="63" y="9" width="1" height="40"/>
+                                                                        <rect key="frame" x="63" y="12.666666666666686" width="1" height="40"/>
                                                                         <color key="backgroundColor" name="#E2E1E1"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="bAu-1N-E2E"/>
@@ -435,11 +435,11 @@
                                                                     <constraint firstItem="pDG-mB-oWX" firstAttribute="centerY" secondItem="vAm-rQ-3LE" secondAttribute="centerY" id="wDD-nE-RDX"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gwh-sy-NLY" userLabel="My Asks View">
-                                                                <rect key="frame" x="0.0" y="238.66666666666666" width="350" height="57.666666666666657"/>
+                                                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gwh-sy-NLY" userLabel="My Asks View">
+                                                                <rect key="frame" x="0.0" y="267.66666666666663" width="350" height="0.0"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QA" translatesAutoresizingMaskIntoConstraints="NO" id="zXm-4H-dZz">
-                                                                        <rect key="frame" x="20" y="17.333333333333314" width="23" height="23"/>
+                                                                        <rect key="frame" x="20" y="-11.666666666666629" width="23" height="23"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="23" id="154-4K-42R"/>
                                                                             <constraint firstAttribute="height" constant="23" id="LbK-jI-fX6"/>
@@ -451,7 +451,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </imageView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKh-m7-EOU">
-                                                                        <rect key="frame" x="84" y="0.0" width="266" height="57.666666666666664"/>
+                                                                        <rect key="frame" x="84" y="0.0" width="266" height="0.0"/>
                                                                         <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="17"/>
                                                                         <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                                         <state key="normal" title="My Asks">
@@ -468,14 +468,14 @@
                                                                         </connections>
                                                                     </button>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArrowLeftSetting" translatesAutoresizingMaskIntoConstraints="NO" id="zcF-Uy-Znr" customClass="LocalizableImage">
-                                                                        <rect key="frame" x="325" y="21.333333333333314" width="10" height="15"/>
+                                                                        <rect key="frame" x="325" y="-7.6666666666666288" width="10" height="15"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="15" id="LDi-82-PHC"/>
                                                                             <constraint firstAttribute="width" constant="10" id="gYw-LD-aJw"/>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xuw-Jw-fru">
-                                                                        <rect key="frame" x="63" y="9" width="1" height="40"/>
+                                                                        <rect key="frame" x="63" y="-19.999999999999943" width="1" height="40"/>
                                                                         <color key="backgroundColor" name="#E2E1E1"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="1" id="XS3-1K-h1d"/>
@@ -504,10 +504,10 @@
                                                                 </constraints>
                                                             </view>
                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V5D-J4-yfn" userLabel="My Asks View">
-                                                                <rect key="frame" x="0.0" y="298.33333333333337" width="350" height="57.666666666666686"/>
+                                                                <rect key="frame" x="0.0" y="268.66666666666663" width="350" height="65"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="country" translatesAutoresizingMaskIntoConstraints="NO" id="VVv-lN-JHH">
-                                                                        <rect key="frame" x="20" y="17.333333333333258" width="23" height="23"/>
+                                                                        <rect key="frame" x="20" y="21" width="23" height="23"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="23" id="3Ou-8R-Jrj"/>
                                                                             <constraint firstAttribute="width" constant="23" id="adZ-pO-bF8"/>
@@ -519,7 +519,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </imageView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3X-5s-pW1">
-                                                                        <rect key="frame" x="84" y="0.0" width="266" height="57.666666666666664"/>
+                                                                        <rect key="frame" x="84" y="0.0" width="266" height="65"/>
                                                                         <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="17"/>
                                                                         <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                                         <state key="normal" title="Change Country">
@@ -536,14 +536,14 @@
                                                                         </connections>
                                                                     </button>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArrowLeftSetting" translatesAutoresizingMaskIntoConstraints="NO" id="bak-3d-jrW" customClass="LocalizableImage">
-                                                                        <rect key="frame" x="325" y="21.333333333333258" width="10" height="15"/>
+                                                                        <rect key="frame" x="325" y="25" width="10" height="15"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="10" id="CtA-cc-u88"/>
                                                                             <constraint firstAttribute="height" constant="15" id="p1S-kg-30b"/>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmw-lp-sUH">
-                                                                        <rect key="frame" x="63" y="9" width="1" height="40"/>
+                                                                        <rect key="frame" x="63" y="12.333333333333371" width="1" height="40"/>
                                                                         <color key="backgroundColor" name="#E2E1E1"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="8VF-Y7-Cer"/>
@@ -572,10 +572,10 @@
                                                                 </constraints>
                                                             </view>
                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNa-8Q-JjT" userLabel="Change Language View">
-                                                                <rect key="frame" x="0.0" y="358" width="350" height="57.666666666666686"/>
+                                                                <rect key="frame" x="0.0" y="335.66666666666663" width="350" height="65"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChangeLanguageImage" translatesAutoresizingMaskIntoConstraints="NO" id="RfM-Pd-Zj9">
-                                                                        <rect key="frame" x="20" y="17.333333333333371" width="23" height="23"/>
+                                                                        <rect key="frame" x="20" y="21" width="23" height="23"/>
                                                                         <color key="tintColor" name="textColor"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="23" id="ZGn-cf-f7p"/>
@@ -588,7 +588,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </imageView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0SR-AR-V6E">
-                                                                        <rect key="frame" x="84" y="0.0" width="266" height="57.666666666666664"/>
+                                                                        <rect key="frame" x="84" y="0.0" width="266" height="65"/>
                                                                         <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="17"/>
                                                                         <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                                         <state key="normal" title="Change Languge">
@@ -602,7 +602,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </button>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="521-C6-2MX">
-                                                                        <rect key="frame" x="63" y="9" width="1" height="40"/>
+                                                                        <rect key="frame" x="63" y="12.666666666666742" width="1" height="40"/>
                                                                         <color key="backgroundColor" name="#E2E1E1"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="1" id="JK1-E6-voc"/>
@@ -615,7 +615,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zac-Gp-tta">
-                                                                        <rect key="frame" x="220" y="14" width="120" height="30"/>
+                                                                        <rect key="frame" x="220" y="17.666666666666742" width="120" height="30"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BSq-dW-WKh">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
@@ -688,10 +688,10 @@
                                                                 </constraints>
                                                             </view>
                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCl-eW-E33" userLabel="Setting View">
-                                                                <rect key="frame" x="0.0" y="417.66666666666663" width="350" height="57.666666666666686"/>
+                                                                <rect key="frame" x="0.0" y="402.66666666666663" width="350" height="65.333333333333314"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" translatesAutoresizingMaskIntoConstraints="NO" id="WEV-4e-Xg9">
-                                                                        <rect key="frame" x="20" y="17.333333333333371" width="23" height="23"/>
+                                                                        <rect key="frame" x="20" y="21" width="23" height="23"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="23" id="cDh-od-eMi"/>
                                                                             <constraint firstAttribute="height" constant="23" id="fb6-XT-1jc"/>
@@ -703,7 +703,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </imageView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vou-0W-SaG">
-                                                                        <rect key="frame" x="84" y="0.0" width="266" height="57.666666666666664"/>
+                                                                        <rect key="frame" x="84" y="0.0" width="266" height="65.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="17"/>
                                                                         <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                                         <state key="normal" title="Settings">
@@ -720,14 +720,14 @@
                                                                         </connections>
                                                                     </button>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArrowLeftSetting" translatesAutoresizingMaskIntoConstraints="NO" id="sfp-wc-Zcj" customClass="LocalizableImage">
-                                                                        <rect key="frame" x="325" y="21.333333333333371" width="10" height="15"/>
+                                                                        <rect key="frame" x="325" y="25" width="10" height="15"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="15" id="NTL-Og-1vk"/>
                                                                             <constraint firstAttribute="width" constant="10" id="dzR-ge-O7o"/>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPZ-l0-68h">
-                                                                        <rect key="frame" x="63" y="9" width="1" height="40"/>
+                                                                        <rect key="frame" x="63" y="12.666666666666742" width="1" height="40"/>
                                                                         <color key="backgroundColor" name="#E2E1E1"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="BaT-8M-tXp"/>
@@ -756,10 +756,10 @@
                                                                 </constraints>
                                                             </view>
                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4D1-dz-n9V" userLabel="Account verification View">
-                                                                <rect key="frame" x="0.0" y="477.33333333333337" width="350" height="57.666666666666629"/>
+                                                                <rect key="frame" x="0.0" y="470" width="350" height="65"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verificationGray" translatesAutoresizingMaskIntoConstraints="NO" id="uGc-47-AD9">
-                                                                        <rect key="frame" x="20" y="17.333333333333258" width="23" height="23"/>
+                                                                        <rect key="frame" x="20" y="21" width="23" height="23"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="23" id="7QH-pW-hEe"/>
                                                                             <constraint firstAttribute="height" constant="23" id="dEe-5S-vSc"/>
@@ -771,7 +771,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </imageView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eET-U7-rwd">
-                                                                        <rect key="frame" x="84" y="0.0" width="266" height="57.666666666666664"/>
+                                                                        <rect key="frame" x="84" y="0.0" width="266" height="65"/>
                                                                         <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="17"/>
                                                                         <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                                         <state key="normal" title="Account Verification">
@@ -788,14 +788,14 @@
                                                                         </connections>
                                                                     </button>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArrowLeftSetting" translatesAutoresizingMaskIntoConstraints="NO" id="aSf-8v-64H" customClass="LocalizableImage">
-                                                                        <rect key="frame" x="325" y="21.333333333333258" width="10" height="15"/>
+                                                                        <rect key="frame" x="325" y="25" width="10" height="15"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="10" id="AnO-yq-dcr"/>
                                                                             <constraint firstAttribute="height" constant="15" id="Y4E-S2-apN"/>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J68-YV-Yyp">
-                                                                        <rect key="frame" x="63" y="9" width="1" height="40"/>
+                                                                        <rect key="frame" x="63" y="12.333333333333371" width="1" height="40"/>
                                                                         <color key="backgroundColor" name="#E2E1E1"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="SYA-FH-eZg"/>
@@ -1103,7 +1103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gcI-cr-ttW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3692.3076923076924" y="715.87677725118476"/>
+            <point key="canvasLocation" x="3612" y="596"/>
         </scene>
         <!--My AdsVC-->
         <scene sceneID="qB8-lQ-lRD">
@@ -1284,6 +1284,9 @@
                                         <state key="normal" title="ADD AD"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="didTapAddAdButton:" destination="wGP-BP-dVi" eventType="touchUpInside" id="zhb-6z-aZZ"/>

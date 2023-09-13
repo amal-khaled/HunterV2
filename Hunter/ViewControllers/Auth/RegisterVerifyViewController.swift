@@ -129,7 +129,7 @@ extension RegisterVerifyViewController :OTPFieldViewDelegate{
                 if check == 0{
                 
                     StaticFunctions.createSuccessAlert(msg: msg)
-                    self.basicPresentation(storyName: MAIN_STORYBOARD, segueId: "homeT")
+                    self.basicPresentation(storyName: MAIN_STORYBOARD, segueId: "TabBarVC")
 
                 }else{
                     StaticFunctions.createErrorAlert(msg: msg)

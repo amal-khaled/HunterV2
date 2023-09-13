@@ -96,7 +96,8 @@ class Constants {
     static let HOME_FEATURE_PRODUCTS_URL = DOMAIN + "feature_prods"
     static let GET_CATEGORIES_URL = DOMAIN + "categories"
     static let GET_SUB_CATEGORIES_URL = DOMAIN + "sub_category"
-    
+    static let GET_SLIDERS_URL = DOMAIN + "sliders"
+
     //Product
     static let PRODUCT_URL = DOMAIN + "prods_by_id"
     static let ADD_COMMENT_URL = DOMAIN + "comment_on_prods"
@@ -149,6 +150,7 @@ class Constants {
     //Notifications
     static let SAVE_TOKEN_URL = DOMAIN + "notifications/save_token"
     static let GET_NOTIFICATIONS_URL = DOMAIN + "notifications"
+    static let GET_NOTIFICATIONS_COUNT_URL = DOMAIN + "notifications/count"
     static let DELETE_NOTIFICATIONS_URL = DOMAIN + "notifications/delete_all"
     
     //Asks
@@ -179,6 +181,11 @@ class Constants {
     static var CITIES = [Country]()
     static var STATUS = [Country]()
     static var countryId = 6
+    
+    
+    //NotificationsCount
+    
+    static var notificationsCount = 0
     
     
     //location

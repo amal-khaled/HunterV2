@@ -41,3 +41,17 @@ struct UserNotification: Codable {
     
    
 }
+
+
+// MARK: - NotificationsCountModel
+struct NotificationsCountModel: Codable {
+    let message: String?
+    let data: CountData?
+    let success: Bool?
+    let statusCode: Int?
+}
+
+// MARK: - CountData
+struct CountData: Codable {
+    let count: Int?
+}

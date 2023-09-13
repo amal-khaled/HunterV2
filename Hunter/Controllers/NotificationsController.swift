@@ -100,5 +100,36 @@ class NotificationsController{
             }
             
         }, link: Constants.DELETE_NOTIFICATIONS_URL , param: [:])
-    } 
+    }
+    
+    
+    func getNotificationsCount(completion: @escaping(NotificationsCountModel?, Int, String)->()){
+        
+      
+            
+        APIConnection.apiConnection.postConnection(completion: {
+            data  in
+            guard let data = data else { return }
+            
+            do {
+                let userNotificationArray = try JSONDecoder().decode(NotificationsCountModel.self, from: data)
+                
+                if userNotificationArray.statusCode == 200{
+                    
+                    completion(userNotificationArray , 0 ,"")
+                }
+                else {
+                    completion(nil,1,userNotificationArray.message ?? "")
+                }
+                
+            } catch (let jerrorr){
+                
+                print(jerrorr)
+                completion(nil,1,SERVER_ERROR)
+                
+                
+            }
+            
+        }, link: Constants.GET_NOTIFICATIONS_COUNT_URL , param: [:])
+    }
 }

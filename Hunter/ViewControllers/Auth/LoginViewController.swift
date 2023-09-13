@@ -71,7 +71,7 @@ class LoginViewController: UIViewController {
     
      @IBAction func skipAction(_ sender: Any) {
          // retain Cycle 
-         self.basicPresentation(storyName: MAIN_STORYBOARD, segueId: "homeT")
+         self.basicPresentation(storyName: MAIN_STORYBOARD, segueId: "TabBarVC")
 //         dismiss(animated: true)
 
      }
@@ -199,7 +199,7 @@ extension LoginViewController{
                              AppDelegate.defaults.set( userObject.data.id ?? 0, forKey: "userId")
                              AppDelegate.currentUser.toke = userObject.token ?? ""
                              NotificationsController.shared.saveToken( token: AppDelegate.playerId)
-                             self.basicPresentation(storyName: MAIN_STORYBOARD, segueId: "homeT")
+                             self.basicPresentation(storyName: MAIN_STORYBOARD, segueId: "TabBarVC")
                          }else{
                              // go to Code Verfication
                              self.resendCode(userId: data?.data.id ?? 0)

@@ -512,15 +512,6 @@ extension HomeDetailsViewController: UICollectionViewDataSource, UICollectionVie
                     cell.featuredImageIcon.isHidden = true
                 }
             }
-            
-            
-//            if (indexPath.row % 2) == 0 {
-//                cell.backView.backgroundColor = UIColor(hexString: "#F4F8FF", alpha: 1)
-//                cell.backView.backgroundColor = UIColor(hexString: "#F4F8FF", alpha: 1)
-//            }else{
-//                cell.backView.backgroundColor = .white
-//                cell.backView.backgroundColor = .white
-//            }
             return cell
         }else if collectionView == mainCategoryCollectionView{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cat-cell", for: indexPath) as! MainCategoryCollectionViewCell
@@ -547,7 +538,9 @@ extension HomeDetailsViewController: UICollectionViewDataSource, UICollectionVie
             return cell
         }else if collectionView == FeaturesCollectionView {
          let    cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell-feature", for: indexPath) as! FeaturesProductsCollectionViewCell
-            cell.setData(product: featureProducts[indexPath.row])
+            if featureProducts.count > 0 {
+                cell.setData(product: featureProducts[indexPath.item])
+            }
             return cell
         }
         else{

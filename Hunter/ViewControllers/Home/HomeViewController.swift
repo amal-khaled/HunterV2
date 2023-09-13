@@ -32,6 +32,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var FeaturesCollectionView: UICollectionView!
     @IBOutlet weak var productCollectionView: UICollectionView!
     
+    @IBOutlet weak var productCollectionViewConstraints: NSLayoutConstraint!
     @IBOutlet weak var storeCollectionView: UICollectionView!
     
     @IBOutlet weak var typeView: UIView!
@@ -61,9 +62,11 @@ class HomeViewController: UIViewController {
     var storesList = [StoreObject]()
     var categories = [Category]()
     var subCategories = [Category]()
+    var collectionViewHeight:CGFloat = 0.0
     
     let titleLabel = UILabel()
-    let badgeLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+    let badgeLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 15, height: 15))
+    
     private let shimmerView = ProductsShimmerView.loadFromNib()
     
     
@@ -75,7 +78,7 @@ class HomeViewController: UIViewController {
         configureNavButtons()
         navigationController?.navigationBar.tintColor = UIColor.green // Change to your desired text color
         print(navigationController)
-        updateBadgeCount(5)
+        
     }
     override func viewDidAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = false
@@ -86,14 +89,7 @@ class HomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         self.navigationController?.navigationBar.isHidden = false
-//        if categoryId == 1 {
-//            sell = nil
-//            typeLbl.text = "All".localize
-//            self.typeView.isHidden = false
-//        }else{
-//            self.typeView.isHidden = true
-//
-//        }
+        getnotifictionCounts()
        
         countryId = AppDelegate.currentCountry.id ?? 6
         
@@ -355,8 +351,10 @@ extension HomeViewController{
             if check == 0{
                 print(featureProducts.count)
                 self.featureProducts = featureProducts
+                
                 if featureProducts.count > 0 {
                     self.featureContainerView.isHidden = false
+                    self.FeaturesCollectionView.reloadData()
                 }else{
                     self.featureContainerView.isHidden = true
                 }
@@ -374,6 +372,22 @@ extension HomeViewController{
             products, check, msg in
             if check == 0{
                 self.shimmerView.isHidden = true
+                
+                if products.count > 10 {
+                    print(products.count)
+                    DispatchQueue.main.async {
+                        self.collectionViewHeight = 10 * 150
+                        self.productCollectionViewConstraints.constant = self.collectionViewHeight
+                    }
+                }else{
+                    DispatchQueue.main.async {
+                        print(products.count)
+                        self.collectionViewHeight = CGFloat(products.count * 150)
+                        self.productCollectionViewConstraints.constant = self.collectionViewHeight
+                    }
+                }
+                
+                
                 if self.page == 1 {
                     self.products.removeAll()
                     self.products = products
@@ -470,26 +484,36 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             }else{
                 cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell-grid", for: indexPath) as! ProductCollectionViewCell
             }
-            cell.setData(product: products[indexPath.row])
+            if products.count > 0{
+                cell.setData(product: products[indexPath.row])
+            }
             return cell
         }else if collectionView == mainCategoryCollectionView{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cat-cell", for: indexPath) as! MainCategoryCollectionViewCell
-            cell.setData(category: categories[indexPath.row])
+            if categories.count > 0 {
+                cell.setData(category: categories[indexPath.row])
+            }
             return cell
         }else if collectionView == FeaturesCollectionView {
          let    cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell-feature", for: indexPath) as! FeaturesProductsCollectionViewCell
-            cell.setData(product: featureProducts[indexPath.item])
+            if featureProducts.count > 0 {
+                cell.setData(product: featureProducts[indexPath.item])
+            }
             return cell
         }else if collectionView == storeCollectionView {
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeStoreCollectionViewCell", for: indexPath) as! HomeStoreCollectionViewCell
             // pass data
-            cell.setData(from: storesList[indexPath.item])
+            if storesList.count > 0 {
+                cell.setData(from: storesList[indexPath.item])
+            }
             return cell
         }
         else{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "sub-cell", for: indexPath) as! SubCategoryCollectionViewCell
-            cell.setData(category: subCategories[indexPath.row])
+            if subCategories.count > 0 {
+                cell.setData(category: subCategories[indexPath.row])
+            }
             return cell
         }
     }
@@ -551,11 +575,11 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         }
     }
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if indexPath.row == (products.count-1) && !isTheLast{
-            page+=1
-            getData()
-            
-        }
+//        if indexPath.row == (products.count-1) && !isTheLast{
+//            page+=1
+//            getData()
+//
+//        }
     }
 }
 class RTLCollectionViewFlowLayout: UICollectionViewFlowLayout {
@@ -592,13 +616,13 @@ extension HomeViewController {
             let image2 = UIImage(named: "notificationn 1")
         
         let chatButton = UIButton(type: .custom)
-        chatButton.frame = CGRect(x: 0.0, y: 0.0, width: 25, height: 25)
+        chatButton.frame = CGRect(x: 0.0, y: 0.0, width: 30, height: 30)
         chatButton.setImage(UIImage(named:"chatIcon 1"), for: .normal)
         chatButton.addTarget(self, action: #selector(didTapChatButton), for: UIControl.Event.touchUpInside)
 
            let chatBarItem = UIBarButtonItem(customView: chatButton)
         
-        let notificationButton = UIButton.init(frame: CGRect.init(x: 0, y: 0, width: 25, height: 25))
+        let notificationButton = UIButton.init(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30))
         notificationButton.setImage(image2, for: .normal)
         notificationButton.addTarget(self, action: #selector(didTapNotificationButton), for: .touchUpInside)
 
@@ -646,6 +670,19 @@ extension HomeViewController {
         notificationsVC.modalPresentationStyle = .fullScreen
         navigationController?.pushViewController(notificationsVC, animated: true)
     }
+    
+    
+    private func getnotifictionCounts(){
+        NotificationsController.shared.getNotificationsCount(completion: {
+            count, check, msg in
+            
+            if check == 1{
+                StaticFunctions.createErrorAlert(msg: msg)
+            }else{
+                self.updateBadgeCount(count?.data?.count ?? 0)
+            }
+        })
+    }
     }
 
 extension HomeViewController:UITextFieldDelegate{
@@ -663,9 +700,3 @@ extension HomeViewController:UITextFieldDelegate{
         }
 }
 
-//extension HomeViewController:WoofTabBarControllerDataSource, WoofTabBarControllerDelegate {
-//
-//    func woofTabBarItem() -> WoofTabBarItem {
-//        return WoofTabBarItem(title: "Home".localize, image: "home", selectedImage: "HomeButtonIcon",notificationCount: 3)
-//    }
-//}

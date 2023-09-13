@@ -349,7 +349,7 @@ extension ProductViewController{
         self.nameBtn.text = product.name
         if let createDate = product.createdAt{
             if createDate.count > 11 {
-                self.dateLbl.text =  "\(createDate[11..<16])"
+                self.dateLbl.text =   diffDates(GetDateFromString(createDate)).replace("-", "")
                 
             }
         }

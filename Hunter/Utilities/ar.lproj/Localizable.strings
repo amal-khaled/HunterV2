@@ -35,12 +35,11 @@
 "Most popular persons" = "الأشخاص الأكثر شعبية";
 "Persons relevant to your search result" = "الأشخاص ذوي الصلة بنتيجة البحث الخاصة بك";
 "Peoples" = "الأشخاص";
-"Questions" = "أسئلة";
 "Search result" = "نتائج البحث";
 "Please type in anything you want to search for in Hunter" = "من فضلك اكتب اي شئ تريد البحث عنة في الصياد";
 "Most popular Stores" = "المتاجر المناسبة لنتيجة بحثك";
 "Stores" = "المتاجر";
-
+"Stores relevant to your search result" = "المتاجر ذات الصلة بنتيجة البحث الخاصة بك";
 //MARK: Menu
 "Back" = "رجوع";
 "My Profile" = "الملف الشخصي";

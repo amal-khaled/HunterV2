@@ -167,4 +167,33 @@ class StoresController {
             }
         }, link: Constants.HOME_STORES_URL,param:params)
     }
+    
+    func getSliders(completion: @escaping([SliderObject], Int, String)->(),countryId:Int){
+        
+        let params = [
+            "country_id": countryId
+        ]
+        APIConnection.apiConnection.getConnectionWithParam(completion: { data in
+            guard let data = data else { return }
+            
+            do {
+                let productArray = try JSONDecoder().decode(SliderModel.self, from: data)
+                
+                if productArray.statusCode == 200{
+                    
+                    completion(productArray.data?.prods ?? [SliderObject](), 0,"")
+                }
+                else {
+                    completion([SliderObject](),1,productArray.message ?? "")
+                }
+                
+            } catch (let jerrorr){
+                
+                print(jerrorr)
+                completion([SliderObject](),1,SERVER_ERROR)
+                
+                
+            }
+        }, link: Constants.GET_SLIDERS_URL,param:params)
+    }
 }

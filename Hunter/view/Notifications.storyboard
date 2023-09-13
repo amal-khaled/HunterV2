@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tcc-QX-7Vv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tcc-QX-7Vv">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -441,21 +441,10 @@
             </objects>
             <point key="canvasLocation" x="-1010" y="4"/>
         </scene>
-        <!--Notifications-->
+        <!--Navigation Controller-->
         <scene sceneID="gh0-f5-jFk">
             <objects>
                 <navigationController storyboardIdentifier="notificationV" automaticallyAdjustsScrollViewInsets="NO" id="Tcc-QX-7Vv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notifications" image="NotifyIcon" selectedImage="NotifyFill" id="VXk-EH-1bX" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
-                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
-                                <color key="value" name="#0EBFB1"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
-                                <color key="value" name="#0EBFB1"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="arrowBack" backIndicatorTransitionMaskImage="arrowBack" id="l62-ge-y08">
@@ -492,8 +481,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="NotifyFill" width="21" height="25.333333969116211"/>
-        <image name="NotifyIcon" width="20.666666030883789" height="24.666666030883789"/>
         <image name="arrowBack" width="20.333333969116211" height="13.666666984558105"/>
         <image name="icons-trash" width="13" height="14.666666984558105"/>
         <namedColor name="#0093F5">

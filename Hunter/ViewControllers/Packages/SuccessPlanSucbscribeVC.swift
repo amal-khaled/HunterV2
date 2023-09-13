@@ -27,7 +27,7 @@ class SuccessPlanSucbscribeVC: UIViewController {
     
     
     @IBAction func didTapGoToHomeButton(_ sender: UIButton) {
-        self.basicPresentation(storyName: MAIN_STORYBOARD, segueId: "homeT")
+        self.basicPresentation(storyName: MAIN_STORYBOARD, segueId: "TabBarVC")
     }
     
     @IBAction func didTapGoToYourProfile(_ sender: UIButton) {

@@ -158,6 +158,7 @@ extension UIViewController :NVActivityIndicatorViewable{
     func basicPresentation(storyName: String, segueId: String, withAnimation: Bool = true){
         
         let vc = UIStoryboard(name: storyName, bundle: nil).instantiateViewController(withIdentifier: segueId)
+        vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: withAnimation, completion: nil)
     }
     func Login() {
