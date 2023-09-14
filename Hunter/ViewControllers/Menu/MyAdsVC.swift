@@ -125,7 +125,7 @@ class MyAdsVC: UIViewController {
     
     @IBAction func didTapAddAdButton(_ sender: UIButton) {
         let vc = UIStoryboard(name: ADVS_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: "AddAdvsVC") as! AddAdvsVC
-        
+        vc.isComeFromProfile = true
         navigationController?.pushViewController(vc, animated: true)
     }
     

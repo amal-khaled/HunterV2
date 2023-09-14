@@ -32,6 +32,9 @@ class MenuVC: UIViewController {
     
     @IBOutlet weak var arabicButton: UIButton!
     
+    var woofTabBarView: WoofTabBarView?
+    var woofTabBarController: WoofTabBarController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        ConfigureUI()
@@ -163,7 +166,11 @@ class MenuVC: UIViewController {
             let vc = UIStoryboard(name: ADVS_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: ADDADVS_VCID) as! AddAdvsVC
             vc.modalPresentationStyle = .fullScreen
             vc.isFromHome = false
+            vc.isComeFromProfile = true
             navigationController?.pushViewController(vc, animated: true)
+//            NotificationCenter.default.post(name: NSNotification.Name("SwitchToTab"), object: 1)
+            
+
         }else {
             StaticFunctions.createErrorAlert(msg: "Please Login First To Can Add Post!".localize)
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0){

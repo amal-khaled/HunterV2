@@ -62,6 +62,7 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var regionLabel: UILabel!
     
+    @IBOutlet weak var headerViewHeightConstraints: NSLayoutConstraint!
     @IBOutlet weak var descTextView: UITextView!
     
 //    @IBOutlet weak var adDescption: NextGrowingTextView!
@@ -89,6 +90,7 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
     
     
     //MARK: Poropreties
+    var isComeFromProfile = false
     var isFromHome = true
     var hasPhone = "on"
     var hasWhats = "off"
@@ -616,17 +618,16 @@ extension AddAdvsVC {
     
     //MARK: Methods
     private func setupView(){
-//        descTextView.delegate = self
-//        descTextView.text = "Please Enter the full description with the advantages and disadvantages, if any , and the pruchase and sale price.".localize
-//        descTextView.textColor = UIColor.lightGray
-//        descTextView.placeholderExt = "Please Enter the full description with the advantages and disadvantages".localize
         
+        DispatchQueue.main.async { 
+            if self.isComeFromProfile {
+                self.headerViewHeightConstraints.constant = 80
+            }else{
+                self.headerViewHeightConstraints.constant = 0
+            }
+        }
+       
         descTextView.addPlaceholder("Please Enter the full description with the advantages".localize,text: descText)
-
-
-        
-//        uploadImageView.image = UIImage(named: "uploadAd")
-//        descTextView.addPlaceholder("Please Enter the full description with the advantages and disadvantages, if any , and the pruchase and sale price.".localize)
         configerSelectedButtons()
     }
     

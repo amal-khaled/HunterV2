@@ -10,6 +10,7 @@ import WoofTabBarController
 
 class TabBarVC: WoofTabBarController {
 
+    static let shared = TabBarVC()
     override var defaultIndex: Int { 0 }
     
     let homeVC = HomeNavigationController.instantiate()
@@ -27,13 +28,44 @@ class TabBarVC: WoofTabBarController {
             barview.shadow = (3.0, 0.5, .zero, .gray)
         }
         
+        NotificationCenter.default.addObserver(self, selector: #selector(switchToTab(_:)), name: NSNotification.Name("SwitchToTab"), object: nil)
+
+       
         
     }
+    
+    @objc func switchToTab(_ notification: Notification){
+            // Get the desired tab index from the notification
+            if let _ = notification.object as? Int {
+                // Switch to the specified tab index
+                
+                let menuVC = menuVC
+//                delegate?.didDeSelectItem(itemView: currentItemView, vc: menuVC, atIndex: 4)
+                replaceTabVC(withTabVCAt: 2)
+                self.currentTabVC = addAdsVC
+                self.currentItemView = tabBarView.itemView(at: 2)
+////                currentItemView = tabBarView.itemView(at: 2)
+//                let addAdsVC = addAdsVC
+//                currentItemView = tabBarView.itemView(at: 4)
+//                delegate?.didDeSelectItem(itemView: currentItemView, vc: menuVC, atIndex: 4)
+//                delegate?.didSelectItem(itemView: currentItemView, destinationVC: addAdsVC, atIndex: 2)
+//                delegate?.didAnimateItem(itemView: currentItemView, destinationVC: addAdsVC, atIndex: 2)
+//                if ((delegate?.shouldAnimateItem(itemView: currentItemView, destinationVC: addAdsVC, atIndex: 2)) != nil) {
+//                   return  addAdsVC.shouldAnimate()
+//                }
+//
+//                if ((delegate?.shouldHighlightItem(itemView: currentItemView, destinationVC: addAdsVC, atIndex: 2)) != nil) {
+//                    return addAdsVC.shouldHighlight()
+//                }
+//
+            }
+        }
 
     override func viewControllers() -> [WoofTabControllerItem] {
         return [homeVC,storesVC,addAdsVC,categoryVC,menuVC]
                 //, storesVC, addAdsVC, categoryVC, menuVC]
     }
+    
 }
 
 extension TabBarVC: WoofTabBarControllerBarViewDelegate {
