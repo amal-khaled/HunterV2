@@ -174,6 +174,8 @@ class msgsC: UIViewController , UICollectionViewDelegate , UICollectionViewDataS
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         noMessagesView.isHidden = true
       
         navigationController?.navigationBar.isHidden = false
@@ -231,6 +233,10 @@ class msgsC: UIViewController , UICollectionViewDelegate , UICollectionViewDataS
         }else {
             selectAndDeleteViewContainer.isHidden = false
         }
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
     }
     
     

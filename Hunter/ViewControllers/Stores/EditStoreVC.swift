@@ -60,8 +60,13 @@ class EditStoreVC: UIViewController {
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         configureView()
         
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {

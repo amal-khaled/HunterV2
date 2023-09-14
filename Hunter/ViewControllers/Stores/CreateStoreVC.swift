@@ -59,9 +59,14 @@ class CreateStoreVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         configureView()
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
+    }
     
     // MARK: - Methods
     

@@ -21,6 +21,7 @@ class FollowersAndFollowingsVC: UIViewController {
     var indexPath:IndexPath?
     override func viewDidLoad() {
         super.viewDidLoad()
+//        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         configeView()
         indexPath = [0,0]
     }
@@ -33,6 +34,7 @@ class FollowersAndFollowingsVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         navigationController?.navigationBar.isHidden = false
         tabBarController?.tabBar.isHidden = true
     }

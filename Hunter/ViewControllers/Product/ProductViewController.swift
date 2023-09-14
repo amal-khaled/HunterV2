@@ -58,6 +58,8 @@ class ProductViewController: UIViewController {
         setupSlider()
 
         // Do any additional setup after loading the view.
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
+        
         NotificationCenter.default.addObserver(self, selector: #selector(self.updateData(_:)), name: NSNotification.Name(rawValue: "updateData"), object: nil)
        
         getData()
@@ -84,6 +86,7 @@ class ProductViewController: UIViewController {
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
 //        self.avSource.player.isMuted = true
         self.navigationController?.navigationBar.isHidden = false
         self.tabBarController?.tabBar.isHidden = false

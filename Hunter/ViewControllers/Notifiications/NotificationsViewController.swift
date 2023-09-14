@@ -20,7 +20,7 @@ class NotificationsViewController: UIViewController {
     //    let cellSpacingHeight: CGFloat = 8
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         self.title = "Notifications".localize
         if !StaticFunctions.isLogin(){
             basicPresentation(storyName: Auth_STORYBOARD, segueId: "login_nav")
@@ -46,6 +46,9 @@ class NotificationsViewController: UIViewController {
         }
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
     
     @IBAction func deleteButtonClicked(_ sender: UIButton) {
         deleteNotifications()

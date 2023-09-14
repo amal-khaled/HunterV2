@@ -15,7 +15,7 @@ class ChangeCountryVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         counties = Constants.COUNTRIES
 
         if Constants.COUNTRIES.count == 0{
@@ -38,6 +38,7 @@ class ChangeCountryVC: UIViewController {
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
         tabBarController?.tabBar.isHidden = false
         navigationController?.navigationBar.isHidden = true
     }

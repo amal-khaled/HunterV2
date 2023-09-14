@@ -64,7 +64,7 @@ class StoreProfileVC: UIViewController {
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         getProfile()
     
     }
@@ -73,6 +73,10 @@ class StoreProfileVC: UIViewController {
         super.viewWillAppear(animated)
         configureView()
         getProductsByUser()
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
     }
     
     // MARK: - Methods

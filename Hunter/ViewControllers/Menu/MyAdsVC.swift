@@ -29,6 +29,7 @@ class MyAdsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         ConfigureUIView()
         noAdsStackView.isHidden = true
         getProductsByUser(with: "published")
@@ -46,6 +47,7 @@ class MyAdsVC: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
         tabBarController?.tabBar.isHidden = false
         navigationController?.navigationBar.isHidden = true
     }

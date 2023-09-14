@@ -36,6 +36,7 @@ class ProfileVC: UIViewController {
     //MARK: View LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         navigationController?.navigationBar.isHidden = true
         configureUI()
         let tapGesuter = UITapGestureRecognizer(target: self, action: #selector(tappedChangeProfileImage))
@@ -52,6 +53,7 @@ class ProfileVC: UIViewController {
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
         navigationController?.navigationBar.isHidden = true
         tabBarController?.tabBar.isHidden = false
     }

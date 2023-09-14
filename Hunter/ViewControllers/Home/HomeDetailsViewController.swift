@@ -59,7 +59,6 @@ class HomeDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         print(categoryId)
         ConfigureView()
         featuredLabelContainerView.isHidden = !isComeToFeatureAds
@@ -68,6 +67,8 @@ class HomeDetailsViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = false
+        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
+
         self.tabBarController?.tabBar.isHidden = true
             
         

@@ -155,6 +155,7 @@ class ChatVC: ViewController,UITableViewDataSource,UITableViewDelegate,
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationController?.navigationBar.isHidden = true
         tabBarController?.tabBar.isHidden = true
         handelRecordPermission()
@@ -1120,11 +1121,12 @@ class ChatVC: ViewController,UITableViewDataSource,UITableViewDelegate,
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         self.navigationController?.navigationBar.isHidden = true
         tabBarController?.tabBar.isHidden = true
     }
     override func viewWillAppear(_ animated: Bool) {
-        
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrame(_:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         
 //        self.tabBarController?.tabBar.layer.isHidden = true

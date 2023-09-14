@@ -41,7 +41,7 @@
         var userId = "0"
         override func viewDidLoad() {
             super.viewDidLoad()
-            
+            NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
             navigationController?.navigationBar.isHidden = true
             print(OtherUserId)
             getProfile()
@@ -58,6 +58,7 @@
         
         override func viewWillDisappear(_ animated: Bool) {
             super.viewWillDisappear(animated)
+            NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
             navigationController?.navigationBar.isHidden = false
             tabBarController?.tabBar.isHidden = false
         }

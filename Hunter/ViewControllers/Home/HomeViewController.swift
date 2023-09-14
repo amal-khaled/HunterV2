@@ -72,6 +72,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         self.navigationController?.navigationBar.isHidden = false
         self.navigationController?.isNavigationBarHidden = false
         ConfigureView()
@@ -82,6 +83,7 @@ class HomeViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = false
+        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
         
         print(navigationController)
 
@@ -89,6 +91,7 @@ class HomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         self.navigationController?.navigationBar.isHidden = false
+//        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
         getnotifictionCounts()
        
         countryId = AppDelegate.currentCountry.id ?? 6

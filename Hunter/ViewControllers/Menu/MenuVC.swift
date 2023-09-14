@@ -45,6 +45,7 @@ class MenuVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.goHome(_:)), name: NSNotification.Name(rawValue: "goHome"), object: nil)
 
         navigationController?.navigationBar.isHidden = true
@@ -168,7 +169,6 @@ class MenuVC: UIViewController {
             vc.isFromHome = false
             vc.isComeFromProfile = true
             navigationController?.pushViewController(vc, animated: true)
-//            NotificationCenter.default.post(name: NSNotification.Name("SwitchToTab"), object: 1)
             
 
         }else {

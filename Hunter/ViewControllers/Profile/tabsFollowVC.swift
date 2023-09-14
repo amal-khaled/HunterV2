@@ -19,6 +19,7 @@ class tabsFollowVC: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         initTabs()
     }
     
@@ -30,6 +31,7 @@ class tabsFollowVC: UIViewController {
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
         navigationController?.navigationBar.isHidden = true
         tabBarController?.tabBar.isHidden = false
     }

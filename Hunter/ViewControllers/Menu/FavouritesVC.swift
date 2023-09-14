@@ -20,6 +20,7 @@ class FavouritesVC: UIViewController {
     @IBOutlet weak var emptyView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         self.title = "Favourites".localize
         let backButton = UIBarButtonItem()
         backButton.title = ""
@@ -61,6 +62,8 @@ class FavouritesVC: UIViewController {
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        
+        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
         tabBarController?.tabBar.isHidden = false
         
     }

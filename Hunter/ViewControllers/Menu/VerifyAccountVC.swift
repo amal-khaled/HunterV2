@@ -54,7 +54,7 @@ class VerifyAccountVC: UIViewController, UITextFieldDelegate {
         }
         override func viewDidLoad() {
             super.viewDidLoad()
-            
+            NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
             tajeerv.borderWidth = 0.7
             StaticFunctions.setImageFromAssets(sell_img, "radioImage")
             sellv.backgroundColor = UIColor(named: "#0093F5")
@@ -90,6 +90,7 @@ class VerifyAccountVC: UIViewController, UITextFieldDelegate {
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
         tabBarController?.tabBar.isHidden = false
         
     }
