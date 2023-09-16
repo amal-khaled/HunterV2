@@ -60,6 +60,7 @@ class HomeDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(changeCountryName(_:)), name: NSNotification.Name("changeCountryName"), object: nil)
         print(categoryId)
         ConfigureView()
         featuredLabelContainerView.isHidden = !isComeToFeatureAds
@@ -117,20 +118,7 @@ class HomeDetailsViewController: UIViewController {
     func createCustomNavBar(){
         customNavView.cornerRadius = 30
         customNavView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
-//        let customNavBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: (UIApplication.shared.windows.first?.safeAreaInsets.top ?? 0) + UIScreen.main.bounds.height / 4.5))
-//        print(UIScreen.main.bounds.height / 4.5)
-//            customNavBar.backgroundColor = UIColor(named: "#0093F5")
-//        customNavBar.cornerRadius = 30
-//        customNavBar.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
-//        // Set your desired background color
-//            view.addSubview(customNavBar)
-//        self.view.sendSubviewToBack(customNavBar)
-//        self.view.addSubview(ScrollView)
-//        ScrollView.translatesAutoresizingMaskIntoConstraints = false
-//        self.ScrollView.topAnchor.constraint(equalTo: customNavBar.bottomAnchor, constant: -50).isActive = true
-//        self.ScrollView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant:0 ).isActive = true
-//        self.ScrollView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant:0 ).isActive = true
-//        self.ScrollView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant:0 ).isActive = true
+
     }
     @objc func leftBarButtonItem1Tapped() {
         // Handle left bar button item 1 tap
@@ -172,7 +160,7 @@ class HomeDetailsViewController: UIViewController {
         
         let categoryButton = UIButton(type: .custom)
         categoryButton.frame = rightView.bounds
-        categoryButton.addTarget(self, action: #selector(categoryBtnAction), for: .touchUpInside)
+        categoryButton.addTarget(self, action: #selector(didTapChangeCountryButton), for: .touchUpInside)
 
         rightView.addSubview(categoryButton)
 
@@ -198,7 +186,11 @@ class HomeDetailsViewController: UIViewController {
       
     }
     
-    @objc func categoryBtnAction(){
+    @objc func changeCountryName(_ notification:Notification){
+        titleLabel.text = MOLHLanguage.currentAppleLanguage() == "en" ? AppDelegate.currentCountry.nameEn : AppDelegate.currentCountry.nameAr
+    }
+    
+    @objc func didTapChangeCountryButton(){
         coountryVC = UIStoryboard(name: MAIN_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: COUNTRY_VCIID) as!  CounriesViewController
         coountryVC.countryBtclosure = {
             (country) in

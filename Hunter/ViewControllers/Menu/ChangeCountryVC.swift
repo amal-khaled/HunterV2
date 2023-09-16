@@ -76,17 +76,8 @@ extension ChangeCountryVC: UITableViewDataSource, UITableViewDelegate{
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         AppDelegate.currentCountry = counties[indexPath.row]
+        NotificationCenter.default.post(name: NSNotification.Name("changeCountryName"), object: nil)
         Constants.countryId = counties[indexPath.row].id ?? 6
-//        let homeVC = HomeViewController()
-//        homeVC.countryName = MOLHLanguage.currentAppleLanguage() == "en" ? (counties[indexPath.row].nameEn ?? "") : (counties[indexPath.row].nameAr ?? "")
-//        homeVC.countryId = counties[indexPath.row].id ?? 6
-//        homeVC.cityId = -1
-      //  self.basicPresentation(storyName: MAIN_STORYBOARD, segueId: "homeT")
         self.navigationController?.popViewController(animated: true)
-//        self.dismiss(animated: false, completion: { [self] in
-//                        self.countryBtclosure!(counties[indexPath.row])
-//
-//            //counties[indexPath.row].id, MOLHLanguage.currentAppleLanguage() == "en" ? (counties[indexPath.row].nameEn ?? "") : (counties[indexPath.row].nameAr ?? ""), counties[indexPath.row].code
-//        })
     }
 }

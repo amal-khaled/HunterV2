@@ -39,12 +39,12 @@ class StoresVC: UIViewController {
     //MARK: - App Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(changeCountryName(_:)), name: NSNotification.Name("changeCountryName"), object: nil)
         searchTextField.delegate = self
         pagerView.delegate = self
         pagerView.dataSource = self
         getStores()
         getSliders()
-        
         customNavView.cornerRadius = 30
         customNavView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
         createChangeCountryButton()
@@ -87,7 +87,7 @@ class StoresVC: UIViewController {
         
         let categoryButton = UIButton(type: .custom)
         categoryButton.frame = rightView.bounds
-        categoryButton.addTarget(self, action: #selector(categoryBtnAction), for: .touchUpInside)
+        categoryButton.addTarget(self, action: #selector(didTapChangeCountryButton), for: .touchUpInside)
 
         rightView.addSubview(categoryButton)
 
@@ -96,7 +96,7 @@ class StoresVC: UIViewController {
         navigationItem.leftBarButtonItems = []
     }
     
-    @objc func categoryBtnAction(){
+    @objc func didTapChangeCountryButton(){
         coountryVC = UIStoryboard(name: MAIN_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: COUNTRY_VCIID) as!  CounriesViewController
         coountryVC.countryBtclosure = {
             (country) in
@@ -110,6 +110,11 @@ class StoresVC: UIViewController {
 //            self.getData()
         }
         self.present(coountryVC, animated: false, completion: nil)
+    }
+    
+    
+    @objc func changeCountryName(_ notification:Notification){
+        titleLabel.text = MOLHLanguage.currentAppleLanguage() == "en" ? AppDelegate.currentCountry.nameEn : AppDelegate.currentCountry.nameAr
     }
     //MARK: IBActions
     

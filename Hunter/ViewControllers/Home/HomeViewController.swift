@@ -73,8 +73,10 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(changeCountryName(_:)), name: NSNotification.Name("changeCountryName"), object: nil)
         self.navigationController?.navigationBar.isHidden = false
         self.navigationController?.isNavigationBarHidden = false
+        titleLabel.text = countryName
         ConfigureView()
         configureNavButtons()
         navigationController?.navigationBar.tintColor = UIColor.green // Change to your desired text color
@@ -122,7 +124,7 @@ class HomeViewController: UIViewController {
         mainCategoryCollectionView.semanticContentAttribute = .forceLeftToRight
 //        didChangeCountry()
         getCategory()
-        createAddAdvsButton()
+        changeCountryBarItemButton()
         searchTextField.setPlaceHolderColor(.white)
     }
     
@@ -132,7 +134,9 @@ class HomeViewController: UIViewController {
     }
  
     
-    func createAddAdvsButton(){
+    
+    
+    func changeCountryBarItemButton(){
         
         //MARK: Right Button
         
@@ -164,7 +168,7 @@ class HomeViewController: UIViewController {
              let categoryButton = UIButton(type: .custom)
      //        categoryButton.titleEdgeInsets = UIEdgeInsets(top: 0,left: 20,bottom: 0,right:20)
         categoryButton.frame = rightView.bounds
-        categoryButton.addTarget(self, action: #selector(categoryBtnAction), for: .touchUpInside)
+        categoryButton.addTarget(self, action: #selector(didTapChangeCountryButton), for: .touchUpInside)
 
         rightView.addSubview(categoryButton)
 
@@ -189,7 +193,17 @@ class HomeViewController: UIViewController {
       
     }
     
-    @objc func categoryBtnAction(){
+    @objc func changeCountryName(_ notification:Notification){
+        titleLabel.text = MOLHLanguage.currentAppleLanguage() == "en" ? AppDelegate.currentCountry.nameEn : AppDelegate.currentCountry.nameAr
+        self.countryId = AppDelegate.currentCountry.id ?? 6
+        self.cityId = -1
+        self.featureContainerView.isHidden = true
+        self.resetProducts()
+        self.getData()
+        self.getFeatureData()
+    }
+    
+    @objc func didTapChangeCountryButton(){
 //        basicNavigation(storyName: CATEGORRY_STORYBOARD, segueId: CATEGORIES_VCID)
         coountryVC = UIStoryboard(name: MAIN_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: COUNTRY_VCIID) as!  CounriesViewController
         coountryVC.countryBtclosure = {
@@ -210,29 +224,6 @@ class HomeViewController: UIViewController {
     }
     
     @objc func chooseCategory(_ notification: NSNotification) {
-//        let categoryIndex = notification.userInfo?["cat_index"] as! Int
-//        let subcategoryIndex = notification.userInfo?["sub_cat_index"] as! Int
-//        subCategories = notification.userInfo?["subCategories"] as! [Category]
-//        categoryId = categories[categoryIndex+1].id ?? 0
-//        print(categoryId)
-//
-//        subcategoryId = subCategories[subcategoryIndex].id ?? 0
-//        self.subCategories.insert(Category(nameAr: "الكل", nameEn: "All",id: -1, hasSubCat: 0), at: 0)
-//
-//        mainCategoryCollectionView.selectItem(at: [0, categoryIndex+1], animated: true, scrollPosition: .centeredHorizontally)
-////        self.subCategoryCollectionView.isHidden = false
-////        self.subCategoryCollectionView.reloadData()
-////        subCategoryCollectionView.selectItem(at: [0, subcategoryIndex+1], animated: true, scrollPosition: .centeredHorizontally)
-////            // do something with your image
-//        if categoryId == 1 {
-//            sell = nil
-//            typeLbl.text = "All".localize
-//            self.typeView.isHidden = false
-//        }else{
-//            self.typeView.isHidden = true
-//
-//        }
-//        getData()
     }
     
     //MARK: IBActions
