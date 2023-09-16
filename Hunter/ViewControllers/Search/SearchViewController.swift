@@ -31,6 +31,7 @@ class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         navigationController?.navigationBar.isHidden = true
         
         searchBar.text = searchText
@@ -42,6 +43,7 @@ class SearchViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = true
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
 
         
     }
@@ -49,6 +51,8 @@ class SearchViewController: UIViewController {
         navigationController?.navigationBar.isHidden = false
 //        searchBar.text = ""
 //        self.navigationController?.popToRootViewController(animated: true)
+        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
+
         
     }
     @IBAction func backBtnAction(_ sender: Any) {

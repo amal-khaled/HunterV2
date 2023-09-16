@@ -46,6 +46,7 @@ class ProfileVC: UIViewController {
       
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         getProfile()
         getProductsByUser()
         self.navigationController?.navigationBar.isHidden = true

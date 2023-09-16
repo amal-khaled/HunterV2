@@ -65,6 +65,7 @@
 "Please Login First To Can Go To Asks!" = "الرجاء تسجيل الدخول أولاً ليتمكن من الذهاب إلى اسألتي!";
 "Please Login First To Can Go To Verify Account!" = "الرجاء تسجيل الدخول أولاً لتتمكن من توثيق الحساب!";
 "Stores Packages" = "باقات المتاجر";
+"Please Login First" =  "الرجاء تسجيل الدخول أولا";
 
 //MARK: Verify Account
 "Verify Account" = "توثيق الحساب";

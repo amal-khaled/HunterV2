@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "dsdscsdcaecerce.png",
+      "filename" : "whatsAppIcon.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "dsdscsdcaecerce@2x.png",
+      "filename" : "whatsAppIcon@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "dsdscsdcaecerce@3x.png",
+      "filename" : "whatsAppIcon@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

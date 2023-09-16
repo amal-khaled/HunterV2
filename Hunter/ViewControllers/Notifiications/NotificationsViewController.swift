@@ -33,9 +33,12 @@ class NotificationsViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = false
-        
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
+
     }
     override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
+
         if !StaticFunctions.isLogin(){
             basicPresentation(storyName: Auth_STORYBOARD, segueId: "login_nav")
             

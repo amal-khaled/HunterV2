@@ -72,7 +72,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
         self.navigationController?.navigationBar.isHidden = false
         self.navigationController?.isNavigationBarHidden = false
         ConfigureView()
@@ -84,12 +84,11 @@ class HomeViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = false
         NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
-        
         print(navigationController)
 
     }
     override func viewWillAppear(_ animated: Bool) {
-        
+        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
         self.navigationController?.navigationBar.isHidden = false
 //        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
         getnotifictionCounts()

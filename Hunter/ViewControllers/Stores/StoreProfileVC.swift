@@ -71,6 +71,7 @@ class StoreProfileVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         configureView()
         getProductsByUser()
     }
@@ -160,13 +161,18 @@ class StoreProfileVC: UIViewController {
             let editStore = EditStoreVC.instantiate()
             navigationController?.pushViewController(editStore, animated: true)
         }else {
-            ProfileController.shared.followUser(completion: { check, message in
-                if check == 0 {
-                    self.getProfile()
-                }else {
-                    StaticFunctions.createErrorAlert(msg: message)
-                }
-            }, OtherUserId: otherUserId)
+            if StaticFunctions.isLogin() {
+                ProfileController.shared.followUser(completion: { check, message in
+                    if check == 0 {
+                        self.getProfile()
+                    }else {
+                        StaticFunctions.createErrorAlert(msg: message)
+                    }
+                }, OtherUserId: otherUserId)
+            }else{
+                StaticFunctions.createErrorAlert(msg: "Please Login First".localize)
+            }
+           
         }
     }
     @IBAction func didTapMyChatButton(_ sender: UIButton) {

@@ -28,6 +28,7 @@ class SettingVC: UIViewController {
     @IBOutlet weak var overlay: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         makeShadow()
         if AppDelegate.currentUser.toke == nil && !StaticFunctions.isLogin() {
             deletView.isHidden = true

@@ -621,6 +621,7 @@ extension AddAdvsVC {
         
         DispatchQueue.main.async { 
             if self.isComeFromProfile {
+                NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
                 self.headerViewHeightConstraints.constant = 80
             }else{
                 self.headerViewHeightConstraints.constant = 0
@@ -1072,11 +1073,21 @@ extension AddAdvsVC:UITextViewDelegate {
 }
 extension AddAdvsVC : ChooseAdTyDelegate {
     func didTapNormalAd() {
-        createAds(isFeatured:0)
+        if StaticFunctions.isLogin() {
+            createAds(isFeatured:0)
+        }else{
+            StaticFunctions.createErrorAlert(msg: "Please Login First".localize)
+        }
+        
     }
     
     func didTapFeaturedAd() {
-        createAds(isFeatured: 1)
+        if StaticFunctions.isLogin() {
+            createAds(isFeatured: 1)
+        }else{
+            StaticFunctions.createErrorAlert(msg: "Please Login First".localize)
+        }
+        
     }
     
 }
@@ -1096,9 +1107,4 @@ extension AddAdvsVC:PayingDelegate{
         goToSuccessfullAddAd()
     }
 }
-//extension AddAdvsVC:WoofTabBarControllerDataSource, WoofTabBarControllerDelegate {
-//    
-//    func woofTabBarItem() -> WoofTabBarItem {
-//        return WoofTabBarItem(title: "Add Your Ad".localize, image: "addAdvsButtonIconGray", selectedImage: "AddAdsIconMain")
-//    }
-//}
+

@@ -96,6 +96,7 @@ class EditProfileVC : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
 //        countryImage.image = UIImage(named: Ap.country_Image)
 //        phoneNumber.delegate = self
         setupUI()
@@ -103,8 +104,14 @@ class EditProfileVC : UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         navigationController?.navigationBar.isHidden = true
         tabBarController?.tabBar.isHidden = true
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
     }
     
     
