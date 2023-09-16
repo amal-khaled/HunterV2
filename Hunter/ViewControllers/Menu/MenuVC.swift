@@ -57,6 +57,10 @@ class MenuVC: UIViewController {
             arabicButtonPressed()
         }
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        navigationController?.navigationBar.isHidden = true
+    }
     
     @objc func goHome(_ notification: NSNotification) {
         tabBarController?.selectedIndex = 0

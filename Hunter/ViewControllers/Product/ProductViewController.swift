@@ -86,7 +86,7 @@ class ProductViewController: UIViewController {
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
+//        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
 //        self.avSource.player.isMuted = true
         self.navigationController?.navigationBar.isHidden = false
         self.tabBarController?.tabBar.isHidden = false
@@ -121,11 +121,7 @@ class ProductViewController: UIViewController {
 ////      let source = dataSource.sources[imageSlider.currentPage] as! AVSource
 ////        source.pla
 ////            .source.player.pause()
-//        self.present(vc, animated: false, completion: nil)
-//        
-//
-//        
-//       
+//        self.present(vc, animated: false, completion: nil)       
 //    }
     @IBAction func userClickedAction(_ sender: Any) {
         if StaticFunctions.isLogin() {

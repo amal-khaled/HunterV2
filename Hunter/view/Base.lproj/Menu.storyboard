@@ -37,7 +37,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="900"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5RG-F7-66D">
-                                                <rect key="frame" x="0.0" y="60" width="390" height="190"/>
+                                                <rect key="frame" x="0.0" y="20" width="390" height="190"/>
                                                 <subviews>
                                                     <view tag="3" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cig-FS-fLM" userLabel="User data">
                                                         <rect key="frame" x="0.0" y="0.0" width="390" height="90"/>
@@ -158,7 +158,7 @@
                                                 </subviews>
                                             </stackView>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="twH-t3-cBT" userLabel="Setting data">
-                                                <rect key="frame" x="20" y="260" width="350" height="535"/>
+                                                <rect key="frame" x="20" y="220" width="350" height="535"/>
                                                 <subviews>
                                                     <stackView clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="kdo-ax-EsO">
                                                         <rect key="frame" x="0.0" y="0.0" width="350" height="535"/>
@@ -203,7 +203,7 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C30-uS-98A">
-                                                                        <rect key="frame" x="63" y="12.666666666666686" width="1" height="40"/>
+                                                                        <rect key="frame" x="63" y="12.666666666666657" width="1" height="40"/>
                                                                         <color key="backgroundColor" name="#E2E1E1"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="Zta-Gh-yx9"/>
@@ -436,10 +436,10 @@
                                                                 </constraints>
                                                             </view>
                                                             <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gwh-sy-NLY" userLabel="My Asks View">
-                                                                <rect key="frame" x="0.0" y="267.66666666666663" width="350" height="0.0"/>
+                                                                <rect key="frame" x="0.0" y="267.66666666666669" width="350" height="0.0"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QA" translatesAutoresizingMaskIntoConstraints="NO" id="zXm-4H-dZz">
-                                                                        <rect key="frame" x="20" y="-11.666666666666629" width="23" height="23"/>
+                                                                        <rect key="frame" x="20" y="-11.666666666666686" width="23" height="23"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="23" id="154-4K-42R"/>
                                                                             <constraint firstAttribute="height" constant="23" id="LbK-jI-fX6"/>
@@ -468,14 +468,14 @@
                                                                         </connections>
                                                                     </button>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArrowLeftSetting" translatesAutoresizingMaskIntoConstraints="NO" id="zcF-Uy-Znr" customClass="LocalizableImage">
-                                                                        <rect key="frame" x="325" y="-7.6666666666666288" width="10" height="15"/>
+                                                                        <rect key="frame" x="325" y="-7.6666666666666856" width="10" height="15"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="15" id="LDi-82-PHC"/>
                                                                             <constraint firstAttribute="width" constant="10" id="gYw-LD-aJw"/>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xuw-Jw-fru">
-                                                                        <rect key="frame" x="63" y="-19.999999999999943" width="1" height="40"/>
+                                                                        <rect key="frame" x="63" y="-20" width="1" height="40"/>
                                                                         <color key="backgroundColor" name="#E2E1E1"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="1" id="XS3-1K-h1d"/>
@@ -504,7 +504,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V5D-J4-yfn" userLabel="My Asks View">
-                                                                <rect key="frame" x="0.0" y="268.66666666666663" width="350" height="65"/>
+                                                                <rect key="frame" x="0.0" y="268.66666666666669" width="350" height="65"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="country" translatesAutoresizingMaskIntoConstraints="NO" id="VVv-lN-JHH">
                                                                         <rect key="frame" x="20" y="21" width="23" height="23"/>
@@ -536,14 +536,14 @@
                                                                         </connections>
                                                                     </button>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArrowLeftSetting" translatesAutoresizingMaskIntoConstraints="NO" id="bak-3d-jrW" customClass="LocalizableImage">
-                                                                        <rect key="frame" x="325" y="25" width="10" height="15"/>
+                                                                        <rect key="frame" x="325" y="24.999999999999943" width="10" height="15"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="10" id="CtA-cc-u88"/>
                                                                             <constraint firstAttribute="height" constant="15" id="p1S-kg-30b"/>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmw-lp-sUH">
-                                                                        <rect key="frame" x="63" y="12.333333333333371" width="1" height="40"/>
+                                                                        <rect key="frame" x="63" y="12.333333333333314" width="1" height="40"/>
                                                                         <color key="backgroundColor" name="#E2E1E1"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="8VF-Y7-Cer"/>
@@ -852,7 +852,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXc-0p-Wt0">
-                                                <rect key="frame" x="20" y="799" width="350" height="65"/>
+                                                <rect key="frame" x="20" y="759" width="350" height="65"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="log-out" translatesAutoresizingMaskIntoConstraints="NO" id="hEh-ox-alb">
                                                         <rect key="frame" x="20" y="21" width="23" height="23"/>
@@ -933,7 +933,7 @@
                                             <constraint firstAttribute="height" constant="900" id="RE5-7F-jIR"/>
                                             <constraint firstItem="twH-t3-cBT" firstAttribute="leading" secondItem="X6w-9R-P31" secondAttribute="leading" constant="20" id="dwy-tI-S6W"/>
                                             <constraint firstItem="twH-t3-cBT" firstAttribute="top" secondItem="5RG-F7-66D" secondAttribute="bottom" constant="10" id="t7p-kg-og9"/>
-                                            <constraint firstItem="5RG-F7-66D" firstAttribute="top" secondItem="X6w-9R-P31" secondAttribute="top" constant="60" id="uJl-h2-4zf"/>
+                                            <constraint firstItem="5RG-F7-66D" firstAttribute="top" secondItem="X6w-9R-P31" secondAttribute="top" constant="20" id="uJl-h2-4zf"/>
                                             <constraint firstAttribute="trailing" secondItem="rXc-0p-Wt0" secondAttribute="trailing" constant="20" id="uPd-uC-q7P"/>
                                         </constraints>
                                     </view>
