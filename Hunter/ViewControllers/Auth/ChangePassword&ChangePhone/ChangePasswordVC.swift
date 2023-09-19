@@ -23,9 +23,13 @@ class ChangePasswordVC : ViewController {
     var isConfirmPasswordHidden = false
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         navigationController?.navigationBar.isHidden = true
         tabBarController?.tabBar.isHidden = true
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
     }
     
     @IBAction func didTapBackButton(_ sender: UIButton) {

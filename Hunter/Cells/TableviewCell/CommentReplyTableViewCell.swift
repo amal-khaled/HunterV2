@@ -48,14 +48,14 @@ class CommentReplyTableViewCell: UITableViewCell {
         lbl_comment.sizeToFit()
         // should created response
         
-        if let createdDate = reply.createdAt  {
-            let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-            dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
-
-            let pastDate = dateFormatter.date(from:createdDate ) ?? Date()
-            
-            lbl_date.text = pastDate.timeAgoDisplay()
+        if let createdDate = reply.date  {
+//            let dateFormatter = DateFormatter()
+//                dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+//            dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+//
+//            let pastDate = dateFormatter.date(from:createdDate ) ?? Date()
+            lbl_date.text = diffDates(GetDateFromString(createdDate)).replace("-", "")
+//            lbl_date.text = pastDate.timeAgoDisplay()
         }
         
         if(AppDelegate.currentUser.id == reply.uid){

@@ -254,6 +254,7 @@
 		C8CCE33C2A19E29200FFAFB2 /* LocalizedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CCE33B2A19E29200FFAFB2 /* LocalizedImage.swift */; };
 		C8CCE33E2A19E33B00FFAFB2 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CCE33D2A19E33B00FFAFB2 /* ProfileController.swift */; };
 		C8CCE3402A19E81100FFAFB2 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CCE33F2A19E81100FFAFB2 /* Profile.swift */; };
+		C8D52C2D2AB8F0F20081EA2D /* PaggingForLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D52C2C2AB8F0F20081EA2D /* PaggingForLabel.swift */; };
 		C8EAB7CC2A9C99A9009F975C /* CreateStoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EAB7CB2A9C99A9009F975C /* CreateStoreVC.swift */; };
 		C8ECBD542A34535E003178DA /* VerifyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ECBD532A34535E003178DA /* VerifyAccountVC.swift */; };
 		C8F253CD2AA1C5AA0063C0F5 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F253CC2AA1C5AA0063C0F5 /* BasicViewController.swift */; };
@@ -520,6 +521,7 @@
 		C8CCE33B2A19E29200FFAFB2 /* LocalizedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedImage.swift; sourceTree = "<group>"; };
 		C8CCE33D2A19E33B00FFAFB2 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		C8CCE33F2A19E81100FFAFB2 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		C8D52C2C2AB8F0F20081EA2D /* PaggingForLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaggingForLabel.swift; sourceTree = "<group>"; };
 		C8EAB7CB2A9C99A9009F975C /* CreateStoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStoreVC.swift; sourceTree = "<group>"; };
 		C8ECBD532A34535E003178DA /* VerifyAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAccountVC.swift; sourceTree = "<group>"; };
 		C8F253CC2AA1C5AA0063C0F5 /* BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
@@ -825,6 +827,7 @@
 				65DD121129E6915A00A3B8DD /* KeyboardLayoutConstraint.swift */,
 				65DD121229E6915A00A3B8DD /* StaticFunctions.swift */,
 				65DD121329E6915A00A3B8DD /* Localization.swift */,
+				C8D52C2C2AB8F0F20081EA2D /* PaggingForLabel.swift */,
 				C8F253CC2AA1C5AA0063C0F5 /* BasicViewController.swift */,
 				65DD121929E6915A00A3B8DD /* GeneralUIExtenstions.swift */,
 				65DD121A29E6915A00A3B8DD /* Reachability.swift */,
@@ -1484,6 +1487,7 @@
 				65F33D072A22295500A1A889 /* AskImagePickerViewController.swift in Sources */,
 				C8A547D72A594BF100031FE9 /* ProductsShimmerView.swift in Sources */,
 				C8A2BECC2A3A64AA00A05E77 /* ViewPagerController.swift in Sources */,
+				C8D52C2D2AB8F0F20081EA2D /* PaggingForLabel.swift in Sources */,
 				65DD122A29E6915A00A3B8DD /* GradientView.swift in Sources */,
 				C8AD40E52A28F8DC00E464DB /* ContactVC.swift in Sources */,
 				65FC22172A12716E0077F1A2 /* ReplyViewController.swift in Sources */,

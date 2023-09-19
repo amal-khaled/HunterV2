@@ -1236,31 +1236,16 @@
                                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oPL-FD-4rO">
                                                                         <rect key="frame" x="0.0" y="74.666666666666742" width="318" height="46.333333333333343"/>
                                                                         <subviews>
-                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kKH-DL-nOe">
-                                                                                <rect key="frame" x="12" y="3" width="224" height="43.333333333333336"/>
-                                                                                <color key="textColor" name="textColor"/>
-                                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="ASCIICapableNumberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
-                                                                                <userDefinedRuntimeAttributes>
-                                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
-                                                                                </userDefinedRuntimeAttributes>
-                                                                            </textField>
                                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iof-PK-qdu">
-                                                                                <rect key="frame" x="236" y="0.0" width="82" height="46.333333333333336"/>
+                                                                                <rect key="frame" x="8" y="0.0" width="82" height="46.333333333333336"/>
                                                                                 <subviews>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone2" translatesAutoresizingMaskIntoConstraints="NO" id="Vb5-KC-rL2">
-                                                                                        <rect key="frame" x="44" y="10.666666666666515" width="27" height="25"/>
+                                                                                        <rect key="frame" x="0.0" y="10.666666666666515" width="27" height="25"/>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="width" constant="27" id="1TG-io-NlX"/>
                                                                                             <constraint firstAttribute="height" constant="25" id="XsT-Sv-LuK"/>
                                                                                         </constraints>
                                                                                     </imageView>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="965" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3v-Kh-Ixf">
-                                                                                        <rect key="frame" x="11.333333333333316" y="18.666666666666515" width="22.666666666666671" height="14.666666666666664"/>
-                                                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14.5"/>
-                                                                                        <color key="textColor" white="0.0" alpha="0.93636670649999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                        <nil key="highlightedColor"/>
-                                                                                    </label>
                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Z2-Qk-xWO">
                                                                                         <rect key="frame" x="81" y="13.999999999999998" width="1" height="18.333333333333329"/>
                                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1268,15 +1253,22 @@
                                                                                             <constraint firstAttribute="width" constant="1" id="Rud-Jy-8ke"/>
                                                                                         </constraints>
                                                                                     </view>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="965" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3v-Kh-Ixf">
+                                                                                        <rect key="frame" x="31" y="18.666666666666515" width="42" height="14.666666666666664"/>
+                                                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14.5"/>
+                                                                                        <color key="textColor" white="0.0" alpha="0.93636670649999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
                                                                                 </subviews>
                                                                                 <viewLayoutGuide key="safeArea" id="UDa-Se-h4V"/>
                                                                                 <constraints>
                                                                                     <constraint firstItem="j3v-Kh-Ixf" firstAttribute="centerY" secondItem="iof-PK-qdu" secondAttribute="centerY" constant="3" id="5bZ-Rv-aBI"/>
                                                                                     <constraint firstItem="Vb5-KC-rL2" firstAttribute="centerY" secondItem="iof-PK-qdu" secondAttribute="centerY" id="5oh-2f-5ur"/>
                                                                                     <constraint firstItem="9Z2-Qk-xWO" firstAttribute="top" secondItem="iof-PK-qdu" secondAttribute="top" constant="14" id="6Gs-Gj-1la"/>
-                                                                                    <constraint firstItem="Vb5-KC-rL2" firstAttribute="leading" secondItem="j3v-Kh-Ixf" secondAttribute="trailing" constant="10" id="Rda-9S-dz4"/>
+                                                                                    <constraint firstItem="9Z2-Qk-xWO" firstAttribute="leading" secondItem="j3v-Kh-Ixf" secondAttribute="trailing" constant="8" id="Idm-p6-nWj"/>
+                                                                                    <constraint firstItem="Vb5-KC-rL2" firstAttribute="leading" secondItem="UDa-Se-h4V" secondAttribute="leading" id="SxW-rh-Cou"/>
                                                                                     <constraint firstAttribute="bottom" secondItem="9Z2-Qk-xWO" secondAttribute="bottom" constant="14" id="eSl-dR-S2z"/>
-                                                                                    <constraint firstItem="9Z2-Qk-xWO" firstAttribute="leading" secondItem="Vb5-KC-rL2" secondAttribute="trailing" constant="10" id="fNW-wV-ftt"/>
+                                                                                    <constraint firstItem="j3v-Kh-Ixf" firstAttribute="leading" secondItem="Vb5-KC-rL2" secondAttribute="trailing" constant="4" id="rpf-Am-yfI"/>
                                                                                     <constraint firstAttribute="trailing" secondItem="9Z2-Qk-xWO" secondAttribute="trailing" id="vf3-Sh-2w4"/>
                                                                                     <constraint firstAttribute="width" constant="82" id="wuh-tb-qht"/>
                                                                                 </constraints>
@@ -1289,16 +1281,25 @@
                                                                                     </userDefinedRuntimeAttribute>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </view>
+                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kKH-DL-nOe">
+                                                                                <rect key="frame" x="94" y="3" width="220" height="43.333333333333336"/>
+                                                                                <color key="textColor" name="textColor"/>
+                                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
+                                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="ASCIICapableNumberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </textField>
                                                                         </subviews>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
-                                                                            <constraint firstItem="iof-PK-qdu" firstAttribute="trailing" secondItem="oPL-FD-4rO" secondAttribute="trailing" id="3jr-04-jUw"/>
                                                                             <constraint firstItem="iof-PK-qdu" firstAttribute="top" secondItem="oPL-FD-4rO" secondAttribute="top" id="CG4-vE-MZU"/>
                                                                             <constraint firstAttribute="bottom" secondItem="iof-PK-qdu" secondAttribute="bottom" id="H1P-y8-BSO"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="kKH-DL-nOe" secondAttribute="trailing" constant="4" id="WnT-9r-dbB"/>
                                                                             <constraint firstItem="kKH-DL-nOe" firstAttribute="top" secondItem="oPL-FD-4rO" secondAttribute="top" constant="3" id="dbD-Pm-rwt"/>
                                                                             <constraint firstAttribute="height" constant="46.5" id="i2u-g5-F8L"/>
-                                                                            <constraint firstItem="kKH-DL-nOe" firstAttribute="leading" secondItem="oPL-FD-4rO" secondAttribute="leading" constant="12" id="oCM-be-aWB"/>
-                                                                            <constraint firstItem="iof-PK-qdu" firstAttribute="leading" secondItem="kKH-DL-nOe" secondAttribute="trailing" id="vMs-Zx-7z5"/>
+                                                                            <constraint firstItem="kKH-DL-nOe" firstAttribute="leading" secondItem="iof-PK-qdu" secondAttribute="trailing" constant="4" id="pbj-IJ-4tT"/>
+                                                                            <constraint firstItem="iof-PK-qdu" firstAttribute="leading" secondItem="oPL-FD-4rO" secondAttribute="leading" constant="8" id="tK5-3m-Eqk"/>
                                                                             <constraint firstAttribute="bottom" secondItem="kKH-DL-nOe" secondAttribute="bottom" id="zic-JC-HNE"/>
                                                                         </constraints>
                                                                         <userDefinedRuntimeAttributes>

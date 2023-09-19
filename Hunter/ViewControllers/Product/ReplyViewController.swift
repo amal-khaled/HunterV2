@@ -22,6 +22,10 @@ class ReplyViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(textDidChange(_:)), name: UITextView.textDidChangeNotification, object: nil)
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
+    }
     @objc func textDidChange(_ notification: Notification){
         enableButton()
         

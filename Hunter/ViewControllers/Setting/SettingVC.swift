@@ -26,6 +26,8 @@ class SettingVC: UIViewController {
     @IBOutlet weak var deletv: UIView!
     @IBOutlet weak var deletev_bottom: NSLayoutConstraint!
     @IBOutlet weak var overlay: UIView!
+    
+    let appId = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
@@ -63,14 +65,14 @@ class SettingVC: UIViewController {
     
     @IBAction func goShare(_ sender: Any) {
         
-        shareContent(text: "Dawnload Hunter App From AppStore  itms-apps://itunes.apple.com/app/id1589937521" )
+        shareContent(text: "Dawnload Hunter App From AppStore  itms-apps://itunes.apple.com/app/id\(appId)" )
     }
     
     @IBAction func didTapBackButton(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
     @IBAction func goRating(_ sender: Any) {
-        dawnloadAppFromStore(appID: "1589937521")
+        dawnloadAppFromStore(appID: appId)
     }
     
     @IBAction func goContactUs(_ sender: Any) {

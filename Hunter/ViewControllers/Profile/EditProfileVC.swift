@@ -44,6 +44,9 @@ class EditProfileVC : UIViewController {
     var regionsName = [String]()
     var regionsId = [String]()
     
+    var userImageData = Data()
+    private var EditProfileParams = [String:Any]()
+    
     @IBOutlet weak var citiesDrop: UIButton!
     @IBOutlet weak var regionsDrop: UIButton!
     @IBOutlet weak var upic: UIImageView!
@@ -120,6 +123,12 @@ class EditProfileVC : UIViewController {
         getCitiesList()
         getRegionsList()
         
+        EditProfileParams =
+        [
+            "id":AppDelegate.currentUser.id ?? 0,
+            "mobile":AppDelegate.currentUser.phone ?? "",
+            "country_id":AppDelegate.currentUser.countryId ?? 6
+        ]
         userNameEN.text = AppDelegate.currentUser.username
         regionId = "\(AppDelegate.currentUser.regionId ?? 0)"
         cityId = "\(AppDelegate.currentUser.cityId ?? 0)"
@@ -215,7 +224,15 @@ class EditProfileVC : UIViewController {
         countriesDropDown.anchorView = countriesButton
         countriesDropDown.bottomOffset = CGPoint(x: 0, y: countriesButton.bounds.height)
         countriesDropDown.dataSource = countriesName
-        countriesButton.setTitle(countriesName[countriesId.firstIndex(of: "\(AppDelegate.currentUser.countryId ?? 0)")!], for: .normal)
+        
+        if countriesName.count > 0 && countriesId.count > 0{
+            if let countryID = countriesId.firstIndex(of: countryId) {
+                countriesButton.setTitle(countriesName[countryID], for: .normal)
+            }else {
+                countriesButton.setTitle(countriesName[0], for: .normal)
+            }
+        }
+      //  countriesButton.setTitle(countriesName[countriesId.firstIndex(of: "\(AppDelegate.currentUser.countryId ?? 0)")!], for: .normal)
         countriesDropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             self.countryId = self.countriesId[index]
             self.countryName = self.countriesName[index]
@@ -288,8 +305,9 @@ class EditProfileVC : UIViewController {
     }
 
     @IBAction func pick_img(_ sender: Any) {
-//        img = upic
-//        takeimg()
+
+        openGallery()
+           
     }
     
     
@@ -315,7 +333,7 @@ class EditProfileVC : UIViewController {
         
         AF.upload(multipartFormData: {multipartFormData in
                 
-                   // params["image"] = imageData
+                  //  params["image"] = imageData
 //                    multipartFormData.append(imageData, withName: "image",fileName: "file.jpg", mimeType: "image/jpg")
                  print("send Image Parameters : -----> ", params)
             for (key,value) in params {
@@ -378,6 +396,18 @@ class EditProfileVC : UIViewController {
 //MARK: DropDwon
 
 extension EditProfileVC {
+    
+    private func changeProfileImage(image:UIImage){
+        APIConnection.apiConnection.uploadImageConnection(completion: { success, message in
+            if success {
+//                StaticFunctions.createSuccessAlert(msg: message)
+            }else {
+                StaticFunctions.createErrorAlert(msg: message)
+            }
+            
+        }, link: Constants.EDIT_USER_URL, param: EditProfileParams, image: image, imageType: .profileImage)
+    }
+    
     func setupCitiesListDropDown(completion:@escaping (_ success:Bool)->()) {
         if MOLHLanguage.currentAppleLanguage() == "en"{
             citiesDropDwon.anchorView = citiesDrop
@@ -530,6 +560,13 @@ extension EditProfileVC {
             self.regionsDrop.setTitle(self.regionName, for: .normal)
         }
     }
+    
+    private func openGallery() {
+        let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.delegate = self
+        present(imagePicker, animated: true, completion: nil)
+    }
 }
 extension EditProfileVC  {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -542,4 +579,27 @@ extension EditProfileVC  {
         }
         return true
     }
+}
+
+//MARK: Picked image From Gallery
+
+extension EditProfileVC: UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        
+        if let capturedImage = info[.originalImage] as? UIImage {
+            print("Captured image: \(capturedImage)")
+           // self.images.append(capturedImage as UIImage)
+            
+            self.upic.image = capturedImage
+                changeProfileImage(image: capturedImage)
+            
+            
+        }
+    }
+        
+        
+        func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+            picker.dismiss(animated: true, completion: nil)
+        }
 }

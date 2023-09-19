@@ -532,6 +532,19 @@ extension UIViewController :NVActivityIndicatorViewable{
                                                          ])
     }
     
+    // Function to remove the dynamic country code
+       func removeCountryCode(from phoneNumber: String) -> String {
+           // Replace the dynamic country code with an empty string
+           // You may need to determine the logic for identifying and removing the country code
+           // In this example, we assume that the country code is the first three characters
+           if phoneNumber.count >= 3 {
+               let startIndex = phoneNumber.index(phoneNumber.startIndex, offsetBy: 3)
+               return String(phoneNumber[startIndex...])
+           } else {
+               return phoneNumber
+           }
+       }
+    
     func getViewController(_ id:String,_ story:String="Main") -> UIViewController{
         let story = UIStoryboard(name: story, bundle: nil)
         let vc = story.instantiateViewController(withIdentifier: id)

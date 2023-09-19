@@ -96,7 +96,7 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
     var hasWhats = "off"
     var hasChat = "off"
     var hasNewPhone = false
-    var countryId = AppDelegate.currentUser.countryId ?? 0
+    var countryId = AppDelegate.currentUser.countryId ?? 6
     
     // Main Category DropDwon
     var mainCatID:Int = -1
@@ -204,7 +204,8 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
         self.selectedMedia = selectedMedia
         self.selectedMediaKeys = selectedMediaKeys
         advsTitleTF.text = title
-        newPhoneTF.text = AppDelegate.currentUser.phone ?? ""
+        print(AppDelegate.currentUser.phone?.dropFirst(3) ?? "")
+        newPhoneTF.text = removeCountryCode(from: "\(AppDelegate.currentUser.phone ?? "")")
         cityId = retrieveSessionData().CityId ?? 0
         regionId = retrieveSessionData().RegionId ?? 0
         mainCatID = retrieveSessionData().catId ?? 0
@@ -629,6 +630,7 @@ extension AddAdvsVC {
         }
        
         descTextView.addPlaceholder("Please Enter the full description with the advantages".localize,text: descText)
+        newPhoneTF.text = removeCountryCode(from: "\(AppDelegate.currentUser.phone ?? "")")
         configerSelectedButtons()
     }
     
@@ -704,6 +706,7 @@ extension AddAdvsVC {
  private  func getCitis(){
         CountryController.shared.getCities(completion: {[weak self]  cities, check, error in
             guard let self = self else{return}
+            print(self.countryId)
             for city in cities {
                 if  MOLHLanguage.currentAppleLanguage() == "en" {
                     
@@ -717,8 +720,8 @@ extension AddAdvsVC {
                     print(self.cityList)
                 }
             }
-            if self.cityId == AppDelegate.currentUser.cityId ?? 0 {
-//                self.cityId = self.cityIDsList[0]
+            if self.cityId == 0 {
+                self.cityId = self.cityIDsList[0]
             }
             self.setupCitiesDropDown()
             self.getRegions(cityId: self.cityId)
@@ -1073,11 +1076,18 @@ extension AddAdvsVC:UITextViewDelegate {
 }
 extension AddAdvsVC : ChooseAdTyDelegate {
     func didTapNormalAd() {
-        if StaticFunctions.isLogin() {
-            createAds(isFeatured:0)
+        if AppDelegate.currentUser.availableAdsCountUserInCurrentMonth ?? 0 <= 0 {
+            StaticFunctions.createErrorAlert(msg: "Sorry, You have exhausted your free ads this month".localize)
         }else{
-            StaticFunctions.createErrorAlert(msg: "Please Login First".localize)
+            if StaticFunctions.isLogin() {
+                createAds(isFeatured:0)
+            }else{
+                StaticFunctions.createErrorAlert(msg: "Please Login First".localize)
+            }
         }
+        
+        
+       
         
     }
     

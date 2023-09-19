@@ -51,7 +51,7 @@ class SearchViewController: UIViewController {
         navigationController?.navigationBar.isHidden = false
 //        searchBar.text = ""
 //        self.navigationController?.popToRootViewController(animated: true)
-        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
+//        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
 
         
     }

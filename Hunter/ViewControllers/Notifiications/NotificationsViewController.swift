@@ -21,10 +21,11 @@ class NotificationsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
+        
         self.title = "Notifications".localize
+        navigationController?.navigationBar.tintColor = .white
         if !StaticFunctions.isLogin(){
             basicPresentation(storyName: Auth_STORYBOARD, segueId: "login_nav")
-            
         }
         self.navigationController?.navigationBar.isHidden = false
         

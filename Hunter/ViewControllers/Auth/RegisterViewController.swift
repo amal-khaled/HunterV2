@@ -308,7 +308,8 @@ extension RegisterViewController{
          user.name = nameTF.text!
          user.lastName = familyNameTF.text!
          user.email = emailTF.text!
-         user.phone = phoneTF.text!
+         user.phone = countryCode + phoneTF.text!
+         user.bio = bioTF.text!
          user.countryId = (countryId)
          user.cityId = (cityId)
          user.regionId = (stateId)

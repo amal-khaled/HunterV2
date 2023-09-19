@@ -398,10 +398,9 @@
                                                                                     </userDefinedRuntimeAttributes>
                                                                                 </imageView>
                                                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:45 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMa-kk-kv1">
-                                                                                    <rect key="frame" x="8" y="177.66666666666666" width="50" height="20"/>
+                                                                                    <rect key="frame" x="8" y="177.66666666666666" width="36" height="20"/>
                                                                                     <color key="backgroundColor" name="#E2E1E1"/>
                                                                                     <constraints>
-                                                                                        <constraint firstAttribute="width" constant="50" id="0zF-af-C5Z"/>
                                                                                         <constraint firstAttribute="height" constant="20" id="hOH-3v-0AE"/>
                                                                                     </constraints>
                                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
@@ -944,7 +943,7 @@
         <scene sceneID="gft-uc-DMU">
             <objects>
                 <viewController id="LcA-lJ-kX0" customClass="SearchAskViewController" customModule="Hunter" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="9HY-cU-EEe">
+                    <view key="view" contentMode="scaleToFill" id="9HY-cU-EEe">
                         <rect key="frame" x="0.0" y="0.0" width="363" height="0.0"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1007,7 +1006,7 @@
                                     </collectionView>
                                 </subviews>
                             </stackView>
-                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="KAh-BE-C4N">
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="KAh-BE-C4N">
                                 <rect key="frame" x="30" y="-80.666666666666671" width="303" height="161.33333333333334"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noMessagesImage" translatesAutoresizingMaskIntoConstraints="NO" id="xBN-eN-GnR">

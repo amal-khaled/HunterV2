@@ -165,30 +165,36 @@ extension UIView{
     }
     func dateDiff(_ dateRangeStart:Date , _ dateRangeEnd:Date) -> String {
         var result = ""
-        let components = Calendar.current.dateComponents([.month,.day,.hour, .weekday,.minute,.second], from: dateRangeStart, to: dateRangeEnd)
+        let components = Calendar.current.dateComponents([.month,.day,.hour,.minute,.second], from: dateRangeStart, to: dateRangeEnd)
         // print("diffrent  time  ======> ",components)
         
-        if let months = components.month , let days = components.day, let hours  = components.hour , let minutes = components.minute , let seconds = components.second , let weeks = components.weekday{
+        if let months = components.month , let days = components.day, let hours  = components.hour , let minutes = components.minute , let seconds = components.second {
             if( months != 0){
                 print(months)
-                result = "\(months) mon"
-            }else if(weeks != 0){
-                print(weeks)
-                result = "\(weeks) week"
-            }
-            else if(days != 0){
-            
-                result = "\(days ) day"
-              
+                result = "\("before".localize) \(months) \("month".localize)"
+                //  return "\(months) شهر"
+            }else if(days != 0){
+                print(days)
+                if (days % 7) > 0 {
+                    let weeks =  (days % 7)
+                    result = "\("before".localize) \(weeks) \("week".localize)"
+                }else{
+                    result = "\("before".localize) \(days ) \("day".localize)"
+                }
+                //  return "\(days ) يوم"
+                
             }else if(hours != 0){
                 print(hours)
-                result = "\(hours) h"
+                result = "\("before".localize) \(hours) \("hours".localize)"
+                //return "\(hours) ساعة"
             }else if(minutes != 0){
                 print(minutes)
-                result = "\(minutes) min"
+                result = "\("before".localize) \(minutes) \("minutes".localize)"
+                //   return "\(minutes) دقيقة"
             }else{
                 print(seconds)
-                result = "\(seconds) sec"
+                result = "\("before".localize) \(seconds) \("seconds".localize)"
+                // return "\(seconds) ثانية"
             }
         }
         return result

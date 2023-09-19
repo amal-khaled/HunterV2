@@ -182,6 +182,7 @@ extension LoginViewController{
          
 //         let phoneNumber = countryCode + phoneTF.text!
          let phoneNumber = countryCode + phoneTF.text!
+         print(phoneNumber)
          if Reachability.isConnectedToNetwork(){
              self.loginBtn.startAnimation()
              AppDelegate.currentUser = User()

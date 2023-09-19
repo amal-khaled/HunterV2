@@ -60,7 +60,8 @@ class VerifyAccountVC: UIViewController, UITextFieldDelegate {
             sellv.backgroundColor = UIColor(named: "#0093F5")
             StaticFunctions.setTextColor(sell_txt, UIColor.white)
             phoneNumber.delegate = self
-            phoneNumber.text = "\(AppDelegate.currentUser.phone ?? "")"
+            phoneNumber.text = removeCountryCode(from: "\(AppDelegate.currentUser.phone ?? "")")
+            
 //            phoneCode.text = "\(AppDelegate.currentUser.phone?.prefix(3) ?? "")"
            if MOLHLanguage.currentAppleLanguage() == "en" {
                pic.image = UIImage(named: "UploadDovImage")

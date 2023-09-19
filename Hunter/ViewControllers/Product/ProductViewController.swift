@@ -72,6 +72,7 @@ class ProductViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         self.navigationController?.navigationBar.isHidden = true
         self.tabBarController?.tabBar.isHidden = true
         
@@ -80,6 +81,7 @@ class ProductViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         self.navigationController?.navigationBar.isHidden = true
         self.tabBarController?.tabBar.isHidden = true
         
@@ -125,18 +127,26 @@ class ProductViewController: UIViewController {
 //    }
     @IBAction func userClickedAction(_ sender: Any) {
         if StaticFunctions.isLogin() {
-            if AppDelegate.currentUser.id ?? 0 == product.userId ?? 0 {
-                let vc = UIStoryboard(name: PROFILE_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: PROFILE_VCID) as! ProfileVC
+            if AppDelegate.currentUser.isStore ?? false {
+                let vc = UIStoryboard(name: "Store", bundle: nil).instantiateViewController(withIdentifier: "StoreProfileVC") as! StoreProfileVC
                 vc.navigationController?.navigationBar.isHidden = true
                 vc.modalPresentationStyle = .fullScreen
                 self.navigationController?.pushViewController(vc, animated: true)
-            }else {
-                let vc = UIStoryboard(name: PROFILE_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: OTHER_USER_PROFILE_VCID) as! OtherUserProfileVC
-                vc.OtherUserId = product.userId ?? 0
-                vc.navigationController?.navigationBar.isHidden = true
-                vc.modalPresentationStyle = .fullScreen
-                self.navigationController?.pushViewController(vc, animated: true)
+            }else{
+                if AppDelegate.currentUser.id ?? 0 == product.userId ?? 0 {
+                    let vc = UIStoryboard(name: PROFILE_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: PROFILE_VCID) as! ProfileVC
+                    vc.navigationController?.navigationBar.isHidden = true
+                    vc.modalPresentationStyle = .fullScreen
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }else {
+                    let vc = UIStoryboard(name: PROFILE_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: OTHER_USER_PROFILE_VCID) as! OtherUserProfileVC
+                    vc.OtherUserId = product.userId ?? 0
+                    vc.navigationController?.navigationBar.isHidden = true
+                    vc.modalPresentationStyle = .fullScreen
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
             }
+           
             
         }else {
             
@@ -397,7 +407,12 @@ extension ProductViewController{
             
         }
         
-        userNameLbl.text = "Store".localize + " " + (product.userName ?? "") + " " + (product.userLastName ?? "")
+        if AppDelegate.currentUser.isStore ?? false {
+            userNameLbl.text = "Store".localize + " " + (product.userName ?? "") + " " + (product.userLastName ?? "")
+        }else{
+            userNameLbl.text = (product.userName ?? "") + " " + (product.userLastName ?? "")
+        }
+        
         
         self.userImageView.setImageWithLoading(url: product.userPic ?? "",placeholder: "logo_photo")
         

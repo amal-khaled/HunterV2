@@ -27,10 +27,16 @@ class CommentRepliesViewController: UIViewController {
         super.viewDidLoad()
         lst.rowHeight = UITableView.automaticDimension
         getData()
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
+
         NotificationCenter.default.addObserver(self, selector: #selector(self.updateData(_:)), name: NSNotification.Name(rawValue: "updateData"), object: nil)
         
 //        countOfCommentsLabel.text = "مشاهدة التعليقات (\(replaiesCount))"
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
     }
   
     @objc func updateData(_ notification: NSNotification) {

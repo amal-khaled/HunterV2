@@ -67,6 +67,7 @@
 "Stores Packages" = "باقات المتاجر";
 "Please Login First" =  "الرجاء تسجيل الدخول أولا";
 
+
 //MARK: Verify Account
 "Verify Account" = "توثيق الحساب";
 "Select the account type" = "حدد نوع الحساب";
@@ -298,8 +299,10 @@
 
 "hello I'm Contct with you from Hunter App" = "مرحبًا، أنا أتواصل معك من تطبيق الصياد";
 "Profile" = "حسابي";
-
-
+"You have" = "لديك";
+"Free ads" = "إعلان مجاني";
+"Sorry, You have exhausted your free ads this month" = "عذرًا، لقد استنفدت إعلاناتك المجانية هذا الشهر";
+"before" = "قبل";
 //MARK: Edit Profile
 
 "Edit Profile" = "تعديل الملف الشخصي";

@@ -57,6 +57,7 @@ class AuthCoontroller{
             "username":user.username ?? "",
             "last_name":user.lastName ?? "",
             "country_id": user.countryId ?? -1 ,
+            "bio":user.bio ?? "WHAT ABOUT YOU ?",
             
             "regid":"1",
 
@@ -79,6 +80,7 @@ class AuthCoontroller{
                     AppDelegate.unVerifiedUserUser = userObject.data.data ?? User()
                    
                     AppDelegate.unVerifiedUserUser.toke = userObject.data.token ?? ""
+                    print(userObject.data.token ?? "")
                     completion( 0,userObject.msg ?? "")
                 }
                 else {

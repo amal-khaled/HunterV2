@@ -22,6 +22,7 @@ class ProfileVC: UIViewController {
     @IBOutlet weak private var followingsCountLabel: UILabel!
     @IBOutlet weak private var locationLabel: UILabel!
     
+    @IBOutlet weak var countOfFreeAds: UILabel!
     @IBOutlet weak private var myAdsCollectionView: UICollectionView!
     
     //MARK: Properties
@@ -54,8 +55,8 @@ class ProfileVC: UIViewController {
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
-        navigationController?.navigationBar.isHidden = true
+//        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
+      //  navigationController?.navigationBar.isHidden = true
         tabBarController?.tabBar.isHidden = false
     }
     
@@ -96,7 +97,7 @@ class ProfileVC: UIViewController {
         followingsCountLabel.text = "\(profileModel.following ?? 0)"
         rateCountLabel.text = "\(profileModel.userRate ?? 0)"
         bioLabel.text = profileModel.bio ?? ""
-        
+        countOfFreeAds.text = "\(profileModel.availableAdsCountUserInCurrentMonth ?? 0)"
         var location:String = {
             if MOLHLanguage.currentAppleLanguage() == "en"{
              return   "\(profileModel.countriesNameEn ?? "") -  \(profileModel.citiesNameEn ?? "")"
@@ -198,6 +199,14 @@ class ProfileVC: UIViewController {
         let vc = UIStoryboard(name: PROFILE_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: CREDIT_VCID) as! CreditVC
         present(vc, animated: false)
     }
+    
+    @IBAction func didTapNotificationButton(_ sender: UIButton) {
+        print("Notifications")
+        let notificationsVC = UIStoryboard(name: "Notifications", bundle: nil).instantiateViewController(withIdentifier: "notifications") as! NotificationsViewController
+        notificationsVC.modalPresentationStyle = .fullScreen
+        navigationController?.pushViewController(notificationsVC, animated: true)
+    }
+    
     
 }
 extension ProfileVC {
@@ -313,7 +322,7 @@ extension ProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,UIColl
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: myAdsCollectionView.frame.width - 30, height: 120)
+        return CGSize(width: myAdsCollectionView.frame.width - 30, height: 100)
         
     }
     
