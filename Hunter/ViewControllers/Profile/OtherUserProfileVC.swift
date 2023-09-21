@@ -285,6 +285,7 @@
                     self.userId = userProfile.uid ?? "0"
                     Constants.otherUserName = userProfile.username ?? ""
                     Constants.otherUserPic = userProfile.pic ?? ""
+                    Constants.otherUserIsStore = userProfile.isStore ?? false
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: "passUserID"), object: nil, userInfo: ["userID": self.userId])
                     self.bindProfileData(from: userProfile)
                    // self.getProductsByUser()

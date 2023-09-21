@@ -39,6 +39,7 @@ class StoresVC: UIViewController {
     //MARK: - App Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(changeCountryName(_:)), name: NSNotification.Name("changeCountryName"), object: nil)
         searchTextField.delegate = self
         pagerView.delegate = self
@@ -51,9 +52,14 @@ class StoresVC: UIViewController {
             searchTextField.setPlaceHolderColor(.white)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
     }
     
     

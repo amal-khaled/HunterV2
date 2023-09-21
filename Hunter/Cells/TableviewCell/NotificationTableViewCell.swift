@@ -37,7 +37,7 @@ class NotificationTableViewCell: UITableViewCell {
                 self.name.text = "user".localize
             }
             
-            img.setImageWithLoading(url: userNotification.userf?[0].pic ?? "users/1675912998.jpg")
+            img.setImageWithLoading(url: userNotification.userf?[0].pic ?? "",placeholder: "logo_photo")
              
         }else {
              self.name.text = "user".localize
@@ -53,14 +53,14 @@ class NotificationTableViewCell: UITableViewCell {
         if let createdDate = userNotification.ndate  {
           
             
-            let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-            dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
-
-            let pastDate = dateFormatter.date(from:createdDate ?? "") ?? Date()
+//            let dateFormatter = DateFormatter()
+//                dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+//            dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+//
+//            let pastDate = dateFormatter.date(from:createdDate ?? "") ?? Date()
             
             
-            timeLbl.text = pastDate.timeAgoDisplay()
+            timeLbl.text = diffDates(GetDateFromString(createdDate)).replace("-", "")
         }
 
        

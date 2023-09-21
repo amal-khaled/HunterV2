@@ -21,7 +21,9 @@ class NotificationsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
-        
+        if let navigationBar = navigationController?.navigationBar {
+                    navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white] // Change the color to your desired color
+                }
         self.title = "Notifications".localize
         navigationController?.navigationBar.tintColor = .white
         if !StaticFunctions.isLogin(){
@@ -155,6 +157,7 @@ extension NotificationsViewController: UITableViewDelegate, UITableViewDataSourc
                     if let userName = notiiifications[index].userf?[0].username , let userPic =  notiiifications[index].userf?[0].pic , let userId = notiiifications[index].userf?[0].id {
                         Constants.userOtherId = "\(userId)"
                         Constants.otherUserPic = userPic
+                        Constants.otherUserIsStore = notiiifications[index].userf?[0].isStore ?? false
                         Constants.otherUserName = userName
                     }
                     basicNavigation(storyName: "Chat", segueId: "ChatVC")

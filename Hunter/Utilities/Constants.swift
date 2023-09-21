@@ -210,6 +210,7 @@ class Constants {
     static var tempLng:Double = 0;
     
     static var otherUserPic = ""
+    static var otherUserIsStore = false
     static var otherUserName = ""
     static var userOtherId = ""
     

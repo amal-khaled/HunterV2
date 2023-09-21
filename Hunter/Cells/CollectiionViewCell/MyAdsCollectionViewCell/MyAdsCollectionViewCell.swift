@@ -46,17 +46,17 @@ class MyAdsCollectionViewCell: UICollectionViewCell {
     
     func setData(product: Product){
         
-        userImageView.setImageWithLoading(url: product.userPic ?? "")
+        userImageView.setImageWithLoading(url: product.userPic ?? "",placeholder: "logo_photo")
         adTitleLabel.text = product.name
         priceLabel.text = "\(product.price ?? 0)"
         
         if  MOLHLanguage.currentAppleLanguage() == "en" {
             currencyLabel.text = product.currencyEn
-            currencyLabel.text = product.cityNameEn
+//            currencyLabel.text = product.cityNameEn
             cityLabel.text = product.cityNameEn
         }else{
             currencyLabel.text = product.currencyAr
-            currencyLabel.text = product.cityNameAr
+//            currencyLabel.text = product.cityNameAr
             cityLabel.text = product.cityNameAr
             
         }
@@ -89,7 +89,7 @@ class MyAdsCollectionViewCell: UICollectionViewCell {
         }
         if let createDate = product.createdAt{
             if createDate.count > 11 {
-                self.timeLabel.text =  "\(createDate[11..<16])"
+                self.timeLabel.text =  diffDates(GetDateFromString(createDate)).replace("-", "")
                 
             }
         }
@@ -124,7 +124,10 @@ class MyAdsCollectionViewCell: UICollectionViewCell {
         
         if product.status == "unpaid_feature" {
             shareLabel.text = "Pay Now".localize
-            shareLabel.font = UIFont(name: "Tajawal-Regular", size: 10)
+            shareLabel.font = UIFont(name: "Tajawal-Regular", size: 13)
+        }else{
+            shareLabel.text = "Share".localize
+            shareLabel.font = UIFont(name: "Tajawal-Regular", size: 13)
         }
     }
     

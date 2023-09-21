@@ -60,6 +60,7 @@ struct AllRoomsUsers: Codable {
     let verified, blocked, codeVerify, notification: Int?
     let deactivate: Int?
     let note: String?
+    let isStore:Bool?
     let createdAt: String?
 
     enum CodingKeys: String, CodingKey {
@@ -75,6 +76,7 @@ struct AllRoomsUsers: Codable {
         case codeVerify = "code_verify"
         case notification, deactivate, note
         case createdAt = "created_at"
+        case isStore = "is_store"
     }
 }
 

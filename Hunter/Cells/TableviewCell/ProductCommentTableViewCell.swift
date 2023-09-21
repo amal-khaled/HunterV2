@@ -70,7 +70,7 @@ class ProductCommentTableViewCell: UITableViewCell {
 
         }
          commentLbl.sizeToFit()
-        img.setImageWithLoading(url: comment.commentUserPic ?? "")
+        img.setImageWithLoading(url: comment.commentUserPic ?? "",placeholder: "logo_photo")
         
         
 

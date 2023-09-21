@@ -287,7 +287,7 @@ class ChatVC: ViewController,UITableViewDataSource,UITableViewDelegate,
     @objc func openOtherProfileUser (){
 //        user.other_id = user.other_id
 //        goNav("otherProfilev","Profile")
-        if AppDelegate.currentUser.isStore ?? false {
+        if Constants.otherUserIsStore ?? false {
             let storeProfile = StoreProfileVC.instantiate()
             storeProfile.otherUserId = Int(Constants.userOtherId) ?? 0
             navigationController?.pushViewController(storeProfile, animated: true)
@@ -322,7 +322,7 @@ class ChatVC: ViewController,UITableViewDataSource,UITableViewDelegate,
     }
     
     fileprivate func setUpChatHeaderView(){
-        otherUserImage.setImageWithLoading(url: Constants.otherUserPic)
+        otherUserImage.setImageWithLoading(url: Constants.otherUserPic,placeholder: "logo_photo")
         otherUserName.text = Constants.otherUserName
         otherUserImage.layer.cornerRadius = otherUserImage.frame.width / 2
         chatHeaderView.layer.shadowColor = UIColor.gray.cgColor

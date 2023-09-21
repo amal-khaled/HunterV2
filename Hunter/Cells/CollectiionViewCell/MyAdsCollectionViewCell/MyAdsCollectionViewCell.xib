@@ -294,8 +294,8 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BE-ki-Xr8">
-                                                                <rect key="frame" x="27" y="11.666666666666686" width="24" height="14"/>
-                                                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="13.800000190734863"/>
+                                                                <rect key="frame" x="29.333333333333336" y="12" width="21.666666666666664" height="13"/>
+                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="13"/>
                                                                 <color key="textColor" name="#0093F5"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -346,8 +346,8 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbm-Tw-4Na">
-                                                                <rect key="frame" x="11.333333333333343" y="11.666666666666686" width="39.666666666666664" height="14"/>
-                                                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="13.800000190734863"/>
+                                                                <rect key="frame" x="16" y="12" width="35" height="13"/>
+                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="13"/>
                                                                 <color key="textColor" name="#0093F5"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -398,8 +398,8 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akJ-40-YVx">
-                                                                <rect key="frame" x="16.333333333333311" y="11.666666666666686" width="34.666666666666657" height="14"/>
-                                                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="13.800000190734863"/>
+                                                                <rect key="frame" x="19.666666666666686" y="12" width="31.333333333333329" height="13"/>
+                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="13"/>
                                                                 <color key="textColor" name="#0093F5"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -508,7 +508,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="FeatureImage" width="29" height="34"/>
+        <image name="FeatureImage" width="28.333333969116211" height="34"/>
         <image name="Share_ADVs" width="15.333333015441895" height="14"/>
         <image name="clock2" width="14.666666984558105" height="14.666666984558105"/>
         <image name="del_main" width="12" height="13.333333015441895"/>

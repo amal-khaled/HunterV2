@@ -174,7 +174,9 @@ class msgsC: UIViewController , UICollectionViewDelegate , UICollectionViewDataS
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if let navigationBar = navigationController?.navigationBar {
+                    navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white] // Change the color to your desired color
+                }
         self.title = "Messages".localize
         navigationController?.navigationBar.tintColor = .white
         
@@ -198,7 +200,7 @@ class msgsC: UIViewController , UICollectionViewDelegate , UICollectionViewDataS
         chk_select_all.tintColor = UIColor(named: "#0093F5")
         chk_select_all.stateChangeAnimation = .bounce(.fill)
 //        self.title = "Messages".localize
-        self.navigationController?.navigationBar.tintColor = .white
+    
 //        get()
     }
     
@@ -307,7 +309,7 @@ class msgsC: UIViewController , UICollectionViewDelegate , UICollectionViewDataS
                 
                 cell.name.text = userName
             }
-            cell.img.setImageWithLoading(url: roomsData[inx].user?[0].pic ?? "users/1675802939.png")
+            cell.img.setImageWithLoading(url: roomsData[inx].user?[0].pic ?? "",placeholder: "logo_photo")
         }else{
             cell.name.text = "User"
             cell.img.image = UIImage(named: "logo_photo")
@@ -383,11 +385,14 @@ class msgsC: UIViewController , UICollectionViewDelegate , UICollectionViewDataS
              }
              if let receiverId = roomsData[inx].user2{
                  receiver.id = "\(receiverId)"
+                 
                  if receiverId == AppDelegate.currentUser.id ?? 0 {
                      guard let id = roomsData[inx].user1 else {return}
                      Constants.userOtherId = "\(id)"
+                     Constants.otherUserIsStore = roomsData[inx].user?[0].isStore ?? false
                  }else{
                      Constants.userOtherId = "\(receiverId)"
+                     Constants.otherUserIsStore = roomsData[inx].user?[0].isStore ?? false
                  }
                      
              }

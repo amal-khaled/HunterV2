@@ -151,7 +151,7 @@ class EditProfileVC : UIViewController {
                 }
         
         
-        upic.setImageWithLoading(url: AppDelegate.currentUser.pic ?? "")
+        upic.setImageWithLoading(url: AppDelegate.currentUser.pic ?? "",placeholder: "logo_photo")
         bio.text = AppDelegate.currentUser.bio ?? ""
         bio.setLineSpacing()
         

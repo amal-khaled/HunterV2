@@ -25,14 +25,13 @@ class CommentRepliesViewController: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.tintColor = .white
         lst.rowHeight = UITableView.automaticDimension
         getData()
         NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
 
         NotificationCenter.default.addObserver(self, selector: #selector(self.updateData(_:)), name: NSNotification.Name(rawValue: "updateData"), object: nil)
         
-//        countOfCommentsLabel.text = "مشاهدة التعليقات (\(replaiesCount))"
-        // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -88,7 +87,7 @@ func getData(){
         }, id: data.comment?.id ?? 0)
     }
    func setData(){
-        self.img_user.setImageWithLoading(url: data.comment?.commentUserPic ?? "users/1675802939.png")
+        self.img_user.setImageWithLoading(url: data.comment?.commentUserPic ?? "",placeholder: "logo_photo")
         self.lbl_name.text = data.comment?.commentUserName
 //        self.lbl_date.text = data.comment?.createdAt?.formattedDateSince
         self.lbl_comment.text = data.comment?.comment

@@ -88,7 +88,7 @@ class ProfileVC: UIViewController {
         }
         if let userPic =  profileModel.pic {
             if userPic.contains(".png") || userPic.contains(".jpg"){
-                userImageView.setImageWithLoading(url:profileModel.pic ?? "" )
+                userImageView.setImageWithLoading(url:profileModel.pic ?? "",placeholder: "logo_photo" )
             }
         }
         userFullNameLabel.text = profileModel.name ?? ""
@@ -239,7 +239,7 @@ extension ProfileVC {
             }
             
             //use 128 as user id to check
-        }, userId: userId , page: page, countryId:countryId, status: "" )
+        }, userId: userId , page: page, countryId:countryId, status: "published" )
     }
     
     private func displayImageActionSheet() {

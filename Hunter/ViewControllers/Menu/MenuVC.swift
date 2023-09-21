@@ -81,13 +81,13 @@ class MenuVC: UIViewController {
             userNameLabel.text = AppDelegate.currentUser.name ?? ""
             if AppDelegate.currentUser.isStore ?? false {
                 if let logo =  AppDelegate.currentUser.store?.logo {
-                    userImageView.setImageWithLoading(url:logo)
+                    userImageView.setImageWithLoading(url:logo,placeholder: "logo_photo")
                 }else{
-                    userImageView.setImageWithLoading(url: AppDelegate.currentUser.pic ?? "")
+                    userImageView.setImageWithLoading(url: AppDelegate.currentUser.pic ?? "",placeholder: "logo_photo")
                 }
                 
             }else{
-                userImageView.setImageWithLoading(url: AppDelegate.currentUser.pic ?? "")
+                userImageView.setImageWithLoading(url: AppDelegate.currentUser.pic ?? "",placeholder: "logo_photo")
             }
             if AppDelegate.currentUser.isStore ?? false {
                 loginButton.isHidden = false

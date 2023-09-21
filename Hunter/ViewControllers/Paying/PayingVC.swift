@@ -29,7 +29,7 @@ class PayingVC: UIViewController {
     weak var planDelegate:PayingPlanDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         webView.navigationDelegate = self
         // Load a URL
              if let url = URL(string: urlString) {

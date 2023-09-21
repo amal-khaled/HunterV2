@@ -89,12 +89,14 @@ class EditAdVC:UIViewController, PickupMediaPopupEditAdsVCDelegate  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         configureUI()
 
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         getData()
         navigationController?.navigationBar.isHidden = true
         tabBarController?.tabBar.isHidden = true

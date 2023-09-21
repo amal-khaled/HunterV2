@@ -23,14 +23,14 @@ class RateOtherUserCell: UITableViewCell {
                 img.image = UIImage(named: "logo_photo")
             }else{
                 print(data.ratedUserPic ?? "")
-                img.setImageWithLoading(url: data.ratedUserPic ?? "")
+                img.setImageWithLoading(url: data.ratedUserPic ?? "",placeholder: "logo_photo")
             }
            
             lbl_name.text = data.ratedUserName
             lbl_comment.text = data.comment
             lbl_comment.setLineSpacing()
             rate.rating = Double(data.rate)
-            lbl_date.text = cDate(GetDateFromString(data.date ?? ""),"EEEE d MMMM")
+            lbl_date.text = diffDates(GetDateFromString(data.createdAt ?? "")).replace("-", "")
         }
     }
 

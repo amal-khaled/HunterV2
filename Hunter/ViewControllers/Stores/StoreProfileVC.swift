@@ -43,10 +43,13 @@ class StoreProfileVC: UIViewController {
     @IBOutlet weak var storeRatingCountLabel: UILabel!
     @IBOutlet weak var storeFollowersCountLabel: UILabel!
     @IBOutlet weak var storeFollowingsCountLabel: UILabel!
+    
+    @IBOutlet weak var packesTypeStackView: UIStackView!
     @IBOutlet weak var storesPackagesButton: UIButton!
     @IBOutlet weak var editProfileButton: UIButton!
     @IBOutlet weak var chatButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
+    
     
     @IBOutlet weak var collectionViewheightConstraint: NSLayoutConstraint!
     
@@ -264,11 +267,11 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
     
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if indexPath.row == (products.count-1) && !isTheLast{
-            page+=1
-            getProductsByUser()
+//        if indexPath.row == (products.count-1) && !isTheLast{
+//            page+=1
+//            getProductsByUser()
             
-        }
+//        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -313,6 +316,7 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
             }
             if let userPic =  profileModel.store?.logo {
                 Constants.otherUserPic = userPic
+                Constants.otherUserIsStore = profileModel.isStore ?? false
                 
                 if userPic.contains(".png") || userPic.contains(".jpg"){
                     print(userPic)
@@ -321,7 +325,7 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
             }else{
                 if let userPic =  profileModel.pic {
                     Constants.otherUserPic = userPic
-                    
+                    Constants.otherUserIsStore = profileModel.isStore ?? false
                     if userPic.contains(".png") || userPic.contains(".jpg"){
                         print(userPic)
                         storeProfileImageView.setImageWithLoading(url:userPic,placeholder: "logo_photo")
@@ -332,7 +336,7 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
             
             
             
-            Constants.otherUserName = profileModel.name ?? ""
+            Constants.otherUserName = profileModel.username ?? ""
             storeNameLabel.text = profileModel.store?.companyName ?? ""
             storeAdsCountLabel.text = "\(profileModel.numberOfProds ?? 0)"
             storeFollowersCountLabel.text = "\(profileModel.followers ?? 0)"
@@ -373,6 +377,7 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
             if AppDelegate.currentUser.id ?? 0 == profileModel.id ?? 0 {
                 blockButton.isHidden = true
                 reportButton.isHidden = true
+                packesTypeStackView.isHidden = false
                 storesPackagesButton.isHidden = false
             }else {
                 notificationButton.isHidden = true
@@ -383,6 +388,7 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
                 storesPackagesButton.isHidden = true
                 blockButton.isHidden = false
                 reportButton.isHidden = false
+                packesTypeStackView.isHidden = false
             }
             
             if AppDelegate.currentUser.id ?? 0 != otherUserId  {
@@ -418,14 +424,19 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
                      }
                      print("Count of products: \(products.count)")
                            print("Message: \(msg)")
-                     self.collectionView.reloadData()
+                     DispatchQueue.main.async {
+                         print(products.count)
+                         self.collectionViewheightConstraint.constant = CGFloat(products.count / 2 * 295)
+                         self.collectionView.reloadData()
+                     }
+                     
                  }else{
                      StaticFunctions.createErrorAlert(msg: msg)
                      self.page = self.page == 1 ? 1 : self.page - 1
                  }
                  
                  //use 128 as user id to check
-             }, userId: otherUserId , page: page, countryId:countryId ?? 0, status: "")
+             }, userId: otherUserId , page: page, countryId:countryId ?? 0, status: "published")
          }
         
         

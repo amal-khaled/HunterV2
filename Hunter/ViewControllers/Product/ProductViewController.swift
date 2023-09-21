@@ -127,7 +127,7 @@ class ProductViewController: UIViewController {
 //    }
     @IBAction func userClickedAction(_ sender: Any) {
         if StaticFunctions.isLogin() {
-            if AppDelegate.currentUser.isStore ?? false {
+            if product.isStore ?? false {
                 let vc = UIStoryboard(name: "Store", bundle: nil).instantiateViewController(withIdentifier: "StoreProfileVC") as! StoreProfileVC
                 vc.navigationController?.navigationBar.isHidden = true
                 vc.modalPresentationStyle = .fullScreen
@@ -241,6 +241,7 @@ class ProductViewController: UIViewController {
                     StaticFunctions.createErrorAlert(msg: "You Can't chat with yourself".localize)
                 }else {
                     Constants.otherUserPic = self.product.userPic ?? ""
+                    Constants.otherUserIsStore = self.product.isStore ?? false
                     Constants.otherUserName = self.product.userName ?? ""
                     self.basicNavigation(storyName: "Chat", segueId: "ChatVC")
                 }
@@ -407,7 +408,7 @@ extension ProductViewController{
             
         }
         
-        if AppDelegate.currentUser.isStore ?? false {
+        if product.isStore ?? false {
             userNameLbl.text = "Store".localize + " " + (product.userName ?? "") + " " + (product.userLastName ?? "")
         }else{
             userNameLbl.text = (product.userName ?? "") + " " + (product.userLastName ?? "")
