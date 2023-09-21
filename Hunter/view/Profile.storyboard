@@ -3006,7 +3006,7 @@
                                                     <constraint firstAttribute="bottom" secondItem="V29-nZ-yxD" secondAttribute="bottom" constant="5" id="swY-Hk-OU6"/>
                                                 </constraints>
                                             </view>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="d0p-8H-lFo">
+                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="d0p-8H-lFo">
                                                 <rect key="frame" x="25" y="130" width="364" height="95.666666666666686"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="WTT-n4-Hvp">
@@ -3101,8 +3101,8 @@
                                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="mPf-HI-qni">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="364" height="35"/>
                                                                                 <subviews>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydN-w5-JFX" userLabel="اسم المستخدم او رقم الجوال">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="74" height="35"/>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydN-w5-JFX" userLabel="اسم المستخدم او رقم الجوال">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="80.666666666666671" height="35"/>
                                                                                         <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="17"/>
                                                                                         <color key="textColor" red="0.43529412150000002" green="0.43529412150000002" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                         <nil key="highlightedColor"/>
@@ -3111,7 +3111,7 @@
                                                                                         </userDefinedRuntimeAttributes>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9f-Eu-Vgy" userLabel="اسم المستخدم او رقم الجوال">
-                                                                                        <rect key="frame" x="99" y="0.0" width="265" height="35"/>
+                                                                                        <rect key="frame" x="105.66666666666666" y="0.0" width="258.33333333333337" height="35"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" systemColor="systemRedColor"/>
                                                                                         <nil key="highlightedColor"/>
