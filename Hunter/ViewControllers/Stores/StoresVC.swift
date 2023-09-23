@@ -21,6 +21,8 @@ class StoresVC: UIViewController {
     @IBOutlet weak var countryBtn: UIButton!
     @IBOutlet weak var customNavView: UIView!
     @IBOutlet weak var searchTextField: UITextField!
+    
+    @IBOutlet weak var createStoreView: UIView!
     @IBOutlet weak var pagerView: FSPagerView! {
         didSet {
             self.pagerView.register(FSPagerViewCell.self, forCellWithReuseIdentifier: "cell")
@@ -50,6 +52,11 @@ class StoresVC: UIViewController {
         customNavView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
         createChangeCountryButton()
             searchTextField.setPlaceHolderColor(.white)
+        if AppDelegate.currentUser.isStore ?? false {
+            createStoreView.isHidden = true
+        }else{
+            createStoreView.isHidden = false
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

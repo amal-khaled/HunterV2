@@ -251,14 +251,13 @@ class ChatVC: ViewController,UITableViewDataSource,UITableViewDelegate,
 
         let recordView = RecordView()
         recordView.translatesAutoresizingMaskIntoConstraints = false
-
         sendView.addSubview(recordButton)
         sendView.addSubview(recordView)
 
         recordButton.widthAnchor.constraint(equalToConstant: 30).isActive = true
         recordButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
 
-        recordButton.trailingAnchor.constraint(equalTo: sendView.trailingAnchor, constant: -2).isActive = true
+        recordButton.leadingAnchor.constraint(equalTo: sendView.leadingAnchor, constant: -2).isActive = true
         recordButton.bottomAnchor.constraint(equalTo: sendView.safeAreaLayoutGuide.bottomAnchor, constant: -16).isActive = true
 
 
@@ -339,12 +338,12 @@ class ChatVC: ViewController,UITableViewDataSource,UITableViewDelegate,
     
     func showConfirmOptions(){
         showV(v: [overlay])
-        confirmDialogConstraint.constant = 0
+        confirmDialogConstraint.constant = 70
         animate_event()
     }
     func hideConfirmOptions(){
         hideV(v: [overlay])
-        confirmDialogConstraint.constant = -400
+        confirmDialogConstraint.constant = -470
         animate_event()
     }
     
@@ -437,12 +436,12 @@ class ChatVC: ViewController,UITableViewDataSource,UITableViewDelegate,
     
     func showDialog(){
         showV(v: [overlay])
-        dialogChatBottomConstraint.constant = 0
+        dialogChatBottomConstraint.constant = 70
         animate_event()
     }
     func hideDialog(){
         hideV(v: [overlay])
-        dialogChatBottomConstraint.constant = -400
+        dialogChatBottomConstraint.constant = -470
         animate_event()
     }
     
@@ -518,12 +517,12 @@ class ChatVC: ViewController,UITableViewDataSource,UITableViewDelegate,
     //report on Chat
     func showreportOnChat(){
         showV(v: [overlay])
-        reportOnChatBottomConstraint.constant = 0
+        reportOnChatBottomConstraint.constant = 70
         animate_event()
     }
     func hidereportOnChat(){
         hideV(v: [overlay])
-        reportOnChatBottomConstraint.constant = -400
+        reportOnChatBottomConstraint.constant = -470
         animate_event()
     }
     

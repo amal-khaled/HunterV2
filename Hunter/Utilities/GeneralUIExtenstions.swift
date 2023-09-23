@@ -698,7 +698,7 @@ extension UILabel {
         }
     }
     
-    func setLineSpacing(lineSpacing: CGFloat = 1, lineHeightMultiple: CGFloat = 1.5,alignment:NSTextAlignment = .right) {
+    func setLineSpacing(lineSpacing: CGFloat = 1, lineHeightMultiple: CGFloat = 1.5,alignment:NSTextAlignment = .natural) {
         
         guard let labelText = self.text else { return }
         

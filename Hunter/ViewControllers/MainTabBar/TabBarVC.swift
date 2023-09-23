@@ -28,24 +28,24 @@ class TabBarVC: WoofTabBarController {
             barview.shadow = (3.0, 0.5, .zero, .gray)
         }
         
-        NotificationCenter.default.addObserver(self, selector: #selector(hideTabBar(_:)), name: NSNotification.Name("hideTabBar"), object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(showTabBar(_:)), name: NSNotification.Name("ShowTabBar"), object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(hideTabBar(_:)), name: NSNotification.Name("hideTabBar"), object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(showTabBar(_:)), name: NSNotification.Name("ShowTabBar"), object: nil)
        
         
     }
     
-    @objc func hideTabBar(_ notification: Notification){
-        self.configureTabBarView { (barview) in
-            barview.isHidden = true
-            self.view.backgroundColor = .white
-        }
-        }
-    @objc func showTabBar(_ notification: Notification){
-        self.configureTabBarView { (barview) in
-            barview.isHidden = false
-            self.view.backgroundColor = UIColor(named: "#0093F5")
-        }
-        }
+//    @objc func hideTabBar(_ notification: Notification){
+//        self.configureTabBarView { (barview) in
+//            barview.isHidden = true
+//            self.view.backgroundColor = .white
+//        }
+//        }
+//    @objc func showTabBar(_ notification: Notification){
+//        self.configureTabBarView { (barview) in
+//            barview.isHidden = false
+//            self.view.backgroundColor = UIColor(named: "#0093F5")
+//        }
+//        }
 
     override func viewControllers() -> [WoofTabControllerItem] {
         return [homeVC,storesVC,addAdsVC,categoryVC,menuVC]

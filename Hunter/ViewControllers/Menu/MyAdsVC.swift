@@ -149,7 +149,7 @@ extension MyAdsVC : UICollectionViewDelegate,UICollectionViewDataSource , UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: myAdsCollectionView.frame.width - 10, height: myAdsCollectionView.frame.height / 1.75 )
+        return CGSize(width: myAdsCollectionView.frame.width - 10, height: myAdsCollectionView.frame.height / 1.6 )
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

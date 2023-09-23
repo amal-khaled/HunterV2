@@ -27,7 +27,7 @@ class SettingVC: UIViewController {
     @IBOutlet weak var deletev_bottom: NSLayoutConstraint!
     @IBOutlet weak var overlay: UIView!
     
-    let appId = ""
+    let appId = "6446364350"
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
