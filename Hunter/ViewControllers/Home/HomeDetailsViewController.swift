@@ -23,6 +23,7 @@ class HomeDetailsViewController: UIViewController {
     @IBOutlet weak var subCatigoryContainer: UIView!
     @IBOutlet weak var featureAdsLabel: UILabel!
     
+    @IBOutlet weak var productCollectionViewHeightConstraints: NSLayoutConstraint!
     @IBOutlet weak var featuredLabelContainerView: UIView!
     @IBOutlet weak var typeView: UIView!
     @IBOutlet weak var typeLbl: UILabel!
@@ -352,8 +353,16 @@ class HomeDetailsViewController: UIViewController {
     
 }
 extension HomeDetailsViewController{
+    
+    func updateCollectionViewHeight() {
+          productCollectionView.layoutIfNeeded()
+          
+          let contentHeight = productCollectionView.collectionViewLayout.collectionViewContentSize.height
+          productCollectionViewHeightConstraints.constant = contentHeight
+      }
 
     func getData(){
+        print("Page: ===> ",page)
         ContainerStackView.addArrangedSubview(shimmerView)
         ProductController.shared.getHomeProducts(completion: {
             products, check, msg in
@@ -373,6 +382,7 @@ extension HomeDetailsViewController{
                     }else {
                         self.products.append(contentsOf: self.featureProducts)
                         self.productCollectionView.reloadData()
+                        self.updateCollectionViewHeight()
                     }
                    
                 }
@@ -398,6 +408,7 @@ extension HomeDetailsViewController{
                     self.isTheLast = true
                 }
                 self.productCollectionView.reloadData()
+                self.updateCollectionViewHeight()
 //                self.FeaturesCollectionView.reloadData()
             }else{
                 StaticFunctions.createErrorAlert(msg: msg)
@@ -618,7 +629,7 @@ extension HomeDetailsViewController: UICollectionViewDataSource, UICollectionVie
         }
     }
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if indexPath.row == (products.count-1) && !isTheLast && !isComeToFeatureAds{
+        if  !isTheLast && !isComeToFeatureAds{
             page+=1
             getData()
             
