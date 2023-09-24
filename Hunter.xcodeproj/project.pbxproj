@@ -1806,7 +1806,10 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Hunter;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_NSCameraUsageDescription = "يريد التطبيق الوصول للكاميرا لوضع صورة للاعلان او للملف الشخصي ";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "يريد مناسبة الوصول للميكروفون لتسجيل فيديو للاعلان او لارسال تسجيل صوتي في المحادثة";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "يريد التطبيق الحصول علي موقعك لتحديد اقرب الإعلانات لك";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "يريد التطبيق الحصول علي موقعك لتحديد اقرب الإعلانات لك";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "لتسجيل فيديو للاعلان او لارسال تسجيل صوتي في المحادثة";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "يريد التطبيق الوصول للصور لوضع صورة للاعلان او للملف الشخصي ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1819,7 +1822,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.adv.hunter.blue;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluezone.hunter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Hunter/Shimmer/Hunter-Bridging-Header.h";
@@ -1843,7 +1846,10 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Hunter;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_NSCameraUsageDescription = "يريد التطبيق الوصول للكاميرا لوضع صورة للاعلان او للملف الشخصي ";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "يريد مناسبة الوصول للميكروفون لتسجيل فيديو للاعلان او لارسال تسجيل صوتي في المحادثة";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "يريد التطبيق الحصول علي موقعك لتحديد اقرب الإعلانات لك";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "يريد التطبيق الحصول علي موقعك لتحديد اقرب الإعلانات لك";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "لتسجيل فيديو للاعلان او لارسال تسجيل صوتي في المحادثة";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "يريد التطبيق الوصول للصور لوضع صورة للاعلان او للملف الشخصي ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1856,7 +1862,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.adv.hunter.blue;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluezone.hunter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Hunter/Shimmer/Hunter-Bridging-Header.h";
