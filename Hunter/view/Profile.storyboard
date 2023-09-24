@@ -726,7 +726,7 @@
                                                 <rect key="frame" x="15" y="60" width="360" height="123"/>
                                                 <subviews>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7P-ZR-EbB" customClass="NextGrowingTextView" customModule="NextGrowingTextView">
-                                                        <rect key="frame" x="10" y="10" width="340" height="105"/>
+                                                        <rect key="frame" x="10" y="9.9999999999999982" width="340" height="27.333333333333329"/>
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5394,8 +5394,17 @@
         <designable name="bcl-dR-OEc">
             <size key="intrinsicContentSize" width="15" height="15.666666666666666"/>
         </designable>
+        <designable name="dlP-oZ-I7h">
+            <size key="intrinsicContentSize" width="150" height="30"/>
+        </designable>
+        <designable name="h7P-ZR-EbB">
+            <size key="intrinsicContentSize" width="340" height="27.333333333333332"/>
+        </designable>
         <designable name="k8h-Fd-p3u">
             <size key="intrinsicContentSize" width="15" height="15.666666666666666"/>
+        </designable>
+        <designable name="su4-AJ-7UH">
+            <size key="intrinsicContentSize" width="150" height="30"/>
         </designable>
     </designables>
     <resources>
