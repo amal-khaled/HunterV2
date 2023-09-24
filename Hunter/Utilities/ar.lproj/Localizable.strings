@@ -239,7 +239,8 @@
 "Please Fill All Fields" = "إملء كافة الحقول";
 "Make sure your new password matches." = "تأكد من تطابق كلمة المرور الجديدة";
 "Change Password" = "تغيير كلمة المرور";
-
+"Not have regions" = "لا توجد مناطق";
+"Not have cities" = "لا يوجد مدن";
 //Signup
 
 "User name" = "اسم المستخدم";

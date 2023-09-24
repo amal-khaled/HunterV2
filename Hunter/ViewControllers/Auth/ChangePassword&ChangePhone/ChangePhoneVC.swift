@@ -301,8 +301,16 @@ extension ChangePhoneVC  {
                             }
                             if self.city_id == -1 && !self.cities_id.isEmpty{
                                 self.city_id = self.cities_id[0]
+                            }else{
+                                self.citiesButton.setTitle("Not have cities".localize, for: .normal)
+                                self.regionButton.setTitle("Not have regions".localize, for: .normal)
+                                self.regions_name.removeAll()
+                                self.regions_id.removeAll()
+                                self.cities_name.removeAll()
+                                print(self.cities_name)
                             }
-                            print(self.cities_name)
+                           
+                            
                         }
                     }
                     self.setupCitiesDropDown{ success in

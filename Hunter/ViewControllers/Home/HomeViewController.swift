@@ -74,6 +74,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(changeCountryName(_:)), name: NSNotification.Name("changeCountryName"), object: nil)
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.barTintColor = .white
         self.navigationController?.navigationBar.isHidden = false
         self.navigationController?.isNavigationBarHidden = false
         titleLabel.text = countryName

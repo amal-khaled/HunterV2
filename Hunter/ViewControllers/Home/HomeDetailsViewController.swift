@@ -62,6 +62,8 @@ class HomeDetailsViewController: UIViewController {
         super.viewDidLoad()
         NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(changeCountryName(_:)), name: NSNotification.Name("changeCountryName"), object: nil)
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.barTintColor = .white
         print(categoryId)
         ConfigureView()
         featuredLabelContainerView.isHidden = !isComeToFeatureAds
@@ -665,6 +667,13 @@ extension HomeDetailsViewController: UIScrollViewDelegate{
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if (scrollView.contentOffset.y >= (scrollView.contentSize.height - scrollView.frame.size.height)) {
+            
+            if  !isTheLast && !isComeToFeatureAds{
+                page+=1
+                getData()
+                
+            }
+        }else if (scrollView.contentOffset.x >= (scrollView.contentSize.width - scrollView.frame.size.width)) {
             
             if  !isTheLast && !isComeToFeatureAds{
                 page+=1

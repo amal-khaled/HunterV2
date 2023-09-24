@@ -179,7 +179,6 @@ class msgsC: UIViewController , UICollectionViewDelegate , UICollectionViewDataS
                 }
         self.title = "Messages".localize
         navigationController?.navigationBar.tintColor = .white
-        
         NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         noMessagesView.isHidden = true
       
