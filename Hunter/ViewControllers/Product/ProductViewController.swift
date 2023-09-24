@@ -129,6 +129,7 @@ class ProductViewController: UIViewController {
         if StaticFunctions.isLogin() {
             if product.isStore ?? false {
                 let vc = UIStoryboard(name: "Store", bundle: nil).instantiateViewController(withIdentifier: "StoreProfileVC") as! StoreProfileVC
+                vc.otherUserId = product.userId ?? 0
                 vc.navigationController?.navigationBar.isHidden = true
                 vc.modalPresentationStyle = .fullScreen
                 self.navigationController?.pushViewController(vc, animated: true)

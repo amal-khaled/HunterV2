@@ -388,7 +388,7 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
                 storesPackagesButton.isHidden = true
                 blockButton.isHidden = false
                 reportButton.isHidden = false
-                packesTypeStackView.isHidden = false
+                packesTypeStackView.isHidden = true
             }
             
             if AppDelegate.currentUser.id ?? 0 != otherUserId  {
