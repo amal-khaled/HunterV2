@@ -9,6 +9,10 @@ import UIKit
 import Cosmos
 import Alamofire
 
+protocol AddRateForUsersVCDelegate:AnyObject{
+    func reloadData()
+}
+
 class AddRateForUsersVC: UIViewController {
 
     
@@ -16,6 +20,7 @@ class AddRateForUsersVC: UIViewController {
     @IBOutlet weak var ratingStars: CosmosView!
    
     
+    weak var delegate : AddRateForUsersVCDelegate?
     var otherUserId = 0
     
     override func viewDidLoad() {
@@ -36,6 +41,7 @@ class AddRateForUsersVC: UIViewController {
                 if jsonData.statusCode == 200{
                     NotificationCenter.default.post(Notification(name: .loadUserRate))
                     StaticFunctions.createSuccessAlert(msg: jsonData.message ?? "")
+                    NotificationCenter.default.post(name: NSNotification.Name("getRate"), object: nil)
                     self.dismiss(animated: false)
                 }
                 else {

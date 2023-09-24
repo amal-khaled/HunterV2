@@ -329,8 +329,8 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func didTapMoreStores(_ sender: UIButton) {
-        
-        tabBarController?.selectedIndex = 2
+        let storesVC = StoresVC.instantiate()
+        navigationController?.pushViewController(storesVC, animated: true)
     }
 }
 extension HomeViewController{

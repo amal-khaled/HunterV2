@@ -299,7 +299,7 @@ extension ChangePhoneVC  {
                                     }
                                 }
                             }
-                            if self.city_id == -1 {
+                            if self.city_id == -1 && !self.cities_id.isEmpty{
                                 self.city_id = self.cities_id[0]
                             }
                             print(self.cities_name)

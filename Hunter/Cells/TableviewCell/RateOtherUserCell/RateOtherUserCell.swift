@@ -30,7 +30,7 @@ class RateOtherUserCell: UITableViewCell {
             lbl_comment.text = data.comment
             lbl_comment.setLineSpacing()
             rate.rating = Double(data.rate)
-            lbl_date.text = diffDates(GetDateFromString(data.createdAt ?? "")).replace("-", "")
+            lbl_date.text = diffDates(GetDateFromString(data.date ?? "")).replace("-", "")
         }
     }
 

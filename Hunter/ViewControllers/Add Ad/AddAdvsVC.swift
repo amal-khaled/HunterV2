@@ -261,7 +261,12 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
         self.images = images
         self.selectedImages = Array(images.values)
         self.selectedIndexPath = [0,0]
-        mainImageKey = Array(images.keys)[0]
+        if !images.isEmpty {
+            mainImageKey = Array(images.keys)[0]
+        }else{
+            print("images.keys ==>" , images.keys)
+        }
+        
         self.mediaKeys = mediaKeys
         self.selectedMedia = selectedMedia
 //        selectFirstCell()

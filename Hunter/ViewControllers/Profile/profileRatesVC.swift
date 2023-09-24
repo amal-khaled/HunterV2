@@ -34,6 +34,8 @@ class profileRatesVC: UIViewController,UITableViewDataSource,UITableViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadUserRates(_:)), name: NSNotification.Name("getRate"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleUserIDNotification(_:)), name: .userIDNotification, object: nil)
                 
         //lst.backgroundColor = UIColor.clear.withAlphaComponent(0)
@@ -73,6 +75,10 @@ class profileRatesVC: UIViewController,UITableViewDataSource,UITableViewDelegate
          rateDate.removeAll()
          otherUserName.removeAll()
          userPicture.removeAll()
+    }
+    
+    @objc func reloadUserRates(_ notification: Notification){
+        getRate()
     }
     
     @objc func getRate(){

@@ -214,7 +214,7 @@
                                                         <rect key="frame" x="0.0" y="315.66666666666669" width="393" height="564.33333333333326"/>
                                                         <subviews>
                                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MS7-eS-1u1">
-                                                                <rect key="frame" x="10" y="0.0" width="373" height="444.33333333333331"/>
+                                                                <rect key="frame" x="10" y="0.0" width="373" height="379.33333333333331"/>
                                                                 <color key="backgroundColor" name="#F9F9F9"/>
                                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SQY-pY-GCm">
                                                                     <size key="itemSize" width="171" height="149"/>
@@ -299,7 +299,7 @@
                                                         <constraints>
                                                             <constraint firstItem="MS7-eS-1u1" firstAttribute="leading" secondItem="pYp-CN-K09" secondAttribute="leading" constant="10" id="5yX-Qq-lxF"/>
                                                             <constraint firstItem="MS7-eS-1u1" firstAttribute="top" secondItem="pYp-CN-K09" secondAttribute="top" id="ZcF-oE-xvc"/>
-                                                            <constraint firstAttribute="bottom" secondItem="MS7-eS-1u1" secondAttribute="bottom" constant="120" id="Zg6-6s-Mdg"/>
+                                                            <constraint firstAttribute="bottom" secondItem="MS7-eS-1u1" secondAttribute="bottom" constant="185" id="Zg6-6s-Mdg"/>
                                                             <constraint firstAttribute="trailing" secondItem="MS7-eS-1u1" secondAttribute="trailing" constant="10" id="yTL-67-iRj"/>
                                                         </constraints>
                                                     </view>
@@ -1322,7 +1322,7 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="MSN-mL-G47" secondAttribute="bottom" id="CXO-kY-bTd"/>
+                                    <constraint firstAttribute="bottom" secondItem="MSN-mL-G47" secondAttribute="bottom" constant="50" id="CXO-kY-bTd"/>
                                     <constraint firstItem="MSN-mL-G47" firstAttribute="leading" secondItem="5Yt-YC-GPA" secondAttribute="leading" id="PBL-kC-CHX"/>
                                     <constraint firstItem="MSN-mL-G47" firstAttribute="top" secondItem="5Yt-YC-GPA" secondAttribute="top" id="evg-kw-AXk"/>
                                     <constraint firstAttribute="trailing" secondItem="MSN-mL-G47" secondAttribute="trailing" id="whi-kz-tmy"/>
@@ -2560,7 +2560,7 @@ To get free ads</string>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="HpX-ha-IFW" firstAttribute="leading" secondItem="00l-Kf-1UA" secondAttribute="leading" id="0Cd-QW-grm"/>
-                                    <constraint firstAttribute="bottom" secondItem="HpX-ha-IFW" secondAttribute="bottom" id="La9-Ib-9Su"/>
+                                    <constraint firstAttribute="bottom" secondItem="HpX-ha-IFW" secondAttribute="bottom" constant="50" id="La9-Ib-9Su"/>
                                     <constraint firstAttribute="trailing" secondItem="HpX-ha-IFW" secondAttribute="trailing" id="XjV-aA-KD4"/>
                                     <constraint firstItem="HpX-ha-IFW" firstAttribute="top" secondItem="00l-Kf-1UA" secondAttribute="top" id="h0z-cZ-ZYE"/>
                                 </constraints>
@@ -2675,23 +2675,23 @@ To get free ads</string>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dmP-MM-Vx7">
-                                        <rect key="frame" x="343" y="103" width="35" height="140"/>
+                                        <rect key="frame" x="328" y="103" width="50" height="200"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5x-he-d11">
-                                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="35" id="G2Y-p0-1PA"/>
-                                                    <constraint firstAttribute="height" constant="35" id="s3d-wk-ej6"/>
+                                                    <constraint firstAttribute="width" constant="50" id="G2Y-p0-1PA"/>
+                                                    <constraint firstAttribute="height" constant="50" id="s3d-wk-ej6"/>
                                                 </constraints>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="notificationImage"/>
+                                                <state key="normal" image="ic_notificationIcon"/>
                                                 <connections>
                                                     <action selector="didTapNotificationButton:" destination="GKQ-C2-D3L" eventType="touchUpInside" id="fgi-Is-Fsn"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVQ-ZS-Pcz" userLabel="share Button">
-                                                <rect key="frame" x="0.0" y="35" width="35" height="35"/>
+                                                <rect key="frame" x="0.0" y="50" width="50" height="50"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="shareProfile"/>
@@ -2700,7 +2700,7 @@ To get free ads</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6HL-J6-GdO" userLabel="Report Button">
-                                                <rect key="frame" x="0.0" y="70" width="35" height="35"/>
+                                                <rect key="frame" x="0.0" y="100" width="50" height="50"/>
                                                 <color key="tintColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="flag-image"/>
@@ -2709,7 +2709,7 @@ To get free ads</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJP-ko-BUH" userLabel="Block Button">
-                                                <rect key="frame" x="0.0" y="105" width="35" height="35"/>
+                                                <rect key="frame" x="0.0" y="150" width="50" height="50"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -3609,7 +3609,7 @@ To get free ads</string>
                                 <constraints>
                                     <constraint firstItem="l6f-8f-epB" firstAttribute="leading" secondItem="vrI-s8-TLB" secondAttribute="leading" id="E54-yS-eMR"/>
                                     <constraint firstAttribute="trailing" secondItem="l6f-8f-epB" secondAttribute="trailing" id="Fmf-cl-ArA"/>
-                                    <constraint firstAttribute="bottom" secondItem="l6f-8f-epB" secondAttribute="bottom" id="H8y-1w-UH1"/>
+                                    <constraint firstAttribute="bottom" secondItem="l6f-8f-epB" secondAttribute="bottom" constant="120" id="H8y-1w-UH1"/>
                                     <constraint firstItem="l6f-8f-epB" firstAttribute="top" secondItem="vrI-s8-TLB" secondAttribute="top" id="qTD-i0-X6G"/>
                                     <constraint firstItem="l6f-8f-epB" firstAttribute="width" secondItem="vrI-s8-TLB" secondAttribute="width" id="y7n-4x-zbv"/>
                                 </constraints>
@@ -3962,10 +3962,10 @@ To get free ads</string>
         <image name="emailIcon" width="35" height="35"/>
         <image name="eye" catalog="system" width="128" height="79"/>
         <image name="flag-image" width="44.333332061767578" height="40.666667938232422"/>
+        <image name="ic_notificationIcon" width="373" height="373"/>
         <image name="instagramSocial" width="23" height="23"/>
         <image name="instgramImage" width="41" height="41"/>
         <image name="locationSocial" width="19" height="26.333333969116211"/>
-        <image name="notificationImage" width="70" height="70"/>
         <image name="passwordIcon" width="35" height="35"/>
         <image name="phone2" width="64" height="64"/>
         <image name="phoneIcon" width="35" height="35"/>

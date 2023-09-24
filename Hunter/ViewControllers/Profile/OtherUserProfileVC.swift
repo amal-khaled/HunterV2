@@ -239,6 +239,7 @@
         @IBAction func didTapAddRateButton(_ sender: UIButton) {
             let vc = UIStoryboard(name: "Profile", bundle: nil).instantiateViewController(withIdentifier: "AddRateForUsersVC") as! AddRateForUsersVC
             vc.otherUserId = OtherUserId
+            vc.delegate = self
             vc.modalPresentationStyle = .overFullScreen
             self.present(vc, animated: false)
         }
@@ -440,3 +441,9 @@
     //        }
     //    }
     //}
+
+extension OtherUserProfileVC : AddRateForUsersVCDelegate{
+    func reloadData() {
+        
+    }
+}
