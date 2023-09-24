@@ -5394,11 +5394,14 @@
         <designable name="bcl-dR-OEc">
             <size key="intrinsicContentSize" width="15" height="15.666666666666666"/>
         </designable>
-        <designable name="dlP-oZ-I7h">
-            <size key="intrinsicContentSize" width="150" height="30"/>
+        <designable name="h7P-ZR-EbB">
+            <size key="intrinsicContentSize" width="367.66666666666669" height="27.333333333333332"/>
         </designable>
         <designable name="k8h-Fd-p3u">
             <size key="intrinsicContentSize" width="15" height="15.666666666666666"/>
+        </designable>
+        <designable name="su4-AJ-7UH">
+            <size key="intrinsicContentSize" width="150" height="30"/>
         </designable>
     </designables>
     <resources>
