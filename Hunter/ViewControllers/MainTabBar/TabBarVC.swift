@@ -56,7 +56,6 @@ class TabBarVC: WoofTabBarController {
 
 extension TabBarVC: WoofTabBarControllerBarViewDelegate {
     func shouldSelectItem(itemView: WoofTabBarItemView, destinationVC: WoofTabBarController.WoofTabControllerItem, atIndex: Int) -> Bool {
-        navigationController?.popToRootViewController(animated: false)
         return true
     }
     

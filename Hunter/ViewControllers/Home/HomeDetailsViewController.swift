@@ -81,12 +81,12 @@ class HomeDetailsViewController: UIViewController {
             self.typeView.isHidden = false
         }else{
             self.typeView.isHidden = true
-
+            
         }
-       
+        
         countryId = AppDelegate.currentCountry.id ?? 6
         
-         countryName = MOLHLanguage.currentAppleLanguage() == "en" ? AppDelegate.currentCountry.nameEn : AppDelegate.currentCountry.nameAr
+        countryName = MOLHLanguage.currentAppleLanguage() == "en" ? AppDelegate.currentCountry.nameEn : AppDelegate.currentCountry.nameAr
         
         if isComeFromCategory {
             handleChoosingCategory()
@@ -94,38 +94,38 @@ class HomeDetailsViewController: UIViewController {
         
     }
     
-   
+    
     //MARK: Methods
     
     private func ConfigureView(){
         customNavView.cornerRadius = 30
         customNavView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
         self.navigationController?.navigationBar.isHidden = false
-//        self.navigationItem.title = "Home".localize
-
+        //        self.navigationItem.title = "Home".localize
+        
         NotificationCenter.default.addObserver(self, selector: #selector(self.chooseCategory(_:)), name: NSNotification.Name(rawValue: "chooseCategory"), object: nil)
-
+        
         FeaturesCollectionView.semanticContentAttribute = .forceLeftToRight
         mainCategoryCollectionView.semanticContentAttribute = .forceLeftToRight
         subCategoryCollectionView.semanticContentAttribute = .forceLeftToRight
         productCollectionView.semanticContentAttribute = .forceLeftToRight
-//        didChangeCountry()
+        //        didChangeCountry()
         getCategory()
         createAddAdvsButton()
         searchTextField.setPlaceHolderColor(.white)
-
+        
     }
     
     func createCustomNavBar(){
         customNavView.cornerRadius = 30
         customNavView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
-
+        
     }
     @objc func leftBarButtonItem1Tapped() {
         // Handle left bar button item 1 tap
         print("Handle left bar button item 1 tap")
     }
-
+    
     @objc func rightBarButtonItem1Tapped() {
         // Handle right bar button item 1 tap
         print("Handle right bar button item 1 tap")
@@ -134,23 +134,23 @@ class HomeDetailsViewController: UIViewController {
     func createAddAdvsButton(){
         //MARK: Right Button
         
-         let rightView = UIView()
+        let rightView = UIView()
         rightView.backgroundColor = .white
         rightView.frame = CGRect(x: 0, y: 0, width: 130, height: 30) // Increase the width
-
+        
         let cornerRadius: CGFloat = 16.0
         rightView.layer.cornerRadius = cornerRadius // Apply corner radius
-
+        
         let dropDownImage = UIImageView(image: UIImage(named: "dropDownIcon")?.withRenderingMode(.alwaysOriginal))
         dropDownImage.contentMode = .scaleAspectFill
         dropDownImage.frame = CGRect(x: 10 , y: 10, width: 14, height: 10) // Adjust the position and size of the image
-
+        
         rightView.addSubview(dropDownImage)
-
+        
         let locationImage = UIImageView(image: UIImage(named: "locationBlack")?.withRenderingMode(.alwaysOriginal))
         locationImage.contentMode = .scaleAspectFill
         locationImage.frame = CGRect(x: rightView.frame.width - 25, y: 10, width: 14, height: 10) // Adjust the position and size of the image
-
+        
         rightView.addSubview(locationImage)
         
         titleLabel.text = countryName // Assuming you have a "localized" method for localization
@@ -162,9 +162,9 @@ class HomeDetailsViewController: UIViewController {
         let categoryButton = UIButton(type: .custom)
         categoryButton.frame = rightView.bounds
         categoryButton.addTarget(self, action: #selector(didTapChangeCountryButton), for: .touchUpInside)
-
+        
         rightView.addSubview(categoryButton)
-
+        
         let countryButton = UIBarButtonItem(customView: rightView)
         navigationItem.rightBarButtonItems = [countryButton]
         navigationItem.leftBarButtonItems = []
@@ -174,7 +174,7 @@ class HomeDetailsViewController: UIViewController {
         if StaticFunctions.isLogin() {
             let vc = UIStoryboard(name: ADVS_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: ADDADVS_VCID) as! AddAdvsVC
             vc.modalPresentationStyle = .fullScreen
-//            presentDetail(vc)
+            //            presentDetail(vc)
             vc.isFromHome = true
             navigationController?.pushViewController(vc, animated: true)
         }else{
@@ -184,7 +184,7 @@ class HomeDetailsViewController: UIViewController {
             }
         }
         
-      
+        
     }
     
     @objc func changeCountryName(_ notification:Notification){
@@ -197,7 +197,7 @@ class HomeDetailsViewController: UIViewController {
             (country) in
             AppDelegate.currentCountry = country
             self.countryName = MOLHLanguage.currentAppleLanguage() == "en" ? (country.nameEn ?? "") : (country.nameAr ?? "")
-//            self.rightButton.setTitle(self.countryName, for: .normal)
+            //            self.rightButton.setTitle(self.countryName, for: .normal)
             self.titleLabel.text = self.countryName
             self.countryId = country.id ?? 6
             self.cityId = -1
@@ -215,14 +215,14 @@ class HomeDetailsViewController: UIViewController {
         print(categoryId)
         subcategoryId = subCategories[subcategoryIndex].id ?? 0
         self.subCategories.insert(Category(nameAr: "الكل", nameEn: "All",id: -1, hasSubCat: 0), at: 0)
-
+        
         mainCategoryCollectionView.reloadData()
         mainCategoryCollectionView.selectItem(at: [0, categoryIndex], animated: true, scrollPosition: .centeredHorizontally)
         self.subCategoryCollectionView.isHidden = false
         self.subCatigoryContainer.isHidden = false
         self.subCategoryCollectionView.reloadData()
         subCategoryCollectionView.selectItem(at: [0, subcategoryIndex + 1], animated: true, scrollPosition: .centeredHorizontally)
-//            // do something with your image
+        //            // do something with your image
         feaureContainerView.isHidden = true
         
         if categoryId == 74 {
@@ -244,16 +244,16 @@ class HomeDetailsViewController: UIViewController {
         subCategories = notification.userInfo?["subCategories"] as! [Category]
         categoryId = categories[categoryIndex+1].id ?? 0
         print(categoryId)
-       
+        
         subcategoryId = subCategories[subcategoryIndex].id ?? 0
         self.subCategories.insert(Category(nameAr: "الكل", nameEn: "All",id: -1, hasSubCat: 0), at: 0)
-
+        
         mainCategoryCollectionView.selectItem(at: [0, categoryIndex+1], animated: true, scrollPosition: .centeredHorizontally)
         self.subCategoryCollectionView.isHidden = false
         self.subCatigoryContainer.isHidden = false
         self.subCategoryCollectionView.reloadData()
         subCategoryCollectionView.selectItem(at: [0, subcategoryIndex+1], animated: true, scrollPosition: .centeredHorizontally)
-//            // do something with your image
+        //            // do something with your image
         if categoryId == 74 {
             sell = nil
             typeLbl.text = "All".localize
@@ -264,7 +264,7 @@ class HomeDetailsViewController: UIViewController {
         }
         
         getData()
-
+        
     }
     
     //MARK: IBActions
@@ -312,15 +312,15 @@ class HomeDetailsViewController: UIViewController {
         
     }
     @IBAction func countryAction(_ sender: Any) {
-
+        
         coountryVC = UIStoryboard(name: MAIN_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: COUNTRY_VCIID) as!  CounriesViewController
         coountryVC.countryBtclosure = {
             (country) in
             AppDelegate.currentCountry = country
-//            self.countryLbl.text = MOLHLanguage.currentAppleLanguage() == "en" ? (country.nameEn ?? "") : (country.nameAr ?? "")
+            //            self.countryLbl.text = MOLHLanguage.currentAppleLanguage() == "en" ? (country.nameEn ?? "") : (country.nameAr ?? "")
             self.countryId = country.id ?? 6
             self.cityId = -1
-
+            
             self.resetProducts()
             self.getData()
             
@@ -328,7 +328,7 @@ class HomeDetailsViewController: UIViewController {
         self.present(coountryVC, animated: false, completion: nil)
     }
     @IBAction func goLogin(_ sender: Any) {
-//        basicPresentation(storyName: Auth_STORYBOARD, segueId: "login_nav")
+        //        basicPresentation(storyName: Auth_STORYBOARD, segueId: "login_nav")
     }
     @IBAction func gridAction(_ sender: Any) {
         isList = false
@@ -355,14 +355,15 @@ class HomeDetailsViewController: UIViewController {
 extension HomeDetailsViewController{
     
     func updateCollectionViewHeight() {
-          productCollectionView.layoutIfNeeded()
-          
-          let contentHeight = productCollectionView.collectionViewLayout.collectionViewContentSize.height
-          productCollectionViewHeightConstraints.constant = contentHeight
-      }
-
+        productCollectionView.layoutIfNeeded()
+        
+        let contentHeight = productCollectionView.collectionViewLayout.collectionViewContentSize.height
+        productCollectionViewHeightConstraints.constant = contentHeight
+    }
+    
     func getData(){
         print("Page: ===> ",page)
+        
         ContainerStackView.addArrangedSubview(shimmerView)
         ProductController.shared.getHomeProducts(completion: {
             products, check, msg in
@@ -384,9 +385,9 @@ extension HomeDetailsViewController{
                         self.productCollectionView.reloadData()
                         self.updateCollectionViewHeight()
                     }
-                   
+                    
                 }
-               
+                
                 if self.page == 1 {
                     self.products.removeAll()
                     if !self.isComeToFeatureAds {
@@ -407,9 +408,15 @@ extension HomeDetailsViewController{
                     self.page = self.page == 1 ? 1 : self.page - 1
                     self.isTheLast = true
                 }
+                
+                
+                
+                print(self.page)
                 self.productCollectionView.reloadData()
                 self.updateCollectionViewHeight()
-//                self.FeaturesCollectionView.reloadData()
+                
+                
+                //                self.FeaturesCollectionView.reloadData()
             }else{
                 StaticFunctions.createErrorAlert(msg: msg)
                 self.page = self.page == 1 ? 1 : self.page - 1
@@ -422,7 +429,7 @@ extension HomeDetailsViewController{
             categories, check, msg in
             
             self.categories = categories
-//            self.categories.insert(Category(nameAr: "الكل", nameEn: "All",id: -1, hasSubCat: 0), at: 0)
+            //            self.categories.insert(Category(nameAr: "الكل", nameEn: "All",id: -1, hasSubCat: 0), at: 0)
             self.mainCategoryCollectionView.reloadData()
             self.mainCategoryCollectionView.selectItem(at: [0,self.selectedCategoryIndex], animated: false, scrollPosition: .centeredHorizontally)
             
@@ -464,7 +471,7 @@ extension HomeDetailsViewController{
         if categories[item].hasSubCat == 1{
             getSubCategory()
         }else{
-//                       subCategories.removeAll()
+            //                       subCategories.removeAll()
             self.subCatigoryContainer.isHidden = true
             subCategoryCollectionView.isHidden = true
         }
@@ -479,12 +486,15 @@ extension HomeDetailsViewController{
         self.resetProducts()
         self.getData()
     }
+    
+    
+    
 }
 extension HomeDetailsViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == productCollectionView{
             print(products.count)
-          return products.count
+            return products.count
         }else if collectionView == mainCategoryCollectionView{
             return categories.count
         }else if collectionView == FeaturesCollectionView {
@@ -536,7 +546,7 @@ extension HomeDetailsViewController: UICollectionViewDataSource, UICollectionVie
             }
             return cell
         }else if collectionView == FeaturesCollectionView {
-         let    cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell-feature", for: indexPath) as! FeaturesProductsCollectionViewCell
+            let    cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell-feature", for: indexPath) as! FeaturesProductsCollectionViewCell
             if featureProducts.count > 0 {
                 cell.setData(product: featureProducts[indexPath.item])
             }
@@ -573,7 +583,7 @@ extension HomeDetailsViewController: UICollectionViewDataSource, UICollectionVie
             vc.modalPresentationStyle = .fullScreen
             vc.product = products[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
-//            presentDetail(vc)
+            //            presentDetail(vc)
         }
         else if collectionView == mainCategoryCollectionView{
             let cell = collectionView.cellForItem(at: indexPath)
@@ -598,7 +608,7 @@ extension HomeDetailsViewController: UICollectionViewDataSource, UICollectionVie
             if categories[indexPath.row].hasSubCat == 1{
                 getSubCategory()
             }else{
-//                       subCategories.removeAll()
+                //                       subCategories.removeAll()
                 self.subCatigoryContainer.isHidden = true
                 subCategoryCollectionView.isHidden = true
             }
@@ -625,21 +635,21 @@ extension HomeDetailsViewController: UICollectionViewDataSource, UICollectionVie
             self.subcategoryId = subCategories[indexPath.row].id ?? 0
             self.resetProducts()
             self.getData()
-
-        }
-    }
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if  !isTheLast && !isComeToFeatureAds{
-            page+=1
-            getData()
             
         }
     }
+    //    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+    //        if  !isTheLast && !isComeToFeatureAds{
+    //            page+=1
+    //            getData()
+    //
+    //        }
+    //    }
 }
 
 extension HomeDetailsViewController:UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-            // Perform the segue when the Return key is pressed
+        // Perform the segue when the Return key is pressed
         let vc = UIStoryboard(name: SEARCH_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: "search") as! SearchViewController
         if searchTextField.text.safeValue != "" {
             vc.searchText = searchTextField.text!
@@ -647,7 +657,20 @@ extension HomeDetailsViewController:UITextFieldDelegate{
         }else{
             StaticFunctions.createErrorAlert(msg: "Please type in anything you want to search for in Hunter".localize)
         }
-       
-            return true
+        
+        return true
+    }
+}
+extension HomeDetailsViewController: UIScrollViewDelegate{
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if (scrollView.contentOffset.y >= (scrollView.contentSize.height - scrollView.frame.size.height)) {
+            
+            if  !isTheLast && !isComeToFeatureAds{
+                page+=1
+                getData()
+                
+            }
         }
+    }
 }
