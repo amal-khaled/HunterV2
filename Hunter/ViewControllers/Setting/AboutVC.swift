@@ -105,14 +105,14 @@ class AboutVC: ViewController {
 //                           self.lblData.text = condsText
 //
 //                    }
-                    if MOLHLanguage.currentAppleLanguage() == "en" {
-                        self.lblData.text = self.condsTextEn
-                    }else{
-                        
-                        self.lblData.text = self.condsTextAR
-                    }
-                    self.lblData.setLineSpacing(lineSpacing: 1, lineHeightMultiple: 1.5)
-                    self.shight.constant = self.heightForLabel(self.lblData.text!, self.cscroll.frame.width - 40,self.lblData!.font) + 100
+//                    if MOLHLanguage.currentAppleLanguage() == "en" {
+//                        self.lblData.text = self.condsTextEn
+//                    }else{
+//                        
+//                        self.lblData.text = self.condsTextAR
+//                    }
+//                    self.lblData.setLineSpacing(lineSpacing: 1, lineHeightMultiple: 1.5)
+//                    self.shight.constant = self.heightForLabel(self.lblData.text!, self.cscroll.frame.width - 40,self.lblData!.font) + 100
                 case .failure(let error):
                     print(error.localizedDescription)
                 }
