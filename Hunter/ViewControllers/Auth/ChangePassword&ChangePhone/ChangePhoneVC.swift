@@ -28,7 +28,7 @@ class ChangePhoneVC:UIViewController, UITextFieldDelegate{
     let phoneNumberKit = PhoneNumberKit()
     
     var countryCode:String = "965"
-    var country_id:Int = 0
+    var country_id:Int = 6
     var country_name:String = ""
     var countries_name = [String]()
     var countries_id = [Int]()
@@ -37,7 +37,7 @@ class ChangePhoneVC:UIViewController, UITextFieldDelegate{
     
     
     
-    var city_id:Int = 0
+    var city_id:Int = -1 
     var city_name:String = ""
     var cities_name = [String]()
     var cities_id = [Int]()
@@ -80,7 +80,7 @@ class ChangePhoneVC:UIViewController, UITextFieldDelegate{
         customizeDropDown()
         getCountries()
         getCities()
-        getRegions(cityId: city_id)
+      //  getRegions(cityId: city_id)
         phone.delegate = self
         
         chooseLabels.forEach { label in
@@ -257,6 +257,10 @@ extension ChangePhoneVC  {
             completion(true)
            
             
+        }else {
+            completion(false)
+            citiesButton.setTitle("Not have cities".localize, for: .normal)
+
         }
         cities.selectionAction = { [unowned self] (index: Int, item: String) in
             self.city_id = self.cities_id[index]
@@ -302,13 +306,9 @@ extension ChangePhoneVC  {
                             if self.city_id == -1 && !self.cities_id.isEmpty{
                                 self.city_id = self.cities_id[0]
                             }else{
-                                self.citiesButton.setTitle("Not have cities".localize, for: .normal)
-                                self.regionButton.setTitle("Not have regions".localize, for: .normal)
-                                self.regions_name.removeAll()
-                                self.regions_id.removeAll()
-                                self.cities_name.removeAll()
-                                print(self.regions_name)
-                                print(self.cities_name)
+                                //self.citiesButton.setTitle("Not have cities".localize, for: .normal)
+                               // self.regionButton.setTitle("Not have regions".localize, for: .normal)
+//
                             }
                            
                             
@@ -317,6 +317,10 @@ extension ChangePhoneVC  {
                     self.setupCitiesDropDown{ success in
                         if success{
                             self.getRegions(cityId: self.city_id)
+                        }else{
+                            self.regions_name.removeAll()
+                            self.regions.dataSource = []
+                            self.regionButton.setTitle("Not have regions".localize, for: .normal)
                         }
                     }
                     
@@ -361,7 +365,7 @@ extension ChangePhoneVC  {
                             print("regions ",self.regions_name)
                         }
                     }
-                    
+      
                     self.setupRegionsDropDown()
                 }
                 
@@ -457,8 +461,10 @@ extension ChangePhoneVC  {
             }
             
         }else{
-            regionButton.setTitle("لا توجد مدن ", for: .normal)
+            regionButton.setTitle("Not have regions".localize, for: .normal)
         }
+        
+        print(cities_name.count)
         regions.selectionAction = { [unowned self] (index: Int, item: String) in
             self.region_id = self.regions_id[index]
             self.region_name = self.regions_name[index]
