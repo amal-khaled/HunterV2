@@ -67,8 +67,15 @@ class StoreProfileVC: UIViewController {
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        changeCoverButton.isHidden = true
+        changeProfileImageButton.isHidden = true
+        storesPackagesButton.isHidden = true
+        blockButton.isHidden = true
+        reportButton.isHidden = true
+        packesTypeStackView.isHidden = true
         NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         getProfile()
+    
     
     }
     
