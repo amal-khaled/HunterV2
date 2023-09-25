@@ -98,19 +98,20 @@ extension ForgetPasswordViewController : UITextFieldDelegate{
 extension ForgetPasswordViewController{
    
     func ValidTextField(textField : UITextField)->(Bool, String?) {
-         if textField == phoneTF {
-            if (phoneTF.text!.count != 0 ){
-                if StaticFunctions.checkValidPhonNumber(Phone: countryCode + phoneTF.text!) {
-                    return (true ,nil )
-                    
-                }
-                else {
-                    return (false ,NSLocalizedString("enter valid phone number".lowercased(),comment:"") )                               }
-            }
-             else {
-                 return (false ,NSLocalizedString("enter valid phone number".lowercased(),comment:"") )                               }
-            
-        }
+        if textField == phoneTF {
+           if (phoneTF.text!.count != 0 ){
+//                if StaticFunctions.checkValidPhonNumber(Phone: countryCode + phoneTF.text!) {
+                   return (true ,nil )
+                   
+//                }
+//                else {
+//                    return (false ,NSLocalizedString("enter valid phone number".lowercased(),comment:"") )                               }
+           }
+            else {
+                return (false ,NSLocalizedString("enter valid phone number".lowercased(),comment:"") )                               }
+           
+       }
+     
       
         
         
