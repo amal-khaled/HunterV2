@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ig8-3C-ceV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ig8-3C-ceV">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -2829,10 +2829,10 @@ To get free ads</string>
                                 <rect key="frame" x="0.0" y="320" width="393.33333333333331" height="498"/>
                                 <subviews>
                                     <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l6f-8f-epB">
-                                        <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="921.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="901.66666666666663"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="KzO-d7-TPF">
-                                                <rect key="frame" x="181" y="30.000000000000007" width="31.333333333333343" height="83.666666666666686"/>
+                                                <rect key="frame" x="181" y="10" width="31.333333333333343" height="83.666666666666671"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="X3h-4c-VTV">
                                                         <rect key="frame" x="0.0" y="0.0" width="31.333333333333332" height="45.333333333333336"/>
@@ -2863,7 +2863,7 @@ To get free ads</string>
                                                 </subviews>
                                             </stackView>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rqM-WW-UvQ">
-                                                <rect key="frame" x="0.0" y="218.66666666666663" width="393.33333333333331" height="70"/>
+                                                <rect key="frame" x="0.0" y="198.66666666666663" width="393.33333333333331" height="70"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Mai-rh-1Nv">
                                                         <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="70"/>
@@ -3103,7 +3103,7 @@ To get free ads</string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1kk-u4-Wbp">
-                                                <rect key="frame" x="5" y="436.66666666666663" width="383.33333333333331" height="485"/>
+                                                <rect key="frame" x="5" y="416.66666666666663" width="383.33333333333331" height="485"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="485" id="8lc-tj-rQs"/>
@@ -3230,7 +3230,7 @@ To get free ads</string>
                                                                                             <rect key="frame" x="10" y="97.333333333333329" width="298" height="16"/>
                                                                                             <subviews>
                                                                                                 <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JCc-87-ujc">
-                                                                                                    <rect key="frame" x="0.0" y="0.0" width="32" height="16"/>
+                                                                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="16"/>
                                                                                                     <subviews>
                                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مصر" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="Q6w-3Y-Tgj">
                                                                                                             <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
@@ -3239,7 +3239,7 @@ To get free ads</string>
                                                                                                             <nil key="highlightedColor"/>
                                                                                                         </label>
                                                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="place_black_24dp-gray" translatesAutoresizingMaskIntoConstraints="NO" id="gik-0a-4Y8">
-                                                                                                            <rect key="frame" x="24" y="0.0" width="8" height="16"/>
+                                                                                                            <rect key="frame" x="24" y="0.0" width="16" height="16"/>
                                                                                                             <constraints>
                                                                                                                 <constraint firstAttribute="height" constant="16" id="Qzh-lU-UOc"/>
                                                                                                                 <constraint firstAttribute="width" constant="16" id="aFf-jl-K4G"/>
@@ -3248,23 +3248,23 @@ To get free ads</string>
                                                                                                     </subviews>
                                                                                                 </stackView>
                                                                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bd0-Ur-cnW">
-                                                                                                    <rect key="frame" x="219.33333333333334" y="0.0" width="78.666666666666657" height="16"/>
+                                                                                                    <rect key="frame" x="218.66666666666666" y="0.0" width="79.333333333333343" height="16"/>
                                                                                                     <subviews>
                                                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Path 5" translatesAutoresizingMaskIntoConstraints="NO" id="z06-gg-iKr">
-                                                                                                            <rect key="frame" x="0.0" y="0.6666666666666714" width="15" height="15"/>
+                                                                                                            <rect key="frame" x="0.0" y="0.6666666666666714" width="15.666666666666666" height="15"/>
                                                                                                             <constraints>
                                                                                                                 <constraint firstAttribute="height" constant="15" id="Sk5-jn-JeO"/>
                                                                                                                 <constraint firstAttribute="width" constant="15" id="ZFU-nb-feV"/>
                                                                                                             </constraints>
                                                                                                         </imageView>
                                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="احمد محمد" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="8FK-Ac-lgh">
-                                                                                                            <rect key="frame" x="22.999999999999996" y="2.6666666666666705" width="35.666666666666657" height="10.666666666666664"/>
+                                                                                                            <rect key="frame" x="23.666666666666682" y="2.6666666666666705" width="35.666666666666657" height="10.666666666666664"/>
                                                                                                             <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="9"/>
                                                                                                             <color key="textColor" name="#0EBFB1"/>
                                                                                                             <nil key="highlightedColor"/>
                                                                                                         </label>
                                                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon feather-user" translatesAutoresizingMaskIntoConstraints="NO" id="Pdx-wr-E9F">
-                                                                                                            <rect key="frame" x="66.666666666666657" y="0.6666666666666714" width="12" height="15"/>
+                                                                                                            <rect key="frame" x="67.333333333333343" y="0.6666666666666714" width="12" height="15"/>
                                                                                                             <constraints>
                                                                                                                 <constraint firstAttribute="height" constant="15" id="TzU-Dx-9Nf"/>
                                                                                                                 <constraint firstAttribute="width" constant="12" id="qul-AY-o4L"/>
@@ -3372,7 +3372,7 @@ To get free ads</string>
                                                 </connections>
                                             </collectionView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="FsW-Wf-skS">
-                                                <rect key="frame" x="8" y="129.66666666666669" width="377.33333333333331" height="73"/>
+                                                <rect key="frame" x="8" y="109.66666666666669" width="377.33333333333331" height="73"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Cqa-Ll-Qo7">
                                                         <rect key="frame" x="36.666666666666657" y="0.0" width="304" height="16"/>
@@ -3436,8 +3436,8 @@ To get free ads</string>
                                                             <constraint firstAttribute="height" constant="16" id="MrA-qR-DTz"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tDW-5C-QrL">
-                                                        <rect key="frame" x="28.666666666666657" y="28" width="320" height="45"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tDW-5C-QrL">
+                                                        <rect key="frame" x="53.666666666666657" y="28" width="270" height="45"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDR-27-3cU" userLabel="phone">
                                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
@@ -3448,7 +3448,7 @@ To get free ads</string>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jj-9Z-QaD" userLabel="whats">
-                                                                <rect key="frame" x="55" y="0.0" width="45" height="45"/>
+                                                                <rect key="frame" x="45" y="0.0" width="45" height="45"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" image="whatsAppImage"/>
                                                                 <connections>
@@ -3456,7 +3456,7 @@ To get free ads</string>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9C-D9-yG9" userLabel="link">
-                                                                <rect key="frame" x="110" y="0.0" width="45" height="45"/>
+                                                                <rect key="frame" x="90" y="0.0" width="45" height="45"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" image="webSiteImage"/>
                                                                 <connections>
@@ -3464,7 +3464,7 @@ To get free ads</string>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6Q-B8-Lfr" userLabel="instgram">
-                                                                <rect key="frame" x="165" y="0.0" width="45" height="45"/>
+                                                                <rect key="frame" x="135" y="0.0" width="45" height="45"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" image="instgramImage"/>
                                                                 <connections>
@@ -3472,7 +3472,7 @@ To get free ads</string>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLf-Jd-kLs" userLabel="location">
-                                                                <rect key="frame" x="220" y="0.0" width="45" height="45"/>
+                                                                <rect key="frame" x="180" y="0.0" width="45" height="45"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" image="storeLocationImage"/>
                                                                 <connections>
@@ -3480,7 +3480,7 @@ To get free ads</string>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9R-em-tEe" userLabel="twitter">
-                                                                <rect key="frame" x="275" y="0.0" width="45" height="45"/>
+                                                                <rect key="frame" x="225.00000000000003" y="0.0" width="44.999999999999972" height="45"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="45" id="mUC-fU-y1i"/>
                                                                     <constraint firstAttribute="width" secondItem="a9R-em-tEe" secondAttribute="height" multiplier="1:1" id="rYR-RD-gef"/>
@@ -3496,7 +3496,7 @@ To get free ads</string>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="G0E-SJ-UYw">
-                                                <rect key="frame" x="12" y="304.66666666666663" width="369.33333333333331" height="116"/>
+                                                <rect key="frame" x="12" y="284.66666666666663" width="369.33333333333331" height="116"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMX-Ny-ojf">
                                                         <rect key="frame" x="0.0" y="0.0" width="369.33333333333331" height="55"/>
@@ -3564,7 +3564,7 @@ To get free ads</string>
                                         <constraints>
                                             <constraint firstItem="FsW-Wf-skS" firstAttribute="top" secondItem="KzO-d7-TPF" secondAttribute="bottom" constant="16" id="02W-jH-H9a"/>
                                             <constraint firstItem="G0E-SJ-UYw" firstAttribute="top" secondItem="rqM-WW-UvQ" secondAttribute="bottom" constant="16" id="3bz-qX-wYd"/>
-                                            <constraint firstItem="KzO-d7-TPF" firstAttribute="top" secondItem="l6f-8f-epB" secondAttribute="top" constant="30" id="5ep-hg-8VY"/>
+                                            <constraint firstItem="KzO-d7-TPF" firstAttribute="top" secondItem="l6f-8f-epB" secondAttribute="top" constant="10" id="5ep-hg-8VY"/>
                                             <constraint firstItem="rqM-WW-UvQ" firstAttribute="leading" secondItem="l6f-8f-epB" secondAttribute="leading" id="6cO-Xs-Moq"/>
                                             <constraint firstItem="1kk-u4-Wbp" firstAttribute="leading" secondItem="l6f-8f-epB" secondAttribute="leading" constant="5" id="BCc-CT-Pfz"/>
                                             <constraint firstItem="rqM-WW-UvQ" firstAttribute="top" secondItem="FsW-Wf-skS" secondAttribute="bottom" constant="16" id="D36-J8-eZC"/>
