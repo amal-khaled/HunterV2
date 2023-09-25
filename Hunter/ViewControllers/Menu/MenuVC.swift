@@ -104,7 +104,7 @@ class MenuVC: UIViewController {
            // logged out
             loginButton.shake()
             userNameLabel.text = "Guest".localize
-            loginButton.setTitle("Login".localize, for: .normal)
+            loginButton.setTitle("Login/Register".localize, for: .normal)
             logoutView.isHidden = true
             loginButton.isHidden = false
             loginViewContainer.isHidden = false

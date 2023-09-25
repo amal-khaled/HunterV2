@@ -92,12 +92,13 @@ class ProductController{
     }
     
     
-    func getHomeFeatureProducts(completion: @escaping([Product], Int, String)->(),countryId: Int){
+    func getHomeFeatureProducts(completion: @escaping([Product], Int, String)->(),countryId: Int,categoryId:Int){
         
         let param =
         [
            "country_id": countryId,
-           "status" : "published"
+           "status" : "published",
+           "category_id":categoryId
         ] as [String : Any]
         
         print(param)

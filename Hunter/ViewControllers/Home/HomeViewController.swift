@@ -356,7 +356,7 @@ extension HomeViewController{
             }else{
                 StaticFunctions.createErrorAlert(msg: message)
             }
-        }, countryId: countryId)
+        }, countryId: countryId,categoryId: 0)
     }
     
     

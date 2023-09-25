@@ -307,6 +307,7 @@ extension ChangePhoneVC  {
                                 self.regions_name.removeAll()
                                 self.regions_id.removeAll()
                                 self.cities_name.removeAll()
+                                print(self.regions_name)
                                 print(self.cities_name)
                             }
                            

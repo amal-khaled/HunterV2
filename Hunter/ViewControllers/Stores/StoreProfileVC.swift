@@ -379,6 +379,8 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
                 reportButton.isHidden = true
                 packesTypeStackView.isHidden = false
                 storesPackagesButton.isHidden = false
+                changeProfileImageButton.isHidden = false
+                changeCoverButton.isHidden = false
             }else {
                 notificationButton.isHidden = true
                 editProfileButton.setTitle("Follow".localize, for: .normal)

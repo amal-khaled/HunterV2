@@ -173,6 +173,9 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        if !StaticFunctions.isLogin(){
+            basicPresentation(storyName: Auth_STORYBOARD, segueId: "login_nav")
+        }
         self.navigationController?.navigationBar.isHidden = true
         self.navigationController?.navigationItem.backBarButtonItem?.tintColor = .white
         tabBarController?.tabBar.isHidden = true

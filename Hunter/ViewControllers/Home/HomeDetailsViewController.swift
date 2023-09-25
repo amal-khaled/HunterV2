@@ -23,6 +23,7 @@ class HomeDetailsViewController: UIViewController {
     @IBOutlet weak var subCatigoryContainer: UIView!
     @IBOutlet weak var featureAdsLabel: UILabel!
     
+    @IBOutlet weak var filterContainerView: UIView!
     @IBOutlet weak var productCollectionViewHeightConstraints: NSLayoutConstraint!
     @IBOutlet weak var featuredLabelContainerView: UIView!
     @IBOutlet weak var typeView: UIView!
@@ -53,6 +54,7 @@ class HomeDetailsViewController: UIViewController {
     var subCategories = [Category]()
     var isComeToFeatureAds = false
     var isComeFromCategory = false
+    var selectSubCategory = false
     
     let titleLabel = UILabel()
     private let shimmerView = ProductsShimmerView.loadFromNib()
@@ -67,6 +69,8 @@ class HomeDetailsViewController: UIViewController {
         print(categoryId)
         ConfigureView()
         featuredLabelContainerView.isHidden = !isComeToFeatureAds
+        filterContainerView.isHidden = isComeToFeatureAds
+        subCatigoryContainer.isHidden = isComeToFeatureAds
         feaureContainerView.isHidden = true
         searchTextField.delegate = self
     }
@@ -157,6 +161,7 @@ class HomeDetailsViewController: UIViewController {
         
         titleLabel.text = countryName // Assuming you have a "localized" method for localization
         titleLabel.textColor = .black
+        titleLabel.adjustsFontSizeToFitWidth = true
         titleLabel.textAlignment = .center
         rightView.addSubview(titleLabel)
         titleLabel.frame = CGRect(x: 20, y: 0, width: rightView.frame.width - 40, height: rightView.frame.height) // Adjust the position and width of the label
@@ -204,7 +209,11 @@ class HomeDetailsViewController: UIViewController {
             self.countryId = country.id ?? 6
             self.cityId = -1
             self.resetProducts()
-            self.getData()
+            if self.isComeToFeatureAds == true {
+                self.getFeatureData()
+            }else{
+                self.getData()
+            }
         }
         self.present(coountryVC, animated: false, completion: nil)
     }
@@ -221,7 +230,8 @@ class HomeDetailsViewController: UIViewController {
         mainCategoryCollectionView.reloadData()
         mainCategoryCollectionView.selectItem(at: [0, categoryIndex], animated: true, scrollPosition: .centeredHorizontally)
         self.subCategoryCollectionView.isHidden = false
-        self.subCatigoryContainer.isHidden = false
+        self.subCatigoryContainer.isHidden = isComeToFeatureAds
+        self.feaureContainerView.isHidden = isComeFromCategory
         self.subCategoryCollectionView.reloadData()
         subCategoryCollectionView.selectItem(at: [0, subcategoryIndex + 1], animated: true, scrollPosition: .centeredHorizontally)
         //            // do something with your image
@@ -237,6 +247,7 @@ class HomeDetailsViewController: UIViewController {
         }
         
         getData()
+        
     }
     
     
@@ -362,48 +373,58 @@ extension HomeDetailsViewController{
         let contentHeight = productCollectionView.collectionViewLayout.collectionViewContentSize.height
         productCollectionViewHeightConstraints.constant = contentHeight
     }
+    func getFeatureData(){
+        featureProducts.removeAll()
+        ProductController.shared.getHomeFeatureProducts(completion: { featureProducts, check, message in
+            if check == 0{
+                print(featureProducts.count)
+                self.featureProducts = featureProducts
+                
+                
+                if featureProducts.count > 0 {
+                    print(self.isComeToFeatureAds)
+                    self.feaureContainerView.isHidden = self.isComeToFeatureAds
+                    self.FeaturesCollectionView.reloadData()
+                }
+                else{
+                    print(!self.isComeToFeatureAds)
+                    self.feaureContainerView.isHidden = !self.isComeToFeatureAds
+                }
+                if self.selectSubCategory == true {
+                   self.feaureContainerView.isHidden = true
+               }
+                if self.isComeToFeatureAds == true {
+                    self.feaureContainerView.isHidden = true
+                    self.productCollectionView.reloadData()
+                    self.updateCollectionViewHeight()
+                }
+            }else{
+                StaticFunctions.createErrorAlert(msg: message)
+            }
+        }, countryId: countryId,categoryId: categoryId)
+    }
     
     func getData(){
         print("Page: ===> ",page)
-        
-        ContainerStackView.addArrangedSubview(shimmerView)
+//        ContainerStackView.addArrangedSubview(shimmerView)
         ProductController.shared.getHomeProducts(completion: {
             products, check, msg in
             if check == 0{
                 self.shimmerView.isHidden = true
-                DispatchQueue.main.async {
-                    products.forEach({ item in
-                        if item.isFeature ?? false {
-                            self.featureProducts.append(item)
-                            print(self.featureProducts.count)
-                        }
-                    })
-                    if self.isComeToFeatureAds == false && self.featureProducts.count > 0 {
-                        print(self.featureProducts.count)
-                        self.feaureContainerView.isHidden = false
-                        self.FeaturesCollectionView.reloadData()
-                    }else {
-                        self.products.append(contentsOf: self.featureProducts)
-                        self.productCollectionView.reloadData()
-                        self.updateCollectionViewHeight()
-                    }
-                    
-                }
-                
                 if self.page == 1 {
                     self.products.removeAll()
-                    if !self.isComeToFeatureAds {
-                        self.featureProducts.removeAll()
+//                    if !self.isComeToFeatureAds {
+//                        self.featureProducts.removeAll()
                         self.products = products
-                    }
-                    
+//                    }
+                    self.getFeatureData()
                     
                 }else{
-                    if self.isComeToFeatureAds == true {
-                        self.products.append(contentsOf: self.featureProducts)
-                    }else {
+//                    if self.isComeToFeatureAds == true {
+//                        self.products.append(contentsOf: self.featureProducts)
+//                    }else {
                         self.products.append(contentsOf: products)
-                    }
+//                    }
                     
                 }
                 if products.isEmpty{
@@ -447,7 +468,7 @@ extension HomeDetailsViewController{
             self.subCategories.insert(Category(nameAr: "الكل", nameEn: "All",id: -1, hasSubCat: 0), at: 0)
             
             if categories.count > 0 {
-                self.subCatigoryContainer.isHidden = false
+                self.subCatigoryContainer.isHidden = self.isComeToFeatureAds
                 self.subCategoryCollectionView.isHidden = false
             }else{
                 self.subCatigoryContainer.isHidden = true
@@ -487,6 +508,7 @@ extension HomeDetailsViewController{
         }
         self.resetProducts()
         self.getData()
+        self.getFeatureData()
     }
     
     
@@ -496,7 +518,7 @@ extension HomeDetailsViewController: UICollectionViewDataSource, UICollectionVie
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == productCollectionView{
             print(products.count)
-            return products.count
+            return isComeToFeatureAds ? featureProducts.count : products.count
         }else if collectionView == mainCategoryCollectionView{
             return categories.count
         }else if collectionView == FeaturesCollectionView {
@@ -515,13 +537,15 @@ extension HomeDetailsViewController: UICollectionViewDataSource, UICollectionVie
             }else{
                 cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell-grid", for: indexPath) as! ProductCollectionViewCell
             }
-            if products.count > 0 {
+            if products.count > 0 && isComeToFeatureAds == false{
                 cell.setData(product: products[indexPath.row])
                 if self.isComeToFeatureAds == true {
                     cell.featuredImageIcon.isHidden = false
                 }else {
                     cell.featuredImageIcon.isHidden = true
                 }
+            }else if featureProducts.count > 0 && isComeToFeatureAds == true {
+                cell.setData(product: featureProducts[indexPath.row])
             }
             return cell
         }else if collectionView == mainCategoryCollectionView{
@@ -623,7 +647,13 @@ extension HomeDetailsViewController: UICollectionViewDataSource, UICollectionVie
                 
             }
             self.resetProducts()
-            self.getData()
+            if isComeToFeatureAds == true {
+                self.getFeatureData()
+            }else {
+                self.getData()
+            }
+            
+            
             
         }else if collectionView == FeaturesCollectionView {
             
@@ -636,17 +666,28 @@ extension HomeDetailsViewController: UICollectionViewDataSource, UICollectionVie
         else if collectionView == subCategoryCollectionView{
             self.subcategoryId = subCategories[indexPath.row].id ?? 0
             self.resetProducts()
+            if self.subcategoryId == -1 {
+                self.selectSubCategory = false
+            }else{
+                self.selectSubCategory = true
+            }
+            if isComeToFeatureAds == true {
+                self.feaureContainerView.isHidden = true
+            }
             self.getData()
             
         }
     }
-    //    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-    //        if  !isTheLast && !isComeToFeatureAds{
-    //            page+=1
-    //            getData()
-    //
-    //        }
-    //    }
+        func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+            if collectionView == productCollectionView {
+                if indexPath.row == (products.count-1) && !isTheLast && isComeToFeatureAds == false{
+                    page+=1
+                    getData()
+        
+                }
+            }
+           
+        }
 }
 
 extension HomeDetailsViewController:UITextFieldDelegate{
@@ -665,21 +706,15 @@ extension HomeDetailsViewController:UITextFieldDelegate{
 }
 extension HomeDetailsViewController: UIScrollViewDelegate{
     
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        if (scrollView.contentOffset.y >= (scrollView.contentSize.height - scrollView.frame.size.height)) {
-            
-            if  !isTheLast && !isComeToFeatureAds{
-                page+=1
-                getData()
-                
-            }
-        }else if (scrollView.contentOffset.x >= (scrollView.contentSize.width - scrollView.frame.size.width)) {
-            
-            if  !isTheLast && !isComeToFeatureAds{
-                page+=1
-                getData()
-                
-            }
-        }
-    }
+//    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+//
+//        if (scrollView.contentOffset.y >= (scrollView.contentSize.height - scrollView.frame.size.height)) {
+//
+//            if  !isTheLast && !isComeToFeatureAds{
+//                page+=1
+//                getData()
+//
+//            }
+//        }
+//    }
 }
