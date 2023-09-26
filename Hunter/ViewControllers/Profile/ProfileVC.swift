@@ -81,6 +81,8 @@ class ProfileVC: UIViewController {
     }
     
     private func bindProfileData(from profileModel:User){
+        Constants.countPaidAds = profileModel.availableAdsCountUserInCurrentMonth ?? 0
+
         if let cover =  profileModel.cover {
             if cover.contains(".png") || cover.contains(".jpg"){
 //                coverImageView.setImageWithLoading(url:profileModel.cover ?? "" )

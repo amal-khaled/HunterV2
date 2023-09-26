@@ -200,6 +200,7 @@ extension LoginViewController{
                              AppDelegate.defaults.set( userObject.token ?? "", forKey: "token")
                              AppDelegate.defaults.set( userObject.data.id ?? 0, forKey: "userId")
                              AppDelegate.currentUser.toke = userObject.token ?? ""
+                             Constants.countPaidAds = AppDelegate.currentUser.availableAdsCountUserInCurrentMonth ?? 0
                              NotificationsController.shared.saveToken( token: AppDelegate.playerId)
                              self.basicPresentation(storyName: MAIN_STORYBOARD, segueId: "TabBarVC")
                          }else{
