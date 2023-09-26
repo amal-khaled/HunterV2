@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yno-p2-RNu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yno-p2-RNu">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -2647,13 +2647,13 @@
                                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5An-f5-qXd">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
                                                                                         <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="18.5"/>
-                                                                                        <color key="textColor" name="#0EBFB1"/>
+                                                                                        <color key="textColor" name="#0093F5"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIE-BM-Sjp">
                                                                                         <rect key="frame" x="0.0" y="60.000000000000057" width="393" height="50"/>
                                                                                         <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="17.5"/>
-                                                                                        <color key="textColor" name="#0EBFB1"/>
+                                                                                        <color key="textColor" name="#0093F5"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                 </subviews>
@@ -2848,13 +2848,13 @@
                                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFP-pD-oVK">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
                                                                                         <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="18.5"/>
-                                                                                        <color key="textColor" name="#0EBFB1"/>
+                                                                                        <color key="textColor" name="#0093F5"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEl-7W-0Ey">
                                                                                         <rect key="frame" x="0.0" y="60.000000000000057" width="393" height="50"/>
                                                                                         <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="17.5"/>
-                                                                                        <color key="textColor" name="#0EBFB1"/>
+                                                                                        <color key="textColor" name="#0093F5"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                 </subviews>
@@ -3264,7 +3264,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyz-SD-5Bd">
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyz-SD-5Bd" customClass="TransitionButton" customModule="TransitionButton">
                                                 <rect key="frame" x="35" y="560.33333333333337" width="323" height="50"/>
                                                 <color key="backgroundColor" name="#0093F5"/>
                                                 <constraints>
@@ -3555,6 +3555,7 @@
                     </view>
                     <connections>
                         <outlet property="citiesButton" destination="m0F-Wx-ZFW" id="5g9-eZ-ka3"/>
+                        <outlet property="continueButton" destination="dyz-SD-5Bd" id="4rY-y3-Zcg"/>
                         <outlet property="countryButton" destination="vZP-Nj-s4B" id="3wJ-NW-cCy"/>
                         <outlet property="img_flag" destination="rxJ-Dh-m8c" id="AAf-So-4rz"/>
                         <outlet property="lbl_flag" destination="wyC-oP-nRq" id="xNh-ZD-Zcd"/>
@@ -3930,7 +3931,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROS-xb-4JA">
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROS-xb-4JA" customClass="TransitionButton" customModule="TransitionButton">
                                                 <rect key="frame" x="35" y="570" width="323" height="50"/>
                                                 <color key="backgroundColor" name="#0093F5"/>
                                                 <constraints>
@@ -4013,6 +4014,7 @@
                     </view>
                     <connections>
                         <outlet property="cnew" destination="ipN-Nb-45L" id="b3o-Fe-F2l"/>
+                        <outlet property="confirmButton" destination="ROS-xb-4JA" id="ZsM-wE-xYW"/>
                         <outlet property="new" destination="KxT-yt-phP" id="xO9-Qb-xk6"/>
                         <outlet property="old" destination="CQO-Hn-khY" id="HQo-od-09V"/>
                     </connections>
@@ -4100,13 +4102,13 @@
                                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KS1-vm-IVr">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
                                                                                         <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="18.5"/>
-                                                                                        <color key="textColor" name="#0EBFB1"/>
+                                                                                        <color key="textColor" name="#0093F5"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bua-rv-DCn">
                                                                                         <rect key="frame" x="0.0" y="60.000000000000057" width="393" height="50"/>
                                                                                         <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="17.5"/>
-                                                                                        <color key="textColor" name="#0EBFB1"/>
+                                                                                        <color key="textColor" name="#0093F5"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                 </subviews>
@@ -4275,7 +4277,7 @@
         <image name="RectangleCancelImage" width="45" height="6"/>
         <image name="arrowBack" width="20.333333969116211" height="13.666666984558105"/>
         <image name="arrow_Down" width="12" height="6.3333334922790527"/>
-        <image name="country" width="16" height="16"/>
+        <image name="country" width="23.666666030883789" height="23.666666030883789"/>
         <image name="eemail" width="64" height="64"/>
         <image name="eye" catalog="system" width="128" height="79"/>
         <image name="familyIcon" width="19.666666030883789" height="16"/>

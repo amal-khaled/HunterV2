@@ -45,32 +45,42 @@ extension SearchPersonViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! FollowerTableViewCell
         cell.setData(user: users[indexPath.row])
-        cell.followBtclosure = {
-            ProfileController.shared.followUser(completion: {
-                check, msg in
-                if check == 0{
-                    
-                    if  self.users[indexPath.row].searchIsFollow == 0{
+        if StaticFunctions.isLogin() {
+            cell.followBtclosure = {
+                ProfileController.shared.followUser(completion: {
+                    check, msg in
+                    if check == 0{
                         
-                        self.users[indexPath.row].searchIsFollow = 1
-                        
-                    }
-                    else{
+                        if  self.users[indexPath.row].searchIsFollow == 0{
+                            
+                            self.users[indexPath.row].searchIsFollow = 1
+                            
+                        }
+                        else{
 
-                        self.users[indexPath.row].searchIsFollow = 0
+                            self.users[indexPath.row].searchIsFollow = 0
+                        }
+                        self.tableView.reloadData()
+                    }else{
+                        StaticFunctions.createErrorAlert(msg: msg)
                     }
-                    self.tableView.reloadData()
-                }else{
-                    StaticFunctions.createErrorAlert(msg: msg)
-                }
-            }, OtherUserId: self.users[indexPath.row].id ?? 0)
+                }, OtherUserId: self.users[indexPath.row].id ?? 0)
+            }
+        }else{
+            StaticFunctions.createErrorAlert(msg: "Please Login First".localize)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0){
+                self.basicPresentation(storyName: Auth_STORYBOARD, segueId: "login_nav")
+            }
+            
         }
+       
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = UIStoryboard(name: PROFILE_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: OTHER_USER_PROFILE_VCID) as! OtherUserProfileVC
         vc.navigationController?.navigationBar.isHidden = true
         vc.OtherUserId = users[indexPath.row].id ?? 0
+        print(users[indexPath.row].id ?? 0)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

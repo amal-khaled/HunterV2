@@ -140,7 +140,7 @@ extension CommentRepliesViewController: UITableViewDelegate, UITableViewDataSour
                     self.data.replies?[indexPath.row].isLike = isLike
                     if self.data.replies?[indexPath.row].isLike == 1{
                         self.data.replies?[indexPath.row].likeCount! += 1
-                        cell.likeImage.image = UIImage(named: "heartFill")
+                        cell.likeImage.image = UIImage(named: "ic_heartRedFill")
                     }else{
                         self.data.replies?[indexPath.row].likeCount! += -1
                         cell.likeImage.image = UIImage(named: "heartgrey")

@@ -41,11 +41,11 @@ class EditStoreVC: UIViewController {
     
     @IBOutlet weak var countryCodeLabel: UILabel!
     // MARK: - Proprerties
-    var cityId = AppDelegate.currentUser.cityId ?? 0
-    var countryId = AppDelegate.currentUser.countryId ?? 6
-    var cityName = MOLHLanguage.currentAppleLanguage() == "en" ? (AppDelegate.currentUser.citiesNameEn ?? "") : (AppDelegate.currentUser.citiesNameAr ?? "")
-    var stateId = AppDelegate.currentUser.regionId ?? 0
-    var regionName = MOLHLanguage.currentAppleLanguage() == "en" ? (AppDelegate.currentUser.regionsNameEn ?? "") : (AppDelegate.currentUser.regionsNameAr ?? "")
+    var cityId = 0
+    var countryId = 0
+    var cityName = ""
+    var stateId = 0
+    var regionName = ""
     let phoneNumberKit = PhoneNumberKit()
     private var EditProfileParams = [String:Any]()
     private var imageType = 0 //profileImage
@@ -61,6 +61,7 @@ class EditStoreVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
+        getProfile()
         configureView()
         
     }
@@ -83,37 +84,6 @@ class EditStoreVC: UIViewController {
 
     
     private func configureView(){
-        setData()
-        self.cityButton.setTitle(cityName, for: .normal)
-        self.regionButton.setTitle(regionName, for: .normal)
-        profileImageContainerView.layer.cornerRadius = profileImageView.frame.width / 2
-        profileImageView.layer.cornerRadius = profileImageView.frame.width / 2
-    }
-    
-    
-    private func setData(){
-                titleNameOfStoreTextField.text = AppDelegate.currentUser.store?.companyName.safeValue
-        companyNameTextFiled.text = AppDelegate.currentUser.store?.companyName.safeValue
-                passwordTextFiled.text = "******"
-                emailTextField.text = AppDelegate.currentUser.email
-                do {
-                    let phoneNumberCustomDefaultRegion = try phoneNumberKit.parse("\(AppDelegate.currentUser.phone.safeValue)", ignoreType: false)
-
-                    mobileTextFiled.text = String(phoneNumberCustomDefaultRegion.nationalNumber)
-                    countryCodeLabel.text = String(phoneNumberCustomDefaultRegion.countryCode)                }
-                catch {
-                    let mobile = AppDelegate.currentUser.phone?.dropFirst(3)
-//                    order.phoneCode = String(user.mobile.prefix(3))
-                    mobileTextFiled.text = AppDelegate.currentUser.phone.safeValue
-                    print("Generic parser error")
-                }
-
-
-        profileImageView.setImageWithLoading(url: AppDelegate.currentUser.store?.logo ?? "")
-        coverImageView.setImageWithLoading(url: AppDelegate.currentUser.cover.safeValue)
-        aboutCompanyTextFiled.text = AppDelegate.currentUser.store?.bio.safeValue
-        activityTextFiled.text = AppDelegate.currentUser.store?.companyActivity.safeValue
-        whatsAppTextField.text = AppDelegate.currentUser.store?.whatsapp.safeValue
         
         EditProfileParams =
         [
@@ -121,7 +91,13 @@ class EditStoreVC: UIViewController {
             "mobile":AppDelegate.currentUser.phone.safeValue,
             "country_id":AppDelegate.currentUser.countryId ?? 6
         ]
+        
+        profileImageContainerView.layer.cornerRadius = profileImageView.frame.width / 2
+        profileImageView.layer.cornerRadius = profileImageView.frame.width / 2
     }
+    
+    
+    
     // MARK: - IBActions
     
     @IBAction func didTapBackButton(_ sender: UIButton) {
@@ -194,8 +170,8 @@ class EditStoreVC: UIViewController {
             "company_activity":activityTextFiled.text.safeValue,
 //            "phone":mobileTextFiled.text.safeValue,
             "whatsapp":whatsAppTextField.text.safeValue,
-//            "city_id":cityId,
-//            "region_id":stateId,
+            "city_id":cityId,
+            "region_id":stateId,
             "email":emailTextField.text.safeValue,
         ]
         
@@ -209,13 +185,63 @@ class EditStoreVC: UIViewController {
 
 extension EditStoreVC {
     
+    
+    
+    private func getProfile(){
+        ProfileController.shared.getOtherProfile(completion: {[weak self] profile, msg in
+            guard let self = self else {return}
+            if let profile = profile {
+                print("======= profile Data ======== ")
+                print(profile)
+                self.setData(from: profile)
+            }
+        }, userId: AppDelegate.currentUser.id ?? 0)
+    }
+    
+    private func setData(from data: User){
+                titleNameOfStoreTextField.text = data.store?.companyName.safeValue
+        companyNameTextFiled.text = data.store?.companyName.safeValue
+                passwordTextFiled.text = "******"
+                emailTextField.text = data.email
+                do {
+                    let phoneNumberCustomDefaultRegion = try phoneNumberKit.parse("\(data.phone.safeValue)", ignoreType: false)
+
+                    mobileTextFiled.text = String(phoneNumberCustomDefaultRegion.nationalNumber)
+                    countryCodeLabel.text = String(phoneNumberCustomDefaultRegion.countryCode)                }
+                catch {
+                    let mobile = data.phone?.dropFirst(3)
+//                    order.phoneCode = String(user.mobile.prefix(3))
+                    mobileTextFiled.text = data.phone.safeValue
+                    print("Generic parser error")
+                }
+
+
+        profileImageView.setImageWithLoading(url: data.store?.logo ?? "")
+        coverImageView.setImageWithLoading(url: data.cover.safeValue)
+        aboutCompanyTextFiled.text = data.store?.bio.safeValue
+        activityTextFiled.text = data.store?.companyActivity.safeValue
+        whatsAppTextField.text = data.store?.whatsapp.safeValue
+        
+        cityId = data.cityId ?? 0
+        countryId = data.countryId ?? 6
+        cityName = MOLHLanguage.currentAppleLanguage() == "en" ? (data.citiesNameEn ?? "") : (data.citiesNameAr ?? "")
+        stateId = data.regionId ?? 0
+        regionName = MOLHLanguage.currentAppleLanguage() == "en" ? (data.regionsNameEn ?? "") : (data.regionsNameAr ?? "")
+        self.cityButton.setTitle(cityName, for: .normal)
+        self.regionButton.setTitle(regionName, for: .normal)
+        
+        
+    }
+    
+    
     // update Store
     
     
     private func updateStore(images:[String:UIImage],params:[String:Any]){
         print(params)
-        StoresController.shared.updateStore(completion: { success, message in
+        StoresController.shared.updateStore(completion: {success, message in
             if success {
+                
                 StaticFunctions.createSuccessAlert(msg: message)
             }else {
                 StaticFunctions.createErrorAlert(msg: message)
@@ -223,6 +249,13 @@ extension EditStoreVC {
             
         }, link: Constants.EDIT_STORE_URL + "\(AppDelegate.currentUser.store?.id ?? 0)", param: params, images: images)
     }
+    
+//    private func setData(data:UpdateStoreModel) {
+//        AppDelegate.currentUser.name = data.message?.companyName.safeValue
+//        AppDelegate.currentUser.store?.companyName = data.message?.companyName.safeValue
+//        AppDelegate.currentUser.
+////        AppDelegate.currentUser.cityId = data.message.cit
+//    }
     
     private func changeProfileImage(image:UIImage){
         APIConnection.apiConnection.uploadImageConnectionForStore(completion: { success, message in

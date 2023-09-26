@@ -10,6 +10,7 @@ import Alamofire
 import PhoneNumberKit
 import DropDown
 import MOLH
+import TransitionButton
 
 class ChangePhoneVC:UIViewController, UITextFieldDelegate{
     
@@ -25,6 +26,7 @@ class ChangePhoneVC:UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var regionButton: UIButton!
     
+    @IBOutlet weak var continueButton: TransitionButton!
     let phoneNumberKit = PhoneNumberKit()
     
     var countryCode:String = "965"
@@ -146,6 +148,7 @@ class ChangePhoneVC:UIViewController, UITextFieldDelegate{
         let mobile = "\(countryCode)\(phone)"
         
         if !phone.isEmpty {
+            continueButton.startAnimation()
             //Check Exist User
             let params1 : [String: Any]  = ["email":mobile ,"type":"ChangePhone"]
             print("parameters of check user ",params1)
@@ -162,6 +165,7 @@ class ChangePhoneVC:UIViewController, UITextFieldDelegate{
                             guard let url = URL(string: Constants.DOMAIN+"resend_code")else{return}
                             AF.request(url, method: .post, parameters: params)
                                 .responseDecodable(of:SuccessVerifiationModel.self){ res in
+                                    self.continueButton.stopAnimation()
                                     switch res.result {
                                     case .success(let data):
                                         guard let success = data.success , let message = data.message else{return}
@@ -183,10 +187,12 @@ class ChangePhoneVC:UIViewController, UITextFieldDelegate{
                             //
                         }else {
                             //phone is Exist in system
+                            self.continueButton.stopAnimation()
                             StaticFunctions.createErrorAlert(msg:message)
                         }
                     }
                 case .failure(let error):
+                    self.continueButton.stopAnimation()
                     print(error)
                 }
             }

@@ -9,6 +9,7 @@ import Foundation
 
 import UIKit
 import Alamofire
+import TransitionButton
 
 class ChangePasswordVC : ViewController {
     
@@ -17,6 +18,7 @@ class ChangePasswordVC : ViewController {
     @IBOutlet weak var new: UITextField!
     @IBOutlet weak var cnew: UITextField!
     
+    @IBOutlet weak var confirmButton: TransitionButton!
     
     var isOldPasswordHidden = false
     var isNewPasswordHidden = false
@@ -38,6 +40,7 @@ class ChangePasswordVC : ViewController {
     }
     
     @IBAction func go(_ sender: Any) {
+        confirmButton.startAnimation()
         if(checkEmpty(cont: [old,new,cnew])) {
             if new.text == cnew.text{
                 let params : [String: Any]  = [
@@ -46,8 +49,8 @@ class ChangePasswordVC : ViewController {
                 print(Constants.headerProd)
                 AF.request(url, method: .post, parameters: params, encoding:URLEncoding.httpBody , headers: Constants.headerProd).responseDecodable(of:SuccessModel.self){ res in
                     print(res.value)
+                    confirmButton.stopAnimation()
                     switch res.result {
-                        
                     case .success(let data):
                         if let success = data.success, let message = data.message {
                             if success {

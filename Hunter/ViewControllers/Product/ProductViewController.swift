@@ -195,7 +195,7 @@ class ProductViewController: UIViewController {
         
     }
     @IBAction func shareAction(_ sender: Any) {
-        let textToShare = ["\(product.name ?? "")" + "\ndownload Hunter app from apple store" + " https://apps.apple.com/us/app/مناسبة/id1589937521" ]
+        let textToShare = ["\(product.name ?? "")" + "\ndownload Hunter app from apple store" + " https://apps.apple.com/us/app/Hunter/id1589937521" ]
         let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
         activityViewController.popoverPresentationController?.sourceView = self.view
         //activityViewController.excludedActivityTypes = [ UIActivityType.airDrop, UIActivityType.postToFacebook ]

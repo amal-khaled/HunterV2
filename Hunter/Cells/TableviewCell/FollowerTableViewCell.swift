@@ -38,7 +38,7 @@ class FollowerTableViewCell: UITableViewCell {
             verifiesImage.isHidden = true
         }
         
-        userImage.setImageWithLoading(url: user.pic ?? "")
+        userImage.setImageWithLoading(url: user.pic ?? "",placeholder: "logo_photo")
         
         nameLbl.text = user.name ?? ""
         

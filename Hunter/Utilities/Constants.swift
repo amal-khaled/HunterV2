@@ -183,7 +183,7 @@ class Constants {
     static var CITIES = [Country]()
     static var STATUS = [Country]()
     static var countryId = 6
-    
+    static var countPaidAds = 0
     
     //NotificationsCount
     

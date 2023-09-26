@@ -38,7 +38,7 @@ class EditSocialMediaVC: UIViewController {
     
     private func updateStore(images:[String:UIImage],params:[String:Any]){
         print(params)
-        StoresController.shared.updateStore(completion: { success, message in
+        StoresController.shared.updateStore(completion: { success, message  in
             if success {
                 StaticFunctions.createSuccessAlert(msg: message)
             }else {

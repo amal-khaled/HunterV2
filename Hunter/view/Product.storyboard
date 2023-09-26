@@ -755,7 +755,7 @@
                                                                                     <constraint firstAttribute="height" constant="14.5" id="2fu-Cs-ENv"/>
                                                                                 </constraints>
                                                                                 <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="13.5"/>
-                                                                                <color key="textColor" name="#0093F5"/>
+                                                                                <color key="textColor" name="blackColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Path 5" translatesAutoresizingMaskIntoConstraints="NO" id="qPo-wF-1I3">

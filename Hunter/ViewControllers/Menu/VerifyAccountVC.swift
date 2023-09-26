@@ -56,7 +56,7 @@ class VerifyAccountVC: UIViewController, UITextFieldDelegate {
             super.viewDidLoad()
             NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
             tajeerv.borderWidth = 0.7
-            StaticFunctions.setImageFromAssets(sell_img, "radioImage")
+            StaticFunctions.setImageFromAssets(sell_img, "radiobtn")
             sellv.backgroundColor = UIColor(named: "#0093F5")
             StaticFunctions.setTextColor(sell_txt, UIColor.white)
             phoneNumber.delegate = self
@@ -64,9 +64,9 @@ class VerifyAccountVC: UIViewController, UITextFieldDelegate {
             
 //            phoneCode.text = "\(AppDelegate.currentUser.phone?.prefix(3) ?? "")"
            if MOLHLanguage.currentAppleLanguage() == "en" {
-               pic.image = UIImage(named: "UploadDovImage")
+               pic.image = UIImage(named: "addDocumentEng")
             }else{
-                pic.image = UIImage(named: "UploadDovImageArabic")
+                pic.image = UIImage(named: "addDocumentAR")
             }
 
             countriesBtn.setTitle(AppDelegate.currentUser.countriesNameEn, for: .normal)
@@ -340,7 +340,7 @@ class VerifyAccountVC: UIViewController, UITextFieldDelegate {
                 sellv.borderColor = UIColor.gray
                 tajeerv.borderColor =  UIColor(named: "#0093F5")
                 StaticFunctions.setImageFromAssets(sell_img, "radio_grey")
-                StaticFunctions.setImageFromAssets(tajeer_img, "radioImage")
+                StaticFunctions.setImageFromAssets(tajeer_img, "radiobtn")
                 StaticFunctions.setTextColor(sell_txt, UIColor.gray)
                 StaticFunctions.setTextColor(tajeer_txt, UIColor.white)
                 sellv.backgroundColor = UIColor.white
@@ -361,7 +361,7 @@ class VerifyAccountVC: UIViewController, UITextFieldDelegate {
                 tajeerv.borderWidth = 0.7
                 sellv.borderColor = UIColor(named: "#0093F5")
                 tajeerv.borderColor = UIColor.gray
-                StaticFunctions.setImageFromAssets(sell_img, "radioImage")
+                StaticFunctions.setImageFromAssets(sell_img, "radiobtn")
                 StaticFunctions.setImageFromAssets(tajeer_img, "radio_grey")
                 StaticFunctions.setTextColor(sell_txt, UIColor.white)
                 StaticFunctions.setTextColor(tajeer_txt, UIColor.gray)

@@ -26,10 +26,11 @@ class StoresController {
                 let productArray = try JSONDecoder().decode(StoresModel.self, from: data)
                 
                 if productArray.statusCode == 200{
-                    
+                    //success
                     completion(productArray.data ?? [StoreObject](), 0,"")
                 }
                 else {
+                    //fail
                     completion([StoreObject](),1,productArray.message ?? "")
                 }
                 

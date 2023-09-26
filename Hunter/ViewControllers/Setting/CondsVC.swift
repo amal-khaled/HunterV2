@@ -86,27 +86,27 @@ class CondsVC: ViewController {
                 switch response.result {
                 case .success(let data):
 //                    print(data.data?[0].about)
-//                    if MOLHLanguage.currentAppleLanguage() == "en" {
-//                     var condsText = data.data?[0].conds_en.replacingOccurrences(of: "\t", with: " ") // Replace tabs with spaces
-//                        // Remove multiple consecutive whitespace characters
-//                        condsText = condsText?.replacingOccurrences(of: "\\s+", with: " ", options: .regularExpression)
-//                        condsText = condsText?.replacingOccurrences(of: "\r\n", with: "\n")
-//                        print(condsText)
-//                        self.lblData.text = condsText
-//                    }else {
-//                        var condsText = data.data?[0].conds.replacingOccurrences(of: "\t", with: " ") // Replace tabs with spaces
-//                        condsText = condsText?.replacingOccurrences(of: "\\s+", with: " ", options: .regularExpression)
-//
-//                           condsText = condsText?.replacingOccurrences(of: "\r\n", with: "\n")
-//                           self.lblData.text = condsText
-//
-//                    }
                     if MOLHLanguage.currentAppleLanguage() == "en" {
-                        self.lblData.text = self.condsTextEn
-                    }else{
-                        
-                        self.lblData.text = self.condsTextAR
+                     var condsText = data.data?[0].conds_en.replacingOccurrences(of: "\t", with: " ") // Replace tabs with spaces
+                        // Remove multiple consecutive whitespace characters
+                        condsText = condsText?.replacingOccurrences(of: "\\s+", with: " ", options: .regularExpression)
+                        condsText = condsText?.replacingOccurrences(of: "\r\n", with: "\n")
+                        print(condsText)
+                        self.lblData.text = condsText
+                    }else {
+                        var condsText = data.data?[0].conds.replacingOccurrences(of: "\t", with: " ") // Replace tabs with spaces
+                        condsText = condsText?.replacingOccurrences(of: "\\s+", with: " ", options: .regularExpression)
+
+                           condsText = condsText?.replacingOccurrences(of: "\r\n", with: "\n")
+                           self.lblData.text = condsText
+
                     }
+//                    if MOLHLanguage.currentAppleLanguage() == "en" {
+//                        self.lblData.text = self.condsTextEn
+//                    }else{
+//
+//                        self.lblData.text = self.condsTextAR
+//                    }
                     
                     self.lblData.setLineSpacing(lineSpacing: 1, lineHeightMultiple: 1.5)
                     self.shight.constant = self.heightForLabel(self.lblData.text!, self.cscroll.frame.width - 40,self.lblData!.font) + 100

@@ -25,10 +25,11 @@ class ChooseAdTypeVC: UIViewController {
     
     weak var delegate:ChooseAdTyDelegate?
     
-    
+    var countPaidAds = Constants.countPaidAds
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        countOfPaidAdsLabel.text = "You have ".localize + "\(countPaidAds)" + " Paid ads".localize
     }
     
 

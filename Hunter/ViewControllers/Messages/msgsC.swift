@@ -406,8 +406,8 @@ class msgsC: UIViewController , UICollectionViewDelegate , UICollectionViewDataS
              navigationController?.pushViewController(vc, animated: true)
              
          }else {
-//             self.msg(" لم يعد بإمكانك التحدث مع هذا المستخدم تم حذف بياناتة من مناسبة ","msg")
-             StaticFunctions.createErrorAlert(msg: " لم يعد بإمكانك التحدث مع هذا المستخدم تم حذف بياناتة من مناسبة ")
+//             self.msg(" لم يعد بإمكانك التحدث مع هذا المستخدم تم حذف بياناتة من الصياد ","msg")
+             StaticFunctions.createErrorAlert(msg: " لم يعد بإمكانك التحدث مع هذا المستخدم تم حذف بياناتة من الصياد ")
          }
         
         //receiver.name = cnames[inx]

@@ -183,7 +183,9 @@
 "send location" = "ارسال الموقع";
 "send contact" = "ارسال جهة الاتصال";
 "ADD RATE" = "إضافة تقييم";
+"Add Rate" = "إضافة تقييم";
 "Confirm" = "تأكيد";
+"User Rate Put your rating" = "قيم المستخدم وضع تعليقك";
 "Please type any text to send" = "الرجاء كتابة أي نص لإرساله";
 "Specify the location, please" = "حدد الموقع من فضلك";
 "Place Name" = "اسم الموقع";
@@ -342,9 +344,9 @@
 "you have to login first" = "عليك تسجيل الدخول اولا";
 "\ndownload Hunter app from apple store" = "حمل تطبيق مناسبة من المتجر ";
 "I want to talk to you about your advertisement" = "اريد التحدث معك بخصوص اعلانك";
-"on Hunter app" = "على تطبيق مناسبة";
-"prohibited on Hunter" = "محظور على مناسبة";
-"Offensive or inappropriate" = "مسيئة أو غير مناسبة";
+"on Hunter app" = "على تطبيق الصياد";
+"prohibited on Hunter" = "محظور على الصياد";
+"Offensive or inappropriate" = "مسيئة أو غير الصياد";
 "Identical or imitation product" = "منتج متطابق أو مقلد منتج";
 "Located in the wrong section" = "تقع في القسم الخطأ";
 "Looks like a scam" = "يبدو وكأنه عملية احتيال";

@@ -153,7 +153,7 @@ class EditProfileVC : UIViewController {
         
         upic.setImageWithLoading(url: AppDelegate.currentUser.pic ?? "",placeholder: "logo_photo")
         bio.text = AppDelegate.currentUser.bio ?? ""
-        bio.setLineSpacing()
+//        bio.setLineSpacing()
         
         
         getCountries2()
@@ -362,10 +362,11 @@ class EditProfileVC : UIViewController {
     
     
     private func fileData(data:EditProfileData){
-        
+        print(AppDelegate.currentUser.name)
         if let name = data.name  {
             AppDelegate.currentUser.name = name
         }
+        print(AppDelegate.currentUser.name)
         if let lastName = data.lastName {
             AppDelegate.currentUser.lastName = lastName
         }
@@ -390,6 +391,7 @@ class EditProfileVC : UIViewController {
         if let bio = data.bio {
             AppDelegate.currentUser.bio = bio
         }
+        
     }
 
 }
