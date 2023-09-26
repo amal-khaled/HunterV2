@@ -49,7 +49,7 @@ class ChangePasswordVC : ViewController {
                 print(Constants.headerProd)
                 AF.request(url, method: .post, parameters: params, encoding:URLEncoding.httpBody , headers: Constants.headerProd).responseDecodable(of:SuccessModel.self){ res in
                     print(res.value)
-                    confirmButton.stopAnimation()
+                    self.confirmButton.stopAnimation()
                     switch res.result {
                     case .success(let data):
                         if let success = data.success, let message = data.message {
