@@ -29,7 +29,7 @@ class ChooseAdTypeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        countOfPaidAdsLabel.text = "You have ".localize + "\(countPaidAds)" + " Paid ads".localize
+        countOfPaidAdsLabel.text = "You have ".localize + " (\(countPaidAds)) " + " Paid ads".localize
     }
     
 

@@ -508,7 +508,7 @@ extension ProductViewController : UITableViewDelegate, UITableViewDataSource{
                     self.comments[indexPath.row].isLike =  self.comments[indexPath.row].isLike == 1 ? 0 : 1
                     if self.comments[indexPath.row].isLike == 1{
                         self.comments[indexPath.row].countLike! += 1
-                        cell.img_liked.image = UIImage(named: "heartFill")
+                        cell.img_liked.image = UIImage(named: "ic_heartRedFill")
                     }else{
                         self.comments[indexPath.row].countLike! += -1
                         cell.img_liked.image = UIImage(named: "heartgrey")

@@ -217,7 +217,7 @@ extension EditStoreVC {
 
 
         profileImageView.setImageWithLoading(url: data.store?.logo ?? "")
-        coverImageView.setImageWithLoading(url: data.cover.safeValue)
+        coverImageView.setImageWithLoading(url: data.cover.safeValue,placeholder:"coverBG")
         aboutCompanyTextFiled.text = data.store?.bio.safeValue
         activityTextFiled.text = data.store?.companyActivity.safeValue
         whatsAppTextField.text = data.store?.whatsapp.safeValue
@@ -402,7 +402,7 @@ extension EditStoreVC {
                 case .success(let data):
                     print(data)
 //                    self.getProfile()
-                    self.coverImageView.image = UIImage(named: "cover")
+                    self.coverImageView.image = UIImage(named: "coverBG")
                 case.failure(let error):
                     print(error)
                 }

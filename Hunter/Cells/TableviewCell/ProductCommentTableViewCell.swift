@@ -63,7 +63,7 @@ class ProductCommentTableViewCell: UITableViewCell {
          likes.text = "\(comment.countLike ?? 0)"
         
         if comment.isLike == 1{
-            img_liked.image = UIImage(named: "heartFill")
+            img_liked.image = UIImage(named: "ic_heartRedFill")
         }else{
             img_liked.image = UIImage(named: "heartgrey")
 

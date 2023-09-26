@@ -309,7 +309,7 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
                 if cover.contains(".png") || cover.contains(".jpg"){
 //                    storeCoverImageView.setImageWithLoading(url:profileModel.cover ?? "" )
                     print(cover)
-                    storeCoverImageView.setImageWithLoading(url:cover,placeholder: "cover" )
+                    storeCoverImageView.setImageWithLoading(url:cover,placeholder: "coverBG" )
                 }
             }else{
                 
@@ -317,7 +317,7 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
                     if cover.contains(".png") || cover.contains(".jpg"){
     //                    storeCoverImageView.setImageWithLoading(url:profileModel.cover ?? "" )
                         print(cover)
-                        storeCoverImageView.setImageWithLoading(url:cover ,placeholder: "cover" )
+                        storeCoverImageView.setImageWithLoading(url:cover ,placeholder: "coverBG" )
                     }
                 }
             }
