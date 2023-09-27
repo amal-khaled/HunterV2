@@ -8,6 +8,7 @@
 import UIKit
 import MOLH
 import Alamofire
+import TransitionButton
 
 class StoreProfileVC: UIViewController {
     
@@ -47,7 +48,7 @@ class StoreProfileVC: UIViewController {
     @IBOutlet weak var packesTypeStackView: UIStackView!
     @IBOutlet weak var storesPackagesButton: UIButton!
     @IBOutlet weak var editProfileButton: UIButton!
-    @IBOutlet weak var chatButton: UIButton!
+    @IBOutlet weak var chatButton: TransitionButton!
     @IBOutlet weak var collectionView: UICollectionView!
     
     
@@ -188,18 +189,21 @@ class StoreProfileVC: UIViewController {
     @IBAction func didTapMyChatButton(_ sender: UIButton) {
 
         if AppDelegate.currentUser.id ?? 0 != otherUserId {
+            self.chatButton.startAnimation()
             let vc = UIStoryboard(name: "Chat", bundle: nil).instantiateViewController(withIdentifier: "ChatVC") as! ChatVC
             Constants.userOtherId = "\(otherUserId)"
             print(otherUserId)
             vc.modalPresentationStyle = .fullScreen
             
             createRoom("\(otherUserId)"){[weak self] success in
+                self?.chatButton.stopAnimation()
                 guard let self = self else {return}
                 if success {
                     //                self.present(vc, animated: true)
                     vc.navigationController?.navigationBar.isHidden = true
                     self.navigationController?.pushViewController(vc, animated: true)
                 }else{
+                    self.chatButton.stopAnimation()
                     StaticFunctions.createErrorAlert(msg: "Can't Create Room".localize)
                 }
             }

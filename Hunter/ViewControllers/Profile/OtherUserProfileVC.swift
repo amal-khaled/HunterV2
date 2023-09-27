@@ -8,6 +8,7 @@
     import UIKit
     import Alamofire
     import MOLH
+import TransitionButton
 
     class OtherUserProfileVC: UIViewController {
 
@@ -30,6 +31,8 @@
         @IBOutlet weak var pages: UIView!
         @IBOutlet weak var addRateButton: UIButton!
         @IBOutlet weak var followButton: UIButton!
+        
+        @IBOutlet weak var chatButton: TransitionButton!
         
         var OtherUserId = 0
         var otherUserCountryId:Int?
@@ -246,6 +249,7 @@
         
         
         @IBAction func chatBtnAction(_ sender: UIButton) {
+            chatButton.startAnimation()
             if StaticFunctions.isLogin() {
                     let vc = UIStoryboard(name: "Chat", bundle: nil).instantiateViewController(withIdentifier: "ChatVC") as! ChatVC
                     Constants.userOtherId = "\(OtherUserId)"
@@ -253,17 +257,20 @@
                     vc.modalPresentationStyle = .fullScreen
                     
                     createRoom("\(OtherUserId)"){[weak self] success in
+                        self?.chatButton.stopAnimation()
                         guard let self = self else {return}
                         if success {
                             //                self.present(vc, animated: true)
                             vc.navigationController?.navigationBar.isHidden = true
                             self.navigationController?.pushViewController(vc, animated: true)
                         }else{
+                            
                             StaticFunctions.createErrorAlert(msg: "Can't Create Room".localize)
                         }
                     }
                 
             }else {
+                self.chatButton.stopAnimation()
                 StaticFunctions.createErrorAlert(msg: "Please Login First".localize)
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0){
                     self.basicPresentation(storyName: Auth_STORYBOARD, segueId: "login_nav")
