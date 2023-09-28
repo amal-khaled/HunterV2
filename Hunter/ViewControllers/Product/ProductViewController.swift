@@ -244,6 +244,7 @@ class ProductViewController: UIViewController {
                     Constants.otherUserPic = self.product.userPic ?? ""
                     Constants.otherUserIsStore = self.product.isStore ?? false
                     Constants.otherUserName = self.product.userName ?? ""
+                    print(self.product.userName ?? "")
                     self.basicNavigation(storyName: "Chat", segueId: "ChatVC")
                 }
             }else{

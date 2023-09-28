@@ -381,6 +381,7 @@ class msgsC: UIViewController , UICollectionViewDelegate , UICollectionViewDataS
              if let receiverName = roomsData[inx].user?[0].name{
                  receiver.name = receiverName
                  Constants.otherUserName = receiverName
+                 print(receiverName)
              }
              if let receiverId = roomsData[inx].user2{
                  receiver.id = "\(receiverId)"

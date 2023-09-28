@@ -347,7 +347,8 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
             
             
             
-            Constants.otherUserName = profileModel.username ?? ""
+            Constants.otherUserName = profileModel.name ?? ""
+            print(profileModel.name ?? "")
             storeNameLabel.text = profileModel.store?.companyName ?? ""
             storeAdsCountLabel.text = "\(profileModel.numberOfProds ?? 0)"
             storeFollowersCountLabel.text = "\(profileModel.followers ?? 0)"

@@ -291,7 +291,8 @@ import TransitionButton
                     print(userProfile)
                     self.otherUserCountryId = userProfile.countryId ?? 5
                     self.userId = userProfile.uid ?? "0"
-                    Constants.otherUserName = userProfile.username ?? ""
+                    Constants.otherUserName = userProfile.name ?? ""
+                    print(userProfile.name ?? "")
                     Constants.otherUserPic = userProfile.pic ?? ""
                     Constants.otherUserIsStore = userProfile.isStore ?? false
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: "passUserID"), object: nil, userInfo: ["userID": self.userId])

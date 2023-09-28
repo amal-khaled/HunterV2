@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "fiillHeart.png",
+      "filename" : "Component 151 – 1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "fiillHeart@2x.png",
+      "filename" : "Component 151 – 1@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "fiillHeart@3x.png",
+      "filename" : "Component 151 – 1@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
