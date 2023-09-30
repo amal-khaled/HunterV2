@@ -31,7 +31,11 @@ class OtherUserProductVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
-        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3){
+            print(self.self.otherUserID , "Country:  " , self.otherUserCountryId)
+            self.products.removeAll()
+            self.get(page: self.page)
+        }
     }
     
     @objc func handleUserIDNotification(_ notification: Notification) {
@@ -50,7 +54,7 @@ class OtherUserProductVC: UIViewController {
     }
     func get(page:Int){
        // products.data?.data?.removeAll()
-        let params : [String: Any]  = ["uid":otherUserID,"country_id":otherUserCountryId, "page":page,"status":"published"]
+        let params : [String: Any]  = ["uid":otherUserID,"country_id":AppDelegate.currentUser.countryId ?? 0, "page":page,"status":"published"]
         print("parameters for get my advs ======> ", params)
         guard let url = URL(string: Constants.DOMAIN+"prods_by_user") else{return}
         AF.request(url, method: .post, parameters: params)
