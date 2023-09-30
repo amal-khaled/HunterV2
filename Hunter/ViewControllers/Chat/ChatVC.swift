@@ -155,7 +155,9 @@ class ChatVC: ViewController,UITableViewDataSource,UITableViewDelegate,
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if let navigationBar = navigationController?.navigationBar {
+                    navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white] // Change the color to your desired color
+                }
         navigationController?.navigationBar.isHidden = true
         tabBarController?.tabBar.isHidden = true
         handelRecordPermission()
@@ -1125,6 +1127,8 @@ class ChatVC: ViewController,UITableViewDataSource,UITableViewDelegate,
         tabBarController?.tabBar.isHidden = true
     }
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = true
         NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrame(_:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         

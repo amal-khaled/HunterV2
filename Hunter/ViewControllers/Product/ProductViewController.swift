@@ -54,6 +54,9 @@ class ProductViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let navigationBar = navigationController?.navigationBar {
+                    navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white] // Change the color to your desired color
+                }
         self.navigationController?.navigationBar.isHidden = true
         setupSlider()
 

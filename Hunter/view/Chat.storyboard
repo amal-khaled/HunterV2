@@ -192,7 +192,7 @@
                                                     </imageView>
                                                     <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BR9-HL-h6R">
                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                        <color key="backgroundColor" red="0.34164178369999998" green="0.74987715479999995" blue="0.69411522150000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" name="#0093F5"/>
                                                         <inset key="imageEdgeInsets" minX="21" minY="14" maxX="17" maxY="14"/>
                                                         <state key="normal" title=" "/>
                                                         <connections>
@@ -1226,7 +1226,7 @@
         <image name="IconBack" width="15" height="15.666666984558105"/>
         <image name="RectangleCancelImage" width="45" height="6"/>
         <image name="backIconBlack" width="15" height="15.666666984558105"/>
-        <image name="block_mnu" width="33.666667938232422" height="33.666667938232422"/>
+        <image name="block_mnu" width="59" height="59"/>
         <image name="close_mnu" width="30" height="30"/>
         <image name="delete_chat" width="21.333333969116211" height="21.333333969116211"/>
         <image name="ic_error.png" width="24" height="24"/>
