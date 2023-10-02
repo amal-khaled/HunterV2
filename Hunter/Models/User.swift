@@ -60,6 +60,8 @@ struct UserTokenObject: Codable{
         case msg = "message"
     }
     
+    init() {
+    }
     
 }
 
@@ -68,12 +70,14 @@ struct UserObject: Codable{
     var data: User!
    
     var token: String!
+   
+    
     enum CodingKeys: String, CodingKey {
         case data = "user"
         case token = "token"
     }
     
-    
+    init(){}
 }
 
 
@@ -214,8 +218,8 @@ struct User: Codable {
         phone = try container.decodeIfPresent(String.self, forKey: .phone)
         email = try container.decodeIfPresent(String.self, forKey: .email)
         countryId = try container.decodeCountryID(forKey: .countryId)
-        cityId = try container.decodeIfPresent(Int.self, forKey: .cityId)
-        regionId = try container.decodeIfPresent(Int.self, forKey: .regionId)
+        cityId = try container.decodeCountryID(forKey: .cityId)
+        regionId = try container.decodeCountryID(forKey: .regionId)
         pic = try container.decodeIfPresent(String.self, forKey: .pic)
         cover = try container.decodeIfPresent(String.self, forKey: .cover)
         regid = try container.decodeIfPresent(String.self, forKey: .regid)

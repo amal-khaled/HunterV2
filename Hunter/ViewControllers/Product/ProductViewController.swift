@@ -364,6 +364,7 @@ extension ProductViewController{
         self.nameBtn.text = product.name
         if let createDate = product.createdAt{
             if createDate.count > 11 {
+                print(createDate)
                 self.dateLbl.text =   diffDates(GetDateFromString(createDate)).replace("-", "")
                 
             }
@@ -446,6 +447,8 @@ extension ProductViewController{
         if(product.hasChat == "on") || product.hasPhone != "on"{
             if AppDelegate.currentUser.id != (product.userId ?? 0){
                 chatBtn.isHidden = false
+            }else{
+                chatBtn.isHidden = true
             }
             
         }else{

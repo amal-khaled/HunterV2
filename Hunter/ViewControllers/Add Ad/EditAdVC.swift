@@ -486,9 +486,14 @@ extension EditAdVC{
         
         if product.type == 1 {
             setupTajeerViewUI()
+            self.sellView.isHidden = true
+
         }else{
             setupSellViewUI()
+            self.tajeerView.isHidden = true
+
         }
+        
         
         //Main Image
         if let mainImage = product.mainImage {

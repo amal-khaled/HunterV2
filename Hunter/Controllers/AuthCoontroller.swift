@@ -73,14 +73,15 @@ class AuthCoontroller{
             data  in
             guard let data = data else { return }
             
+            print(data)
             do {
                 let userObject = try JSONDecoder().decode(UserTokenObject.self, from: data)
                 
                 if userObject.code == 200{
-                    AppDelegate.unVerifiedUserUser = userObject.data.data ?? User()
+                    AppDelegate.unVerifiedUserUser = userObject.data?.data ?? User()
                    
-                    AppDelegate.unVerifiedUserUser.toke = userObject.data.token ?? ""
-                    print(userObject.data.token ?? "")
+                    AppDelegate.unVerifiedUserUser.toke = userObject.data?.token ?? ""
+                    print(userObject.data?.token ?? "")
                     completion( 0,userObject.msg ?? "")
                 }
                 else {

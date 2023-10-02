@@ -783,7 +783,7 @@ extension AddAdvsVC {
                 self.mainCatID = self.mainCatsIDsList[0]
             }
             
-            if self.mainCatID == 1 {
+            if self.mainCatID == 74 || self.mainCatID == 75 {
                 self.rentViewContainer.isHidden = false
             }else {
                 self.rentViewContainer.isHidden = true
@@ -833,7 +833,7 @@ extension AddAdvsVC {
                     }else{
                         mainCatButton.setTitle(mainCatsList[0], for: .normal)
                     }
-        if self.mainCatID == 1 {
+        if self.mainCatID == 74 || self.mainCatID == 75{
             self.rentViewContainer.isHidden = false
         }else {
             self.rentViewContainer.isHidden = true
@@ -852,7 +852,7 @@ extension AddAdvsVC {
             }else {
                 self.mainCatButton.setTitle(self.mainCatsList[0], for: .normal)
             }
-            if self.mainCatID == 1 {
+            if self.mainCatID == 74 || self.mainCatID == 75 {
                 self.rentViewContainer.isHidden = false
             }else {
                 self.rentViewContainer.isHidden = true

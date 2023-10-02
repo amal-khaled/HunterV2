@@ -205,6 +205,9 @@
 "Are you sure you want to Delete this Chat?" = "هل تريد حذف هذه المحادثة";
 "You have " = " أنت لديك";
 " Paid ads" = "إعلان مدفوع ";
+"Activated" = "مفعلة";
+"Pending" = "معلقة";
+"Featured Pending" = "مميزة معلقة";
 //MARK: Product Details
 "Description" = "وصف";
 "Comments" = "تعليقات";
@@ -271,8 +274,8 @@
 "Change Photo" = "تغيير الصوره";
 "Ads" = "إعلان";
 "Rate" = "تقييم";
-"Followers" = "متابعون";
-"Followings" = "يتابع";
+"Followers " = "متابعون";
+"Followings " = "يتابع";
 "FirstName" = "الاسم الأول";
 "UserName" = "اسم المستخدم";
 "See All" = "مشاهدة الكل";
@@ -307,6 +310,7 @@
 "Free ads" = "إعلان مجاني";
 "Sorry, You have exhausted your free ads this month" = "عذرًا، لقد استنفدت إعلاناتك المجانية هذا الشهر";
 "before" = "قبل";
+"Your ad has been uploaded successfully" = "لقد تم تحميل إعلانك بنجاح";
 //MARK: Edit Profile
 
 "Edit Profile" = "تعديل الملف الشخصي";
