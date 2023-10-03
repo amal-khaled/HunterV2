@@ -137,6 +137,14 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
             return AppDelegate.currentUser.phone ?? ""
         }
     }
+    var countPhoneNumber: Int {
+        if countryId ==  5 || countryId == 10{
+            return 9
+        }else{
+            return  8
+        }
+    }
+    
     var tajeer = 0
     var params = [String:Any]()
     
@@ -161,7 +169,7 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
         //setupCitiesDropDown()
         getDataFromSession()
         configureUI()
-        
+        newPhoneTF.delegate = self
         if MOLHLanguage.currentAppleLanguage() == "en" {
                 uploadImageView.image = UIImage(named: "addimageEnglish")
         } else {
@@ -588,6 +596,7 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
         let nav = UINavigationController(rootViewController: vc)
         nav.modalPresentationStyle = .overFullScreen
         vc.isFromHome = self.isFromHome
+        vc.delegate = self
         self.present(nav, animated: false)
     }
     }
@@ -1042,24 +1051,47 @@ extension AddAdvsVC {
     }
 }
 
-extension AddAdvsVC : UITextFieldDelegate {
+//extension AddAdvsVC : UITextFieldDelegate {
+//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//        if textField  == advsTitleTF {
+//            let count =  (textField.text?.components(separatedBy: " ").count)! - 1
+//            if count < 5 {
+//                textField.allowsEditingTextAttributes
+//            }else {
+//                textField.deleteBackward()
+//                dismissKeyboard()
+//                StaticFunctions.createErrorAlert(msg:"The ad title should not exceed five words".localize)
+//                return textField.allowsEditingTextAttributes
+//            }
+//
+//            return count < 5
+//        }
+//        return false
+//    }
+//}
+
+extension AddAdvsVC: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if textField  == advsTitleTF {
-            let count =  (textField.text?.components(separatedBy: " ").count)! - 1
+        if textField == advsTitleTF {
+            let count = (textField.text?.components(separatedBy: " ").count)! - 1
             if count < 5 {
-                textField.allowsEditingTextAttributes
-            }else {
+                return true
+            } else {
                 textField.deleteBackward()
                 dismissKeyboard()
-                StaticFunctions.createErrorAlert(msg:"The ad title should not exceed five words".localize)
-                return textField.allowsEditingTextAttributes
+                StaticFunctions.createErrorAlert(msg: "The ad title should not exceed five words".localize)
+                return false
             }
-            
-            return count < 5
+        } else if textField == newPhoneTF {
+            let maxLength = countPhoneNumber
+            let currentString = (textField.text ?? "") as NSString
+            let newString = currentString.replacingCharacters(in: range, with: string)
+            return newString.count <= maxLength
         }
-        return false
+        return true
     }
 }
+
 extension Array {
     subscript(safe index: Int) -> Element? {
         return indices.contains(index) ? self[index] : nil
@@ -1126,3 +1158,38 @@ extension AddAdvsVC:PayingDelegate{
     }
 }
 
+
+extension AddAdvsVC:SuccessAddingVCDelegate{
+    
+    func navigateToMyAdsPage (){
+        if let vc = UIStoryboard(name: MENU_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: MYADS_VCID) as? MyAdsVC {
+            print("ViewController instantiated successfully.")
+            
+            vc.modalPresentationStyle = .fullScreen
+            if let currentUserID = AppDelegate.currentUser.id {
+                print("User ID found: \(currentUserID)")
+                vc.userId = currentUserID
+            } else {
+                print("User ID is nil or 0.")
+            }
+            
+            if let navigationController = self.navigationController {
+                navigationController.pushViewController(vc, animated: true)
+                print("Pushing view controller.")
+            } else {
+                print("Navigation controller is nil.")
+            }
+        } else {
+            print("Failed to instantiate ViewController.")
+        }
+        
+    }
+    func didTapMyAdsButton() {
+        dismiss(animated: true) {
+                    // Then navigate to the "my ads" page
+                    self.navigateToMyAdsPage()
+                }
+    }
+    
+    
+}

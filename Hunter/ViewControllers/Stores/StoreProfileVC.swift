@@ -50,10 +50,11 @@ class StoreProfileVC: UIViewController {
     @IBOutlet weak var editProfileButton: UIButton!
     @IBOutlet weak var chatButton: TransitionButton!
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    
     @IBOutlet weak var collectionViewheightConstraint: NSLayoutConstraint!
-    
+    @IBOutlet weak var notificationImage: UIImageView!
+    @IBOutlet weak var shareImage: UIImageView!
+    @IBOutlet weak var blockImage: UIImageView!
+    @IBOutlet weak var flagImag: UIImageView!
     // MARK: - Proprerties
     var otherUserId = AppDelegate.currentUser.id ?? 0
     var countryId = AppDelegate.currentUser.countryId
@@ -73,6 +74,8 @@ class StoreProfileVC: UIViewController {
         storesPackagesButton.isHidden = true
         blockButton.isHidden = true
         reportButton.isHidden = true
+        flagImag.isHidden = true
+        blockImage.isHidden = true
         packesTypeStackView.isHidden = true
         NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         getProfile()
@@ -389,12 +392,15 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
             if AppDelegate.currentUser.id ?? 0 == profileModel.id ?? 0 {
                 blockButton.isHidden = true
                 reportButton.isHidden = true
+                flagImag.isHidden = true
+                blockImage.isHidden = true
                 packesTypeStackView.isHidden = false
                 storesPackagesButton.isHidden = false
                 changeProfileImageButton.isHidden = false
                 changeCoverButton.isHidden = false
             }else {
                 notificationButton.isHidden = true
+                notificationImage.isHidden = true
                 editProfileButton.setTitle("Follow".localize, for: .normal)
                 chatButton.setTitle("Chat".localize, for: .normal)
                 changeCoverButton.isHidden = true
@@ -402,6 +408,8 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
                 storesPackagesButton.isHidden = true
                 blockButton.isHidden = false
                 reportButton.isHidden = false
+                flagImag.isHidden = false
+                blockImage.isHidden = false
                 packesTypeStackView.isHidden = true
             }
             

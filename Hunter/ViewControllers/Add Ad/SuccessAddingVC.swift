@@ -7,8 +7,13 @@
 
 import UIKit
 
+protocol SuccessAddingVCDelegate: AnyObject {
+    func didTapMyAdsButton()
+}
+
 class SuccessAddingVC: UIViewController {
     var isFromHome = true
+    weak var delegate: SuccessAddingVCDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +22,8 @@ class SuccessAddingVC: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        // Set up a timer to wait for 5 seconds
+               Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(navigateToNewScreen), userInfo: nil, repeats: false)
         self.navigationController?.navigationBar.isHidden = true
         tabBarController?.tabBar.isHidden = true
     }
@@ -27,6 +34,12 @@ class SuccessAddingVC: UIViewController {
 
         
     }
+    
+    @objc func navigateToNewScreen() {
+        self.basicPresentation(storyName: MAIN_STORYBOARD, segueId: "TabBarVC")
+     }
+    
+    
     //MARK:  IBActions
     
     @IBAction func didTapuploadNewAds(_ sender: UIButton) {
@@ -34,28 +47,8 @@ class SuccessAddingVC: UIViewController {
         dismiss(animated: false)
     }
     @IBAction func didTapGoToMyAds(_ sender: UIButton) {
-
+        delegate?.didTapMyAdsButton()
         
-        if let vc = UIStoryboard(name: MENU_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier: MYADS_VCID) as? MyAdsVC {
-            print("ViewController instantiated successfully.")
-            
-            vc.modalPresentationStyle = .fullScreen
-            if let currentUserID = AppDelegate.currentUser.id {
-                print("User ID found: \(currentUserID)")
-                vc.userId = currentUserID
-            } else {
-                print("User ID is nil or 0.")
-            }
-            
-            if let navigationController = navigationController {
-                navigationController.pushViewController(vc, animated: true)
-                print("Pushing view controller.")
-            } else {
-                print("Navigation controller is nil.")
-            }
-        } else {
-            print("Failed to instantiate ViewController.")
-        }
-        
+       
     }
 }

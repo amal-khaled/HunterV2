@@ -59,6 +59,9 @@ class EditAdVC:UIViewController, PickupMediaPopupEditAdsVCDelegate  {
     @IBOutlet weak private var loc_sub: UILabel!
     @IBOutlet weak var saveButton: TransitionButton!
     @IBOutlet weak var deleteButton: TransitionButton!
+    @IBOutlet weak var countryFlagImageView: UIImageView!
+    @IBOutlet weak var countryCodeLabel: UILabel!
+    
     
     private var tajeer = 0
    private var has_phone = "on"
@@ -85,12 +88,22 @@ class EditAdVC:UIViewController, PickupMediaPopupEditAdsVCDelegate  {
     var mainImage:Data?
     var productsImages = [ProductImage]()
     var imagesDeleted = [Int]()
+    
+    var countPhoneNumber: Int {
+        if AppDelegate.currentUser.countryId ==  5 || AppDelegate.currentUser.countryId == 10{
+            return 9
+        }else{
+            return  8
+        }
+    }
+    
     //MARK: Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
         configureUI()
+        txt_phone.delegate = self
 
     }
     
@@ -254,7 +267,7 @@ class EditAdVC:UIViewController, PickupMediaPopupEditAdsVCDelegate  {
 //        var phone = AppDelegate.currentUser.phone ?? ""
         guard var phone = AppDelegate.currentUser.phone else {return}
         if(!sw_my_phone.isOn){
-            phone = txt_phone.text!
+            phone = AppDelegate.currentCountry.code ?? "" + txt_phone.text!
         }
         let errors = "لايوجد"
         guard let price = PriceTxetField.text else {return}
@@ -446,7 +459,14 @@ extension EditAdVC{
     
     fileprivate func setData(){
         self.titleLabel.text = product.name
-        
+        self.countryFlagImageView.setImageWithLoading(url: AppDelegate.currentCountry.image ?? "")
+        if let phoneNumber = product.phone, phoneNumber.count >= 3 {
+            self.countryCodeLabel.text = String(phoneNumber.prefix(3))
+        } else {
+            // Handle the case where product.phone is nil or has less than 3 characters
+            self.countryCodeLabel.text = "N/A"
+        }
+
         self.descTextView.text = product.description
         if let price = product.price {
             self.PriceTxetField.text = "\(price)"
@@ -482,15 +502,17 @@ extension EditAdVC{
       
         
         
-        self.txt_phone.text = product.phone
+        self.txt_phone.text = removeCountryCode(from: product.phone ?? "")
         
+        print(product.type)
         if product.type == 1 {
+            
             setupTajeerViewUI()
-            self.sellView.isHidden = true
+           // self.sellView.isHidden = true
 
         }else{
             setupSellViewUI()
-            self.tajeerView.isHidden = true
+           // self.tajeerView.isHidden = true
 
         }
         
@@ -557,6 +579,7 @@ extension EditAdVC{
         lbl_put_phone.isHidden = true
     }
     fileprivate func setupTajeerViewUI() {
+        sellView.isHidden = true
         tajeer = 1
         sellView.borderWidth = 0.7
         tajeerView.borderWidth = 1.2
@@ -575,6 +598,7 @@ extension EditAdVC{
     }
     
     fileprivate func setupSellViewUI() {
+        tajeerView.isHidden = true
         tajeer = 0
         sellView.borderWidth = 1.2
         tajeerView.borderWidth = 0.7
@@ -684,4 +708,17 @@ extension EditAdVC: AdvsImagesCollectionViewCellDelegate {
     }
     
     
+}
+
+extension EditAdVC :UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if textField == txt_phone{
+            let maxLength = countPhoneNumber
+            let currentString = (textField.text ?? "") as NSString
+            let newString = currentString.replacingCharacters(in: range, with: string)
+            
+            return newString.count <= maxLength
+        }
+        return true
+    }
 }
