@@ -16,7 +16,7 @@ import WoofTabBarController
 
 
 class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
-   
+    
     static func instantiate()->AddAdvsVC{
         let controller = UIStoryboard(name: ADVS_STORYBOARD, bundle: nil).instantiateViewController(withIdentifier:ADDADVS_VCID) as! AddAdvsVC
         return controller
@@ -65,7 +65,7 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
     @IBOutlet weak var headerViewHeightConstraints: NSLayoutConstraint!
     @IBOutlet weak var descTextView: UITextView!
     
-//    @IBOutlet weak var adDescption: NextGrowingTextView!
+    //    @IBOutlet weak var adDescption: NextGrowingTextView!
     
     
     @IBOutlet weak var priceTF: UITextField!
@@ -115,6 +115,7 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
     let subCatDropDwon = DropDown()
     
     // City Category DropDwon
+    
     var cityId:Int = AppDelegate.currentUser.cityId ?? 0
     var cityName:String = ""
     var cityList = [String]()
@@ -123,13 +124,13 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
     let cityDropDwon = DropDown()
     
     // regions DropDwon
-    var regionId:Int = AppDelegate.currentUser.regionId ?? 0
+    var regionId:Int = AppDelegate.currentUser.regionId.safeValue
     var regionName:String = ""
     var regionsList = [String]()
     var regionsIDsList = [Int]()
     
     let regionsDropDwon = DropDown()
-//    AppDelegate.currentUser.phone
+    //    AppDelegate.currentUser.phone
     var phone:String {
         if hasNewPhone {
             return "\(newPhoneCountryCode.text ?? "")\(newPhoneTF.text!)"
@@ -162,6 +163,8 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        cityId = AppDelegate.currentUser.cityId.safeValue
+        regionId = AppDelegate.currentUser.regionId.safeValue
         setupView()
         customizeDropDown()
         getCitis()
@@ -171,9 +174,9 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
         configureUI()
         newPhoneTF.delegate = self
         if MOLHLanguage.currentAppleLanguage() == "en" {
-                uploadImageView.image = UIImage(named: "addimageEnglish")
+            uploadImageView.image = UIImage(named: "addimageEnglish")
         } else {
-                uploadImageView.image = UIImage(named: "addimageArabic")
+            uploadImageView.image = UIImage(named: "addimageArabic")
         }
         advsTitleTF.delegate = self
     }
@@ -217,7 +220,7 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
         advsTitleTF.text = title
         print(AppDelegate.currentUser.phone?.dropFirst(3) ?? "")
         newPhoneTF.text = removeCountryCode(from: "\(AppDelegate.currentUser.phone ?? "")")
-        cityId = retrieveSessionData().CityId ?? 0
+        cityId = retrieveSessionData().CityId ?? AppDelegate.currentUser.cityId.safeValue
         regionId = retrieveSessionData().RegionId ?? 0
         mainCatID = retrieveSessionData().catId ?? 0
         subCatID = retrieveSessionData().subCatId ?? 0
@@ -225,20 +228,20 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
         descTextView.text = retrieveSessionData().description
         descText = retrieveSessionData().description ?? ""
         print(descText)
-//        self.mainImageKey = mainImageKey
-//        if let imageDatas = retrieveSessionData().images {
-////            selectedImages = imageDatas.compactMap { UIImage(data: $0.value) }
-////            guard let mediaKeys = retrieveSessionData().mediaKeys else {return}
-////            images = Dictionary(uniqueKeysWithValues: zip(images.keys, UIImage(data:imageDatas.values)))
-//            DispatchQueue.main.async {
-//                self.addMorePhotoButton.isHidden = false
-//                self.moreImageViewContainer.isHidden = false
-//                self.collectionView.isHidden = false
-//                self.firstImageViewContainer.isHidden = true
-//                self.collectionView.reloadData()
-//            }
-//
-//            }
+        //        self.mainImageKey = mainImageKey
+        //        if let imageDatas = retrieveSessionData().images {
+        ////            selectedImages = imageDatas.compactMap { UIImage(data: $0.value) }
+        ////            guard let mediaKeys = retrieveSessionData().mediaKeys else {return}
+        ////            images = Dictionary(uniqueKeysWithValues: zip(images.keys, UIImage(data:imageDatas.values)))
+        //            DispatchQueue.main.async {
+        //                self.addMorePhotoButton.isHidden = false
+        //                self.moreImageViewContainer.isHidden = false
+        //                self.collectionView.isHidden = false
+        //                self.firstImageViewContainer.isHidden = true
+        //                self.collectionView.reloadData()
+        //            }
+        //
+        //            }
         
         
         if let imageDatas = retrieveSessionData().images {
@@ -257,18 +260,18 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
                     self.firstImageViewContainer.isHidden = true
                     self.collectionView.reloadData()
                 }
-             
+                
             }
             
         }
-       
+        
     }
     
     func PickupMediaPopupVC(_ controller: PickupMediaPopupVC, didSelectImages images: [String:UIImage],mediaKeys:[String],selectedMedia:[String:Data] ) {
-       // self.dismiss(animated: false)
-       // self.Images.append(contentsOf: images)
+        // self.dismiss(animated: false)
+        // self.Images.append(contentsOf: images)
         print(selectedMedia)
-         selectedMediaKeys = selectedMedia.keys.sorted()
+        selectedMediaKeys = selectedMedia.keys.sorted()
         self.images = images
         self.selectedImages = Array(images.values)
         self.selectedIndexPath = [0,0]
@@ -280,7 +283,7 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
         
         self.mediaKeys = mediaKeys
         self.selectedMedia = selectedMedia
-//        selectFirstCell()
+        //        selectFirstCell()
         print("Images Count ", images.count)
         print("mediaKeys =======>",mediaKeys)
         print("Videos Count " , mediaKeys.count)
@@ -292,15 +295,15 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
             collectionView.isHidden = false
             
         }else {
-//            moreImageViewContainer.isHidden = true
+            //            moreImageViewContainer.isHidden = true
             addMorePhotoButton.isHidden = true
-           // collectionView.isHidden = true
-           // firstImageViewContainer.isHidden = false
+            // collectionView.isHidden = true
+            // firstImageViewContainer.isHidden = false
         }
         self.collectionView.reloadData()
-       
+        
     }
-
+    
     func setupCity(){
         for i in  Constants.CITIES {
             if  MOLHLanguage.currentAppleLanguage() == "en" {
@@ -321,7 +324,7 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
     @IBAction func backBtnAction(_ sender: UIButton) {
         saveSessionData(images: images, mediaKeys: Array(images.keys), description: descTextView.text, title: advsTitleTF.text ?? "", price: priceTF.text ?? "", catId: mainCatID, subCatId: subCatID, CityId: cityId, RegionId: regionId,selectedMedia: selectedMedia,selectedMediaKeys: selectedMediaKeys,mainImageKey: self.mainImageKey)
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3){
-        self.navigationController?.popViewController(animated: true)
+            self.navigationController?.popViewController(animated: true)
         }
         
     }
@@ -441,7 +444,7 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
     @IBAction func addAdBtnAction(_ sender: UIButton) {
         
         AppDelegate.defaults.removeObject(forKey:"postSessionData")
-      
+        
         if  selectedImages.count <= 0{
             StaticFunctions.createErrorAlert(msg: "Post at least one photo for the ad.".localize)
         }else if mainImageKey == "" {
@@ -461,10 +464,10 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
             present(vc, animated: true)
             
             
-//            createAds()
+            //            createAds()
         }
         
-
+        
         
     }
     
@@ -472,33 +475,33 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
         
         params = [
             "uid":AppDelegate.currentUser.id ?? 0,
-                          "name":advsTitleTF.text!, "price":priceTF.text!,
-                          "amount":"0", "lat": "0", "lng":"0",
-                          "prod_size":"25","color":"red",
-                          "color_name":"red",
-                          "cat_id":"\(mainCatID)",
-                          "sub_cat_id": "\(subCatID)",
-                          "sell_cost":priceTF.text!,"errors":"",
-                          "brand_id":"Nike",
-                          "material_id":"",
-                          "country_id":AppDelegate.currentUser.countryId ?? 0,
-                          "city_id":"\(cityId)",
-                          "region_id":"\(regionId)",
-                          "loc":"\(cityName) \(regionName)",
-                          "phone":"\(phone)","wts":phone,"descr":descTextView.text!,
-                          "has_chat":hasChat,"has_wts":hasWhats,"has_phone":hasPhone,
-                          "tajeer_or_sell":"\(tajeer)",
-                          "is_feature" : isFeatured
+            "name":advsTitleTF.text!, "price":priceTF.text!,
+            "amount":"0", "lat": "0", "lng":"0",
+            "prod_size":"25","color":"red",
+            "color_name":"red",
+            "cat_id":"\(mainCatID)",
+            "sub_cat_id": "\(subCatID)",
+            "sell_cost":priceTF.text!,"errors":"",
+            "brand_id":"Nike",
+            "material_id":"",
+            "country_id":AppDelegate.currentUser.countryId ?? 0,
+            "city_id":"\(cityId)",
+            "region_id":"\(regionId)",
+            "loc":"\(cityName) \(regionName)",
+            "phone":"\(phone)","wts":phone,"descr":descTextView.text!,
+            "has_chat":hasChat,"has_wts":hasWhats,"has_phone":hasPhone,
+            "tajeer_or_sell":"\(tajeer)",
+            "is_feature" : isFeatured
         ]
         var type = ""
         var index = ""
         var image = Data()
-    
+        
         //main_image
         
         print(selectedMedia)
         self.AddAdvsButton.startAnimation()
-//        Loading().startProgress(self)
+        //        Loading().startProgress(self)
         AF.upload(multipartFormData: { [self] multipartFormData in
             for (key,value) in selectedMedia {
                 if key.contains("IMAGE"){
@@ -507,7 +510,7 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
                         type = key.components(separatedBy: " ")[0]
                         index = key.components(separatedBy: " ")[1]
                         image = value
-                       // params["mtype[]"] = type
+                        // params["mtype[]"] = type
                         multipartFormData.append(image, withName: "main_image",fileName: "file\(index).jpg", mimeType: "image/jpg")
                     }else{
                         type = key.components(separatedBy: " ")[0]
@@ -529,26 +532,26 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
                         params["mtype[]"] = type
                         multipartFormData.append(image, withName: "sub_image[]",fileName: "video\(index).mp4", mimeType: "video/mp4")
                     }
-                 
+                    
                 }
-               
-                 print("send Image Parameters : -----> ", params)
-            for (key,value) in params {
-                multipartFormData.append((value as AnyObject).description.data(using: String.Encoding.utf8)!, withName: key)
+                
+                print("send Image Parameters : -----> ", params)
+                for (key,value) in params {
+                    multipartFormData.append((value as AnyObject).description.data(using: String.Encoding.utf8)!, withName: key)
+                }
             }
-        }
-        
-
+            
+            
         },to:Constants.ADDADVS_URL)
         .responseDecodable(of:AddAdvsModel.self){ response in
-//            Loading().finishProgress(self)
+            //            Loading().finishProgress(self)
             self.AddAdvsButton.stopAnimation()
             switch response.result {
             case .success(let data):
                 print("success")
                 print(data)
                 if data.statusCode == 200{
-//                    completion(true,data.message ?? "")
+                    //                    completion(true,data.message ?? "")
                     print(data.message ?? "")
                     if isFeatured == 1 {
                         PayingController.shared.payingFeaturedAd(completion: { payment, check, message in
@@ -568,23 +571,23 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
                     }
                     
                 }else{
-//                    completion(false , data.message ?? "")
+                    //                    completion(false , data.message ?? "")
                     print(data.message)
                     StaticFunctions.createErrorAlert(msg: data.message ?? "")
                 }
             case .failure(let error):
                 print(error)
                 if let decodingError = error.underlyingError as? DecodingError {
-                           // Handle decoding errors
-//                           completion(false, "Decoding error: \(decodingError)")
+                    // Handle decoding errors
+                    //                           completion(false, "Decoding error: \(decodingError)")
                     StaticFunctions.createErrorAlert(msg: "Decoding error: \(decodingError)")
-                       } else {
-                           // Handle other network or server errors
-                           print("error" , SERVER_ERROR)
-                           StaticFunctions.createErrorAlert(msg: SERVER_ERROR)
-                           
-                       }
-                   }
+                } else {
+                    // Handle other network or server errors
+                    print("error" , SERVER_ERROR)
+                    StaticFunctions.createErrorAlert(msg: SERVER_ERROR)
+                    
+                }
+            }
             
         }
         
@@ -599,8 +602,8 @@ class AddAdvsVC: UIViewController , PickupMediaPopupVCDelegate {
         vc.delegate = self
         self.present(nav, animated: false)
     }
-    }
-    
+}
+
 
 //MARK: CollectionView Delegate
 
@@ -611,15 +614,15 @@ extension AddAdvsVC : UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AdvsImagesCollectionViewCell", for: indexPath) as? AdvsImagesCollectionViewCell else {return UICollectionViewCell()}
-//        mainImageKey = Array(selectedMedia.keys)[selectedIndexPath.item]
+        //        mainImageKey = Array(selectedMedia.keys)[selectedIndexPath.item]
         cell.indexPath = indexPath
         cell.delegate = self
         cell.configureCell(images:  Array(images.values), selectedIndex: selectedIndexPath, mainImageKey: mainImageKey, imagekeyOfIndex: Array(images.keys)[indexPath.row])
-//        if mainImageKey == Array(images.keys)[indexPath.row] {
-//            cell.isSelected = true
-//        }else {
-//            cell.isSelected = false
-//        }
+        //        if mainImageKey == Array(images.keys)[indexPath.row] {
+        //            cell.isSelected = true
+        //        }else {
+        //            cell.isSelected = false
+        //        }
         print(mainImageKey)
         return cell
     }
@@ -637,7 +640,7 @@ extension AddAdvsVC {
     //MARK: Methods
     private func setupView(){
         
-        DispatchQueue.main.async { 
+        DispatchQueue.main.async {
             if self.isComeFromProfile {
                 NotificationCenter.default.post(name: NSNotification.Name("hideTabBar"), object: nil)
                 self.headerViewHeightConstraints.constant = 80
@@ -645,7 +648,7 @@ extension AddAdvsVC {
                 self.headerViewHeightConstraints.constant = 0
             }
         }
-       
+        
         descTextView.addPlaceholder("Please Enter the full description with the advantages".localize,text: descText)
         newPhoneTF.text = removeCountryCode(from: "\(AppDelegate.currentUser.phone ?? "")")
         configerSelectedButtons()
@@ -688,7 +691,7 @@ extension AddAdvsVC {
         
     }
     private func setupHasPhoneViewUI(){
-//        has_phone = "on"
+        //        has_phone = "on"
         phoneCallViewContainer.borderWidth = 1.2
         phoneCallViewContainer.backgroundColor = UIColor(named: "#0093F5")
         phoneCallViewContainer.borderColor = .white
@@ -712,15 +715,15 @@ extension AddAdvsVC {
         sellButtonLabel.textColor = .black
         rentButtonLabel.textColor = .white
     }
-
-   
+    
+    
 }
 
 //MARK: Setup Drop Down
 extension AddAdvsVC {
     //get Cities
     
- private  func getCitis(){
+    private  func getCitis(){
         CountryController.shared.getCities(completion: {[weak self]  cities, check, error in
             guard let self = self else{return}
             print(self.countryId)
@@ -728,7 +731,7 @@ extension AddAdvsVC {
                 if  MOLHLanguage.currentAppleLanguage() == "en" {
                     
                     self.cityList.append(city.nameEn ?? "")
-                    self.cityIDsList.append(city.id ?? 0)
+                    //                    self.cityIDsList.append(city.id ?? 0)
                     print(self.cityList)
                 }
                 else{
@@ -737,9 +740,9 @@ extension AddAdvsVC {
                     print(self.cityList)
                 }
             }
-            if self.cityId == 0 {
-                self.cityId = self.cityIDsList[0]
-            }
+            //            if self.cityId == 0 {
+            //                self.cityId = self.cityIDsList[0]
+            //            }
             self.setupCitiesDropDown()
             self.getRegions(cityId: self.cityId)
         }, countryId: countryId)
@@ -747,7 +750,7 @@ extension AddAdvsVC {
         
     }
     
-  private  func getRegions(cityId:Int){
+    private  func getRegions(cityId:Int){
         print(cityId)
         CountryController.shared.getStates(completion: {[weak self] regions, check, error in
             guard let self = self else{return}
@@ -771,7 +774,7 @@ extension AddAdvsVC {
     }
     
     
-  private  func getMainCats(){
+    private  func getMainCats(){
         CategoryController.shared.getCategoories { [weak self]categories, check, error in
             guard let self = self else {return}
             
@@ -797,7 +800,7 @@ extension AddAdvsVC {
             }else {
                 self.rentViewContainer.isHidden = true
             }
-           
+            
             self.setupMainCategoryDropDown()
             self.getSubCats(catId: self.mainCatID)
         }
@@ -821,7 +824,7 @@ extension AddAdvsVC {
             }
             self.setupSubCategoryDropDown()
         }, categoryId: catId)
-      }
+    }
     
     
     // Main Category
@@ -836,12 +839,12 @@ extension AddAdvsVC {
         self.mainCatsList.removeLast()
         mainCatDropDwon.bottomOffset = CGPoint(x: 0, y: mainCatButton.bounds.height)
         mainCatDropDwon.dataSource = mainCatsList
-//        mainCatButton.setTitle(mainCatsList[0], for: .normal)
-                    if let region = mainCatsIDsList.firstIndex(of: mainCatID) {
-                        mainCatButton.setTitle(mainCatsList[region], for: .normal)
-                    }else{
-                        mainCatButton.setTitle(mainCatsList[0], for: .normal)
-                    }
+        //        mainCatButton.setTitle(mainCatsList[0], for: .normal)
+        if let region = mainCatsIDsList.firstIndex(of: mainCatID) {
+            mainCatButton.setTitle(mainCatsList[region], for: .normal)
+        }else{
+            mainCatButton.setTitle(mainCatsList[0], for: .normal)
+        }
         if self.mainCatID == 74 || self.mainCatID == 75{
             self.rentViewContainer.isHidden = false
         }else {
@@ -854,7 +857,7 @@ extension AddAdvsVC {
             print(self.mainCatID)
             
             self.getSubCats(catId:self.mainCatID )
-           // self.mainCatButton.setTitle(self.mainCatName, for: .normal)
+            // self.mainCatButton.setTitle(self.mainCatName, for: .normal)
             
             if let region = self.mainCatsIDsList.firstIndex(of: self.mainCatID) {
                 self.mainCatButton.setTitle(self.mainCatsList[region], for: .normal)
@@ -873,21 +876,21 @@ extension AddAdvsVC {
     
     // Sub Category
     private func setupSubCategoryDropDown() {
-//        subCatDropDwon.anchorView = subCatButton
-      //  regionsDropDwon.frame = regionButton.bounds
-       if MOLHLanguage.currentAppleLanguage() == "en"{
+        //        subCatDropDwon.anchorView = subCatButton
+        //  regionsDropDwon.frame = regionButton.bounds
+        if MOLHLanguage.currentAppleLanguage() == "en"{
             subCatDropDwon.anchorView = subCatButton
         }else{
             subCatDropDwon.anchorView = mainCatButton
         }
         subCatDropDwon.bottomOffset = CGPoint(x: 0, y: subCatButton.bounds.height)
         subCatDropDwon.dataSource = subCatsList
-//        subCatButton.setTitle(subCatsList[0], for: .normal)
-            if let subCatId = subCatsIDsList.firstIndex(of: subCatID) {
-                subCatButton.setTitle(subCatsList[subCatId], for: .normal)
-            }else{
-                subCatButton.setTitle(subCatsList[0], for: .normal)
-            }
+        //        subCatButton.setTitle(subCatsList[0], for: .normal)
+        if let subCatId = subCatsIDsList.firstIndex(of: subCatID) {
+            subCatButton.setTitle(subCatsList[subCatId], for: .normal)
+        }else{
+            subCatButton.setTitle(subCatsList[0], for: .normal)
+        }
         subCatDropDwon.selectionAction = { [weak self] (index: Int, item: String) in
             guard let self = self else {return}
             self.subCatID = self.subCatsIDsList[index]
@@ -899,24 +902,25 @@ extension AddAdvsVC {
     
     // Citis DropDwon
     private func setupCitiesDropDown() {
-//        cityDropDwon.anchorView = cityButton
-      //  regionsDropDwon.frame = regionButton.bounds
-       if MOLHLanguage.currentAppleLanguage() == "en"{
+        //        cityDropDwon.anchorView = cityButton
+        //  regionsDropDwon.frame = regionButton.bounds
+        if MOLHLanguage.currentAppleLanguage() == "en"{
             cityDropDwon.anchorView = cityButton
         }else{
             cityDropDwon.anchorView = regionButton
         }
         cityDropDwon.bottomOffset = CGPoint(x: 0, y: cityButton.bounds.height)
         cityDropDwon.dataSource = cityList
-//        cityButton.setTitle(cityList[0], for: .normal)
+        //        cityButton.setTitle(cityList[0], for: .normal)
         if cityList.count > 0 && cityIDsList.count > 0{
+            
             if let cityID = cityIDsList.firstIndex(of: cityId) {
                 cityButton.setTitle(cityList[cityID], for: .normal)
             }else {
                 cityButton.setTitle(cityList[0], for: .normal)
             }
         }
-            
+        
         cityDropDwon.selectionAction = { [weak self] (index: Int, item: String) in
             guard let self = self else {return}
             self.cityId = self.cityIDsList[index]
@@ -931,28 +935,28 @@ extension AddAdvsVC {
     
     // regions
     private func setupRegionsDropDown() {
-//        regionsDropDwon.anchorView = regionButton
-       if MOLHLanguage.currentAppleLanguage() == "en"{
+        //        regionsDropDwon.anchorView = regionButton
+        if MOLHLanguage.currentAppleLanguage() == "en"{
             regionsDropDwon.anchorView = regionButton
         }else{
             regionsDropDwon.anchorView = cityButton
         }
-      //  regionsDropDwon.frame = regionButton.bounds
+        //  regionsDropDwon.frame = regionButton.bounds
         regionsDropDwon.bottomOffset = CGPoint(x: 0, y: regionButton.bounds.height)
         regionsDropDwon.dataSource = regionsList
-//        if regionsIDsList.count > 0 {
-//            regionButton.setTitle(regionsList[0], for: .normal)
-//        }
+        //        if regionsIDsList.count > 0 {
+        //            regionButton.setTitle(regionsList[0], for: .normal)
+        //        }
         
         print(regionId)
         if regionsList.count > 0 && regionsIDsList.count > 0 {
             if let region = regionsIDsList.firstIndex(of: regionId) {
-              regionButton.setTitle(regionsList[region], for: .normal)
-          }else {
-              regionButton.setTitle(regionsList[0], for: .normal)
-          }
+                regionButton.setTitle(regionsList[region], for: .normal)
+            }else {
+                regionButton.setTitle(regionsList[0], for: .normal)
+            }
         }
-           
+        
         regionsDropDwon.selectionAction = { [weak self] (index: Int, item: String) in
             guard let self = self else {return}
             self.regionId = self.regionsIDsList[index]
@@ -983,11 +987,11 @@ extension AddAdvsVC:AdvsImagesCollectionViewCellDelegate{
             selectedIndexPath = [0,0]
             self.mainImageKey = Array(images.keys)[0]
         }
-       
-//        if let removedKey = selectedMediaKeys[safe: indexPath.item] {
-//            self.selectedMedia.removeValue(forKey: removedKey)
-//            self.selectedMediaKeys.remove(at: indexPath.item)
-//        }
+        
+        //        if let removedKey = selectedMediaKeys[safe: indexPath.item] {
+        //            self.selectedMedia.removeValue(forKey: removedKey)
+        //            self.selectedMediaKeys.remove(at: indexPath.item)
+        //        }
         collectionView.reloadData()
     }
     
@@ -1001,12 +1005,12 @@ extension AddAdvsVC {
     func saveSessionData(images: [String:UIImage],mediaKeys:[String], description: String, title: String,price:String,catId:Int,subCatId:Int,CityId:Int,RegionId:Int,selectedMedia:[String:Data] , selectedMediaKeys:[String]?,mainImageKey:String?) {
         var sessionData: [String: Any] = [:]
         var imagesData: [String: Data] = [:] // Cache to store images as Data
-                
-                for (key, image) in images {
-                    if let imageData = image.jpegData(compressionQuality: 0.01) {
-                        imagesData[key] = imageData
-                    }
-                }
+        
+        for (key, image) in images {
+            if let imageData = image.jpegData(compressionQuality: 0.01) {
+                imagesData[key] = imageData
+            }
+        }
         
         sessionData["images"] = imagesData
         sessionData["mediaKeys"] = mediaKeys
@@ -1020,10 +1024,10 @@ extension AddAdvsVC {
         sessionData["selectedMedia"] = selectedMedia
         sessionData["selectedMediaKeys"] = selectedMediaKeys
         sessionData["mainImageKey"] = mainImageKey
-
+        
         UserDefaults.standard.set(sessionData, forKey: "postSessionData")
     }
-
+    
     // Function to retrieve session data
     func retrieveSessionData() -> (images: [String:Data]?, mediaKeys: [String]?, description: String?, title: String?, price: String?, catId: Int?, subCatId: Int?, CityId: Int?, RegionId: Int?,selectedMedia:[String:Data]?, selectedMediaKeys:[String]?,mainImageKey:String?) {
         if let sessionData = UserDefaults.standard.dictionary(forKey: "postSessionData") {
@@ -1043,8 +1047,8 @@ extension AddAdvsVC {
         }
         return (nil, nil, nil, nil, nil, nil, nil, nil, nil,nil,nil,nil)
     }
-
-
+    
+    
     // Function to clear session data
     func clearSessionData() {
         UserDefaults.standard.removeObject(forKey: "postSessionData")
@@ -1100,14 +1104,14 @@ extension Array {
 
 extension AddAdvsVC:UITextViewDelegate {
     func  textViewDidBeginEditing(_ textView: UITextView) {
-
+        
         if descTextView.textColor == UIColor.lightGray {
             descTextView.text = ""
             descTextView.textColor = UIColor.black
         }
     }
     func textViewDidEndEditing(_ textView: UITextView) {
-
+        
         if descTextView.text == "" {
             descTextView.text = "Please Enter the full description with the advantages".localize
             descTextView.textColor = UIColor.lightGray
@@ -1127,7 +1131,7 @@ extension AddAdvsVC : ChooseAdTyDelegate {
         }
         
         
-       
+        
         
     }
     
@@ -1186,9 +1190,9 @@ extension AddAdvsVC:SuccessAddingVCDelegate{
     }
     func didTapMyAdsButton() {
         dismiss(animated: true) {
-                    // Then navigate to the "my ads" page
-                    self.navigateToMyAdsPage()
-                }
+            // Then navigate to the "my ads" page
+            self.navigateToMyAdsPage()
+        }
     }
     
     

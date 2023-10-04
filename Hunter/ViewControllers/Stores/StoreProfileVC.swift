@@ -472,12 +472,12 @@ extension StoreProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,U
                 print("Delete Image")
             }
             // Customize the color of the actions
-            selectAction.setValue(#colorLiteral(red: 0, green: 0.7860813737, blue: 0.7477947474, alpha: 1), forKey: "titleTextColor")
+            selectAction.setValue(UIColor(hexString: "#0093F5",alpha: 1.0), forKey: "titleTextColor")
             alertController.addAction(selectAction)
             alertController.addAction(deletAction)
             let cancelAction = UIAlertAction(title: "Cancel".localize, style: .cancel, handler: nil)
                     alertController.addAction(cancelAction)
-                    let imageView = UIImageView(image: UIImage(named: "imageadd"))
+            let imageView = UIImageView(image: UIImage(named: "imageadd")?.withRenderingMode(.alwaysTemplate))
                     imageView.contentMode = .scaleAspectFit
                     imageView.clipsToBounds = true
                     let imageWidth: CGFloat = 20

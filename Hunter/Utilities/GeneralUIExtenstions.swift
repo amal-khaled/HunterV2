@@ -989,4 +989,11 @@ extension Optional where Wrapped == String {
     var safeValue: String {
         return self ?? ""
     }
+    
+}
+extension Optional where Wrapped == Int {
+    var safeValue: Int {
+        return self ?? 100
+    }
+    
 }
