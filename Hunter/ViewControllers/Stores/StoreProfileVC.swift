@@ -19,11 +19,6 @@ class StoreProfileVC: UIViewController {
         return editStoreVC
     }
     
-    
-   
-    
-    
-    
     // MARK: - IBOutlets
     
     @IBOutlet weak var changeCoverButton: UIButton!

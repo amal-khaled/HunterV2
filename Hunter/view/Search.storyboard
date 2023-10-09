@@ -16,9 +16,11 @@
             <string>Tajawal-Medium</string>
         </array>
         <array key="Tajawal-Bold.ttf">
+            <string>Almarai-Bold</string>
             <string>Tajawal-Bold</string>
         </array>
         <array key="Tajawal-Regular.ttf">
+            <string>Almarai-Regular</string>
             <string>Tajawal-Regular</string>
         </array>
     </customFonts>
@@ -53,8 +55,8 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8g5-oz-Cfy">
-                                                        <rect key="frame" x="131.66666666666666" y="10.333333333333327" width="100" height="19.333333333333329"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <rect key="frame" x="132.66666666666666" y="11" width="97.666666666666657" height="18"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16"/>
                                                         <color key="textColor" name="#9C9C9C"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
@@ -139,7 +141,7 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ads" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwV-c9-HU9">
                                                         <rect key="frame" x="0.0" y="0.0" width="121" height="48"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
                                                         <color key="textColor" name="#0093F5"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
@@ -160,7 +162,7 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peoples" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xur-Ig-K8p">
                                                         <rect key="frame" x="0.0" y="0.0" width="121" height="48"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
                                                         <color key="textColor" name="#929292"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
@@ -181,7 +183,7 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stores" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcI-xf-6a0">
                                                         <rect key="frame" x="0.0" y="0.0" width="121" height="48"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
                                                         <color key="textColor" name="#929292"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
@@ -398,12 +400,12 @@
                                                                                     </userDefinedRuntimeAttributes>
                                                                                 </imageView>
                                                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:45 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMa-kk-kv1">
-                                                                                    <rect key="frame" x="8" y="177.66666666666666" width="36" height="20"/>
+                                                                                    <rect key="frame" x="8" y="177.66666666666666" width="27" height="20"/>
                                                                                     <color key="backgroundColor" name="#E2E1E1"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="20" id="hOH-3v-0AE"/>
                                                                                     </constraints>
-                                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                                                    <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="12"/>
                                                                                     <color key="textColor" name="textColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                     <userDefinedRuntimeAttributes>
@@ -439,7 +441,7 @@
                                                                                             <subviews>
                                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.89999997615814209" translatesAutoresizingMaskIntoConstraints="NO" id="bKZ-oS-TwW">
                                                                                                     <rect key="frame" x="0.0" y="0.0" width="311" height="47.333333333333336"/>
-                                                                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                                                    <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="18"/>
                                                                                                     <color key="textColor" name="#0093F5"/>
                                                                                                     <nil key="highlightedColor"/>
                                                                                                 </label>
@@ -452,9 +454,9 @@
                                                                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="20"/>
                                                                                                     <subviews>
                                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sell" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlh-4K-LSn">
-                                                                                                            <rect key="frame" x="14" y="1.6666666666666856" width="22" height="17"/>
+                                                                                                            <rect key="frame" x="14.666666666666666" y="2.3333333333333135" width="20.666666666666671" height="15.666666666666664"/>
                                                                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                                            <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                                             <color key="textColor" red="0.98039215690000003" green="0.98000001910000001" blue="0.98000001910000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                                             <nil key="highlightedColor"/>
                                                                                                         </label>
@@ -473,17 +475,17 @@
                                                                                                     </userDefinedRuntimeAttributes>
                                                                                                 </view>
                                                                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wwK-10-lj3" userLabel="Price Stack View">
-                                                                                                    <rect key="frame" x="290.66666666666669" y="0.0" width="20.333333333333314" height="20"/>
+                                                                                                    <rect key="frame" x="296" y="0.0" width="15" height="20"/>
                                                                                                     <subviews>
                                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="af5-vq-m7E">
-                                                                                                            <rect key="frame" x="0.0" y="0.0" width="12.333333333333334" height="20"/>
-                                                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                                                                            <rect key="frame" x="0.0" y="0.0" width="8.6666666666666661" height="20"/>
+                                                                                                            <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="19"/>
                                                                                                             <color key="textColor" name="#213970"/>
                                                                                                             <nil key="highlightedColor"/>
                                                                                                         </label>
                                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBj-fD-kmC">
-                                                                                                            <rect key="frame" x="12.333333333333314" y="0.0" width="8" height="20"/>
-                                                                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                                                            <rect key="frame" x="8.6666666666666856" y="0.0" width="6.3333333333333321" height="20"/>
+                                                                                                            <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="13"/>
                                                                                                             <color key="textColor" name="#213970"/>
                                                                                                             <nil key="highlightedColor"/>
                                                                                                         </label>
@@ -495,7 +497,7 @@
                                                                                             <rect key="frame" x="0.0" y="83.333333333333343" width="311" height="20"/>
                                                                                             <subviews>
                                                                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DhL-dG-ZDR">
-                                                                                                    <rect key="frame" x="0.0" y="0.0" width="80.666666666666671" height="20"/>
+                                                                                                    <rect key="frame" x="0.0" y="0.0" width="78" height="20"/>
                                                                                                     <subviews>
                                                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:X1q-81-Mm2:image" translatesAutoresizingMaskIntoConstraints="NO" id="X1q-81-Mm2">
                                                                                                             <rect key="frame" x="0.0" y="2.6666666666666856" width="12" height="15"/>
@@ -505,13 +507,13 @@
                                                                                                             </constraints>
                                                                                                         </imageView>
                                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ahmed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="Djy-Fb-PMJ">
-                                                                                                            <rect key="frame" x="20" y="3.3333333333333153" width="37" height="13.333333333333336"/>
-                                                                                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                                                                            <rect key="frame" x="20.000000000000004" y="4.0000000000000009" width="34.333333333333343" height="12.333333333333336"/>
+                                                                                                            <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="11"/>
                                                                                                             <color key="textColor" name="#0093F5"/>
                                                                                                             <nil key="highlightedColor"/>
                                                                                                         </label>
                                                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:ALI-BK-M6X:image" translatesAutoresizingMaskIntoConstraints="NO" id="ALI-BK-M6X">
-                                                                                                            <rect key="frame" x="65" y="2.6666666666666856" width="15.666666666666671" height="15"/>
+                                                                                                            <rect key="frame" x="62.333333333333321" y="2.6666666666666856" width="15.666666666666664" height="15"/>
                                                                                                             <constraints>
                                                                                                                 <constraint firstAttribute="width" constant="15" id="C4h-eS-fSJ"/>
                                                                                                                 <constraint firstAttribute="height" constant="15" id="G5V-sZ-J1Y"/>
@@ -520,7 +522,7 @@
                                                                                                     </subviews>
                                                                                                 </stackView>
                                                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RfL-Ov-xOi">
-                                                                                                    <rect key="frame" x="250.33333333333329" y="0.0" width="60.666666666666657" height="20"/>
+                                                                                                    <rect key="frame" x="252.33333333333329" y="0.0" width="58.666666666666657" height="20"/>
                                                                                                     <subviews>
                                                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:oZa-1s-9cx:image" translatesAutoresizingMaskIntoConstraints="NO" id="oZa-1s-9cx">
                                                                                                             <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -530,8 +532,8 @@
                                                                                                             </constraints>
                                                                                                         </imageView>
                                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Egypt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="QVZ-qd-5Qe">
-                                                                                                            <rect key="frame" x="27.999999999999996" y="0.0" width="32.666666666666657" height="20"/>
-                                                                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                                            <rect key="frame" x="28" y="0.0" width="30.666666666666671" height="20"/>
+                                                                                                            <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="12"/>
                                                                                                             <color key="textColor" name="textColor"/>
                                                                                                             <nil key="highlightedColor"/>
                                                                                                         </label>
@@ -626,7 +628,7 @@
                                 </subviews>
                             </stackView>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="GZS-3r-n7w">
-                                <rect key="frame" x="30" y="200.66666666666663" width="303" height="161"/>
+                                <rect key="frame" x="30" y="201" width="303" height="160.33333333333337"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noMessagesImage" translatesAutoresizingMaskIntoConstraints="NO" id="sgk-0e-qeC">
                                         <rect key="frame" x="101.66666666666666" y="0.0" width="100" height="100"/>
@@ -636,17 +638,17 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kYD-eX-6uo">
-                                        <rect key="frame" x="20.333333333333343" y="130.00000000000003" width="262.33333333333326" height="31"/>
+                                        <rect key="frame" x="39.333333333333329" y="130" width="224.33333333333337" height="30.333333333333343"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are no matching results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qof-eP-eIg">
-                                                <rect key="frame" x="52.999999999999986" y="0.0" width="156.66666666666663" height="13.333333333333334"/>
+                                                <rect key="frame" x="34" y="0.0" width="156.66666666666666" height="13.333333333333334"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search again by selecting different values for the search elements" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lm8-xT-N0l">
-                                                <rect key="frame" x="0.0" y="21.333333333333314" width="262.33333333333331" height="9.6666666666666643"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                <rect key="frame" x="0.0" y="21.333333333333314" width="224.33333333333334" height="9"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="8"/>
                                                 <color key="textColor" name="#9C9C9C"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -682,18 +684,18 @@
         <scene sceneID="lJ6-ul-EL3">
             <objects>
                 <viewController id="36G-qn-hC4" customClass="SearchPersonViewController" customModule="Hunter" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="XSB-Tw-4A2">
+                    <view key="view" contentMode="scaleToFill" id="XSB-Tw-4A2">
                         <rect key="frame" x="0.0" y="0.0" width="363" height="0.0"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KkN-3k-cb4">
-                                <rect key="frame" x="0.0" y="0.0" width="363" height="644.66666666666663"/>
+                                <rect key="frame" x="0.0" y="0.0" width="363" height="650"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ydn-FC-0in">
-                                        <rect key="frame" x="0.0" y="0.0" width="363" height="86"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="363" height="91.333333333333329"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Most popular persons" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKV-mK-lvU">
-                                                <rect key="frame" x="0.0" y="0.0" width="363" height="17"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="363" height="20"/>
                                                 <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="17"/>
                                                 <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -702,7 +704,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Persons relevant to your search result" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hf1-3g-V7B">
-                                                <rect key="frame" x="0.0" y="20" width="363" height="13"/>
+                                                <rect key="frame" x="0.0" y="23" width="363" height="15.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="13"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
@@ -711,7 +713,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BgU-sv-baL">
-                                                <rect key="frame" x="0.0" y="36" width="363" height="50"/>
+                                                <rect key="frame" x="0.0" y="41.333333333333343" width="363" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="2" id="cf2-Tm-pmL"/>
@@ -720,7 +722,7 @@
                                         </subviews>
                                     </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" estimatedRowHeight="80" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2h9-JN-PMW">
-                                        <rect key="frame" x="0.0" y="86" width="363" height="558.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="91.333333333333314" width="363" height="558.66666666666674"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="Lpi-bD-JIR" customClass="FollowerTableViewCell" customModule="Hunter" customModuleProvider="target">
@@ -761,16 +763,16 @@
                                                                                     <rect key="frame" x="63" y="8.0000000000000036" width="133" height="38.666666666666671"/>
                                                                                     <subviews>
                                                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6dV-Ef-kJY">
-                                                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="16"/>
+                                                                                            <rect key="frame" x="0.0" y="0.0" width="51.666666666666664" height="16"/>
                                                                                             <subviews>
                                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDg-JX-X0j">
-                                                                                                    <rect key="frame" x="0.0" y="3.3333333333333313" width="29" height="12.666666666666664"/>
+                                                                                                    <rect key="frame" x="0.0" y="1.3333333333333313" width="30.666666666666668" height="14.666666666666664"/>
                                                                                                     <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="12.5"/>
                                                                                                     <color key="textColor" name="#0093F5"/>
                                                                                                     <nil key="highlightedColor"/>
                                                                                                 </label>
                                                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="verification" translatesAutoresizingMaskIntoConstraints="NO" id="21v-pb-Nbw">
-                                                                                                    <rect key="frame" x="34" y="0.0" width="16" height="16"/>
+                                                                                                    <rect key="frame" x="35.666666666666671" y="0.0" width="16" height="16"/>
                                                                                                     <constraints>
                                                                                                         <constraint firstAttribute="height" constant="16" id="MDp-Ta-cMe"/>
                                                                                                         <constraint firstAttribute="width" constant="16" id="Y2a-eI-ghU"/>
@@ -886,7 +888,7 @@
                                     </tableView>
                                 </subviews>
                             </stackView>
-                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="rnl-qM-ieY">
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="rnl-qM-ieY">
                                 <rect key="frame" x="30" y="-80.666666666666671" width="303" height="161.33333333333334"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noMessagesImage" translatesAutoresizingMaskIntoConstraints="NO" id="JqE-2M-4z6">
@@ -943,18 +945,18 @@
         <scene sceneID="gft-uc-DMU">
             <objects>
                 <viewController id="LcA-lJ-kX0" customClass="SearchAskViewController" customModule="Hunter" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="9HY-cU-EEe">
+                    <view key="view" contentMode="scaleToFill" id="9HY-cU-EEe">
                         <rect key="frame" x="0.0" y="0.0" width="363" height="0.0"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fi0-RS-RLU">
-                                <rect key="frame" x="0.0" y="0.0" width="363" height="214"/>
+                                <rect key="frame" x="0.0" y="0.0" width="363" height="219.33333333333334"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="UEi-UN-faU">
-                                        <rect key="frame" x="0.0" y="0.0" width="363" height="86"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="363" height="91.333333333333329"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Most popular Stores" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxZ-Wt-8t4" userLabel="Most popular Stores">
-                                                <rect key="frame" x="0.0" y="0.0" width="363" height="17"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="363" height="20"/>
                                                 <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="17"/>
                                                 <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -963,7 +965,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Questions relevant to your search result" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aro-Ew-kgI" userLabel="Stores relevant to your search result">
-                                                <rect key="frame" x="0.0" y="20" width="363" height="13"/>
+                                                <rect key="frame" x="0.0" y="23" width="363" height="15.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="13"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
@@ -972,7 +974,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ipK-SS-QtE">
-                                                <rect key="frame" x="0.0" y="36" width="363" height="50"/>
+                                                <rect key="frame" x="0.0" y="41.333333333333343" width="363" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="2" id="PIj-X2-m1a"/>
@@ -981,7 +983,7 @@
                                         </subviews>
                                     </stackView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2Z4-qz-96g">
-                                        <rect key="frame" x="0.0" y="86" width="363" height="128"/>
+                                        <rect key="frame" x="0.0" y="91.333333333333314" width="363" height="128"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OzT-16-Ciq">
                                             <size key="itemSize" width="128" height="128"/>
@@ -1006,7 +1008,7 @@
                                     </collectionView>
                                 </subviews>
                             </stackView>
-                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="KAh-BE-C4N">
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="KAh-BE-C4N">
                                 <rect key="frame" x="30" y="-80.666666666666671" width="303" height="161.33333333333334"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noMessagesImage" translatesAutoresizingMaskIntoConstraints="NO" id="xBN-eN-GnR">
@@ -1029,7 +1031,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search again by selecting different values for the search elements" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VoN-1X-O3O">
-                                                <rect key="frame" x="0.0" y="21.333333333333343" width="262.33333333333331" height="9.6666666666666643"/>
+                                                <rect key="frame" x="0.0" y="21.333333333333314" width="262.33333333333331" height="9.6666666666666643"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                                 <color key="textColor" name="#9C9C9C"/>
                                                 <nil key="highlightedColor"/>
@@ -1083,6 +1085,7 @@
                         <navigationBarAppearance key="standardAppearance">
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <textAttributes key="titleTextAttributes">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </textAttributes>
                         </navigationBarAppearance>

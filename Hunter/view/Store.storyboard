@@ -12,22 +12,18 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Almarai-Bold.ttf">
-            <string>Almarai-Bold</string>
-        </array>
         <array key="Almarai-Light.ttf">
             <string>Almarai-Light</string>
-        </array>
-        <array key="Almarai-Regular.ttf">
-            <string>Almarai-Regular</string>
         </array>
         <array key="Medium.ttf">
             <string>Tajawal-Medium</string>
         </array>
         <array key="Tajawal-Bold.ttf">
+            <string>Almarai-Bold</string>
             <string>Tajawal-Bold</string>
         </array>
         <array key="Tajawal-Regular.ttf">
+            <string>Almarai-Regular</string>
             <string>Tajawal-Regular</string>
         </array>
     </customFonts>
@@ -138,8 +134,8 @@
                                                                                 </constraints>
                                                                             </imageView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6Y-Pp-ew7">
-                                                                                <rect key="frame" x="74.999999999999986" y="11.666666666666657" width="94.000000000000014" height="17"/>
-                                                                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="17"/>
+                                                                                <rect key="frame" x="74.999999999999986" y="10.666666666666657" width="94.000000000000014" height="19"/>
+                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
                                                                                 <color key="textColor" name="blackColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                                 <userDefinedRuntimeAttributes>
@@ -420,14 +416,14 @@
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="65h-VQ-UG1">
-                                                <rect key="frame" x="25" y="176.66666666666666" width="364" height="95.666666666666657"/>
+                                                <rect key="frame" x="25" y="173" width="364" height="95.666666666666686"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="zco-rQ-h2v">
                                                         <rect key="frame" x="0.0" y="0.0" width="364" height="31.666666666666668"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVJ-Xf-g6C" userLabel="اسم المستخدم او رقم الجوال">
-                                                                <rect key="frame" x="0.0" y="0.0" width="123.66666666666667" height="31.666666666666668"/>
-                                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="116.33333333333333" height="31.666666666666668"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -435,7 +431,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="066-MC-hFB" userLabel="اسم المستخدم او رقم الجوال">
-                                                                <rect key="frame" x="148.66666666666663" y="0.0" width="215.33333333333337" height="31.666666666666668"/>
+                                                                <rect key="frame" x="141.33333333333337" y="0.0" width="222.66666666666663" height="31.666666666666668"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" systemColor="systemRedColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -443,11 +439,11 @@
                                                         </subviews>
                                                     </stackView>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Uw-pd-8WY">
-                                                        <rect key="frame" x="0.0" y="40.666666666666657" width="364" height="55"/>
+                                                        <rect key="frame" x="0.0" y="40.666666666666686" width="364" height="55"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="590-Cm-5Uf">
                                                                 <rect key="frame" x="35" y="5" width="319" height="50"/>
-                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16.5"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
@@ -487,7 +483,7 @@
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sgz-Hx-jsN">
-                                                <rect key="frame" x="25" y="287.33333333333326" width="364" height="780"/>
+                                                <rect key="frame" x="25" y="283.66666666666674" width="364" height="780"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="D8Q-AC-RXP">
                                                         <rect key="frame" x="0.0" y="0.0" width="364" height="841"/>
@@ -502,8 +498,8 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="364" height="62.666666666666664"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgE-5D-APN" userLabel="اسم المستخدم او رقم الجوال">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="133.33333333333334" height="62.666666666666664"/>
-                                                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="126.66666666666667" height="62.666666666666664"/>
+                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
                                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -511,7 +507,7 @@
                                                                                         </userDefinedRuntimeAttributes>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1f-EB-0yz" userLabel="اسم المستخدم او رقم الجوال">
-                                                                                        <rect key="frame" x="150.33333333333337" y="0.0" width="213.66666666666663" height="62.666666666666664"/>
+                                                                                        <rect key="frame" x="143.66666666666663" y="0.0" width="220.33333333333337" height="62.666666666666664"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" systemColor="systemRedColor"/>
                                                                                         <nil key="highlightedColor"/>
@@ -519,12 +515,12 @@
                                                                                 </subviews>
                                                                             </stackView>
                                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIn-UT-Vdz">
-                                                                                <rect key="frame" x="0.0" y="72.666666666666686" width="364" height="55"/>
+                                                                                <rect key="frame" x="0.0" y="72.666666666666629" width="364" height="55"/>
                                                                                 <subviews>
                                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Activity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WSG-wN-Q4d">
                                                                                         <rect key="frame" x="35" y="4" width="319" height="47"/>
                                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16.5"/>
+                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
                                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                                                                         <userDefinedRuntimeAttributes>
                                                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
@@ -564,14 +560,14 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fPA-YB-hg7" userLabel="category">
-                                                                <rect key="frame" x="0.0" y="142.66666666666669" width="364" height="127.66666666666669"/>
+                                                                <rect key="frame" x="0.0" y="142.66666666666663" width="364" height="127.66666666666669"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="XlP-8D-ttf">
                                                                         <rect key="frame" x="0.0" y="0.0" width="364" height="64.666666666666671"/>
                                                                         <subviews>
                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bkf-Tm-cEQ">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="62" height="64.666666666666671"/>
-                                                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="59" height="64.666666666666671"/>
+                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                                 <userDefinedRuntimeAttributes>
@@ -579,7 +575,7 @@
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </label>
                                                                             <label opaque="NO" contentMode="left" verticalHuggingPriority="251" text="  *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5Z-x3-Hxl">
-                                                                                <rect key="frame" x="77" y="0.0" width="287" height="64.666666666666671"/>
+                                                                                <rect key="frame" x="74" y="0.0" width="290" height="64.666666666666671"/>
                                                                                 <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="17"/>
                                                                                 <color key="textColor" systemColor="systemRedColor"/>
                                                                                 <nil key="highlightedColor"/>
@@ -587,10 +583,10 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQn-N5-gVv">
-                                                                        <rect key="frame" x="0.0" y="72.666666666666629" width="364" height="55"/>
+                                                                        <rect key="frame" x="0.0" y="72.666666666666686" width="364" height="55"/>
                                                                         <subviews>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropDownIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XNh-zV-VqI">
-                                                                                <rect key="frame" x="336" y="19.333333333333258" width="16" height="16"/>
+                                                                                <rect key="frame" x="336" y="19.333333333333371" width="16" height="16"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="16" id="3bh-Uc-Jjq"/>
                                                                                     <constraint firstAttribute="height" constant="16" id="gNN-k8-QSK"/>
@@ -598,7 +594,7 @@
                                                                             </imageView>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFn-Um-aPm">
                                                                                 <rect key="frame" x="35" y="0.0" width="329" height="55"/>
-                                                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="2" maxY="0.0"/>
                                                                                 <state key="normal" title="Choose your Country">
                                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -644,8 +640,8 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="364" height="62.666666666666664"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMQ-5g-Qbc" userLabel="اسم المستخدم او رقم الجوال">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="54.666666666666664" height="62.666666666666664"/>
-                                                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="49.333333333333336" height="62.666666666666664"/>
+                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
                                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -653,7 +649,7 @@
                                                                                         </userDefinedRuntimeAttributes>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text=" *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2R-2U-xcZ" userLabel="اسم المستخدم او رقم الجوال">
-                                                                                        <rect key="frame" x="71.666666666666657" y="0.0" width="292.33333333333337" height="62.666666666666664"/>
+                                                                                        <rect key="frame" x="66.333333333333343" y="0.0" width="297.66666666666663" height="62.666666666666664"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" systemColor="systemRedColor"/>
                                                                                         <nil key="highlightedColor"/>
@@ -663,7 +659,7 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QLq-v0-Afo">
-                                                                        <rect key="frame" x="0.0" y="72.666666666666742" width="364" height="55"/>
+                                                                        <rect key="frame" x="0.0" y="72.666666666666629" width="364" height="55"/>
                                                                         <subviews>
                                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QTU-21-ahZ">
                                                                                 <rect key="frame" x="282" y="0.0" width="82" height="55"/>
@@ -686,7 +682,7 @@
                                                                                         <rect key="frame" x="0.0" y="0.0" width="82" height="45"/>
                                                                                     </button>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="965" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4J-Yx-uqT">
-                                                                                        <rect key="frame" x="10" y="22.666666666666742" width="26" height="15.666666666666664"/>
+                                                                                        <rect key="frame" x="10" y="21.333333333333371" width="26" height="18.333333333333329"/>
                                                                                         <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="15.5"/>
                                                                                         <color key="textColor" white="0.0" alpha="0.93636670649999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <nil key="highlightedColor"/>
@@ -724,7 +720,7 @@
                                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nlf-HI-Zdc">
                                                                                 <rect key="frame" x="35" y="4" width="239" height="47"/>
                                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                 <textInputTraits key="textInputTraits"/>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
@@ -764,7 +760,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="g5x-Ms-8Vy">
-                                                                <rect key="frame" x="0.0" y="428.00000000000006" width="364" height="127.66666666666669"/>
+                                                                <rect key="frame" x="0.0" y="427.99999999999994" width="364" height="127.66666666666669"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mEM-d9-RyO">
                                                                         <rect key="frame" x="0.0" y="0.0" width="364" height="127.66666666666667"/>
@@ -773,8 +769,8 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="364" height="62.666666666666664"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WhatsApp number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enU-Cf-4mL" userLabel="اسم المستخدم او رقم الجوال">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="147.66666666666666" height="62.666666666666664"/>
-                                                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="137.33333333333334" height="62.666666666666664"/>
+                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
                                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -782,7 +778,7 @@
                                                                                         </userDefinedRuntimeAttributes>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28n-dS-RLq" userLabel="اسم المستخدم او رقم الجوال">
-                                                                                        <rect key="frame" x="164.66666666666663" y="0.0" width="199.33333333333337" height="62.666666666666664"/>
+                                                                                        <rect key="frame" x="154.33333333333337" y="0.0" width="209.66666666666663" height="62.666666666666664"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" systemColor="systemRedColor"/>
                                                                                         <nil key="highlightedColor"/>
@@ -790,12 +786,12 @@
                                                                                 </subviews>
                                                                             </stackView>
                                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLs-fW-cmk">
-                                                                                <rect key="frame" x="0.0" y="72.666666666666629" width="364" height="55"/>
+                                                                                <rect key="frame" x="0.0" y="72.666666666666742" width="364" height="55"/>
                                                                                 <subviews>
                                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter WhatsApp number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pV3-NG-Pln">
                                                                                         <rect key="frame" x="35" y="4" width="319" height="47"/>
                                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16.5"/>
+                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
                                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                                                                         <userDefinedRuntimeAttributes>
                                                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
@@ -845,8 +841,8 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="364" height="62.666666666666664"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61I-mB-oGr" userLabel="اسم المستخدم او رقم الجوال">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="43" height="62.666666666666664"/>
-                                                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="42" height="62.666666666666664"/>
+                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
                                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -854,7 +850,7 @@
                                                                                         </userDefinedRuntimeAttributes>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWK-pC-05b" userLabel="اسم المستخدم او رقم الجوال">
-                                                                                        <rect key="frame" x="60" y="0.0" width="304" height="62.666666666666664"/>
+                                                                                        <rect key="frame" x="59" y="0.0" width="305" height="62.666666666666664"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" systemColor="systemRedColor"/>
                                                                                         <nil key="highlightedColor"/>
@@ -870,7 +866,7 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="55"/>
                                                                                 <subviews>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eemail" translatesAutoresizingMaskIntoConstraints="NO" id="T0B-Fs-ADX">
-                                                                                        <rect key="frame" x="5" y="17.666666666666742" width="30" height="20"/>
+                                                                                        <rect key="frame" x="5" y="17.666666666666629" width="30" height="20"/>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="height" constant="20" id="O0b-e2-OaA"/>
                                                                                             <constraint firstAttribute="width" constant="30" id="dSj-mH-Osx"/>
@@ -887,7 +883,7 @@
                                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b4d-iD-B1d">
                                                                                 <rect key="frame" x="42" y="0.0" width="322" height="55"/>
                                                                                 <color key="textColor" name="blackColor"/>
-                                                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                 <textInputTraits key="textInputTraits"/>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
@@ -914,7 +910,7 @@
                                                                 <viewLayoutGuide key="safeArea" id="zxf-53-6LO"/>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ceR-Wo-fqa">
-                                                                <rect key="frame" x="0.0" y="713.33333333333348" width="364" height="127.66666666666663"/>
+                                                                <rect key="frame" x="0.0" y="713.33333333333326" width="364" height="127.66666666666663"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fIg-rH-uq4">
                                                                         <rect key="frame" x="0.0" y="0.0" width="364" height="67.666666666666671"/>
@@ -923,8 +919,8 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="364" height="67.666666666666671"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2e-p1-qHD" userLabel="اسم المستخدم او رقم الجوال">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="73" height="67.666666666666671"/>
-                                                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="73.333333333333329" height="67.666666666666671"/>
+                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
                                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -932,7 +928,7 @@
                                                                                         </userDefinedRuntimeAttributes>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text=" *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Coz-eh-Mwz" userLabel="اسم المستخدم او رقم الجوال">
-                                                                                        <rect key="frame" x="98" y="0.0" width="266" height="67.666666666666671"/>
+                                                                                        <rect key="frame" x="98.333333333333343" y="0.0" width="265.66666666666663" height="67.666666666666671"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" systemColor="systemRedColor"/>
                                                                                         <nil key="highlightedColor"/>
@@ -942,7 +938,7 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfr-Q6-Wtg">
-                                                                        <rect key="frame" x="0.0" y="77.666666666666515" width="364" height="50"/>
+                                                                        <rect key="frame" x="0.0" y="77.666666666666742" width="364" height="50"/>
                                                                         <subviews>
                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GJY-YE-gZj">
                                                                                 <rect key="frame" x="35" y="5" width="294" height="45"/>
@@ -1029,14 +1025,14 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aIo-os-1Jh">
-                                                <rect key="frame" x="25" y="1239.3333333333333" width="364" height="100"/>
+                                                <rect key="frame" x="25" y="1235.6666666666667" width="364" height="100"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDW-si-TSf">
                                                         <rect key="frame" x="0.0" y="0.0" width="364" height="100"/>
                                                         <subviews>
                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Company" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enI-9O-4QJ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="113.33333333333333" height="20.666666666666668"/>
-                                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="104.66666666666667" height="17"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -1044,12 +1040,12 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVV-eh-iw7">
-                                                                <rect key="frame" x="0.0" y="28.666666666666735" width="364" height="71.333333333333314"/>
+                                                                <rect key="frame" x="0.0" y="25" width="364" height="75"/>
                                                                 <subviews>
                                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Write a brief about your company" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gJY-D2-d59">
-                                                                        <rect key="frame" x="35" y="12.000000000000004" width="317" height="47.333333333333343"/>
+                                                                        <rect key="frame" x="35" y="12" width="317" height="51"/>
                                                                         <color key="textColor" name="blackColor"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
@@ -1090,13 +1086,13 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smX-qH-VKy" customClass="TransitionButton" customModule="TransitionButton">
-                                                <rect key="frame" x="82" y="1445.6666666666667" width="250" height="50"/>
+                                                <rect key="frame" x="82" y="1442" width="250" height="50"/>
                                                 <color key="backgroundColor" name="#0093F5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="4g0-iC-Z7m"/>
                                                     <constraint firstAttribute="width" constant="250" id="fx8-fs-E68"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="17.5"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17.5"/>
                                                 <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title="Register">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1112,11 +1108,11 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u7Y-2R-wRw">
-                                                <rect key="frame" x="117" y="126.00000000000001" width="180" height="20.666666666666671"/>
+                                                <rect key="frame" x="125.33333333333333" y="126" width="163.66666666666669" height="17"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload the company logo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZa-xD-Rds">
-                                                        <rect key="frame" x="0.0" y="0.0" width="180" height="20.666666666666668"/>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="163.66666666666666" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
@@ -1126,7 +1122,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dyd-7C-6yA">
-                                                <rect key="frame" x="60.666666666666657" y="1370.6666666666667" width="293" height="25"/>
+                                                <rect key="frame" x="67.333333333333343" y="1367" width="279.33333333333326" height="25"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odA-Qh-WRu">
                                                         <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
@@ -1141,11 +1137,11 @@
                                                         </connections>
                                                     </button>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGo-Ka-nNg">
-                                                        <rect key="frame" x="35" y="0.0" width="258" height="25"/>
+                                                        <rect key="frame" x="35.000000000000014" y="0.0" width="244.33333333333337" height="25"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I agree to the " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ac-2Y-OrW">
-                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="25"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="92.333333333333329" height="25"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -1153,8 +1149,8 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbg-Ee-j0A">
-                                                                <rect key="frame" x="100" y="0.0" width="158" height="25"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <rect key="frame" x="92.333333333333314" y="0.0" width="152" height="25"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="Terms and Conditions">
                                                                     <color key="titleColor" name="#0093F5"/>
@@ -1172,7 +1168,7 @@
                                                 <viewLayoutGuide key="safeArea" id="65D-ad-j0y"/>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nSO-zd-Epr">
-                                                <rect key="frame" x="25" y="1083.3333333333333" width="364" height="140"/>
+                                                <rect key="frame" x="25" y="1079.6666666666667" width="364" height="140"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="XFN-72-Cyy">
                                                         <rect key="frame" x="35" y="0.0" width="294" height="140"/>
@@ -1184,7 +1180,7 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
                                                                         <subviews>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pickStoreLicense" translatesAutoresizingMaskIntoConstraints="NO" id="ZR1-rT-ayQ">
-                                                                                <rect key="frame" x="7.6666666666666714" y="7.3333333333334849" width="30" height="30"/>
+                                                                                <rect key="frame" x="7.6666666666666714" y="7.3333333333332575" width="30" height="30"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" secondItem="ZR1-rT-ayQ" secondAttribute="height" multiplier="1:1" id="CTe-7r-Pz4"/>
                                                                                     <constraint firstAttribute="width" constant="30" id="rdS-Ru-5F8"/>
@@ -1201,7 +1197,7 @@
                                                                     </view>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The company's trade license" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bb2-Z5-JL8">
                                                                         <rect key="frame" x="49" y="0.0" width="245" height="45"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                         <userDefinedRuntimeAttributes>
@@ -1264,11 +1260,11 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="xcw-2F-FPO">
-                                                <rect key="frame" x="133.66666666666669" y="1515.6666666666667" width="146.66666666666669" height="32"/>
+                                                <rect key="frame" x="136" y="1512" width="142" height="30"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have Account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zht-Kn-6FN">
-                                                        <rect key="frame" x="0.0" y="0.0" width="102.66666666666667" height="32"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="99" height="30"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
@@ -1276,8 +1272,8 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMB-AS-v7c">
-                                                        <rect key="frame" x="106.66666666666669" y="0.0" width="40" height="32"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <rect key="frame" x="103" y="0.0" width="39" height="30"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Login">
                                                             <color key="titleColor" name="#0093F5"/>
@@ -1394,7 +1390,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your company has been successfully registered" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbr-NE-4Fc">
-                                                <rect key="frame" x="20" y="220" width="353" height="58.333333333333314"/>
+                                                <rect key="frame" x="20" y="220" width="353" height="56"/>
                                                 <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="25"/>
                                                 <color key="textColor" red="0.0" green="0.22352941179999999" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1403,7 +1399,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgx-qm-rmx">
-                                                <rect key="frame" x="42" y="298.33333333333337" width="309.33333333333331" height="46.666666666666686"/>
+                                                <rect key="frame" x="50" y="296" width="293.33333333333331" height="44.666666666666686"/>
                                                 <string key="text">It will be reviewed by management
 To get free ads</string>
                                                 <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="20"/>
@@ -1414,7 +1410,7 @@ To get free ads</string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSM-vg-YwR">
-                                                <rect key="frame" x="88.333333333333329" y="395" width="216.33333333333337" height="45"/>
+                                                <rect key="frame" x="88.333333333333329" y="390.66666666666663" width="216.33333333333337" height="45"/>
                                                 <color key="backgroundColor" name="#0093F5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="AQr-fb-zST"/>
@@ -1581,8 +1577,8 @@ To get free ads</string>
                                                         <rect key="frame" x="0.0" y="0.0" width="364" height="31.666666666666668"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dY4-a4-BXU" userLabel="اسم المستخدم او رقم الجوال">
-                                                                <rect key="frame" x="0.0" y="0.0" width="123.66666666666667" height="31.666666666666668"/>
-                                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="116.33333333333333" height="31.666666666666668"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -1590,7 +1586,7 @@ To get free ads</string>
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bvr-MB-C3d" userLabel="اسم المستخدم او رقم الجوال">
-                                                                <rect key="frame" x="123.66666666666664" y="0.0" width="240.33333333333337" height="31.666666666666668"/>
+                                                                <rect key="frame" x="116.33333333333336" y="0.0" width="247.66666666666663" height="31.666666666666668"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" systemColor="systemRedColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -1602,7 +1598,7 @@ To get free ads</string>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I7L-3u-n8g">
                                                                 <rect key="frame" x="55" y="5" width="301" height="50"/>
-                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="12.5"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="12.5"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
@@ -1663,8 +1659,8 @@ To get free ads</string>
                                                                         <rect key="frame" x="0.0" y="0.0" width="364" height="54.666666666666664"/>
                                                                         <subviews>
                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company activity" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g11-Gi-fUh">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="133.33333333333334" height="54.666666666666664"/>
-                                                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="126.66666666666667" height="54.666666666666664"/>
+                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                                 <userDefinedRuntimeAttributes>
@@ -1672,7 +1668,7 @@ To get free ads</string>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </label>
                                                                             <label opaque="NO" contentMode="left" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rua-tp-r5U">
-                                                                                <rect key="frame" x="133.33333333333337" y="0.0" width="230.66666666666663" height="54.666666666666664"/>
+                                                                                <rect key="frame" x="126.66666666666664" y="0.0" width="237.33333333333337" height="54.666666666666664"/>
                                                                                 <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="17"/>
                                                                                 <color key="textColor" systemColor="systemRedColor"/>
                                                                                 <nil key="highlightedColor"/>
@@ -1685,7 +1681,7 @@ To get free ads</string>
                                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Activity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fks-yd-M5j">
                                                                                 <rect key="frame" x="55" y="0.0" width="301" height="55"/>
                                                                                 <color key="textColor" name="blackColor"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                 <textInputTraits key="textInputTraits"/>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
@@ -1730,11 +1726,11 @@ To get free ads</string>
                                                                         <rect key="frame" x="0.0" y="0.0" width="364" height="52.666666666666664"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3QZ-kR-XRV">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="66.666666666666671" height="52.666666666666664"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="61.333333333333336" height="52.666666666666664"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVM-mm-lQ0" userLabel="اسم المستخدم او رقم الجوال">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="54.666666666666664" height="52.666666666666664"/>
-                                                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="49.333333333333336" height="52.666666666666664"/>
+                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
                                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -1742,7 +1738,7 @@ To get free ads</string>
                                                                                         </userDefinedRuntimeAttributes>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text=" *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9d-Ew-66H" userLabel="اسم المستخدم او رقم الجوال">
-                                                                                        <rect key="frame" x="54.666666666666671" y="0.0" width="12" height="52.666666666666664"/>
+                                                                                        <rect key="frame" x="49.333333333333329" y="0.0" width="12" height="52.666666666666664"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" systemColor="systemRedColor"/>
                                                                                         <nil key="highlightedColor"/>
@@ -1750,7 +1746,8 @@ To get free ads</string>
                                                                                 </subviews>
                                                                             </stackView>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uq7-Th-OQZ">
-                                                                                <rect key="frame" x="300" y="0.0" width="64" height="52.666666666666664"/>
+                                                                                <rect key="frame" x="303" y="0.0" width="61" height="52.666666666666664"/>
+                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
                                                                                 <color key="tintColor" systemColor="systemRedColor"/>
                                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                                 <state key="normal" title="(Change)"/>
@@ -1777,7 +1774,7 @@ To get free ads</string>
                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TQV-1d-TaZ">
                                                                                 <rect key="frame" x="55" y="5" width="219" height="50"/>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16.5"/>
+                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="ASCIICapableNumberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
@@ -1802,7 +1799,7 @@ To get free ads</string>
                                                                                         </constraints>
                                                                                     </imageView>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="965" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxe-1x-InJ">
-                                                                                        <rect key="frame" x="47" y="22.666666666666742" width="24.333333333333329" height="15.666666666666664"/>
+                                                                                        <rect key="frame" x="47" y="21.333333333333371" width="26" height="18.333333333333329"/>
                                                                                         <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="15.5"/>
                                                                                         <color key="textColor" white="0.0" alpha="0.93636670649999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <nil key="highlightedColor"/>
@@ -1888,8 +1885,8 @@ To get free ads</string>
                                                                                 <rect key="frame" x="0.0" y="0.0" width="364" height="52.666666666666664"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WhatsApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LV-LN-T8N" userLabel="اسم المستخدم او رقم الجوال">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="82" height="52.666666666666664"/>
-                                                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="77.666666666666671" height="52.666666666666664"/>
+                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
                                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -1897,7 +1894,7 @@ To get free ads</string>
                                                                                         </userDefinedRuntimeAttributes>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VT-qh-aSr" userLabel="اسم المستخدم او رقم الجوال">
-                                                                                        <rect key="frame" x="99" y="0.0" width="265" height="52.666666666666664"/>
+                                                                                        <rect key="frame" x="94.666666666666657" y="0.0" width="269.33333333333337" height="52.666666666666664"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" systemColor="systemRedColor"/>
                                                                                         <nil key="highlightedColor"/>
@@ -1917,7 +1914,7 @@ To get free ads</string>
                                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="WhatsApp" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zki-vy-Mb1">
                                                                                         <rect key="frame" x="55" y="10" width="301" height="35"/>
                                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16.5"/>
+                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
                                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                                                                         <userDefinedRuntimeAttributes>
                                                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
@@ -1968,8 +1965,8 @@ To get free ads</string>
                                                                                 <rect key="frame" x="0.0" y="0.0" width="292" height="52.666666666666664"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaZ-a5-vXW" userLabel="اسم المستخدم او رقم الجوال">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="43" height="52.666666666666664"/>
-                                                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="42" height="52.666666666666664"/>
+                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
                                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -1977,7 +1974,7 @@ To get free ads</string>
                                                                                         </userDefinedRuntimeAttributes>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiX-Xt-zRD" userLabel="اسم المستخدم او رقم الجوال">
-                                                                                        <rect key="frame" x="43" y="0.0" width="249" height="52.666666666666664"/>
+                                                                                        <rect key="frame" x="42" y="0.0" width="250" height="52.666666666666664"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" systemColor="systemRedColor"/>
                                                                                         <nil key="highlightedColor"/>
@@ -2022,7 +2019,7 @@ To get free ads</string>
                                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cDh-o3-T1Z">
                                                                                 <rect key="frame" x="42" y="0.0" width="322" height="55"/>
                                                                                 <color key="textColor" name="blackColor"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                 <textInputTraits key="textInputTraits"/>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
@@ -2059,7 +2056,7 @@ To get free ads</string>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUQ-u5-Ryi" userLabel="اسم المستخدم او رقم الجوال">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="172" height="52.666666666666664"/>
-                                                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
                                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -2088,7 +2085,7 @@ To get free ads</string>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="height" constant="55" id="DAq-1O-1rY"/>
                                                                                         </constraints>
-                                                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16.5"/>
+                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
                                                                                         <state key="normal">
                                                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         </state>
@@ -2134,7 +2131,7 @@ To get free ads</string>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Region" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XB-n4-fBa" userLabel="اسم المستخدم او رقم الجوال">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="172" height="52.666666666666664"/>
-                                                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
                                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -2148,7 +2145,7 @@ To get free ads</string>
                                                                                 <subviews>
                                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbP-M8-Cnu">
                                                                                         <rect key="frame" x="8" y="0.0" width="154" height="55"/>
-                                                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16.5"/>
+                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
                                                                                         <state key="normal">
                                                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         </state>
@@ -2209,11 +2206,11 @@ To get free ads</string>
                                                                         <rect key="frame" x="0.0" y="0.0" width="364" height="47.666666666666664"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ekq-8E-DQr">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="102.66666666666667" height="47.666666666666664"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="103" height="47.666666666666664"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZxQ-Of-bI4" userLabel="اسم المستخدم او رقم الجوال">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="73" height="47.666666666666664"/>
-                                                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="73.333333333333329" height="47.666666666666664"/>
+                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
                                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -2221,7 +2218,7 @@ To get free ads</string>
                                                                                         </userDefinedRuntimeAttributes>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text=" " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmh-n3-Z9R" userLabel="اسم المستخدم او رقم الجوال">
-                                                                                        <rect key="frame" x="98" y="0.0" width="4.6666666666666714" height="47.666666666666664"/>
+                                                                                        <rect key="frame" x="98.333333333333329" y="0.0" width="4.6666666666666714" height="47.666666666666664"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" systemColor="systemRedColor"/>
                                                                                         <nil key="highlightedColor"/>
@@ -2229,7 +2226,8 @@ To get free ads</string>
                                                                                 </subviews>
                                                                             </stackView>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9RH-0g-SSd">
-                                                                                <rect key="frame" x="300" y="0.0" width="64" height="47.666666666666664"/>
+                                                                                <rect key="frame" x="303" y="0.0" width="61" height="47.666666666666664"/>
+                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
                                                                                 <color key="tintColor" systemColor="systemRedColor"/>
                                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                                 <state key="normal" title="(Change)"/>
@@ -2258,7 +2256,7 @@ To get free ads</string>
                                                                                     <constraint firstAttribute="height" constant="55" id="aFQ-4a-eH6"/>
                                                                                 </constraints>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16.5"/>
+                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
@@ -2330,8 +2328,8 @@ To get free ads</string>
                                                         <rect key="frame" x="0.0" y="0.0" width="364" height="120"/>
                                                         <subviews>
                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Company" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mut-Ig-Tv6">
-                                                                <rect key="frame" x="0.0" y="0.0" width="113.33333333333333" height="20.666666666666668"/>
-                                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="104.66666666666667" height="17"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -2339,7 +2337,7 @@ To get free ads</string>
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ce-IN-zz9">
-                                                                <rect key="frame" x="0.0" y="28.666666666666508" width="364" height="91.333333333333314"/>
+                                                                <rect key="frame" x="0.0" y="25" width="364" height="95"/>
                                                                 <subviews>
                                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yvg-gQ-ZIU" customClass="NextGrowingTextView" customModule="NextGrowingTextView">
                                                                         <rect key="frame" x="10" y="10" width="344" height="109"/>
@@ -2353,8 +2351,8 @@ To get free ads</string>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="About Company" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f9M-YS-aHN">
-                                                                        <rect key="frame" x="8" y="12" width="348" height="67.333333333333329"/>
-                                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16.5"/>
+                                                                        <rect key="frame" x="8" y="12" width="348" height="71"/>
+                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
@@ -2409,7 +2407,7 @@ To get free ads</string>
                                                     <constraint firstAttribute="width" constant="200" id="KDx-md-IXB"/>
                                                     <constraint firstAttribute="height" constant="50" id="X0X-vI-3By"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="17.5"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17.5"/>
                                                 <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title="Save">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2581,8 +2579,8 @@ To get free ads</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ls-qr-xri">
-                                        <rect key="frame" x="165.66666666666666" y="18.666666666666671" width="83" height="18"/>
-                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="18"/>
+                                        <rect key="frame" x="165" y="17.333333333333329" width="84.333333333333314" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="18"/>
                                         <color key="textColor" name="blackColor"/>
                                         <nil key="highlightedColor"/>
                                         <userDefinedRuntimeAttributes>
@@ -2647,16 +2645,16 @@ To get free ads</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="08O-Ck-7oc" userLabel="Cover">
-                                <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="270"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="270"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover" translatesAutoresizingMaskIntoConstraints="NO" id="kR5-Kq-jKH">
-                                        <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="270"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="270"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="270" id="MIz-Kq-GXs"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWL-TP-We5">
-                                        <rect key="frame" x="196.66666666666666" y="70" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="300" y="70" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
                                         <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2675,7 +2673,7 @@ To get free ads</string>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ntg-jy-czY">
-                                        <rect key="frame" x="318.33333333333331" y="50" width="55" height="220"/>
+                                        <rect key="frame" x="525" y="50" width="55" height="220"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FME-gY-Fpp">
                                                 <rect key="frame" x="0.0" y="0.0" width="55" height="220"/>
@@ -2687,13 +2685,13 @@ To get free ads</string>
                                                         <rect key="frame" x="0.0" y="55" width="55" height="55"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_redFlag" translatesAutoresizingMaskIntoConstraints="NO" id="RC4-uj-B2w">
-                                                        <rect key="frame" x="8.3333333333333144" y="110" width="38" height="55"/>
+                                                        <rect key="frame" x="8.6666666666666856" y="110" width="38" height="55"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="38" id="PXi-26-VWQ"/>
                                                         </constraints>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="block_mnu" translatesAutoresizingMaskIntoConstraints="NO" id="MAn-VQ-RyD">
-                                                        <rect key="frame" x="8.3333333333333144" y="165" width="38" height="55"/>
+                                                        <rect key="frame" x="8.6666666666666856" y="165" width="38" height="55"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="38" id="TUJ-8f-wYn"/>
                                                         </constraints>
@@ -2803,7 +2801,7 @@ To get free ads</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EoM-AX-vYt">
-                                <rect key="frame" x="131.66666666666666" y="190" width="129.99999999999997" height="130"/>
+                                <rect key="frame" x="235" y="190" width="130" height="130"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpk-Uv-nGK">
                                         <rect key="frame" x="-20" y="-20" width="50" height="50"/>
@@ -2860,19 +2858,19 @@ To get free ads</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="3" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="vrI-s8-TLB">
-                                <rect key="frame" x="0.0" y="320" width="393.33333333333331" height="498"/>
+                                <rect key="frame" x="0.0" y="320" width="600" height="498"/>
                                 <subviews>
                                     <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l6f-8f-epB">
-                                        <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="901.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="900"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="KzO-d7-TPF">
-                                                <rect key="frame" x="181" y="10" width="31.333333333333343" height="83.666666666666671"/>
+                                                <rect key="frame" x="287" y="10" width="26" height="82"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="X3h-4c-VTV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="31.333333333333332" height="45.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="26" height="44.666666666666664"/>
                                                         <subviews>
                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SuN-wU-9u5">
-                                                                <rect key="frame" x="0.0" y="0.0" width="31.333333333333332" height="30"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="26" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="zmw-cL-rxT"/>
                                                                 </constraints>
@@ -2881,7 +2879,7 @@ To get free ads</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQ8-zy-CIe">
-                                                                <rect key="frame" x="0.0" y="29.999999999999996" width="31.333333333333332" height="15.333333333333332"/>
+                                                                <rect key="frame" x="0.0" y="30.000000000000004" width="26" height="14.666666666666668"/>
                                                                 <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="13"/>
                                                                 <color key="textColor" name="#0093F5"/>
                                                                 <nil key="highlightedColor"/>
@@ -2889,7 +2887,7 @@ To get free ads</string>
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="----" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nyq-dJ-svG">
-                                                        <rect key="frame" x="0.0" y="60.333333333333321" width="31.333333333333332" height="23.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="59.666666666666693" width="26" height="22.333333333333336"/>
                                                         <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="20"/>
                                                         <color key="textColor" name="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -2897,25 +2895,25 @@ To get free ads</string>
                                                 </subviews>
                                             </stackView>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rqM-WW-UvQ">
-                                                <rect key="frame" x="0.0" y="198.66666666666663" width="393.33333333333331" height="70"/>
+                                                <rect key="frame" x="0.0" y="197" width="600" height="70"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Mai-rh-1Nv">
-                                                        <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="70"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TSk-DR-vnB">
-                                                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="70"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="70"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="HYn-4j-qUq">
-                                                                        <rect key="frame" x="0.0" y="10" width="98.333333333333329" height="60"/>
+                                                                        <rect key="frame" x="0.0" y="10" width="150" height="60"/>
                                                                         <subviews>
                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EO-Ot-e7x">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="32.666666666666664"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="32.666666666666664"/>
                                                                                 <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="18"/>
                                                                                 <color key="textColor" name="#0093F5"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G85-QK-09T" userLabel="يتابع">
-                                                                                <rect key="frame" x="0.0" y="27.666666666666746" width="98.333333333333329" height="32.333333333333343"/>
+                                                                                <rect key="frame" x="0.0" y="27.666666666666632" width="150" height="32.333333333333343"/>
                                                                                 <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
@@ -2926,14 +2924,14 @@ To get free ads</string>
                                                                         </subviews>
                                                                     </stackView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j19-aj-SSD">
-                                                                        <rect key="frame" x="97.333333333333329" y="12" width="1" height="46"/>
+                                                                        <rect key="frame" x="149" y="12" width="1" height="46"/>
                                                                         <color key="backgroundColor" red="0.80784313730000001" green="0.83137254900000002" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="1" id="Loi-eb-rae"/>
                                                                         </constraints>
                                                                     </view>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCi-fO-yQL">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="70"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="70"/>
                                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                         <connections>
                                                                             <action selector="didTapMyAdsButtons:" destination="GKQ-C2-D3L" eventType="touchUpInside" id="6za-p1-9DG"/>
@@ -2955,19 +2953,19 @@ To get free ads</string>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OIv-5k-Zng">
-                                                                <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="70"/>
+                                                                <rect key="frame" x="150" y="0.0" width="150" height="70"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="jfQ-KS-8rG">
-                                                                        <rect key="frame" x="0.0" y="10" width="98.333333333333329" height="60"/>
+                                                                        <rect key="frame" x="0.0" y="10" width="150" height="60"/>
                                                                         <subviews>
                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zew-2C-qx7">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="32.666666666666664"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="32.666666666666664"/>
                                                                                 <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="18"/>
                                                                                 <color key="textColor" name="#0093F5"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAq-X4-i8K" userLabel="متابعون">
-                                                                                <rect key="frame" x="0.0" y="27.666666666666746" width="98.333333333333329" height="32.333333333333343"/>
+                                                                                <rect key="frame" x="0.0" y="27.666666666666632" width="150" height="32.333333333333343"/>
                                                                                 <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
@@ -2978,14 +2976,14 @@ To get free ads</string>
                                                                         </subviews>
                                                                     </stackView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nnj-MB-KYw">
-                                                                        <rect key="frame" x="97.333333333333329" y="12" width="1" height="46"/>
+                                                                        <rect key="frame" x="149" y="12" width="1" height="46"/>
                                                                         <color key="backgroundColor" red="0.80784313730000001" green="0.83137254900000002" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="1" id="3pE-PH-7dH"/>
                                                                         </constraints>
                                                                     </view>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4c-29-79Z">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="70"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="70"/>
                                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     </button>
                                                                 </subviews>
@@ -3004,19 +3002,19 @@ To get free ads</string>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdA-HD-ak6">
-                                                                <rect key="frame" x="196.66666666666666" y="0.0" width="98.333333333333343" height="70"/>
+                                                                <rect key="frame" x="300" y="0.0" width="150" height="70"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="NFk-hw-1Uu">
-                                                                        <rect key="frame" x="0.0" y="10" width="98.333333333333329" height="60"/>
+                                                                        <rect key="frame" x="0.0" y="10" width="150" height="60"/>
                                                                         <subviews>
                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0X7-Ib-h3V">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="32.666666666666664"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="32.666666666666664"/>
                                                                                 <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="18"/>
                                                                                 <color key="textColor" name="#0093F5"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Followers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJ0-tX-Z38">
-                                                                                <rect key="frame" x="0.0" y="27.666666666666746" width="98.333333333333329" height="32.333333333333343"/>
+                                                                                <rect key="frame" x="0.0" y="27.666666666666632" width="150" height="32.333333333333343"/>
                                                                                 <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
@@ -3027,14 +3025,14 @@ To get free ads</string>
                                                                         </subviews>
                                                                     </stackView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q8T-Ic-UEE">
-                                                                        <rect key="frame" x="97.333333333333343" y="12" width="1" height="46"/>
+                                                                        <rect key="frame" x="149" y="12" width="1" height="46"/>
                                                                         <color key="backgroundColor" red="0.80784313730000001" green="0.83137254900000002" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="1" id="J8E-Sl-6pU"/>
                                                                         </constraints>
                                                                     </view>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1n-Sf-4Mx">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="70"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="70"/>
                                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                         <connections>
                                                                             <action selector="didTapFollowersButton:" destination="GKQ-C2-D3L" eventType="touchUpInside" id="Hog-gF-06k"/>
@@ -3056,19 +3054,19 @@ To get free ads</string>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b53-So-dmF">
-                                                                <rect key="frame" x="295" y="0.0" width="98.333333333333314" height="70"/>
+                                                                <rect key="frame" x="450" y="0.0" width="150" height="70"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="O5S-dI-A10">
-                                                                        <rect key="frame" x="0.0" y="10" width="98.333333333333329" height="60"/>
+                                                                        <rect key="frame" x="0.0" y="10" width="150" height="60"/>
                                                                         <subviews>
                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYc-0Z-Zcp">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="32.666666666666664"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="32.666666666666664"/>
                                                                                 <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="18"/>
                                                                                 <color key="textColor" name="#0093F5"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Followings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4A-UX-aF6">
-                                                                                <rect key="frame" x="0.0" y="27.666666666666746" width="98.333333333333329" height="32.333333333333343"/>
+                                                                                <rect key="frame" x="0.0" y="27.666666666666632" width="150" height="32.333333333333343"/>
                                                                                 <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
@@ -3079,14 +3077,14 @@ To get free ads</string>
                                                                         </subviews>
                                                                     </stackView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nkL-r7-h6M">
-                                                                        <rect key="frame" x="97.333333333333314" y="15" width="1" height="30"/>
+                                                                        <rect key="frame" x="149" y="15" width="1" height="30"/>
                                                                         <color key="backgroundColor" red="0.80784313730000001" green="0.83137254900000002" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="1" id="6vI-rk-Abm"/>
                                                                         </constraints>
                                                                     </view>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkx-2N-tIC">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="70"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="70"/>
                                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                         <connections>
                                                                             <action selector="didTapFollowingsButton:" destination="GKQ-C2-D3L" eventType="touchUpInside" id="E83-7k-kNi"/>
@@ -3137,7 +3135,7 @@ To get free ads</string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1kk-u4-Wbp">
-                                                <rect key="frame" x="5" y="416.66666666666663" width="383.33333333333331" height="485"/>
+                                                <rect key="frame" x="5" y="415" width="590" height="485"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="485" id="8lc-tj-rQs"/>
@@ -3150,7 +3148,7 @@ To get free ads</string>
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StoreProductCell" id="7au-Sg-1Sd" customClass="ProductCollectionViewCell" customModule="Hunter" customModuleProvider="target">
-                                                        <rect key="frame" x="32.666666666666664" y="0.0" width="318" height="155"/>
+                                                        <rect key="frame" x="136" y="0.0" width="318" height="155"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yLm-mN-vb5">
                                                             <rect key="frame" x="0.0" y="0.0" width="318" height="155"/>
@@ -3190,8 +3188,8 @@ To get free ads</string>
                                                                                                 </userDefinedRuntimeAttribute>
                                                                                             </userDefinedRuntimeAttributes>
                                                                                         </imageView>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:45 AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qW2-sj-VdJ">
-                                                                                            <rect key="frame" x="267" y="2.6666666666666661" width="43" height="20"/>
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:45 AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qW2-sj-VdJ" customClass="PaddingLabel" customModule="Hunter" customModuleProvider="target">
+                                                                                            <rect key="frame" x="274" y="2.6666666666666661" width="36" height="20"/>
                                                                                             <color key="backgroundColor" name="#E2E1E1"/>
                                                                                             <constraints>
                                                                                                 <constraint firstAttribute="height" constant="20" id="ckU-Y2-iXz"/>
@@ -3223,7 +3221,7 @@ To get free ads</string>
                                                                                             <rect key="frame" x="260" y="57.333333333333329" width="50" height="20"/>
                                                                                             <subviews>
                                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="بيع" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHw-B0-Yhy">
-                                                                                                    <rect key="frame" x="19" y="3.6666666666666714" width="12" height="13"/>
+                                                                                                    <rect key="frame" x="18" y="4.0000000000000009" width="14" height="12.333333333333336"/>
                                                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                     <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="11"/>
                                                                                                     <color key="textColor" red="0.98039215690000003" green="0.98000001910000001" blue="0.98000001910000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3244,16 +3242,16 @@ To get free ads</string>
                                                                                             </userDefinedRuntimeAttributes>
                                                                                         </view>
                                                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GXX-Ue-4LR" userLabel="Price Stack View">
-                                                                                            <rect key="frame" x="8" y="63.333333333333329" width="32.666666666666664" height="14"/>
+                                                                                            <rect key="frame" x="8" y="63.66666666666665" width="35.333333333333336" height="13.666666666666664"/>
                                                                                             <subviews>
                                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="د.ك" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0J2-ev-NlK">
-                                                                                                    <rect key="frame" x="0.0" y="0.0" width="12.333333333333334" height="14"/>
+                                                                                                    <rect key="frame" x="0.0" y="0.0" width="17" height="13.666666666666666"/>
                                                                                                     <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="10"/>
                                                                                                     <color key="textColor" name="#0EBFB1"/>
                                                                                                     <nil key="highlightedColor"/>
                                                                                                 </label>
                                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPK-s8-8vf">
-                                                                                                    <rect key="frame" x="12.333333333333334" y="0.0" width="20.333333333333329" height="14"/>
+                                                                                                    <rect key="frame" x="17" y="0.0" width="18.333333333333329" height="13.666666666666666"/>
                                                                                                     <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="12"/>
                                                                                                     <color key="textColor" name="#0EBFB1"/>
                                                                                                     <nil key="highlightedColor"/>
@@ -3282,7 +3280,7 @@ To get free ads</string>
                                                                                                     </subviews>
                                                                                                 </stackView>
                                                                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bd0-Ur-cnW">
-                                                                                                    <rect key="frame" x="219.33333333333334" y="0.0" width="78.666666666666657" height="16"/>
+                                                                                                    <rect key="frame" x="215.33333333333334" y="0.0" width="82.666666666666657" height="16"/>
                                                                                                     <subviews>
                                                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Path 5" translatesAutoresizingMaskIntoConstraints="NO" id="z06-gg-iKr">
                                                                                                             <rect key="frame" x="0.0" y="0.6666666666666714" width="15" height="15"/>
@@ -3292,13 +3290,13 @@ To get free ads</string>
                                                                                                             </constraints>
                                                                                                         </imageView>
                                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="احمد محمد" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="8FK-Ac-lgh">
-                                                                                                            <rect key="frame" x="22.999999999999996" y="2.6666666666666705" width="35.666666666666657" height="10.666666666666664"/>
+                                                                                                            <rect key="frame" x="22.999999999999996" y="3.0000000000000009" width="39.666666666666657" height="10.333333333333336"/>
                                                                                                             <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="9"/>
                                                                                                             <color key="textColor" name="#0EBFB1"/>
                                                                                                             <nil key="highlightedColor"/>
                                                                                                         </label>
                                                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon feather-user" translatesAutoresizingMaskIntoConstraints="NO" id="Pdx-wr-E9F">
-                                                                                                            <rect key="frame" x="66.666666666666657" y="0.6666666666666714" width="12" height="15"/>
+                                                                                                            <rect key="frame" x="70.666666666666657" y="0.6666666666666714" width="12" height="15"/>
                                                                                                             <constraints>
                                                                                                                 <constraint firstAttribute="height" constant="15" id="TzU-Dx-9Nf"/>
                                                                                                                 <constraint firstAttribute="width" constant="12" id="qul-AY-o4L"/>
@@ -3309,10 +3307,10 @@ To get free ads</string>
                                                                                             </subviews>
                                                                                         </stackView>
                                                                                         <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="13p-TL-q1V">
-                                                                                            <rect key="frame" x="10" y="9.9999999999999964" width="298" height="48.333333333333329"/>
+                                                                                            <rect key="frame" x="10" y="9.9999999999999964" width="298" height="48.666666666666657"/>
                                                                                             <subviews>
                                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.89999997615814209" translatesAutoresizingMaskIntoConstraints="NO" id="vXa-Ki-fBn">
-                                                                                                    <rect key="frame" x="0.0" y="0.0" width="298" height="48.333333333333336"/>
+                                                                                                    <rect key="frame" x="0.0" y="0.0" width="298" height="48.666666666666664"/>
                                                                                                     <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
                                                                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                     <nil key="highlightedColor"/>
@@ -3406,17 +3404,17 @@ To get free ads</string>
                                                 </connections>
                                             </collectionView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="FsW-Wf-skS">
-                                                <rect key="frame" x="8" y="109.66666666666669" width="377.33333333333331" height="73"/>
+                                                <rect key="frame" x="8" y="108" width="584" height="73"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Cqa-Ll-Qo7">
-                                                        <rect key="frame" x="36.666666666666657" y="0.0" width="304" height="16"/>
+                                                        <rect key="frame" x="133.99999999999997" y="0.0" width="316.33333333333326" height="16"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="TpY-11-F1U">
-                                                                <rect key="frame" x="0.0" y="0.0" width="132.66666666666666" height="16"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="137.66666666666666" height="16"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Your Current plan:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsJ-ga-XDB">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="99" height="16"/>
-                                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="13"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="101.66666666666667" height="16"/>
+                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="13"/>
                                                                         <color key="textColor" name="blackColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                         <userDefinedRuntimeAttributes>
@@ -3424,8 +3422,8 @@ To get free ads</string>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ly2-Ao-f6i">
-                                                                        <rect key="frame" x="102.99999999999999" y="0.0" width="29.666666666666671" height="16"/>
-                                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="13"/>
+                                                                        <rect key="frame" x="105.66666666666666" y="0.0" width="32" height="16"/>
+                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="13"/>
                                                                         <color key="textColor" name="#0093F5"/>
                                                                         <nil key="highlightedColor"/>
                                                                         <userDefinedRuntimeAttributes>
@@ -3435,11 +3433,11 @@ To get free ads</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" id="LS1-vY-jiN">
-                                                                <rect key="frame" x="182.66666666666669" y="0.0" width="121.33333333333331" height="13"/>
+                                                                <rect key="frame" x="187.66666666666669" y="0.0" width="128.66666666666669" height="15.333333333333334"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your have" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hv2-tt-UJv">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="53.333333333333336" height="16"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="57.333333333333336" height="16"/>
                                                                         <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="13"/>
                                                                         <color key="textColor" name="blackColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -3448,14 +3446,14 @@ To get free ads</string>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHS-aF-QwC">
-                                                                        <rect key="frame" x="58.33333333333335" y="0.0" width="13.333333333333336" height="16"/>
-                                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="13"/>
+                                                                        <rect key="frame" x="62.333333333333336" y="0.0" width="12.666666666666664" height="16"/>
+                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="13"/>
                                                                         <color key="textColor" name="#0093F5"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paid ads" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAg-f0-kNd">
-                                                                        <rect key="frame" x="76.666666666666657" y="0.0" width="44.666666666666657" height="16"/>
-                                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="13"/>
+                                                                        <rect key="frame" x="80.000000000000028" y="0.0" width="48.666666666666657" height="16"/>
+                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="13"/>
                                                                         <color key="textColor" name="blackColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                         <userDefinedRuntimeAttributes>
@@ -3471,7 +3469,7 @@ To get free ads</string>
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tDW-5C-QrL">
-                                                        <rect key="frame" x="53.666666666666657" y="28" width="270" height="45"/>
+                                                        <rect key="frame" x="157" y="28" width="270" height="45"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDR-27-3cU" userLabel="phone">
                                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
@@ -3514,7 +3512,7 @@ To get free ads</string>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9R-em-tEe" userLabel="twitter">
-                                                                <rect key="frame" x="225.00000000000003" y="0.0" width="44.999999999999972" height="45"/>
+                                                                <rect key="frame" x="225" y="0.0" width="45" height="45"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="45" id="mUC-fU-y1i"/>
                                                                     <constraint firstAttribute="width" secondItem="a9R-em-tEe" secondAttribute="height" multiplier="1:1" id="rYR-RD-gef"/>
@@ -3530,15 +3528,15 @@ To get free ads</string>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="G0E-SJ-UYw">
-                                                <rect key="frame" x="12" y="284.66666666666663" width="369.33333333333331" height="116"/>
+                                                <rect key="frame" x="12" y="283" width="576" height="116"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMX-Ny-ojf">
-                                                        <rect key="frame" x="0.0" y="0.0" width="369.33333333333331" height="55"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="576" height="55"/>
                                                         <color key="backgroundColor" name="#0093F5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="55" id="SZh-ly-Mwe"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="20"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="STORES PACKAGES"/>
                                                         <userDefinedRuntimeAttributes>
@@ -3552,12 +3550,12 @@ To get free ads</string>
                                                         </connections>
                                                     </button>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="QVa-wg-i9n">
-                                                        <rect key="frame" x="0.0" y="71" width="369.33333333333331" height="45"/>
+                                                        <rect key="frame" x="0.0" y="71" width="576" height="45"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4r-Pn-S13">
-                                                                <rect key="frame" x="0.0" y="0.0" width="177.33333333333334" height="45"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="280.66666666666669" height="45"/>
                                                                 <color key="backgroundColor" name="#0093F5"/>
-                                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="18"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="Edit Profile"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -3571,7 +3569,7 @@ To get free ads</string>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxH-ts-tAc" customClass="TransitionButton" customModule="TransitionButton">
-                                                                <rect key="frame" x="192.33333333333337" y="0.0" width="177" height="45"/>
+                                                                <rect key="frame" x="295.66666666666674" y="0.0" width="280.33333333333326" height="45"/>
                                                                 <color key="backgroundColor" red="0.0" green="0.69411764710000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="18"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -3701,7 +3699,7 @@ To get free ads</string>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit social media" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BuY-n0-zlu">
-                                                <rect key="frame" x="129.33333333333331" y="40" width="134.33333333333331" height="19"/>
+                                                <rect key="frame" x="124" y="40" width="145" height="22.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="19"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -3710,7 +3708,7 @@ To get free ads</string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4GA-IE-0rD">
-                                                <rect key="frame" x="20" y="109" width="353" height="310"/>
+                                                <rect key="frame" x="20" y="112.33333333333331" width="353" height="310"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="olq-7k-KFe">
                                                         <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
@@ -3748,7 +3746,7 @@ To get free ads</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KdP-dD-DmF">
-                                                        <rect key="frame" x="0.0" y="65" width="353" height="50"/>
+                                                        <rect key="frame" x="0.0" y="65.000000000000057" width="353" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationSocial" translatesAutoresizingMaskIntoConstraints="NO" id="8KI-0U-nMI">
                                                                 <rect key="frame" x="8" y="4" width="40" height="42"/>
@@ -3783,7 +3781,7 @@ To get free ads</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="62s-0T-Jfu">
-                                                        <rect key="frame" x="0.0" y="130" width="353" height="50"/>
+                                                        <rect key="frame" x="0.0" y="130.00000000000006" width="353" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagramSocial" translatesAutoresizingMaskIntoConstraints="NO" id="ANS-fH-mXX">
                                                                 <rect key="frame" x="8" y="4" width="40" height="42"/>
@@ -3818,7 +3816,7 @@ To get free ads</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uY6-pG-wHj">
-                                                        <rect key="frame" x="0.0" y="195" width="353" height="50"/>
+                                                        <rect key="frame" x="0.0" y="195.00000000000006" width="353" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitterSocial" translatesAutoresizingMaskIntoConstraints="NO" id="dp8-mw-MOJ">
                                                                 <rect key="frame" x="8" y="4" width="40" height="42"/>
@@ -3853,7 +3851,7 @@ To get free ads</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCU-hh-wSZ">
-                                                        <rect key="frame" x="46.666666666666686" y="260" width="260" height="50"/>
+                                                        <rect key="frame" x="46.666666666666686" y="260.00000000000006" width="260" height="50"/>
                                                         <color key="backgroundColor" name="#0093F5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="6d1-mt-wjk"/>
@@ -3947,10 +3945,10 @@ To get free ads</string>
     </scenes>
     <designables>
         <designable name="bxH-ts-tAc">
-            <size key="intrinsicContentSize" width="74" height="33"/>
+            <size key="intrinsicContentSize" width="70" height="33"/>
         </designable>
         <designable name="smX-qH-VKy">
-            <size key="intrinsicContentSize" width="65" height="33"/>
+            <size key="intrinsicContentSize" width="65" height="32"/>
         </designable>
     </designables>
     <resources>

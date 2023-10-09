@@ -169,6 +169,7 @@ class HomeViewController: UIViewController {
         titleLabel.frame = CGRect(x: 30, y: 0, width: rightView.frame.width - 60, height: rightView.frame.height ) // Adjust the position and width of the label
              let categoryButton = UIButton(type: .custom)
      //        categoryButton.titleEdgeInsets = UIEdgeInsets(top: 0,left: 20,bottom: 0,right:20)
+        titleLabel.font = UIFont(name: "Almarai-Regular", size:13 )
         categoryButton.frame = rightView.bounds
         categoryButton.addTarget(self, action: #selector(didTapChangeCountryButton), for: .touchUpInside)
 
