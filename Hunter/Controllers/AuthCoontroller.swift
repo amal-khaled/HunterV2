@@ -9,7 +9,7 @@ import Foundation
 class AuthCoontroller{
     static let shared = AuthCoontroller()
     
-    func login(completion: @escaping(Int, String , UserLoginObject?)->(), phone: String, passwoord: String){
+    func login(completion: @escaping(Int, String , UserLoginObject?,Bool)->(), phone: String, passwoord: String){
         
         var param = [
                      "mobile": phone,
@@ -30,16 +30,16 @@ class AuthCoontroller{
 //                    AppDelegate.defaults.set( userObject.token ?? "", forKey: "token")
 //                    AppDelegate.defaults.set( userObject.data.id ?? 0, forKey: "userId")
                     AppDelegate.unVerifiedUserUser.toke = userObject.token ?? ""
-                    completion( 0,userObject.msg ?? "", userObject)
+                    completion( 0,userObject.msg ?? "", userObject,userObject.success)
                 }
                 else {
-                    completion(1,userObject.msg ?? "",nil)
+                    completion(1,userObject.msg ?? "",nil,userObject.success)
                 }
                 
             } catch (let jerrorr){
                 
                 print(jerrorr)
-                completion(1,SERVER_ERROR,nil)
+                completion(1,SERVER_ERROR,nil,false)
                 
                 
             }

@@ -497,7 +497,7 @@
                                                                                             <rect key="frame" x="0.0" y="83.333333333333343" width="311" height="20"/>
                                                                                             <subviews>
                                                                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DhL-dG-ZDR">
-                                                                                                    <rect key="frame" x="0.0" y="0.0" width="78" height="20"/>
+                                                                                                    <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="20"/>
                                                                                                     <subviews>
                                                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:X1q-81-Mm2:image" translatesAutoresizingMaskIntoConstraints="NO" id="X1q-81-Mm2">
                                                                                                             <rect key="frame" x="0.0" y="2.6666666666666856" width="12" height="15"/>
@@ -513,7 +513,7 @@
                                                                                                             <nil key="highlightedColor"/>
                                                                                                         </label>
                                                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:ALI-BK-M6X:image" translatesAutoresizingMaskIntoConstraints="NO" id="ALI-BK-M6X">
-                                                                                                            <rect key="frame" x="62.333333333333321" y="2.6666666666666856" width="15.666666666666664" height="15"/>
+                                                                                                            <rect key="frame" x="62.333333333333329" y="2.6666666666666856" width="15" height="15"/>
                                                                                                             <constraints>
                                                                                                                 <constraint firstAttribute="width" constant="15" id="C4h-eS-fSJ"/>
                                                                                                                 <constraint firstAttribute="height" constant="15" id="G5V-sZ-J1Y"/>
@@ -522,17 +522,17 @@
                                                                                                     </subviews>
                                                                                                 </stackView>
                                                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RfL-Ov-xOi">
-                                                                                                    <rect key="frame" x="252.33333333333329" y="0.0" width="58.666666666666657" height="20"/>
+                                                                                                    <rect key="frame" x="264.33333333333331" y="0.0" width="46.666666666666686" height="20"/>
                                                                                                     <subviews>
                                                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:oZa-1s-9cx:image" translatesAutoresizingMaskIntoConstraints="NO" id="oZa-1s-9cx">
-                                                                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                                                                            <rect key="frame" x="0.0" y="0.0" width="8" height="20"/>
                                                                                                             <constraints>
                                                                                                                 <constraint firstAttribute="width" constant="20" id="0xj-bS-vgC"/>
                                                                                                                 <constraint firstAttribute="height" constant="20" id="v6b-ct-eU5"/>
                                                                                                             </constraints>
                                                                                                         </imageView>
                                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Egypt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="QVZ-qd-5Qe">
-                                                                                                            <rect key="frame" x="28" y="0.0" width="30.666666666666671" height="20"/>
+                                                                                                            <rect key="frame" x="16" y="0.0" width="30.666666666666671" height="20"/>
                                                                                                             <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="12"/>
                                                                                                             <color key="textColor" name="textColor"/>
                                                                                                             <nil key="highlightedColor"/>

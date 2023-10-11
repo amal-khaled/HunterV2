@@ -423,6 +423,7 @@ extension UIViewController :NVActivityIndicatorViewable{
         }
     }
     
+    
     func diffDates(_ dateRangeEnd:Date) -> String {
         let dateRangeStart = Date()
         print(dateRangeStart)
@@ -496,7 +497,7 @@ extension UIViewController :NVActivityIndicatorViewable{
         components.second = Int(part2[2]) ?? 50
         components.timeZone = TimeZone(abbreviation: "UTC")
         let date = calendar?.date(from: components as DateComponents)
-        
+        print(date)
         return date!
     }
     

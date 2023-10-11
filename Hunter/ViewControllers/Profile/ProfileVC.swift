@@ -329,10 +329,10 @@ extension ProfileVC:UICollectionViewDelegate , UICollectionViewDataSource,UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 15.0
+        return 0.0
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 15.0
+        return 0.0
     }
     
     

@@ -19,7 +19,18 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var countryImage: UIImageView!
     var countryCode = "965"
    var isPasswordHidden = true
+    var countryId = 6
     @IBOutlet weak var loginBtn: TransitionButton!
+    
+    var countPhoneNumber: Int {
+        if countryId == 5 || countryId  == 10 {
+                return 9
+            }else if countryId == 2{
+                return  11
+            }else {
+                return 8
+            }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(textDidChange(_:)), name: UITextField.textDidChangeNotification, object: nil)
@@ -38,6 +49,7 @@ class LoginViewController: UIViewController {
             (country) in
             self.countryCode = country.code ?? ""
             self.coountryCode.text = country.code
+            self.countryId = country.id ?? 6
             self.countryImage.setImageWithLoading(url: country.image ??
             "")
             
@@ -114,11 +126,19 @@ extension LoginViewController : UITextFieldDelegate{
         return true
     }
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if (textField == phoneTF ){
-            let aSet = NSCharacterSet(charactersIn:"0123456789").inverted
-            let compSepByCharInSet = string.components(separatedBy: aSet)
-            let numberFiltered = compSepByCharInSet.joined(separator: "")
-            return string == numberFiltered
+//        if (textField == phoneTF ){
+//            let aSet = NSCharacterSet(charactersIn:"0123456789").inverted
+//            let compSepByCharInSet = string.components(separatedBy: aSet)
+//            let numberFiltered = compSepByCharInSet.joined(separator: "")
+//            return string == numberFiltered
+//        }
+//        return true
+        if textField == phoneTF{
+            let maxLength = countPhoneNumber
+               let currentString = (textField.text ?? "") as NSString
+               let newString = currentString.replacingCharacters(in: range, with: string)
+
+               return newString.count <= maxLength
         }
         return true
     }
@@ -188,11 +208,11 @@ extension LoginViewController{
              self.loginBtn.startAnimation()
              AppDelegate.currentUser = User()
              AuthCoontroller.shared.login(completion: {
-                 check, msg , data in
+                 check, msg , data,success in
                  self.loginBtn.stopAnimation(animationStyle: .normal, revertAfterDelay: 0, completion: nil)
                  StaticFunctions.enableBtnWithoutAlpha(btn: self.loginBtn, status: true)
 
-                 if check == 0{
+                 if check == 0 && success == true {
                      if let userObject = data {
 //                         print(userObject.data.codeVerify)
                          if userObject.data.codeVerify == 1 {

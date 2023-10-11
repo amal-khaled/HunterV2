@@ -733,6 +733,7 @@ extension AddAdvsVC {
                     self.cityList.append(city.nameEn ?? "")
                     //                    self.cityIDsList.append(city.id ?? 0)
                     print(self.cityList)
+                    self.cityIDsList.append(city.id ?? 0)
                 }
                 else{
                     self.cityList.append(city.nameAr ?? "")

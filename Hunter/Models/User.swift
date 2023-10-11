@@ -39,13 +39,13 @@ struct UserLoginObject: Codable{
     var code: Int!
     var msg: String!
     var token: String!
-
+    var success:Bool!
     enum CodingKeys: String, CodingKey {
         case data = "data"
         case code = "statusCode"
         case msg = "message"
         case token = "accessToken"
-
+        case success = "success"
     }
     
     
