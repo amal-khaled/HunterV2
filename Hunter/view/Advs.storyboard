@@ -13,14 +13,14 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="Medium.ttf">
-            <string>Tajawal-Medium</string>
+            <string>Almarai-Regular</string>
         </array>
         <array key="Tajawal-Bold.ttf">
-            <string>Tajawal-Bold</string>
+            <string>Almarai-Bold</string>
         </array>
         <array key="Tajawal-Regular.ttf">
             <string>Almarai-Regular</string>
-            <string>Tajawal-Regular</string>
+            <string>Almarai-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -47,7 +47,7 @@
                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تفاصيل الإعلان" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNa-Yh-5tL">
                                                                 <rect key="frame" x="0.0" y="0.0" width="384" height="17.5"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="17.5"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="17.5"/>
                                                                 <color key="textColor" red="0.054901960780000002" green="0.74901960779999999" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -774,7 +774,7 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" id="kmx-zb-tTz"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="12.600000381469727"/>
+                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="12.600000381469727"/>
                                                                         <color key="textColor" red="0.55394845950000005" green="0.58950815570000004" blue="0.61315293029999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -1082,7 +1082,7 @@
                                                                                                     </imageView>
                                                                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rl0-vx-jtx">
                                                                                                         <rect key="frame" x="24.000000000000028" y="0.0" width="28" height="15.333333333333334"/>
-                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="13"/>
+                                                                                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="13"/>
                                                                                                         <color key="textColor" red="0.55394845950000005" green="0.58950815570000004" blue="0.61315293029999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                         <userDefinedRuntimeAttributes>
@@ -1216,7 +1216,7 @@
                                                                     </view>
                                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لاأرغب باظهار اسم المستخدم بالاعلان" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xo7-sl-bQy">
                                                                         <rect key="frame" x="100" y="12" width="284" height="15"/>
-                                                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="15"/>
+                                                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="15"/>
                                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -1256,7 +1256,7 @@
                                                                                     </view>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="965" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3v-Kh-Ixf">
                                                                                         <rect key="frame" x="31" y="17.666666666666515" width="42" height="17"/>
-                                                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14.5"/>
+                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14.5"/>
                                                                                         <color key="textColor" white="0.0" alpha="0.93636670649999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
@@ -1448,7 +1448,7 @@
                                                                         <subviews>
                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مواصفات المنتج" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0Y-Ej-ERv">
                                                                                 <rect key="frame" x="224.66666666666666" y="0.0" width="93.333333333333343" height="20.666666666666668"/>
-                                                                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="17.5"/>
+                                                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="17.5"/>
                                                                                 <color key="textColor" red="0.054901960780000002" green="0.74901960779999999" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
@@ -1460,13 +1460,13 @@
                                                                                         <subviews>
                                                                                             <label opaque="NO" contentMode="left" verticalHuggingPriority="252" text="اللون" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kG-Pw-PyE">
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="318" height="18.333333333333332"/>
-                                                                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="15.5"/>
+                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15.5"/>
                                                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
                                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="قم بكتابة اسم اللون أو اختيار درجة اللون في حالة معرفته" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dM-Wi-qr0">
                                                                                                 <rect key="frame" x="0.0" y="26.333333333333261" width="318" height="14.666666666666668"/>
-                                                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="12.5"/>
+                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="12.5"/>
                                                                                                 <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
@@ -1479,7 +1479,7 @@
                                                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="اسم اللون" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e14-TJ-zPS">
                                                                                                                 <rect key="frame" x="8" y="3" width="180" height="40"/>
                                                                                                                 <color key="textColor" red="0.24520145939999999" green="0.24520145939999999" blue="0.24520145939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
+                                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                                                                                             </textField>
                                                                                                         </subviews>
@@ -1555,13 +1555,13 @@
                                                                                         <subviews>
                                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="المقاس" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ld0-5j-XRa">
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="318" height="18.333333333333332"/>
-                                                                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="15.5"/>
+                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15.5"/>
                                                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
                                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="يمكنك اختيار اكتر من مقاس" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ZO-ol-vpS">
                                                                                                 <rect key="frame" x="0.0" y="26.333333333333261" width="318" height="14.666666666666668"/>
-                                                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="12.5"/>
+                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="12.5"/>
                                                                                                 <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
@@ -1743,13 +1743,13 @@
                                                                                         <subviews>
                                                                                             <label opaque="NO" contentMode="left" verticalHuggingPriority="252" text="مدة إستخدام المنتج" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rK3-et-2Dc">
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="318" height="18.333333333333332"/>
-                                                                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="15.5"/>
+                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15.5"/>
                                                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
                                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سوف يتم اعتبار هذه المدة تقريبة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGZ-8i-JHe">
                                                                                                 <rect key="frame" x="0.0" y="26.333333333333261" width="318" height="14.666666666666668"/>
-                                                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="12.5"/>
+                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="12.5"/>
                                                                                                 <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
@@ -1768,13 +1768,13 @@
                                                                                                             </imageView>
                                                                                                             <label hidden="YES" opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="إختر" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilX-QV-xKT">
                                                                                                                 <rect key="frame" x="36" y="13.999999999999998" width="22.666666666666671" height="16.333333333333329"/>
-                                                                                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="14"/>
+                                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                                                 <color key="textColor" red="0.55394845950000005" green="0.58950815570000004" blue="0.61315293029999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                                 <nil key="highlightedColor"/>
                                                                                                             </label>
                                                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5z-YH-l9M">
                                                                                                                 <rect key="frame" x="0.0" y="0.0" width="110" height="40"/>
-                                                                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
+                                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="2" maxY="0.0"/>
                                                                                                                 <state key="normal">
                                                                                                                     <color key="titleColor" red="0.55394845950000005" green="0.58950815570000004" blue="0.61315293029999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1876,7 +1876,7 @@
                                                                                                 <subviews>
                                                                                                     <label opaque="NO" contentMode="left" verticalHuggingPriority="252" text="الماركة / البراند" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aag-aF-dXv">
                                                                                                         <rect key="frame" x="0.0" y="0.0" width="153" height="18.333333333333332"/>
-                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="15.5"/>
+                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15.5"/>
                                                                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
@@ -1889,7 +1889,7 @@
                                                                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bi9-Bb-obH">
                                                                                                                         <rect key="frame" x="8" y="3" width="133" height="40"/>
                                                                                                                         <color key="textColor" red="0.24520145939999999" green="0.24520145939999999" blue="0.24520145939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
+                                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                                                                                                     </textField>
                                                                                                                 </subviews>
@@ -1940,7 +1940,7 @@
                                                                                                 <subviews>
                                                                                                     <label opaque="NO" contentMode="left" verticalHuggingPriority="252" text="الخامة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDQ-ih-qUz">
                                                                                                         <rect key="frame" x="0.0" y="0.0" width="153" height="18.333333333333332"/>
-                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="15.5"/>
+                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15.5"/>
                                                                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
@@ -1953,7 +1953,7 @@
                                                                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LA7-Ns-U9V">
                                                                                                                         <rect key="frame" x="8" y="3" width="133" height="40"/>
                                                                                                                         <color key="textColor" red="0.24520145939999999" green="0.24520145939999999" blue="0.24520145939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
+                                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                                                                                                     </textField>
                                                                                                                 </subviews>
@@ -2012,7 +2012,7 @@
                                                                                                         <constraints>
                                                                                                             <constraint firstAttribute="height" constant="26" id="Gch-DB-stF"/>
                                                                                                         </constraints>
-                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="17.5"/>
+                                                                                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="17.5"/>
                                                                                                         <color key="textColor" red="0.054901960780000002" green="0.74901960779999999" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
@@ -2021,7 +2021,7 @@
                                                                                                         <subviews>
                                                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لن تتم مشاركة موقع الخريطة مع المستخدمين" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jl7-MR-UGl">
                                                                                                                 <rect key="frame" x="0.0" y="0.0" width="196.33333333333334" height="15"/>
-                                                                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="13"/>
+                                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="13"/>
                                                                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                                 <nil key="highlightedColor"/>
                                                                                                             </label>
@@ -2061,13 +2061,13 @@
                                                                                                                 <subviews>
                                                                                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="حدد الموقع علي الخريطة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sla-gt-rt2">
                                                                                                                         <rect key="frame" x="0.0" y="0.0" width="295" height="17.666666666666668"/>
-                                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="15"/>
+                                                                                                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="15"/>
                                                                                                                         <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                                         <nil key="highlightedColor"/>
                                                                                                                     </label>
                                                                                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="موقع الإعلان" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRX-WZ-Fw2">
                                                                                                                         <rect key="frame" x="0.0" y="23.666666666666515" width="295" height="15.333333333333336"/>
-                                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="13"/>
+                                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="13"/>
                                                                                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                                         <nil key="highlightedColor"/>
                                                                                                                     </label>
@@ -2107,13 +2107,13 @@
                                                                                                     </view>
                                                                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a53-5z-0e8">
                                                                                                         <rect key="frame" x="382" y="131" width="2" height="0.0"/>
-                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="7"/>
+                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="7"/>
                                                                                                         <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
                                                                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="السعر" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAa-h4-Lxo">
                                                                                                         <rect key="frame" x="352.33333333333331" y="141" width="31.666666666666686" height="0.0"/>
-                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="15"/>
+                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
                                                                                                         <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
@@ -2123,7 +2123,7 @@
                                                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="سعر الشراء" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zKz-VT-kI0">
                                                                                                                 <rect key="frame" x="8" y="3" width="130" height="43.666666666666664"/>
                                                                                                                 <color key="textColor" red="0.24520145939999999" green="0.24520145939999999" blue="0.24520145939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
+                                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="ASCIICapableNumberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                                                             </textField>
                                                                                                         </subviews>
@@ -2150,7 +2150,7 @@
                                                                                                     </view>
                                                                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ضع سعر تقريبي لبيع او تأجير المنتج" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ap-7X-PGk">
                                                                                                         <rect key="frame" x="224.33333333333337" y="207.66666666666652" width="159.66666666666663" height="0.0"/>
-                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="12.600000381469727"/>
+                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="12.600000381469727"/>
                                                                                                         <color key="textColor" red="0.55394845950000005" green="0.58950815570000004" blue="0.61315293029999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
@@ -2165,7 +2165,7 @@
                                                                                                                         <subviews>
                                                                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="قابل للتفاوض" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0Y-ZY-xfx">
                                                                                                                                 <rect key="frame" x="0.0" y="6.6666666666665151" width="68.333333333333329" height="17.666666666666668"/>
-                                                                                                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="15"/>
+                                                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
                                                                                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                                                 <nil key="highlightedColor"/>
                                                                                                                             </label>
@@ -2200,7 +2200,7 @@
                                                                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="سعر البيع" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3YY-vZ-DGW">
                                                                                                                         <rect key="frame" x="8" y="3" width="130" height="45"/>
                                                                                                                         <color key="textColor" red="0.24520145939999999" green="0.24520145939999999" blue="0.24520145939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
+                                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="ASCIICapableNumberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                                                                     </textField>
                                                                                                                 </subviews>
@@ -2239,13 +2239,13 @@
                                                                                                 <subviews>
                                                                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الكمية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7za-Ya-zq6">
                                                                                                         <rect key="frame" x="353.33333333333331" y="0.0" width="30.666666666666686" height="17.666666666666668"/>
-                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="15"/>
+                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
                                                                                                         <color key="textColor" red="0.24520145939999999" green="0.24520145939999999" blue="0.24520145939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
                                                                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="من فضلك حدد الكميات المتاحة لمنتجك (إختياري)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9k0-g3-s8s">
                                                                                                         <rect key="frame" x="176.66666666666663" y="23.666666666666742" width="207.33333333333337" height="15"/>
-                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="12.600000381469727"/>
+                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="12.600000381469727"/>
                                                                                                         <color key="textColor" red="0.55394845950000005" green="0.58950815570000004" blue="0.61315293029999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
@@ -2255,7 +2255,7 @@
                                                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="الكمية (بالعدد أو الوزن)" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pQz-hZ-YQR">
                                                                                                                 <rect key="frame" x="8" y="3" width="364" height="43.666666666666664"/>
                                                                                                                 <color key="textColor" red="0.24520145939999999" green="0.24520145939999999" blue="0.24520145939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
+                                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="ASCIICapableNumberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                                                             </textField>
                                                                                                         </subviews>
@@ -2979,7 +2979,7 @@
                                                         <subviews>
                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad Details" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNS-3M-f3w">
                                                                 <rect key="frame" x="0.0" y="0.0" width="360" height="20.666666666666668"/>
-                                                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="17.5"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="17.5"/>
                                                                 <color key="textColor" name="#0093F5"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -2994,7 +2994,7 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="85" id="0HD-Db-gsX"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="16"/>
+                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16"/>
                                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                         <userDefinedRuntimeAttributes>
@@ -3269,7 +3269,7 @@
                                                                                 <subviews>
                                                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5v3-hJ-L05">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="52.666666666666664" height="18.333333333333332"/>
-                                                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="15.5"/>
+                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15.5"/>
                                                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -3282,7 +3282,7 @@
                                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9DS-9y-aor">
                                                                                                 <rect key="frame" x="8" y="3" width="340" height="43.666666666666664"/>
                                                                                                 <color key="textColor" red="0.24520145939999999" green="0.24520145939999999" blue="0.24520145939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
+                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                                                                             </textField>
                                                                                         </subviews>
@@ -3331,7 +3331,7 @@
                                                                 <subviews>
                                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXA-9L-c97">
                                                                         <rect key="frame" x="0.0" y="0.0" width="79" height="18.333333333333332"/>
-                                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="15.5"/>
+                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15.5"/>
                                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                         <userDefinedRuntimeAttributes>
@@ -3398,7 +3398,7 @@
                                                                         <subviews>
                                                                             <label hidden="YES" opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مواصفات المنتج" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQc-2O-RzH">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="93.333333333333329" height="20.666666666666668"/>
-                                                                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="17.5"/>
+                                                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="17.5"/>
                                                                                 <color key="textColor" name="#0093F5"/>
                                                                                 <nil key="highlightedColor"/>
                                                                                 <userDefinedRuntimeAttributes>
@@ -3416,7 +3416,7 @@
                                                                                                 <subviews>
                                                                                                     <label opaque="NO" contentMode="left" verticalHuggingPriority="252" text="الماركة / البراند" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LF-jW-4b4">
                                                                                                         <rect key="frame" x="0.0" y="0.0" width="174" height="0.0"/>
-                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="15.5"/>
+                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15.5"/>
                                                                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
@@ -3429,7 +3429,7 @@
                                                                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8kJ-4l-P3x">
                                                                                                                         <rect key="frame" x="8" y="3" width="154" height="40"/>
                                                                                                                         <color key="textColor" red="0.24520145939999999" green="0.24520145939999999" blue="0.24520145939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
+                                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                                                                                                     </textField>
                                                                                                                 </subviews>
@@ -3480,7 +3480,7 @@
                                                                                                 <subviews>
                                                                                                     <label opaque="NO" contentMode="left" verticalHuggingPriority="252" text="الخامة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCL-Dq-F85">
                                                                                                         <rect key="frame" x="0.0" y="0.0" width="174" height="0.0"/>
-                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="15.5"/>
+                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15.5"/>
                                                                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
@@ -3493,7 +3493,7 @@
                                                                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DP8-r3-TW2">
                                                                                                                         <rect key="frame" x="8" y="3" width="154" height="40"/>
                                                                                                                         <color key="textColor" red="0.24520145939999999" green="0.24520145939999999" blue="0.24520145939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
+                                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                                                                                                     </textField>
                                                                                                                 </subviews>
@@ -3546,7 +3546,7 @@
                                                                                         <subviews>
                                                                                             <label opaque="NO" contentMode="left" verticalHuggingPriority="252" text="عيوب المنتج" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m08-Tg-I1n">
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="360" height="0.0"/>
-                                                                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="15.5"/>
+                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15.5"/>
                                                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
@@ -3585,7 +3585,7 @@
                                                                                         <subviews>
                                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crf-e7-jDt">
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="34.333333333333336" height="46.666666666666664"/>
-                                                                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="15"/>
+                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
                                                                                                 <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                                 <userDefinedRuntimeAttributes>
@@ -3598,7 +3598,7 @@
                                                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Price of Rent or Sell" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hWz-HW-SuZ">
                                                                                                         <rect key="frame" x="8" y="3" width="297.66666666666669" height="43.666666666666664"/>
                                                                                                         <color key="textColor" red="0.24520145939999999" green="0.24520145939999999" blue="0.24520145939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
+                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="ASCIICapableNumberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                                                     </textField>
                                                                                                 </subviews>
@@ -3635,7 +3635,7 @@
                                                                                                         <constraints>
                                                                                                             <constraint firstAttribute="height" constant="26" id="tmb-yo-QzR"/>
                                                                                                         </constraints>
-                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="17.5"/>
+                                                                                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="17.5"/>
                                                                                                         <color key="textColor" red="0.054901960780000002" green="0.74901960779999999" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
@@ -3644,7 +3644,7 @@
                                                                                                         <subviews>
                                                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لن تتم مشاركة موقع الخريطة مع المستخدمين" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3l-4i-Ngn">
                                                                                                                 <rect key="frame" x="0.0" y="0.0" width="196.33333333333334" height="15"/>
-                                                                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="13"/>
+                                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="13"/>
                                                                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                                 <nil key="highlightedColor"/>
                                                                                                             </label>
@@ -3684,13 +3684,13 @@
                                                                                                                 <subviews>
                                                                                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="حدد الموقع علي الخريطة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4c-j9-aSx">
                                                                                                                         <rect key="frame" x="0.0" y="0.0" width="271" height="17.666666666666668"/>
-                                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="15"/>
+                                                                                                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="15"/>
                                                                                                                         <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                                         <nil key="highlightedColor"/>
                                                                                                                     </label>
                                                                                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="موقع الإعلان" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1f-tg-Uui">
                                                                                                                         <rect key="frame" x="0.0" y="23.666666666666742" width="271" height="15.333333333333336"/>
-                                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="13"/>
+                                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="13"/>
                                                                                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                                         <nil key="highlightedColor"/>
                                                                                                                     </label>
@@ -3730,13 +3730,13 @@
                                                                                                     </view>
                                                                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzC-FO-yWr">
                                                                                                         <rect key="frame" x="358" y="0.0" width="2" height="8.3333333333333339"/>
-                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="7"/>
+                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="7"/>
                                                                                                         <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
                                                                                                     <label hidden="YES" opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ضع سعر تقريبي لبيع او تأجير المنتج" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAN-YK-0o5">
                                                                                                         <rect key="frame" x="200.33333333333337" y="0.0" width="159.66666666666663" height="0.0"/>
-                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="12.600000381469727"/>
+                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="12.600000381469727"/>
                                                                                                         <color key="textColor" red="0.55394845950000005" green="0.58950815570000004" blue="0.61315293029999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
@@ -3751,7 +3751,7 @@
                                                                                                                         <subviews>
                                                                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="قابل للتفاوض" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhI-TZ-Hgp">
                                                                                                                                 <rect key="frame" x="0.0" y="6.6666666666667425" width="68.333333333333329" height="17.666666666666668"/>
-                                                                                                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="15"/>
+                                                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
                                                                                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                                                 <nil key="highlightedColor"/>
                                                                                                                             </label>
@@ -3786,7 +3786,7 @@
                                                                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="سعر البيع" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2AN-u4-eX2">
                                                                                                                         <rect key="frame" x="8" y="3" width="130" height="45"/>
                                                                                                                         <color key="textColor" red="0.24520145939999999" green="0.24520145939999999" blue="0.24520145939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
+                                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="ASCIICapableNumberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                                                                     </textField>
                                                                                                                 </subviews>
@@ -3825,13 +3825,13 @@
                                                                                                 <subviews>
                                                                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الكمية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbn-Mr-Rup">
                                                                                                         <rect key="frame" x="329.33333333333331" y="0.0" width="30.666666666666686" height="17.666666666666668"/>
-                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="15"/>
+                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
                                                                                                         <color key="textColor" red="0.24520145939999999" green="0.24520145939999999" blue="0.24520145939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
                                                                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="من فضلك حدد الكميات المتاحة لمنتجك (إختياري)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAA-7Z-Ig5">
                                                                                                         <rect key="frame" x="152.66666666666663" y="23.666666666666629" width="207.33333333333337" height="15"/>
-                                                                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="12.600000381469727"/>
+                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="12.600000381469727"/>
                                                                                                         <color key="textColor" red="0.55394845950000005" green="0.58950815570000004" blue="0.61315293029999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
@@ -3841,7 +3841,7 @@
                                                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="الكمية (بالعدد أو الوزن)" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wj2-SS-HyG">
                                                                                                                 <rect key="frame" x="8" y="3" width="340" height="43.333333333333336"/>
                                                                                                                 <color key="textColor" red="0.24520145939999999" green="0.24520145939999999" blue="0.24520145939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
+                                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="ASCIICapableNumberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                                                             </textField>
                                                                                                         </subviews>
@@ -3895,7 +3895,7 @@
                                                                         <subviews>
                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad type" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngz-cg-Zm8">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="52" height="17.666666666666668"/>
-                                                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="15"/>
+                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
                                                                                 <color key="textColor" red="0.24520145939999999" green="0.24520145939999999" blue="0.24520145939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                 <nil key="highlightedColor"/>
                                                                                 <userDefinedRuntimeAttributes>
@@ -3904,7 +3904,7 @@
                                                                             </label>
                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Choose Ad type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pcs-nA-q5e">
                                                                                 <rect key="frame" x="0.0" y="23.666666666666629" width="132" height="15"/>
-                                                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="12.600000381469727"/>
+                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="12.600000381469727"/>
                                                                                 <color key="textColor" red="0.55394845950000005" green="0.58950815570000004" blue="0.61315293029999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                 <nil key="highlightedColor"/>
                                                                                 <userDefinedRuntimeAttributes>
@@ -3925,7 +3925,7 @@
                                                                                                         <subviews>
                                                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AD FOR RENT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAN-Lw-nVQ">
                                                                                                                 <rect key="frame" x="0.0" y="0.0" width="85" height="15.333333333333334"/>
-                                                                                                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="13"/>
+                                                                                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="13"/>
                                                                                                                 <color key="textColor" red="0.55394845950000005" green="0.58950815570000004" blue="0.61315293029999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                                 <nil key="highlightedColor"/>
                                                                                                                 <userDefinedRuntimeAttributes>
@@ -3977,7 +3977,7 @@
                                                                                                         <subviews>
                                                                                                             <label opaque="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AD FOR SELL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awc-x4-24H">
                                                                                                                 <rect key="frame" x="0.0" y="0.0" width="82" height="15.333333333333334"/>
-                                                                                                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="13"/>
+                                                                                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="13"/>
                                                                                                                 <color key="textColor" name="#0093F5"/>
                                                                                                                 <nil key="highlightedColor"/>
                                                                                                                 <userDefinedRuntimeAttributes>
@@ -4057,7 +4057,7 @@
                                                                         <subviews>
                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connection type" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIM-Ec-vgD">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="110.66666666666667" height="17.666666666666668"/>
-                                                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="15"/>
+                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
                                                                                 <color key="textColor" red="0.24520145939999999" green="0.24520145939999999" blue="0.24520145939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                 <nil key="highlightedColor"/>
                                                                                 <userDefinedRuntimeAttributes>
@@ -4066,7 +4066,7 @@
                                                                             </label>
                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Determine the means by which customers will contact you for this advertisement" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHV-h5-bNO">
                                                                                 <rect key="frame" x="0.0" y="23.666666666666742" width="454" height="15"/>
-                                                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="12.600000381469727"/>
+                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="12.600000381469727"/>
                                                                                 <color key="textColor" red="0.55394845950000005" green="0.58950815570000004" blue="0.61315293029999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                 <nil key="highlightedColor"/>
                                                                                 <userDefinedRuntimeAttributes>
@@ -4099,7 +4099,7 @@
                                                                                                             </imageView>
                                                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bz4-J2-rEc">
                                                                                                                 <rect key="frame" x="23.999999999999993" y="0.0" width="28" height="15.333333333333334"/>
-                                                                                                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="13"/>
+                                                                                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="13"/>
                                                                                                                 <color key="textColor" red="0.55394845950000005" green="0.58950815570000004" blue="0.61315293029999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                                 <nil key="highlightedColor"/>
                                                                                                                 <userDefinedRuntimeAttributes>
@@ -4144,7 +4144,7 @@
                                                                                                         <subviews>
                                                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WhatsApp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QqP-bb-Vpg">
                                                                                                                 <rect key="frame" x="0.0" y="0.0" width="61" height="15.333333333333334"/>
-                                                                                                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="13"/>
+                                                                                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="13"/>
                                                                                                                 <color key="textColor" red="0.55394845950000005" green="0.58950815570000004" blue="0.61315293029999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                                 <nil key="highlightedColor"/>
                                                                                                                 <userDefinedRuntimeAttributes>
@@ -4213,7 +4213,7 @@
                                                                                                             </imageView>
                                                                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0R5-kz-Ykj">
                                                                                                                 <rect key="frame" x="24" y="0.0" width="22.333333333333329" height="15.333333333333334"/>
-                                                                                                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="13"/>
+                                                                                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="13"/>
                                                                                                                 <color key="textColor" name="#0093F5"/>
                                                                                                                 <nil key="highlightedColor"/>
                                                                                                                 <userDefinedRuntimeAttributes>
@@ -4274,7 +4274,7 @@
                                                                                 <subviews>
                                                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use My  Registered Phone Number" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIu-gp-XXI">
                                                                                         <rect key="frame" x="0.0" y="7" width="237" height="17.666666666666668"/>
-                                                                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="15"/>
+                                                                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="15"/>
                                                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -4283,7 +4283,7 @@
                                                                                     </label>
                                                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Phone Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICs-0O-oGb">
                                                                                         <rect key="frame" x="0.0" y="35.666666666666742" width="127.66666666666667" height="16"/>
-                                                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="13.600000381469727"/>
+                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="13.600000381469727"/>
                                                                                         <color key="textColor" red="0.55394845950000005" green="0.58950815570000004" blue="0.61315293029999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -4296,7 +4296,7 @@
                                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Numnber" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vo7-sS-evJ">
                                                                                                 <rect key="frame" x="82" y="3" width="266" height="43.333333333333336"/>
                                                                                                 <color key="textColor" red="0.24520145939999999" green="0.24520145939999999" blue="0.24520145939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
+                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="ASCIICapableNumberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                                                 <userDefinedRuntimeAttributes>
                                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
@@ -4393,7 +4393,7 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="50" id="odv-Xa-qJC"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16.5"/>
+                                                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="16.5"/>
                                                                         <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                                         <state key="normal" title="Save">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4414,7 +4414,7 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="50" id="yWK-6F-KD8"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16.5"/>
+                                                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="16.5"/>
                                                                         <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                                         <state key="normal" title="Delete Ad">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

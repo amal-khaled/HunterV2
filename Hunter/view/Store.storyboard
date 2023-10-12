@@ -13,15 +13,15 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="Medium.ttf">
-            <string>Tajawal-Medium</string>
+            <string>Almarai-Regular</string>
         </array>
         <array key="Tajawal-Bold.ttf">
             <string>Almarai-Bold</string>
-            <string>Tajawal-Bold</string>
+            <string>Almarai-Bold</string>
         </array>
         <array key="Tajawal-Regular.ttf">
             <string>Almarai-Regular</string>
-            <string>Tajawal-Regular</string>
+            <string>Almarai-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -573,7 +573,7 @@
                                                                             </label>
                                                                             <label opaque="NO" contentMode="left" verticalHuggingPriority="251" text="  *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5Z-x3-Hxl">
                                                                                 <rect key="frame" x="75.666666666666657" y="0.0" width="288.33333333333337" height="64.666666666666671"/>
-                                                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="17"/>
+                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
                                                                                 <color key="textColor" systemColor="systemRedColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
@@ -680,7 +680,7 @@
                                                                                     </button>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="965" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4J-Yx-uqT">
                                                                                         <rect key="frame" x="10" y="21.333333333333371" width="26" height="18.333333333333329"/>
-                                                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="15.5"/>
+                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15.5"/>
                                                                                         <color key="textColor" white="0.0" alpha="0.93636670649999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
@@ -943,7 +943,7 @@
                                                                                     <constraint firstAttribute="height" constant="45" id="3i0-K8-RLF"/>
                                                                                 </constraints>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16.5"/>
+                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
@@ -1666,7 +1666,7 @@ To get free ads</string>
                                                                             </label>
                                                                             <label opaque="NO" contentMode="left" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rua-tp-r5U">
                                                                                 <rect key="frame" x="126.66666666666664" y="0.0" width="237.33333333333337" height="54.666666666666664"/>
-                                                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="17"/>
+                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
                                                                                 <color key="textColor" systemColor="systemRedColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
@@ -1797,7 +1797,7 @@ To get free ads</string>
                                                                                     </imageView>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="965" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxe-1x-InJ">
                                                                                         <rect key="frame" x="47" y="21.333333333333371" width="26" height="18.333333333333329"/>
-                                                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="15.5"/>
+                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15.5"/>
                                                                                         <color key="textColor" white="0.0" alpha="0.93636670649999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
@@ -2516,7 +2516,7 @@ To get free ads</string>
                                                     <constraint firstAttribute="height" constant="40" id="0kU-9a-ggR"/>
                                                     <constraint firstAttribute="width" constant="40" id="uHn-xd-sKh"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="18"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="editCoverImage"/>
                                                 <connections>
@@ -2652,7 +2652,7 @@ To get free ads</string>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWL-TP-We5">
                                         <rect key="frame" x="196.66666666666666" y="70" width="0.0" height="0.0"/>
-                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="16"/>
                                         <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
