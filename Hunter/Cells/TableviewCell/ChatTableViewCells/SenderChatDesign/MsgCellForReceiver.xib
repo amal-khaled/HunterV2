@@ -8,11 +8,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Tajawal-Bold.ttf">
-            <string>Tajawal-Bold</string>
-        </array>
         <array key="Tajawal-Regular.ttf">
-            <string>Tajawal-Regular</string>
+            <string>Almarai-Regular</string>
         </array>
     </customFonts>
     <objects>
@@ -36,9 +33,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="269" height="98"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfN-XF-7Wd" customClass="EdgeInsetLabel" customModule="Hunter" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="34" height="71"/>
+                                <rect key="frame" x="0.0" y="0.0" width="65" height="71"/>
                                 <color key="backgroundColor" name="#0093F5"/>
-                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="14.5"/>
+                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14.5"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -57,12 +54,12 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9P-aJ-m92" customClass="EdgeInsetLabel" customModule="Hunter" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="78" width="25.5" height="20"/>
+                                <rect key="frame" x="0.0" y="78" width="52" height="20"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="iXy-cC-pfW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="11.5"/>
+                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="11.5"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -121,10 +118,10 @@
     </objects>
     <designables>
         <designable name="XfN-XF-7Wd">
-            <size key="intrinsicContentSize" width="34" height="14.5"/>
+            <size key="intrinsicContentSize" width="65" height="46.5"/>
         </designable>
         <designable name="Y9P-aJ-m92">
-            <size key="intrinsicContentSize" width="25.5" height="11.5"/>
+            <size key="intrinsicContentSize" width="52" height="37"/>
         </designable>
     </designables>
     <resources>

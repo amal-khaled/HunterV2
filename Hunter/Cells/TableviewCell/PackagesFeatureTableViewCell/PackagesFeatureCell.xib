@@ -10,10 +10,10 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="Tajawal-Bold.ttf">
-            <string>Tajawal-Bold</string>
+            <string>Almarai-Bold</string>
         </array>
         <array key="Tajawal-Regular.ttf">
-            <string>Tajawal-Regular</string>
+            <string>Almarai-Regular</string>
         </array>
     </customFonts>
     <objects>
@@ -41,13 +41,13 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0p-OT-lEf">
                                         <rect key="frame" x="0.0" y="0.0" width="37.333333333333336" height="16"/>
-                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="16"/>
                                         <color key="textColor" name="blackColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWa-SM-2l6">
                                         <rect key="frame" x="0.0" y="20" width="37.333333333333336" height="16"/>
-                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16"/>
                                         <color key="textColor" name="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -68,7 +68,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="55" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dC-qy-CNL">
                                 <rect key="frame" x="33" y="0.0" width="22" height="25"/>
-                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="22"/>
                                 <color key="textColor" name="#0093F5"/>
                                 <nil key="highlightedColor"/>
                             </label>

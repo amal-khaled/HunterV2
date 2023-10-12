@@ -608,7 +608,7 @@ extension UIViewController :NVActivityIndicatorViewable{
 //        appearance.shadowRadius = 8
         appearance.animationduration = 0.25
         appearance.textColor = .black
-        //appearance.textFont =  UIFont(name: "Tajawal-Regular", size: 14)!
+        //appearance.textFont =  UIFont(name: "Almarai-Regular", size: 14)!
         appearance.textFont = UIFont.systemFont(ofSize: 14, weight: .regular)
     }
 }

@@ -11,11 +11,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Tajawal-Bold.ttf">
-            <string>Tajawal-Bold</string>
-        </array>
         <array key="Tajawal-Regular.ttf">
-            <string>Tajawal-Regular</string>
+            <string>Almarai-Regular</string>
         </array>
     </customFonts>
     <objects>
@@ -124,7 +121,7 @@
                                 <subviews>
                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdsdsdsd dsdsdsd dsdsdsd" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.64999997615814209" translatesAutoresizingMaskIntoConstraints="NO" id="IiP-zF-dWY">
                                         <rect key="frame" x="4" y="23" width="332" height="27"/>
-                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="12.5"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="12.5"/>
                                         <color key="textColor" name="#0093F5"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -151,7 +148,7 @@
                                         <rect key="frame" x="0.0" y="55" width="417.66666666666669" height="35"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="M68-rh-3rd">
-                                                <rect key="frame" x="0.0" y="10" width="145" height="15"/>
+                                                <rect key="frame" x="0.0" y="10" width="147.66666666666666" height="15"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon feather-user" translatesAutoresizingMaskIntoConstraints="NO" id="xx7-bu-s1N">
                                                         <rect key="frame" x="0.0" y="2" width="11" height="11"/>
@@ -161,13 +158,13 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="ddddddddddddddddd" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZa-sN-kxO">
-                                                        <rect key="frame" x="17" y="1.6666666666666714" width="107" height="12"/>
-                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="11.800000190734863"/>
+                                                        <rect key="frame" x="17.000000000000007" y="1" width="109.66666666666669" height="13.333333333333334"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="11.800000190734863"/>
                                                         <color key="textColor" name="#0093F5"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verification" translatesAutoresizingMaskIntoConstraints="NO" id="fde-ie-HR3">
-                                                        <rect key="frame" x="130" y="0.0" width="15" height="15"/>
+                                                        <rect key="frame" x="132.66666666666666" y="0.0" width="15" height="15"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="15" id="8gg-UC-Idd"/>
                                                             <constraint firstAttribute="height" constant="15" id="uQ3-mp-IFR"/>
@@ -181,7 +178,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ZFd-2Q-h7D">
-                                                <rect key="frame" x="327" y="10" width="90.666666666666686" height="15"/>
+                                                <rect key="frame" x="325.33333333333331" y="10" width="92.333333333333314" height="15"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="place_black_24dp" translatesAutoresizingMaskIntoConstraints="NO" id="RUL-ab-Lew">
                                                         <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
@@ -191,8 +188,8 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" contentMode="left" verticalHuggingPriority="251" text="ddddddddddd" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EU6-MW-Y25">
-                                                        <rect key="frame" x="20" y="1.6666666666666714" width="70.666666666666671" height="12"/>
-                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="12"/>
+                                                        <rect key="frame" x="20" y="0.6666666666666714" width="72.333333333333329" height="13.666666666666666"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="12"/>
                                                         <color key="textColor" red="0.55394845950000005" green="0.58950815570000004" blue="0.61315293029999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -207,14 +204,14 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="65" height="33"/>
                                                 <subviews>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D.K" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpR-cj-KWU">
-                                                        <rect key="frame" x="35.333333333333314" y="10.666666666666668" width="19.666666666666671" height="14"/>
-                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
+                                                        <rect key="frame" x="31.333333333333314" y="9.6666666666666679" width="22" height="15.666666666666668"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3r5-Ev-2nB">
-                                                        <rect key="frame" x="3.9999999999999982" y="7.6666666666666679" width="29.333333333333329" height="20"/>
-                                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="20"/>
+                                                        <rect key="frame" x="3.9999999999999982" y="6.3333333333333339" width="25.333333333333329" height="22.333333333333329"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="20"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
