@@ -355,11 +355,11 @@ extension UIViewController :NVActivityIndicatorViewable{
     func goGMap(lat:Double,lng:Double){
         DispatchQueue.main.async( execute: {
             let attributedtitle = NSAttributedString(string: "", attributes: [
-                NSAttributedString.Key.font : UIFont(name: "Tajawal-Regular", size: 16.0)!
+                NSAttributedString.Key.font : UIFont(name: "Almarai-Regular", size: 16.0)!
             ])
             
             let attributedmessage = NSAttributedString(string:"", attributes: [
-                NSAttributedString.Key.font : UIFont(name: "Tajawal-Regular", size: 16.0)!
+                NSAttributedString.Key.font : UIFont(name: "Almarai-Regular", size: 16.0)!
             ])
             
             let alert = UIAlertController(title: " ", message: "",  preferredStyle: .alert)
@@ -516,7 +516,7 @@ extension UIViewController :NVActivityIndicatorViewable{
         u.textAlignment = .natural
         u.autocorrectionType = .no
         u.autocapitalizationType = .none
-        u.font = UIFont(name: "Tajawal-Regular", size: 14)!
+        u.font = UIFont(name: "Almarai-Regular", size: 14)!
         u.textColor = UIColor.black
         u.textContainerInset = UIEdgeInsets(top: 8, left: 25, bottom: 8, right: 0)
         
@@ -528,7 +528,7 @@ extension UIViewController :NVActivityIndicatorViewable{
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = .natural
         u.attributedText = NSAttributedString(string: placeHolder,
-                                                         attributes: [.font: UIFont(name: "Tajawal-Regular", size: 13.5)!,
+                                                         attributes: [.font: UIFont(name: "Almarai-Regular", size: 13.5)!,
                                                                       .foregroundColor: UIColor.gray,.paragraphStyle: paragraphStyle
                                                          ])
     }

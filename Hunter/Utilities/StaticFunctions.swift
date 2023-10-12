@@ -66,7 +66,7 @@ class StaticFunctions {
 //
 //        snackbar.animationType = .slideFromBottomBackToBottom
 //        snackbar.messageTextAlign = MOLHLanguage.currentAppleLanguage() == "en" ? .left : .right
-//        snackbar.messageTextFont = UIFont(name: "Tajawal-Regular", size: 14)!
+//        snackbar.messageTextFont = UIFont(name: "Almarai-Regular", size: 14)!
 //        snackbar.show()
         
     }
