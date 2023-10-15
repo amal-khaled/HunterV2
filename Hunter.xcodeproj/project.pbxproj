@@ -138,6 +138,8 @@
 		C84D29022A6D10580026F125 /* MsgMediaCellReciver.xib in Resources */ = {isa = PBXBuildFile; fileRef = C84D28FF2A6D101F0026F125 /* MsgMediaCellReciver.xib */; };
 		C84D29062A6D28B20026F125 /* MsgMapRecieverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C84D29032A6D285D0026F125 /* MsgMapRecieverCell.xib */; };
 		C84D29072A6D28C60026F125 /* MsgMapRecieverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84D29042A6D285D0026F125 /* MsgMapRecieverCell.swift */; };
+		C85204482ADC163A00F691E0 /* Tajawal-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C85204472ADC163A00F691E0 /* Tajawal-Regular.ttf */; };
+		C852044A2ADC164100F691E0 /* Tajawal-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C85204492ADC164000F691E0 /* Tajawal-Bold.ttf */; };
 		C85A5C512A5FC88F0074AF4D /* FavouritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85A5C4F2A5FC88F0074AF4D /* FavouritesTableViewCell.swift */; };
 		C85A5C522A5FC88F0074AF4D /* FavouritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C85A5C502A5FC88F0074AF4D /* FavouritesTableViewCell.xib */; };
 		C85A5C542A6143610074AF4D /* UploadMediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85A5C532A6143610074AF4D /* UploadMediaModel.swift */; };
@@ -407,6 +409,8 @@
 		C84D29002A6D101F0026F125 /* MsgMediaCellReciver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgMediaCellReciver.swift; sourceTree = "<group>"; };
 		C84D29032A6D285D0026F125 /* MsgMapRecieverCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MsgMapRecieverCell.xib; sourceTree = "<group>"; };
 		C84D29042A6D285D0026F125 /* MsgMapRecieverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgMapRecieverCell.swift; sourceTree = "<group>"; };
+		C85204472ADC163A00F691E0 /* Tajawal-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Regular.ttf"; sourceTree = "<group>"; };
+		C85204492ADC164000F691E0 /* Tajawal-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Bold.ttf"; sourceTree = "<group>"; };
 		C85A5C4F2A5FC88F0074AF4D /* FavouritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewCell.swift; sourceTree = "<group>"; };
 		C85A5C502A5FC88F0074AF4D /* FavouritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesTableViewCell.xib; sourceTree = "<group>"; };
 		C85A5C532A6143610074AF4D /* UploadMediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadMediaModel.swift; sourceTree = "<group>"; };
@@ -747,6 +751,8 @@
 		65C4B6102A248C3300A59A4B /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				C85204492ADC164000F691E0 /* Tajawal-Bold.ttf */,
+				C85204472ADC163A00F691E0 /* Tajawal-Regular.ttf */,
 				651F53BD2ADC04A100D48890 /* Bahij_TheSansArabic-SemiBold.ttf */,
 				651F53C42ADC04AE00D48890 /* Bahij_TheSansArabic-Black.ttf */,
 				651F53BF2ADC04AE00D48890 /* Bahij_TheSansArabic-Bold.ttf */,
@@ -1359,6 +1365,7 @@
 				651F53CD2ADC04AF00D48890 /* Bahij_TheSansArabic-Black.ttf in Resources */,
 				C8191F9E2A40765C0057AA28 /* FavouritesCollectionViewCell.xib in Resources */,
 				C8CC46952A391F4800C90476 /* load2.json in Resources */,
+				C85204482ADC163A00F691E0 /* Tajawal-Regular.ttf in Resources */,
 				651F53CE2ADC04AF00D48890 /* Bahij_TheSansArabic-ExtraLight.ttf in Resources */,
 				C85FFCDB2A260BEF000C426D /* AttachCell.xib in Resources */,
 				C85FFC9E2A2608AC000C426D /* Chat.storyboard in Resources */,
@@ -1377,6 +1384,7 @@
 				C85FFCBA2A260AAE000C426D /* MyAdsCollectionViewCell.xib in Resources */,
 				C84D29022A6D10580026F125 /* MsgMediaCellReciver.xib in Resources */,
 				65DD120029E6845E00A3B8DD /* Assets.xcassets in Resources */,
+				C852044A2ADC164100F691E0 /* Tajawal-Bold.ttf in Resources */,
 				C80CC9312A6DBE8100B56F54 /* FavCell.xib in Resources */,
 				C8A72A3F2A00C26000F9C26D /* Profile.storyboard in Resources */,
 				65FFFA182A1E9FF200B70368 /* Notifications.storyboard in Resources */,

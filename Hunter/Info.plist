@@ -22,6 +22,8 @@
 		<string>Bahij_TheSansArabic-Bold.ttf</string>
 		<string>Bahij_TheSansArabic-SemiBold.ttf</string>
 		<string>Bahij_TheSansArabic-Plain.ttf</string>
+		<string>Tajawal-Bold.ttf</string>
+		<string>Tajawal-Regular.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

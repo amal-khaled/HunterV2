@@ -104,7 +104,7 @@ class SettingVC: UIViewController {
     }
     func slide_Delete(){
         showV(v: [overlay])
-        deletev_bottom.constant = -40
+        deletev_bottom.constant = 100
         animate_event()
     }
    
