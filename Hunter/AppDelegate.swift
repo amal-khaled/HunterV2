@@ -29,7 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable {
     static var playerId = ""
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
        
-        
+        UIFont.overrideInitialize()
+
         AppDelegate.defaults.removeObject(forKey: "postSessionData")
 //        IQKeyboardManager.shared.disabledToolbarClasses = [ChatVC.self]
         IQKeyboardManager.shared.enable = true
