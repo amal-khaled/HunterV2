@@ -57,7 +57,7 @@ class tabsFollowVC: UIViewController {
         options = ViewPagerOptions(viewPagerWithFrame: frame)
         options.tabType = ViewPagerTabType.basic
         //options.tabViewImageSize = CGSize(width: 20, height: 20)
-        options.tabViewTextFont = UIFont(name: "Almarai-Bold", size: 15)!
+//        options.tabViewTextFont = UIFont(name: "Almarai-Bold", size: 15)!
         options.tabViewPaddingLeft = 10
         options.tabViewPaddingRight = 10
         

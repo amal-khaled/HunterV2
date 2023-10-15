@@ -258,7 +258,7 @@ class EditProfileVC : UIViewController {
 //        appearance.shadowRadius = 8
         appearance.animationduration = 0.25
         appearance.textColor = .darkGray
-        appearance.textFont =  UIFont(name: "Almarai-Regular", size: 14)!
+//        appearance.textFont =  UIFont(name: "Almarai-Regular", size: 14)!
         //appearance.textFont = UIFont.systemFont(ofSize: 14, weight: UIFontWeightRegular)
     }
     
