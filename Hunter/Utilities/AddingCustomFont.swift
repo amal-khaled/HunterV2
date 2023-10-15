@@ -63,6 +63,8 @@ extension UIFont {
 
         if let systemFontMethod = class_getClassMethod(self, #selector(systemFont(ofSize:))),
             let mySystemFontMethod = class_getClassMethod(self, #selector(mySystemFont(ofSize:))) {
+            print(systemFontMethod)
+            print(mySystemFontMethod)
             method_exchangeImplementations(systemFontMethod, mySystemFontMethod)
         }
 

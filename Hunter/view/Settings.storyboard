@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -16,9 +16,6 @@
         </array>
         <array key="Tajawal-Bold.ttf">
             <string>Almarai-Bold</string>
-        </array>
-        <array key="Tajawal-Regular.ttf">
-            <string>Almarai-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -49,8 +46,8 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDV-bs-6vA">
-                                                <rect key="frame" x="159.66666666666666" y="66.666666666666671" width="73.666666666666657" height="23.333333333333329"/>
-                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="20"/>
+                                                <rect key="frame" x="160.33333333333334" y="66" width="72.333333333333343" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
@@ -680,7 +677,7 @@
                                                 <rect key="frame" x="15" y="15" width="363" height="885"/>
                                                 <subviews>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can send a message for support and assistance for free" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1k-lv-yWf">
-                                                        <rect key="frame" x="0.0" y="48" width="363" height="35.666666666666657"/>
+                                                        <rect key="frame" x="0.0" y="48" width="363" height="41.666666666666657"/>
                                                         <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="17.799999237060547"/>
                                                         <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
@@ -689,7 +686,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ct5-bq-hNJ">
-                                                        <rect key="frame" x="0.0" y="101.66666666666666" width="363" height="274"/>
+                                                        <rect key="frame" x="0.0" y="107.66666666666666" width="363" height="274"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vKI-p6-5bO">
                                                                 <rect key="frame" x="0.0" y="0.0" width="363" height="274"/>
@@ -877,7 +874,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4i-N5-wL4">
-                                                        <rect key="frame" x="0.0" y="393.66666666666669" width="363" height="150.00000000000006"/>
+                                                        <rect key="frame" x="0.0" y="399.66666666666663" width="363" height="150"/>
                                                         <subviews>
                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descreption" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9W1-uC-5lS">
                                                                 <rect key="frame" x="0.0" y="0.0" width="81" height="17.666666666666668"/>
@@ -889,7 +886,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kid-Ev-fyY">
-                                                                <rect key="frame" x="0.0" y="25.666666666666679" width="363" height="124.33333333333331"/>
+                                                                <rect key="frame" x="0.0" y="25.666666666666735" width="363" height="124.33333333333331"/>
                                                                 <subviews>
                                                                     <view clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="vzp-m6-HCc">
                                                                         <rect key="frame" x="10" y="10" width="343" height="106.33333333333333"/>
@@ -946,7 +943,7 @@
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdV-JO-5gL">
-                                                        <rect key="frame" x="30" y="593.66666666666663" width="303" height="50"/>
+                                                        <rect key="frame" x="30" y="599.66666666666663" width="303" height="50"/>
                                                         <color key="backgroundColor" name="#0093F5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="MgV-N3-3LZ"/>
@@ -1086,7 +1083,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is a Hunter application?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwP-we-3Zv">
-                                                <rect key="frame" x="24.999999999999986" y="40" width="241.66666666666663" height="19"/>
+                                                <rect key="frame" x="24.999999999999986" y="40" width="250.66666666666663" height="22.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="19"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -1095,7 +1092,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXA-zh-hY5">
-                                                <rect key="frame" x="20" y="79" width="353" height="0.0"/>
+                                                <rect key="frame" x="20" y="82.333333333333314" width="353" height="0.0"/>
                                                 <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -1157,7 +1154,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hunter application" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLi-Pf-aW6">
-                                <rect key="frame" x="25" y="158" width="343" height="27"/>
+                                <rect key="frame" x="25" y="158" width="343" height="31.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1334,7 +1331,7 @@
             <color red="0.0" green="0.57599997520446777" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="#0EBFB1">
-            <color red="0.054999999701976776" green="0.74900001287460327" blue="0.6940000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.57647058823529407" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="#8F8F8F">
             <color red="0.56099998950958252" green="0.56099998950958252" blue="0.56099998950958252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1343,7 +1340,7 @@
             <color red="0.95300000905990601" green="0.95300000905990601" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		54E56A2DF1A5FAD3A2F4432C /* Pods_Hunter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA87E62FE01EDD3D1161EFB /* Pods_Hunter.framework */; };
-		651F53C72ADC04AF00D48890 /* Bahij_TheSansArabic-Plain.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 651F53BE2ADC04AD00D48890 /* Bahij_TheSansArabic-Plain.ttf */; };
 		651F53C82ADC04AF00D48890 /* Bahij_TheSansArabic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 651F53BF2ADC04AE00D48890 /* Bahij_TheSansArabic-Bold.ttf */; };
 		651F53C92ADC04AF00D48890 /* Bahij_TheSansArabic-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 651F53C02ADC04AE00D48890 /* Bahij_TheSansArabic-ExtraBold.ttf */; };
 		651F53CA2ADC04AF00D48890 /* Bahij_TheSansArabic-SemiLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 651F53C12ADC04AE00D48890 /* Bahij_TheSansArabic-SemiLight.ttf */; };
@@ -16,6 +15,7 @@
 		651F53CD2ADC04AF00D48890 /* Bahij_TheSansArabic-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 651F53C42ADC04AE00D48890 /* Bahij_TheSansArabic-Black.ttf */; };
 		651F53CE2ADC04AF00D48890 /* Bahij_TheSansArabic-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 651F53C52ADC04AF00D48890 /* Bahij_TheSansArabic-ExtraLight.ttf */; };
 		651F53D02ADC04FA00D48890 /* Bahij_TheSansArabic-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 651F53BD2ADC04A100D48890 /* Bahij_TheSansArabic-SemiBold.ttf */; };
+		651F53D22ADC0C6F00D48890 /* Bahij_TheSansArabic-Plain.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 651F53BE2ADC04AD00D48890 /* Bahij_TheSansArabic-Plain.ttf */; };
 		6520853F29FFB99A00C38B45 /* RegisterVerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6520853E29FFB99900C38B45 /* RegisterVerifyViewController.swift */; };
 		652085412A00416800C38B45 /* GeneralObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652085402A00416800C38B45 /* GeneralObject.swift */; };
 		652711EA29EBF7EB00D503F9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652711E929EBF7EB00D503F9 /* LoginViewController.swift */; };
@@ -1347,6 +1347,7 @@
 				C84D28FD2A6D0A990026F125 /* MsgContactSenderCell.xib in Resources */,
 				C86678BF29FFA12B0019AE81 /* Advs.storyboard in Resources */,
 				65DD121F29E6915A00A3B8DD /* Localizable.strings in Resources */,
+				651F53D22ADC0C6F00D48890 /* Bahij_TheSansArabic-Plain.ttf in Resources */,
 				C8B257042AA9D02700317A12 /* SearchStoreCell.xib in Resources */,
 				C85FFCE12A260BEF000C426D /* MsgRecordRecieverCell.xib in Resources */,
 				C85FFCDC2A260BEF000C426D /* MsgContactCell.xib in Resources */,
@@ -1371,7 +1372,6 @@
 				C8CCE3382A18FC5F00FFAFB2 /* Menu.storyboard in Resources */,
 				C85FFCD72A260BEF000C426D /* MsgFileCell.xib in Resources */,
 				C8CC46932A39190500C90476 /* loader.json in Resources */,
-				651F53C72ADC04AF00D48890 /* Bahij_TheSansArabic-Plain.ttf in Resources */,
 				65DD120329E6845E00A3B8DD /* LaunchScreen.storyboard in Resources */,
 				C832F12E2AAE151A00040E78 /* Commenttest.xib in Resources */,
 				C85FFCBA2A260AAE000C426D /* MyAdsCollectionViewCell.xib in Resources */,
