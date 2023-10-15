@@ -28,15 +28,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable {
     static var defaults:UserDefaults = UserDefaults.standard
     static var playerId = ""
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-       
         UIFont.overrideInitialize()
-//        for family in UIFont.familyNames {
-//            print("\(family)")
-//
-//            for name in UIFont.fontNames(forFamilyName: family) {
-//                print("   \(name)")
-//            }
-//        }
+
+        for family in UIFont.familyNames {
+            print("\(family)")
+
+            for name in UIFont.fontNames(forFamilyName: family) {
+                print("   \(name)")
+            }
+        }
         AppDelegate.defaults.removeObject(forKey: "postSessionData")
 //        IQKeyboardManager.shared.disabledToolbarClasses = [ChatVC.self]
         IQKeyboardManager.shared.enable = true
@@ -208,7 +208,7 @@ extension AppDelegate : UNUserNotificationCenterDelegate{
         //   print("notification Title ",title)
         
         // Change this to your preferred presentation option
-        return [[.alert, .sound , .badge]]
+        return [[.banner, .sound , .badge]]
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter,
