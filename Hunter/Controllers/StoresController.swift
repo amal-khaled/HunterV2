@@ -76,12 +76,11 @@ class StoresController {
         // Alamofire Request
         print(param)
         AF.upload(multipartFormData: { multipartFormData in
-            multipartFormData.append(Data(), withName: "logo", fileName: "logo.png", mimeType: "image/png")
+            multipartFormData.append(logoImage, withName: "logo", fileName: "logo.png", mimeType: "image/png")
             
-            let imageData = licenseImage.jpegData(compressionQuality: 0.3)!
-
             
-            multipartFormData.append(imageData, withName: "license", fileName: "license.png", mimeType: "image/png")
+            
+            multipartFormData.append(licenseImage, withName: "license", fileName: "license.png", mimeType: "image/png")
             
             for (key,value) in param {
                 multipartFormData.append((value as AnyObject).description.data(using: String.Encoding.utf8)!, withName: key)

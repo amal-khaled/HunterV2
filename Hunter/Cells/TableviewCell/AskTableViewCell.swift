@@ -47,9 +47,9 @@ class AskTableViewCell: UITableViewCell {
         
         let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+//        dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
 //        print(TimeZone.current)
-        dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+//        dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
 
         let pastDate = dateFormatter.date(from:ask.cdate ?? "") ?? Date()
         print(pastDate)
