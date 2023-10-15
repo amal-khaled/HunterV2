@@ -331,7 +331,17 @@ class msgsC: UIViewController , UICollectionViewDelegate , UICollectionViewDataS
         }
         
          if let date = roomsData[inx].messages?.date {
-            cell.since.text = diffDates(GetDateFromString(date)).replace("-", "")
+//            cell.since.text = diffDates(GetDateFromString(date)).replace("-", "")
+             
+             let dateFormatter = DateFormatter()
+                 dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+             dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+
+             let pastDate = dateFormatter.date(from:date ) ?? Date()
+             
+             cell.since.text = pastDate.timeAgoDisplay()
+             
+             
         }
         
         if(roomsData[inx].unseenCount == 0){

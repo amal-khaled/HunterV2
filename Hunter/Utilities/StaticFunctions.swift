@@ -130,8 +130,12 @@ class StaticFunctions {
     }
     static func checkValidPhonNumber(Phone:String  )->Bool{
         do {
+            var phone = Phone
+            if !Phone.starts(with: "+"){
+                phone = "+" + Phone
+            }
             let phoneNumberKit = PhoneNumberKit()
-            let phoneNumber = try phoneNumberKit.parse(Phone)
+            let phoneNumber = try phoneNumberKit.parse(phone)
             
             return true
             

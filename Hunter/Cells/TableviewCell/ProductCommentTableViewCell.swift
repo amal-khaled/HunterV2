@@ -49,14 +49,24 @@ class ProductCommentTableViewCell: UITableViewCell {
         }
          name.text = comment.commentUserName
 
+//        if let createdDate = comment.date  {
+////            let dateFormatter = DateFormatter()
+////                dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+////            dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+////
+////            let pastDate = dateFormatter.date(from:createdDate ) ?? Date()
+//            date.text = diffDates(GetDateFromString(createdDate)).replace("-", "")
+////            lbl_date.text = pastDate.timeAgoDisplay()
+//        }
+        
         if let createdDate = comment.date  {
-//            let dateFormatter = DateFormatter()
-//                dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-//            dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
-//
-//            let pastDate = dateFormatter.date(from:createdDate ) ?? Date()
-            date.text = diffDates(GetDateFromString(createdDate)).replace("-", "")
-//            lbl_date.text = pastDate.timeAgoDisplay()
+            let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+
+            let pastDate = dateFormatter.date(from:createdDate ) ?? Date()
+            
+            date.text = pastDate.timeAgoDisplay()
         }
 
          commentLbl.text = comment.comment
@@ -98,7 +108,7 @@ extension Date {
         if MOLHLanguage.currentAppleLanguage() == "ar"{
             formatter.locale = Locale.init(identifier: "ar_AE")
         }else{
-            formatter.locale = Locale.init(identifier: "ar_US")
+            formatter.locale = Locale.init(identifier: "en_US")
 
         }
         formatter.unitsStyle = .full

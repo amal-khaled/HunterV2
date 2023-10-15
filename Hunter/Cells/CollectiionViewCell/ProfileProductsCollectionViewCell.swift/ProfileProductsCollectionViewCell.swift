@@ -77,9 +77,16 @@ class ProfileProductsCollectionViewCell: UICollectionViewCell {
             
         }
         if let createDate = product.createdAt{
-            if createDate.count > 11 {
-                self.timeLbl.text =  diffDates(GetDateFromString(createDate)).replace("-", "")
-            }
+//            if createDate.count > 11 {
+//                self.timeLbl.text =  diffDates(GetDateFromString(createDate)).replace("-", "")
+//            }
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+            
+            let pastDate = dateFormatter.date(from:createDate ) ?? Date()
+            
+            self.timeLbl.text = pastDate.timeAgoDisplay()
         }
         var imageLink = ""
         if product.mainImage == "" {

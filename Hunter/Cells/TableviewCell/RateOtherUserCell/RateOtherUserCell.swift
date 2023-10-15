@@ -25,12 +25,25 @@ class RateOtherUserCell: UITableViewCell {
                 print(data.ratedUserPic ?? "")
                 img.setImageWithLoading(url: data.ratedUserPic ?? "",placeholder: "logo_photo")
             }
-           
-            lbl_name.text = data.ratedUserName
-            lbl_comment.text = data.comment
-            lbl_comment.setLineSpacing()
-            rate.rating = Double(data.rate)
-            lbl_date.text = diffDates(GetDateFromString(data.date ?? "")).replace("-", "")
+                
+                lbl_name.text = data.ratedUserName
+                lbl_comment.text = data.comment
+                lbl_comment.setLineSpacing()
+                rate.rating = Double(data.rate)
+//                lbl_date.text = diffDates(GetDateFromString(data.date ?? "")).replace("-", "")
+            
+            if let createdDate = data.date  {
+                
+                
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+                dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+                
+                let pastDate = dateFormatter.date(from:createdDate ) ?? Date()
+                
+                lbl_date.text = pastDate.timeAgoDisplay()
+                
+            }
         }
     }
 

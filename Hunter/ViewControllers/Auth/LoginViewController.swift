@@ -151,14 +151,15 @@ extension LoginViewController{
 
         if (phoneTF.text!.count != 0 ){
 //                StaticFunctions.createSuccessAlert(msg: countryCode + phoneTF.text!)
-//                if StaticFunctions.checkValidPhonNumber(Phone: countryCode + phoneTF.text!) {
+            
+                if StaticFunctions.checkValidPhonNumber(Phone: countryCode + phoneTF.text!) {
                 return (true ,nil )
                 
-//                }
-//                else {
-//                    return (false ,NSLocalizedString("enter valid phone number".lowercased(),comment:"") )
-//
-//                }
+                }
+                else {
+                    return (false ,NSLocalizedString("enter valid phone number".lowercased(),comment:"") )
+
+                }
         }
          else {
 //                 StaticFunctions.createSuccessAlert(msg: "empty phone number")

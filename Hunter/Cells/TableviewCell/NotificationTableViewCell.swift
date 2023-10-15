@@ -53,14 +53,14 @@ class NotificationTableViewCell: UITableViewCell {
         if let createdDate = userNotification.ndate  {
           
             
-//            let dateFormatter = DateFormatter()
-//                dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-//            dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
-//
-//            let pastDate = dateFormatter.date(from:createdDate ?? "") ?? Date()
+            let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+
+            let pastDate = dateFormatter.date(from:createdDate ?? "") ?? Date()
             
             
-            timeLbl.text = diffDates(GetDateFromString(createdDate)).replace("-", "")
+//            timeLbl.text = diffDates(GetDateFromString(createdDate)).replace("-", "")
         }
 
        

@@ -363,12 +363,19 @@ extension ProductViewController{
 
         self.nameBtn.text = product.name
         if let createDate = product.createdAt{
-            if createDate.count > 11 {
-                print(createDate)
-                print(diffDates(GetDateFromString(createDate)).replace("-", ""))
-                self.dateLbl.text =   diffDates(GetDateFromString(createDate)).replace("-", "")
-                
-            }
+//            if createDate.count > 11 {
+//                print(createDate)
+//                print(diffDates(GetDateFromString(createDate)).replace("-", ""))
+//                self.dateLbl.text =   diffDates(GetDateFromString(createDate)).replace("-", "")
+//                
+//            }
+            let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+
+            let pastDate = dateFormatter.date(from:createDate ) ?? Date()
+            
+            dateLbl.text = pastDate.timeAgoDisplay()
         }
         if  MOLHLanguage.currentAppleLanguage() == "en" {
             currencyLbl.text = product.currencyEn
