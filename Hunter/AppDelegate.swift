@@ -30,7 +30,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
        
         UIFont.overrideInitialize()
-
+//        for family in UIFont.familyNames {
+//            print("\(family)")
+//
+//            for name in UIFont.fontNames(forFamilyName: family) {
+//                print("   \(name)")
+//            }
+//        }
         AppDelegate.defaults.removeObject(forKey: "postSessionData")
 //        IQKeyboardManager.shared.disabledToolbarClasses = [ChatVC.self]
         IQKeyboardManager.shared.enable = true
