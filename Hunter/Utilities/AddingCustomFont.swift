@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 
 struct AppFontName {
-    static let regular = "Tajawal-Regular"
-    static let bold = "Tajawal-Bold"
-    static let semiBold = "Tajawal-Bold"
+    static let regular = "BahijTheSansArabic-Plain"
+    static let bold = "BahijTheSansArabic-Bold"
+    static let semiBold = "BahijTheSansArabic-SemiBold"
 }
 
 extension UIFontDescriptor.AttributeName {

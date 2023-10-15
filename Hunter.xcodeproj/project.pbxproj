@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		54E56A2DF1A5FAD3A2F4432C /* Pods_Hunter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA87E62FE01EDD3D1161EFB /* Pods_Hunter.framework */; };
+		651F53C72ADC04AF00D48890 /* Bahij_TheSansArabic-Plain.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 651F53BE2ADC04AD00D48890 /* Bahij_TheSansArabic-Plain.ttf */; };
+		651F53C82ADC04AF00D48890 /* Bahij_TheSansArabic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 651F53BF2ADC04AE00D48890 /* Bahij_TheSansArabic-Bold.ttf */; };
+		651F53C92ADC04AF00D48890 /* Bahij_TheSansArabic-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 651F53C02ADC04AE00D48890 /* Bahij_TheSansArabic-ExtraBold.ttf */; };
+		651F53CA2ADC04AF00D48890 /* Bahij_TheSansArabic-SemiLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 651F53C12ADC04AE00D48890 /* Bahij_TheSansArabic-SemiLight.ttf */; };
+		651F53CB2ADC04AF00D48890 /* Bahij_TheSansArabic-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 651F53C22ADC04AE00D48890 /* Bahij_TheSansArabic-Light.ttf */; };
+		651F53CD2ADC04AF00D48890 /* Bahij_TheSansArabic-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 651F53C42ADC04AE00D48890 /* Bahij_TheSansArabic-Black.ttf */; };
+		651F53CE2ADC04AF00D48890 /* Bahij_TheSansArabic-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 651F53C52ADC04AF00D48890 /* Bahij_TheSansArabic-ExtraLight.ttf */; };
+		651F53D02ADC04FA00D48890 /* Bahij_TheSansArabic-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 651F53BD2ADC04A100D48890 /* Bahij_TheSansArabic-SemiBold.ttf */; };
 		6520853F29FFB99A00C38B45 /* RegisterVerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6520853E29FFB99900C38B45 /* RegisterVerifyViewController.swift */; };
 		652085412A00416800C38B45 /* GeneralObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652085402A00416800C38B45 /* GeneralObject.swift */; };
 		652711EA29EBF7EB00D503F9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652711E929EBF7EB00D503F9 /* LoginViewController.swift */; };
@@ -60,8 +68,6 @@
 		65B873BB2AB0A0CF0020BD23 /* AddAddNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B873BA2AB0A0CF0020BD23 /* AddAddNavigationController.swift */; };
 		65B873BD2AB0A0F30020BD23 /* CategoryNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B873BC2AB0A0F30020BD23 /* CategoryNavigationController.swift */; };
 		65B873BF2AB0A10B0020BD23 /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B873BE2AB0A10B0020BD23 /* ProfileNavigationController.swift */; };
-		65C4B6132A248C3300A59A4B /* Tajawal-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65C4B6112A248C3300A59A4B /* Tajawal-Bold.ttf */; };
-		65C4B6142A248C3300A59A4B /* Tajawal-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65C4B6122A248C3300A59A4B /* Tajawal-Regular.ttf */; };
 		65C7FF0029FD0A350062BFAA /* TypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C7FEFF29FD0A350062BFAA /* TypeViewController.swift */; };
 		65C7FF0229FD461D0062BFAA /* CounriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C7FF0129FD461D0062BFAA /* CounriesViewController.swift */; };
 		65C7FF0429FD46DE0062BFAA /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C7FF0329FD46DE0062BFAA /* CountryTableViewCell.swift */; };
@@ -265,6 +271,14 @@
 /* Begin PBXFileReference section */
 		2FEF5BFF310B8A8C36BD1FCD /* Pods-Hunter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hunter.debug.xcconfig"; path = "Target Support Files/Pods-Hunter/Pods-Hunter.debug.xcconfig"; sourceTree = "<group>"; };
 		3AAA4616B8394696D95E23AB /* Pods-Monasba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monasba.release.xcconfig"; path = "Target Support Files/Pods-Monasba/Pods-Monasba.release.xcconfig"; sourceTree = "<group>"; };
+		651F53BD2ADC04A100D48890 /* Bahij_TheSansArabic-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bahij_TheSansArabic-SemiBold.ttf"; sourceTree = "<group>"; };
+		651F53BE2ADC04AD00D48890 /* Bahij_TheSansArabic-Plain.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bahij_TheSansArabic-Plain.ttf"; sourceTree = "<group>"; };
+		651F53BF2ADC04AE00D48890 /* Bahij_TheSansArabic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bahij_TheSansArabic-Bold.ttf"; sourceTree = "<group>"; };
+		651F53C02ADC04AE00D48890 /* Bahij_TheSansArabic-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bahij_TheSansArabic-ExtraBold.ttf"; sourceTree = "<group>"; };
+		651F53C12ADC04AE00D48890 /* Bahij_TheSansArabic-SemiLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bahij_TheSansArabic-SemiLight.ttf"; sourceTree = "<group>"; };
+		651F53C22ADC04AE00D48890 /* Bahij_TheSansArabic-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bahij_TheSansArabic-Light.ttf"; sourceTree = "<group>"; };
+		651F53C42ADC04AE00D48890 /* Bahij_TheSansArabic-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bahij_TheSansArabic-Black.ttf"; sourceTree = "<group>"; };
+		651F53C52ADC04AF00D48890 /* Bahij_TheSansArabic-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bahij_TheSansArabic-ExtraLight.ttf"; sourceTree = "<group>"; };
 		6520853E29FFB99900C38B45 /* RegisterVerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVerifyViewController.swift; sourceTree = "<group>"; };
 		652085402A00416800C38B45 /* GeneralObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralObject.swift; sourceTree = "<group>"; };
 		652711E929EBF7EB00D503F9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -318,8 +332,6 @@
 		65B873BA2AB0A0CF0020BD23 /* AddAddNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddNavigationController.swift; sourceTree = "<group>"; };
 		65B873BC2AB0A0F30020BD23 /* CategoryNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryNavigationController.swift; sourceTree = "<group>"; };
 		65B873BE2AB0A10B0020BD23 /* ProfileNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigationController.swift; sourceTree = "<group>"; };
-		65C4B6112A248C3300A59A4B /* Tajawal-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Bold.ttf"; sourceTree = "<group>"; };
-		65C4B6122A248C3300A59A4B /* Tajawal-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Regular.ttf"; sourceTree = "<group>"; };
 		65C7FEFF29FD0A350062BFAA /* TypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeViewController.swift; sourceTree = "<group>"; };
 		65C7FF0129FD461D0062BFAA /* CounriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounriesViewController.swift; sourceTree = "<group>"; };
 		65C7FF0329FD46DE0062BFAA /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
@@ -735,8 +747,14 @@
 		65C4B6102A248C3300A59A4B /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				65C4B6112A248C3300A59A4B /* Tajawal-Bold.ttf */,
-				65C4B6122A248C3300A59A4B /* Tajawal-Regular.ttf */,
+				651F53BD2ADC04A100D48890 /* Bahij_TheSansArabic-SemiBold.ttf */,
+				651F53C42ADC04AE00D48890 /* Bahij_TheSansArabic-Black.ttf */,
+				651F53BF2ADC04AE00D48890 /* Bahij_TheSansArabic-Bold.ttf */,
+				651F53C02ADC04AE00D48890 /* Bahij_TheSansArabic-ExtraBold.ttf */,
+				651F53C52ADC04AF00D48890 /* Bahij_TheSansArabic-ExtraLight.ttf */,
+				651F53C22ADC04AE00D48890 /* Bahij_TheSansArabic-Light.ttf */,
+				651F53BE2ADC04AD00D48890 /* Bahij_TheSansArabic-Plain.ttf */,
+				651F53C12ADC04AE00D48890 /* Bahij_TheSansArabic-SemiLight.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -1323,8 +1341,8 @@
 				C85FFCD22A260BEF000C426D /* MsgMediaCell.xib in Resources */,
 				65F746E62A03CBBE00E1C79E /* Category.storyboard in Resources */,
 				C8CC468B2A3874B800C90476 /* ProfileProductsCollectionViewCell.xib in Resources */,
-				65C4B6142A248C3300A59A4B /* Tajawal-Regular.ttf in Resources */,
 				65FC22132A1172BA0077F1A2 /* Product.storyboard in Resources */,
+				651F53CA2ADC04AF00D48890 /* Bahij_TheSansArabic-SemiLight.ttf in Resources */,
 				C8A17F6B2A80E0DF00D6E292 /* GoogleService-Info.plist in Resources */,
 				C84D28FD2A6D0A990026F125 /* MsgContactSenderCell.xib in Resources */,
 				C86678BF29FFA12B0019AE81 /* Advs.storyboard in Resources */,
@@ -1336,11 +1354,16 @@
 				658D003C2A15F22200F512E9 /* Search.storyboard in Resources */,
 				C8AD40E02A28EB9400E464DB /* Settings.storyboard in Resources */,
 				C85FFCE02A260BEF000C426D /* MsgCell.xib in Resources */,
+				651F53CB2ADC04AF00D48890 /* Bahij_TheSansArabic-Light.ttf in Resources */,
+				651F53CD2ADC04AF00D48890 /* Bahij_TheSansArabic-Black.ttf in Resources */,
 				C8191F9E2A40765C0057AA28 /* FavouritesCollectionViewCell.xib in Resources */,
 				C8CC46952A391F4800C90476 /* load2.json in Resources */,
+				651F53CE2ADC04AF00D48890 /* Bahij_TheSansArabic-ExtraLight.ttf in Resources */,
 				C85FFCDB2A260BEF000C426D /* AttachCell.xib in Resources */,
 				C85FFC9E2A2608AC000C426D /* Chat.storyboard in Resources */,
+				651F53D02ADC04FA00D48890 /* Bahij_TheSansArabic-SemiBold.ttf in Resources */,
 				C84D28FE2A6D0AA90026F125 /* MsgCellForReceiver.xib in Resources */,
+				651F53C82ADC04AF00D48890 /* Bahij_TheSansArabic-Bold.ttf in Resources */,
 				C85FFC9D2A2608AC000C426D /* Main.storyboard in Resources */,
 				C8C7E8A82AA47A520093022B /* Packages.storyboard in Resources */,
 				C85FFCDA2A260BEF000C426D /* MsgColorCell.xib in Resources */,
@@ -1348,6 +1371,7 @@
 				C8CCE3382A18FC5F00FFAFB2 /* Menu.storyboard in Resources */,
 				C85FFCD72A260BEF000C426D /* MsgFileCell.xib in Resources */,
 				C8CC46932A39190500C90476 /* loader.json in Resources */,
+				651F53C72ADC04AF00D48890 /* Bahij_TheSansArabic-Plain.ttf in Resources */,
 				65DD120329E6845E00A3B8DD /* LaunchScreen.storyboard in Resources */,
 				C832F12E2AAE151A00040E78 /* Commenttest.xib in Resources */,
 				C85FFCBA2A260AAE000C426D /* MyAdsCollectionViewCell.xib in Resources */,
@@ -1356,8 +1380,8 @@
 				C80CC9312A6DBE8100B56F54 /* FavCell.xib in Resources */,
 				C8A72A3F2A00C26000F9C26D /* Profile.storyboard in Resources */,
 				65FFFA182A1E9FF200B70368 /* Notifications.storyboard in Resources */,
+				651F53C92ADC04AF00D48890 /* Bahij_TheSansArabic-ExtraBold.ttf in Resources */,
 				C8A547D82A594BF100031FE9 /* ProductsShimmerView.xib in Resources */,
-				65C4B6132A248C3300A59A4B /* Tajawal-Bold.ttf in Resources */,
 				C8A2BEBA2A3A55B400A05E77 /* OtherUserProductCell.xib in Resources */,
 				C8B7C9422A97B724008D87FA /* Store.storyboard in Resources */,
 				C8A2BED92A3B5FA700A05E77 /* FollowersCell.xib in Resources */,
