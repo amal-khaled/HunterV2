@@ -55,7 +55,7 @@ class NotificationTableViewCell: UITableViewCell {
             
             let dateFormatter = DateFormatter()
                 dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-//            dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+            dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
 
             let pastDate = dateFormatter.date(from:createdDate ?? "") ?? Date()
             
