@@ -92,7 +92,7 @@ class HomeViewController: UIViewController {
 
     }
     override func viewWillAppear(_ animated: Bool) {
-        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
+//        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
         self.navigationController?.navigationBar.isHidden = false
 //        NotificationCenter.default.post(name: NSNotification.Name("ShowTabBar"), object: nil)
         getnotifictionCounts()
@@ -104,6 +104,8 @@ class HomeViewController: UIViewController {
         getData()
         getFeatureData()
         getStores()
+        
+        searchTextField.text = ""
     }
     
     

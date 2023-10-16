@@ -102,7 +102,7 @@
                                                                                                     </imageView>
                                                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="965" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JnG-xs-OXC">
                                                                                                         <rect key="frame" x="47" y="19" width="26" height="18.333333333333329"/>
-                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15.5"/>
+                                                                                                        <fontDescription key="fontDescription" type="system" pointSize="15.5"/>
                                                                                                         <color key="textColor" white="0.0" alpha="0.93636670649999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
@@ -202,7 +202,7 @@
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxT-3T-HpP" userLabel="اسم المستخدم او رقم الجوال">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="75.333333333333329" height="46.333333333333336"/>
-                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <nil key="textColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -226,7 +226,7 @@
                                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FUa-ZG-i89">
                                                                                                 <rect key="frame" x="0.0" y="19" width="301" height="20"/>
                                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
+                                                                                                <fontDescription key="fontDescription" type="system" pointSize="16.5"/>
                                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                                                 <userDefinedRuntimeAttributes>
                                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
@@ -338,7 +338,7 @@
                                                             <button opaque="NO" clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vS-kF-rsc" customClass="TransitionButton" customModule="TransitionButton">
                                                                 <rect key="frame" x="0.0" y="0.0" width="361" height="50"/>
                                                                 <color key="backgroundColor" name="#0093F5"/>
-                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
                                                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                                                 <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                                 <state key="normal" title="Login">
@@ -356,7 +356,7 @@
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srL-9K-m8t">
                                                                 <rect key="frame" x="172.66666666666666" y="50" width="15.666666666666657" height="50"/>
-                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" white="0.0" alpha="0.93636670649999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -365,7 +365,7 @@
                                                             </label>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkP-dl-JL6">
                                                                 <rect key="frame" x="0.0" y="100" width="361" height="50"/>
-                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
                                                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                                                 <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                                 <state key="normal" title="Create new account">
@@ -522,7 +522,7 @@
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BdM-jU-e49">
                                                         <rect key="frame" x="101.66666666666667" y="174" width="159.66666666666663" height="31"/>
-                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="26.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="26.5"/>
                                                         <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
@@ -534,7 +534,7 @@
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please, enter phone number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDk-sd-vWn">
                                                                 <rect key="frame" x="0.0" y="0.0" width="363" height="17"/>
-                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14.5"/>
                                                                 <color key="textColor" red="0.60392156860000001" green="0.65098039220000004" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -543,7 +543,7 @@
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biD-yx-S1a">
                                                                 <rect key="frame" x="0.0" y="23" width="363" height="50"/>
-                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14.5"/>
                                                                 <color key="textColor" red="0.60392156860000001" green="0.65098039220000004" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -574,7 +574,7 @@
                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gDf-LE-jRD">
                                                                                 <rect key="frame" x="92" y="5" width="215" height="46.666666666666664"/>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="16.5"/>
                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="ASCIICapableNumberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
@@ -593,7 +593,7 @@
                                                                                     </imageView>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="965" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1w-dB-gTJ">
                                                                                         <rect key="frame" x="47" y="19.666666666666686" width="26" height="18.333333333333329"/>
-                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15.5"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="15.5"/>
                                                                                         <color key="textColor" white="0.0" alpha="0.93636670649999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
@@ -710,7 +710,7 @@
                                                             <constraint firstAttribute="height" constant="50" id="LtU-dX-FFY"/>
                                                             <constraint firstAttribute="width" constant="200" id="lWD-tx-LzF"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
                                                         <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="verify">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -803,7 +803,7 @@
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLT-7V-Lgy" userLabel="اسم المستخدم او رقم الجوال">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="82.666666666666671" height="20.333333333333332"/>
-                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" name="textColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -820,7 +820,7 @@
                                                                             </stackView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your username is how friends add you on Hunter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c23-vO-8GU" userLabel="اسم المستخدم او رقم الجوال">
                                                                                 <rect key="frame" x="0.0" y="28.333333333333332" width="364" height="11.666666666666668"/>
-                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="10"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                                 <color key="textColor" name="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                                 <userDefinedRuntimeAttributes>
@@ -847,7 +847,7 @@
                                                                                             </imageView>
                                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Choose your username (English letters)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yJu-ZX-PUV">
                                                                                                 <rect key="frame" x="25" y="12" width="319" height="21"/>
-                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
+                                                                                                <fontDescription key="fontDescription" type="system" pointSize="16.5"/>
                                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                                                                                 <userDefinedRuntimeAttributes>
                                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
@@ -905,7 +905,7 @@
                                                                                         <subviews>
                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HbY-cA-Op8" userLabel="اسم المستخدم او رقم الجوال">
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="74" height="30.333333333333332"/>
-                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                                 <color key="textColor" name="textColor"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                                 <userDefinedRuntimeAttributes>
@@ -941,7 +941,7 @@
                                                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jRc-iu-cU4">
                                                                                                         <rect key="frame" x="25" y="12" width="319" height="21"/>
                                                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
+                                                                                                        <fontDescription key="fontDescription" type="system" pointSize="16.5"/>
                                                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                                                                                         <userDefinedRuntimeAttributes>
                                                                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
@@ -996,7 +996,7 @@
                                                                                         <subviews>
                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Family name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDP-zo-aKY" userLabel="اسم المستخدم او رقم الجوال">
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20.333333333333332"/>
-                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                                 <color key="textColor" name="textColor"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                                 <userDefinedRuntimeAttributes>
@@ -1032,7 +1032,7 @@
                                                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HUA-Es-Pk1" userLabel="text">
                                                                                                         <rect key="frame" x="25" y="12" width="0.0" height="21"/>
                                                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
+                                                                                                        <fontDescription key="fontDescription" type="system" pointSize="16.5"/>
                                                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="family-name"/>
                                                                                                         <userDefinedRuntimeAttributes>
                                                                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
@@ -1089,7 +1089,7 @@
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXz-Yr-1pJ" userLabel="اسم المستخدم او رقم الجوال">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="75.333333333333329" height="20.333333333333332"/>
-                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" name="textColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -1128,7 +1128,7 @@
                                                                                                     <constraint firstAttribute="height" constant="55" id="2Im-ly-esb"/>
                                                                                                 </constraints>
                                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
+                                                                                                <fontDescription key="fontDescription" type="system" pointSize="16.5"/>
                                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                                                 <userDefinedRuntimeAttributes>
                                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
@@ -1201,7 +1201,7 @@
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AY7-bO-sXF" userLabel="اسم المستخدم او رقم الجوال">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="49" height="20.333333333333332"/>
-                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" name="textColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -1235,7 +1235,7 @@
                                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n1Y-eC-jaZ">
                                                                                         <rect key="frame" x="92" y="5" width="236" height="50"/>
                                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="16.5"/>
                                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
                                                                                         <userDefinedRuntimeAttributes>
                                                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
@@ -1257,7 +1257,7 @@
                                                                                             </imageView>
                                                                                             <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="965" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cB0-ju-13j">
                                                                                                 <rect key="frame" x="47" y="21.333333333333314" width="26" height="18.333333333333329"/>
-                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15.5"/>
+                                                                                                <fontDescription key="fontDescription" type="system" pointSize="15.5"/>
                                                                                                 <color key="textColor" white="0.0" alpha="0.93636670649999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
@@ -1356,7 +1356,7 @@
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w58-hx-SPa" userLabel="اسم المستخدم او رقم الجوال">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="41.666666666666664" height="20.333333333333332"/>
-                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" name="textColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -1373,7 +1373,7 @@
                                                                             </stackView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please type the correct email to receive the activation code" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlE-UW-ayf">
                                                                                 <rect key="frame" x="0.0" y="43.333333333333314" width="364" height="15.333333333333336"/>
-                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="13"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                                 <color key="textColor" systemColor="systemRedColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                                 <userDefinedRuntimeAttributes>
@@ -1404,7 +1404,7 @@
                                                                                                     <constraint firstAttribute="height" constant="50" id="iaQ-n7-5iD"/>
                                                                                                 </constraints>
                                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
+                                                                                                <fontDescription key="fontDescription" type="system" pointSize="16.5"/>
                                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                                                 <userDefinedRuntimeAttributes>
                                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
@@ -1458,7 +1458,7 @@
                                                                                 <subviews>
                                                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkw-RT-3hh">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="60.666666666666664" height="20"/>
-                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" name="textColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -1467,7 +1467,7 @@
                                                                                     </label>
                                                                                     <label opaque="NO" contentMode="left" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfS-S5-SAn">
                                                                                         <rect key="frame" x="75.666666666666657" y="0.0" width="288.33333333333337" height="20"/>
-                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" systemColor="systemRedColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
@@ -1500,7 +1500,7 @@
                                                                                             </imageView>
                                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVM-dn-EMQ">
                                                                                                 <rect key="frame" x="30" y="13" width="314" height="29"/>
-                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
+                                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="2" maxY="0.0"/>
                                                                                                 <state key="normal">
                                                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1555,7 +1555,7 @@
                                                                                         <subviews>
                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Governorate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaB-b5-Wc3" userLabel="اسم المستخدم او رقم الجوال">
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="172" height="20"/>
-                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                                 <color key="textColor" name="textColor"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                                 <userDefinedRuntimeAttributes>
@@ -1584,7 +1584,7 @@
                                                                                                 <constraints>
                                                                                                     <constraint firstAttribute="height" constant="55" id="vEW-NI-SzO"/>
                                                                                                 </constraints>
-                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
+                                                                                                <fontDescription key="fontDescription" type="system" pointSize="16.5"/>
                                                                                                 <state key="normal">
                                                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 </state>
@@ -1625,7 +1625,7 @@
                                                                                     </view>
                                                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Op8-5x-eJi">
                                                                                         <rect key="frame" x="0.0" y="85" width="172" height="0.0"/>
-                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="9"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                                                         <color key="textColor" systemColor="systemRedColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
@@ -1639,7 +1639,7 @@
                                                                                         <subviews>
                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Region" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vx-fi-acl" userLabel="اسم المستخدم او رقم الجوال">
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="172" height="20"/>
-                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                                 <color key="textColor" name="textColor"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                                 <userDefinedRuntimeAttributes>
@@ -1665,7 +1665,7 @@
                                                                                             </imageView>
                                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTR-me-2mo">
                                                                                                 <rect key="frame" x="10" y="0.0" width="152" height="55"/>
-                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
+                                                                                                <fontDescription key="fontDescription" type="system" pointSize="16.5"/>
                                                                                                 <state key="normal">
                                                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 </state>
@@ -1708,7 +1708,7 @@
                                                                                     </view>
                                                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHI-8E-dTE">
                                                                                         <rect key="frame" x="0.0" y="85" width="172" height="0.0"/>
-                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="9"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                                                         <color key="textColor" systemColor="systemRedColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
@@ -1724,7 +1724,7 @@
                                                                                 <subviews>
                                                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4f-8k-qVY">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="364" height="17.666666666666668"/>
-                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                                         <color key="textColor" name="textColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -1738,7 +1738,7 @@
                                                                                                 <rect key="frame" x="10" y="10" width="344" height="104.33333333333333"/>
                                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                                                 <color key="textColor" systemColor="labelColor"/>
-                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
+                                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                                                 <userDefinedRuntimeAttributes>
                                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
@@ -1792,7 +1792,7 @@
                                                             <constraint firstAttribute="height" constant="50" id="9gl-bQ-M4J"/>
                                                             <constraint firstAttribute="width" constant="200" id="S35-qe-hBR"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
                                                         <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="Register">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1812,7 +1812,7 @@
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="you accept" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0R-TE-bgb">
                                                                 <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="30"/>
-                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -1824,7 +1824,7 @@
                                                                 <color key="tintColor" name="#0093F5"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Usage agreement">
-                                                                    <fontDescription key="titleFontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
                                                                 </buttonConfiguration>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
@@ -1840,7 +1840,7 @@
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAY-gS-nX5" userLabel="أو">
                                                         <rect key="frame" x="174.33333333333334" y="1009.6666666666667" width="15.666666666666657" height="20"/>
-                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
@@ -1852,7 +1852,7 @@
                                                         <subviews>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYL-8d-WSK">
                                                                 <rect key="frame" x="0.0" y="0.0" width="177" height="50"/>
-                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
                                                                 <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                                 <state key="normal" title="Login">
                                                                     <color key="titleColor" name="#0093F5"/>
@@ -1875,7 +1875,7 @@
                                                             </button>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiV-66-I9e">
                                                                 <rect key="frame" x="187" y="0.0" width="177" height="50"/>
-                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
                                                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                                                 <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                                 <state key="normal" title="Forget Password">
@@ -2017,7 +2017,7 @@
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Phone number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GK0-rW-p0w">
                                                                 <rect key="frame" x="0.0" y="0.0" width="116.66666666666667" height="20.333333333333332"/>
-                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" name="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -2055,7 +2055,7 @@
                                                                             </imageView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="965" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Waq-xg-t9t">
                                                                                 <rect key="frame" x="47" y="13.999999999999998" width="26" height="18.333333333333329"/>
-                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15.5"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="15.5"/>
                                                                                 <color key="textColor" white="0.0" alpha="0.93636670649999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
@@ -2106,7 +2106,7 @@
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fAD-uU-0Pu">
                                                                         <rect key="frame" x="91" y="9.6666666666666288" width="238" height="21"/>
                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="16.5"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
@@ -2174,7 +2174,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="QmT-ZZ-PfN"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
                                                 <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title="Continue">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2278,7 +2278,7 @@
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKz-4H-6YJ" userLabel="اسم المستخدم او رقم الجوال">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="113.33333333333333" height="21"/>
-                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" red="0.43529411759999997" green="0.43529411759999997" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -2314,7 +2314,7 @@
                                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="new password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9pS-AB-4dR">
                                                                                                 <rect key="frame" x="25" y="12" width="268" height="20"/>
                                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
+                                                                                                <fontDescription key="fontDescription" type="system" pointSize="16.5"/>
                                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                                                 <userDefinedRuntimeAttributes>
                                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
@@ -2379,7 +2379,7 @@
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm new password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIr-15-ZsI" userLabel="اسم المستخدم او رقم الجوال">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="175.66666666666666" height="20.333333333333332"/>
-                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" red="0.43529411759999997" green="0.43529411759999997" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <userDefinedRuntimeAttributes>
@@ -2415,7 +2415,7 @@
                                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="confirm new password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jqN-DE-nqC">
                                                                                                 <rect key="frame" x="20" y="12.333333333333371" width="278" height="20"/>
                                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
+                                                                                                <fontDescription key="fontDescription" type="system" pointSize="16.5"/>
                                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                                                 <userDefinedRuntimeAttributes>
                                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
@@ -2507,7 +2507,7 @@
                                                             <constraint firstAttribute="height" constant="50" id="k9p-at-Kaw"/>
                                                             <constraint firstAttribute="width" constant="200" id="wds-3d-YFa"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
                                                         <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="Save">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2608,7 +2608,7 @@
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grF-Os-0v7">
                                                         <rect key="frame" x="127" y="278" width="139" height="31.666666666666686"/>
-                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="27"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
@@ -2620,7 +2620,7 @@
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please check your email and phone number to get the activation code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4W-zi-S47">
                                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="41"/>
-                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -2632,7 +2632,7 @@
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sent to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gE-Ce-1JV" userLabel="تم الإرسال إلى">
                                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="21.666666666666668"/>
-                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="18.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="18.5"/>
                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                         <userDefinedRuntimeAttributes>
@@ -2647,13 +2647,13 @@
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5An-f5-qXd">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
-                                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="18.5"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="18.5"/>
                                                                                         <color key="textColor" name="#0093F5"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIE-BM-Sjp">
                                                                                         <rect key="frame" x="0.0" y="60.000000000000057" width="393" height="50"/>
-                                                                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="17.5"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
                                                                                         <color key="textColor" name="#0093F5"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
@@ -2679,7 +2679,7 @@
                                                             <constraint firstAttribute="width" constant="200" id="J7Z-iR-jhn"/>
                                                             <constraint firstAttribute="height" constant="50" id="Nr9-Zc-TMU"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
                                                         <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="Verify">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2702,7 +2702,7 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="OcJ-Nl-nlc"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <state key="normal" title="Resend Code ">
                                                                     <color key="titleColor" name="#0093F5"/>
                                                                 </state>
@@ -2715,7 +2715,7 @@
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2I5-os-rJ3">
                                                                 <rect key="frame" x="100" y="0.0" width="29.333333333333343" height="30"/>
-                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <color key="textColor" name="#0093F5"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -2809,7 +2809,7 @@
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qa1-nm-6RO">
                                                         <rect key="frame" x="127" y="278" width="139" height="31.666666666666686"/>
-                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="27"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
@@ -2821,7 +2821,7 @@
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please check your email and phone number to get the activation code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsa-hZ-PZf">
                                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="41"/>
-                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -2833,7 +2833,7 @@
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sent to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYC-zC-Fee" userLabel="تم الإرسال إلى">
                                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="21.666666666666668"/>
-                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="18.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="18.5"/>
                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                         <userDefinedRuntimeAttributes>
@@ -2848,13 +2848,13 @@
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFP-pD-oVK">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
-                                                                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="18.5"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="18.5"/>
                                                                                         <color key="textColor" name="#0093F5"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEl-7W-0Ey">
                                                                                         <rect key="frame" x="0.0" y="60.000000000000057" width="393" height="50"/>
-                                                                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="17.5"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
                                                                                         <color key="textColor" name="#0093F5"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
@@ -2880,7 +2880,7 @@
                                                             <constraint firstAttribute="height" constant="50" id="rHj-3i-95u"/>
                                                             <constraint firstAttribute="width" constant="200" id="rI5-LE-vTM"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
                                                         <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="Verify">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2903,7 +2903,7 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Pu5-az-C52"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <state key="normal" title="Resend Code ">
                                                                     <color key="titleColor" name="#0093F5"/>
                                                                 </state>
@@ -2913,7 +2913,7 @@
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AB7-tD-neV">
                                                                 <rect key="frame" x="100" y="0.0" width="29.333333333333343" height="30"/>
-                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <color key="textColor" name="#0093F5"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -3000,7 +3000,7 @@
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Phone Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5C3-Uz-QmD">
                                                 <rect key="frame" x="57.333333333333343" y="175" width="278.33333333333326" height="31"/>
-                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26.5"/>
                                                 <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
@@ -3012,7 +3012,7 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your mobile number to be sent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drV-u2-oiq">
                                                         <rect key="frame" x="0.0" y="0.0" width="361.33333333333331" height="21.666666666666668"/>
-                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="18.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18.5"/>
                                                         <color key="textColor" red="0.60392156860000001" green="0.65098039220000004" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
@@ -3021,7 +3021,7 @@
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your activation code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K83-79-NJT">
                                                         <rect key="frame" x="0.0" y="27.666666666666686" width="361.33333333333331" height="21.666666666666671"/>
-                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="18.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18.5"/>
                                                         <color key="textColor" red="0.60392156860000001" green="0.65098039220000004" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
@@ -3038,7 +3038,7 @@
                                                         <subviews>
                                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlf-KS-EJn">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60.666666666666664" height="20"/>
-                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" name="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -3047,7 +3047,7 @@
                                                             </label>
                                                             <label opaque="NO" contentMode="left" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mf-2c-jiU">
                                                                 <rect key="frame" x="75.666666666666657" y="0.0" width="267.33333333333337" height="20"/>
-                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" systemColor="systemRedColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -3065,7 +3065,7 @@
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZP-Nj-s4B">
                                                                 <rect key="frame" x="44" y="0.0" width="267" height="57"/>
-                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="2" maxY="0.0"/>
                                                                 <state key="normal">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3146,7 +3146,7 @@
                                                                             </imageView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="965" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyC-oP-nRq">
                                                                                 <rect key="frame" x="47" y="19.666666666666742" width="26" height="18.333333333333329"/>
-                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15.5"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="15.5"/>
                                                                                 <color key="textColor" white="0.0" alpha="0.93636670649999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
@@ -3159,7 +3159,7 @@
                                                                             </view>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAC-e4-qwl">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="82" height="51.666666666666664"/>
-                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                                 <connections>
                                                                                     <action selector="go_country_code:" destination="3eX-YX-Eu2" eventType="touchUpInside" id="45h-fe-z1j"/>
                                                                                 </connections>
@@ -3198,7 +3198,7 @@
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i0Q-x8-h4q">
                                                                         <rect key="frame" x="40" y="5" width="201" height="46.666666666666664"/>
                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="16.5"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="ASCIICapableNumberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
@@ -3272,7 +3272,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="P7m-QX-MsP"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
                                                 <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title="Continue">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3298,7 +3298,7 @@
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUG-R9-5zc" userLabel="اسم المستخدم او رقم الجوال">
                                                         <rect key="frame" x="24.666666666666664" y="0.0" width="48.999999999999993" height="20.333333333333332"/>
-                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.43529411759999997" green="0.43529411759999997" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
@@ -3318,7 +3318,7 @@
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXs-RB-4Dk" userLabel="اسم المستخدم او رقم الجوال">
                                                                         <rect key="frame" x="0.0" y="0.0" width="164" height="20"/>
-                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" name="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                         <userDefinedRuntimeAttributes>
@@ -3344,7 +3344,7 @@
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJi-03-IWJ">
                                                                         <rect key="frame" x="4" y="0.0" width="45.333333333333336" height="55"/>
-                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="13"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                         <color key="textColor" name="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                         <userDefinedRuntimeAttributes>
@@ -3356,7 +3356,7 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="55" id="jCO-Uw-3N2"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                         <state key="normal">
                                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
@@ -3405,7 +3405,7 @@
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Region" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ivy-9f-dHm" userLabel="اسم المستخدم او رقم الجوال">
                                                                         <rect key="frame" x="0.0" y="0.0" width="164" height="20"/>
-                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" name="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                         <userDefinedRuntimeAttributes>
@@ -3419,7 +3419,7 @@
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twz-2S-7LR">
                                                                         <rect key="frame" x="4" y="0.0" width="45.333333333333336" height="55"/>
-                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="13"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                         <color key="textColor" name="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                         <userDefinedRuntimeAttributes>
@@ -3428,7 +3428,7 @@
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="bqZ-Pt-mqG">
                                                                         <rect key="frame" x="61.333333333333321" y="0.0" width="75.666666666666686" height="55"/>
-                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                         <state key="normal">
                                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
@@ -3605,7 +3605,7 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWM-M2-qfN">
                                                         <rect key="frame" x="0.0" y="0.0" width="200.66666666666666" height="28.666666666666668"/>
-                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="24.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24.5"/>
                                                         <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
@@ -3614,7 +3614,7 @@
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Fill All Fields" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Scz-Q0-4Gg">
                                                         <rect key="frame" x="0.0" y="34.666666666666686" width="200.66666666666666" height="17"/>
-                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14.5"/>
                                                         <color key="textColor" red="0.60392156860000001" green="0.65098039220000004" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
@@ -3637,7 +3637,7 @@
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyd-ge-JIR" userLabel="اسم المستخدم او رقم الجوال">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="75.333333333333329" height="20"/>
-                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                 <color key="textColor" red="0.43529411759999997" green="0.43529411759999997" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                 <nil key="highlightedColor"/>
                                                                                 <userDefinedRuntimeAttributes>
@@ -3658,7 +3658,7 @@
                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CQO-Hn-khY">
                                                                                 <rect key="frame" x="38" y="5" width="263" height="48.333333333333336"/>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="16.5"/>
                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
@@ -3729,7 +3729,7 @@
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tJ-EM-vg1" userLabel="اسم المستخدم او رقم الجوال">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="113.33333333333333" height="20.333333333333332"/>
-                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                 <color key="textColor" red="0.43529411759999997" green="0.43529411759999997" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                 <nil key="highlightedColor"/>
                                                                                 <userDefinedRuntimeAttributes>
@@ -3762,7 +3762,7 @@
                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="New password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KxT-yt-phP">
                                                                                 <rect key="frame" x="38" y="5" width="263" height="48"/>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="16.5"/>
                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
@@ -3821,7 +3821,7 @@
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm new password" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEI-jo-CnX" userLabel="اسم المستخدم او رقم الجوال">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="175.66666666666666" height="20"/>
-                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                 <color key="textColor" red="0.43529411759999997" green="0.43529411759999997" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                 <nil key="highlightedColor"/>
                                                                                 <userDefinedRuntimeAttributes>
@@ -3842,7 +3842,7 @@
                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm new password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ipN-Nb-45L">
                                                                                 <rect key="frame" x="38" y="5" width="263" height="48.333333333333336"/>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16.5"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="16.5"/>
                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="Localize" value="YES"/>
@@ -3939,7 +3939,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="EgC-bL-y61"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
                                                 <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title="Confirm">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4064,7 +4064,7 @@
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8a5-OX-E2M">
                                                         <rect key="frame" x="127" y="278" width="139" height="31.666666666666686"/>
-                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="27"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
@@ -4076,7 +4076,7 @@
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please check your email and phone number to get the activation code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1C-Kb-W61">
                                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="41"/>
-                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -4088,7 +4088,7 @@
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sent to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iY-oA-sLz" userLabel="تم الإرسال إلى">
                                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="21.666666666666668"/>
-                                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="18.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="18.5"/>
                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                         <userDefinedRuntimeAttributes>
@@ -4103,13 +4103,13 @@
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KS1-vm-IVr">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
-                                                                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="18.5"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="18.5"/>
                                                                                         <color key="textColor" name="#0093F5"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bua-rv-DCn">
                                                                                         <rect key="frame" x="0.0" y="60" width="393" height="50"/>
-                                                                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="17.5"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
                                                                                         <color key="textColor" name="#0093F5"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
@@ -4135,7 +4135,7 @@
                                                             <constraint firstAttribute="width" constant="200" id="jMo-4X-3By"/>
                                                             <constraint firstAttribute="height" constant="50" id="nNm-JH-OZa"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
                                                         <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="Verify">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4158,7 +4158,7 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Cz3-hY-UBi"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <state key="normal" title="Resend Code ">
                                                                     <color key="titleColor" name="#0093F5"/>
                                                                 </state>

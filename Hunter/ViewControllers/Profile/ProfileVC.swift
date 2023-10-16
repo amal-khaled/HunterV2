@@ -389,13 +389,13 @@ extension ProfileVC {
     
     func confirmRemoveCover() {
         DispatchQueue.main.async( execute: {
-            let attributedtitle = NSAttributedString(string: "", attributes: [
-//                NSAttributedString.Key.font : UIFont(name: "Almarai-Regular", size: 13.0)!
-            ])
+//            let attributedtitle = NSAttributedString(string: "", attributes: [
+////                NSAttributedString.Key.font : UIFont(name: "Almarai-Regular", size: 13.0)!
+//            ])
             
-            let attributedmessage = NSAttributedString(string:"", attributes: [
-//                NSAttributedString.Key.font : UIFont(name: "Almarai-Regular", size: 13.0)!
-            ])
+//            let attributedmessage = NSAttributedString(string:"", attributes: [
+////                NSAttributedString.Key.font : UIFont(name: "Almarai-Regular", size: 13.0)!
+//            ])
             var typeImage =  "Cover"
             if self.isUpdateCover {
                 typeImage =  "Cover"

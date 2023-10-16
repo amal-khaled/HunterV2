@@ -35,7 +35,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfN-XF-7Wd" customClass="EdgeInsetLabel" customModule="Hunter" customModuleProvider="target">
                                 <rect key="frame" x="421" y="0.0" width="65" height="235"/>
                                 <color key="backgroundColor" name="#0093F5"/>
-                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14.5"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -59,7 +59,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="iXy-cC-pfW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="11.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11.5"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
