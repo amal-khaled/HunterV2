@@ -11,15 +11,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Medium.ttf">
-            <string>Tajawal-Medium</string>
-        </array>
-        <array key="Tajawal-Bold.ttf">
-            <string>Almarai-Bold</string>
-        </array>
-        <array key="Tajawal-Regular.ttf">
-            <string>Almarai-Regular</string>
-        </array>
         <array key="cairo_bold.ttf">
             <string>Cairo-Bold</string>
         </array>
@@ -242,7 +233,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="elsayed Ahmed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymG-dP-bGE">
-                                        <rect key="frame" x="80" y="24.666666666666671" width="124.33333333333331" height="21"/>
+                                        <rect key="frame" x="80" y="24.333333333333329" width="123.33333333333331" height="21.666666666666671"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" name="blackColor"/>
                                         <nil key="highlightedColor"/>
@@ -354,7 +345,7 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete The Conversation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nXh-Lm-Dgo">
-                                                        <rect key="frame" x="65" y="14" width="235" height="22"/>
+                                                        <rect key="frame" x="65" y="11.999999999999998" width="235" height="26.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -384,7 +375,7 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report The Conversation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uGF-Xo-Ikh">
-                                                        <rect key="frame" x="65" y="14" width="235" height="22"/>
+                                                        <rect key="frame" x="65" y="11.999999999999998" width="235" height="26.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -429,7 +420,7 @@
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Block" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iX3-LP-J8w">
-                                                        <rect key="frame" x="65" y="14" width="235" height="22"/>
+                                                        <rect key="frame" x="65" y="11.999999999999998" width="235" height="26.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -740,7 +731,7 @@
                                 <rect key="frame" x="0.0" y="1044" width="390" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you want to block?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubu-jE-d9g">
-                                        <rect key="frame" x="51" y="40" width="288" height="23.333333333333329"/>
+                                        <rect key="frame" x="56.333333333333343" y="40" width="277.66666666666663" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" red="0.74117647060000003" green="0.066666666669999999" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -795,7 +786,7 @@
                                                 <rect key="frame" x="10" y="20" width="370" height="48"/>
                                                 <subviews>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCK-0n-g9M">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50.333333333333336" height="21"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="51.333333333333336" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" name="#0093F5"/>
                                                         <nil key="highlightedColor"/>
@@ -804,7 +795,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the reason for reporting the chat content" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOi-5Y-fxU">
-                                                        <rect key="frame" x="0.0" y="27" width="283" height="21"/>
+                                                        <rect key="frame" x="0.0" y="27" width="307.66666666666669" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" systemColor="systemGrayColor"/>
                                                         <nil key="highlightedColor"/>
@@ -865,7 +856,7 @@
                                                         <color key="backgroundColor" name="#0093F5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
-                                                        <state key="normal" title="send">
+                                                        <state key="normal" title="Send">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
