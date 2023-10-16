@@ -917,7 +917,7 @@ extension UITextView {
         placeholderLabel.text = placeholder
         placeholderLabel.textAlignment = .natural
         placeholderLabel.lineBreakMode = .byWordWrapping
-        placeholderLabel.font = UIFont.systemFont(ofSize: 13.0, weight: .medium)
+        placeholderLabel.font = UIFont.systemFont(ofSize: 13)
 
         placeholderLabel.textColor = UIColor.lightGray
         placeholderLabel.sizeToFit()
